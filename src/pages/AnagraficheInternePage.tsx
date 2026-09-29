@@ -28,7 +28,6 @@ import ProduttoreProvvigioniRamoTab from "@/components/anagrafiche/ProduttorePro
 import DeleteWithImpactDialog from "@/components/common/DeleteWithImpactDialog";
 import { ValidatedInput } from "@/components/ui/validated-input";
 import { matchesAnagraficaListSearch } from "@/lib/searchNoEmail";
-import { TableScrollArea } from "@/components/shared/TableScrollArea";
 
 /** value ISO yyyy-MM-dd o "" */
 const DateField = ({ value, onChange }: { value: string; onChange: (v: string) => void }) => (
@@ -862,7 +861,10 @@ const AnagraficheInternePage = () => {
       </div>
 
       <Tabs value={activeTab} onValueChange={(v) => { setActiveTab(v as TabValue); setSearch(""); }}>
-        <TableScrollArea barStyle={{ scrollbarWidth: "thin", scrollbarColor: "#475569 #e2e8f0" }}>
+        <div
+          className="w-full min-w-0 overflow-x-auto overflow-y-hidden"
+          style={{ scrollbarWidth: "thin", scrollbarColor: "#94a3b8 transparent" }}
+        >
           <TabsList className="inline-flex h-10 w-max min-w-full justify-start">
             {TIPI.map((t) => (
               <TabsTrigger key={t.value} value={t.value} className="shrink-0 gap-1.5">
@@ -875,7 +877,7 @@ const AnagraficheInternePage = () => {
               </TabsTrigger>
             ))}
           </TabsList>
-        </TableScrollArea>
+        </div>
 
         {isAnagraficaTab && (
           <div className="mt-4 flex items-center gap-3">
