@@ -12,7 +12,8 @@ import { Separator } from "@/components/ui/separator";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { getLevelByRole, ROLE_LABELS, VISIBILITY_LABEL, VisibilityScope, LEVELS } from "@/lib/userLevels";
+import { ALL_PERMISSION_KEYS, getLevelByRole, ROLE_LABELS, VISIBILITY_LABEL, VisibilityScope, LEVELS } from "@/lib/userLevels";
+import { roleLabel, sedeAssegnataLabel } from "@/lib/userPrivilegiDisplay";
 import PermissionsMatrix from "./PermissionsMatrix";
 import { KeyRound, Power, Shield, User as UserIcon, Eye, Settings2, Save, ExternalLink } from "lucide-react";
 import { useQuery } from "@tanstack/react-query";
@@ -127,9 +128,15 @@ const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
             <div className="flex-1 min-w-0">
               <SheetTitle className="truncate">{user.cognome} {user.nome}</SheetTitle>
               <p className="text-xs text-muted-foreground truncate">{user.email}</p>
-              <div className="flex gap-1 mt-1">
+              <div className="flex gap-1 mt-1 flex-wrap">
                 <Badge variant="outline" className="text-[10px]">{level.id}</Badge>
-                <Badge className="text-[10px]">{level.label}</Badge>
+                <Badge className="text-[10px]">Ruolo: {roleLabel(ruolo)}</Badge>
+                {(Array.isArray(user.ruoli_rls) ? user.ruoli_rls : []).map((role: string) => (
+                  <Badge key={role} variant="secondary" className="text-[10px]">Sistema: {roleLabel(role)}</Badge>
+                ))}
+                {Array.isArray(user.ruoli_rls) && user.ruoli_rls.length === 0 && (
+                  <Badge variant="destructive" className="text-[10px]">Ruolo di sistema assente</Badge>
+                )}
                 {!attivo && <Badge variant="destructive" className="text-[10px]">Sospeso</Badge>}
               </div>
             </div>
@@ -191,11 +198,7 @@ const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
                 <div>
                   <Label className="text-xs">Sede assegnata</Label>
                   <div className="flex items-center gap-2 h-10 px-3 rounded-md border bg-muted/30">
-                    {user.uffici?.nome_ufficio ? (
-                      <span className="text-sm">{user.uffici.nome_ufficio}</span>
-                    ) : (
-                      <Badge variant="destructive" className="text-[10px]">Sede mancante</Badge>
-                    )}
+                    <span className="text-sm truncate">{sedeAssegnataLabel(user)}</span>
                   </div>
                 </div>
               </div>
@@ -255,14 +258,25 @@ const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
             </TabsContent>
 
             <TabsContent value="permissions" className="space-y-3 mt-0">
-              <div className="flex items-center justify-between">
-                <p className="text-sm text-muted-foreground">Spunta i moduli accessibili</p>
-                <Button variant="outline" size="sm" onClick={handleApplyTemplate}>
-                  Applica template {level.label}
-                </Button>
+              <div className="flex items-center justify-between gap-2">
+                <p className="text-sm text-muted-foreground">
+                  {ruolo === "admin"
+                    ? "Il ruolo Admin ha accesso totale a tutti i moduli."
+                    : "Spunta i moduli accessibili"}
+                </p>
+                {ruolo !== "admin" && (
+                  <Button variant="outline" size="sm" onClick={handleApplyTemplate}>
+                    Applica template {level.label}
+                  </Button>
+                )}
               </div>
               <PermissionsMatrix
-                permissions={permissions}
+                permissions={
+                  ruolo === "admin"
+                    ? Object.fromEntries(ALL_PERMISSION_KEYS.map((key) => [key, true]))
+                    : permissions
+                }
+                disabled={ruolo === "admin"}
                 onChange={(k, v) => setPermissions((p) => ({ ...p, [k]: v }))}
               />
               <div className="flex items-center justify-between rounded-lg border p-3 mt-3">
@@ -270,7 +284,11 @@ const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
                   <Label className="font-medium">Riceve provvigioni</Label>
                   <p className="text-xs text-muted-foreground">Abilitazione modulo. Le percentuali si impostano in Anagrafiche Amministrative.</p>
                 </div>
-                <Switch checked={riceveProvvigioni} onCheckedChange={setRiceveProvvigioni} />
+                <Switch
+                  checked={ruolo === "admin" ? true : riceveProvvigioni}
+                  disabled={ruolo === "admin"}
+                  onCheckedChange={setRiceveProvvigioni}
+                />
               </div>
             </TabsContent>
 

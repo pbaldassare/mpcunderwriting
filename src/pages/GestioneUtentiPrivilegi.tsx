@@ -10,7 +10,8 @@ import { Switch } from "@/components/ui/switch";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ShieldCheck, UserPlus, Search, RefreshCw, Settings2, Info, Trash2 } from "lucide-react";
-import { LEVELS, getLevelByRole, ROLE_LABELS, UserLevel } from "@/lib/userLevels";
+import { LEVELS, getLevelByRole, UserLevel } from "@/lib/userLevels";
+import { permissionSummary, roleLabel, sedeAssegnataLabel } from "@/lib/userPrivilegiDisplay";
 import UserLevelCard from "@/components/utenti/UserLevelCard";
 import CreateUserWizard from "@/components/utenti/CreateUserWizard";
 import UserPermissionsSheet from "@/components/utenti/UserPermissionsSheet";
@@ -37,17 +38,48 @@ const GestioneUtentiPrivilegi = () => {
     }
   }, [searchParams, setSearchParams]);
 
-  const { data: users = [], refetch, isLoading } = useQuery({
+  const { data: users = [], refetch, isLoading, isError, error } = useQuery({
     queryKey: ["users-priv"],
     queryFn: async () => {
-      const { data, error } = await supabase
-        .from("profiles")
-        .select("id, nome, cognome, email, ruolo, attivo, ufficio_id, permessi_json, percentuale_base, percentuale_ra, created_at, uffici(nome_ufficio)")
-        .neq("ruolo", "cliente")
-        .neq("ruolo", "prospect")
-        .order("cognome");
-      if (error) throw error;
-      return data || [];
+      const [profilesRes, ufficiRes, sediRes, rolesRes] = await Promise.all([
+        supabase
+          .from("profiles")
+          .select("id, nome, cognome, email, ruolo, attivo, ufficio_id, permessi_json, percentuale_base, percentuale_ra, created_at")
+          .neq("ruolo", "cliente")
+          .neq("ruolo", "prospect")
+          .order("cognome"),
+        supabase.from("uffici").select("id, nome_ufficio"),
+        supabase.from("profilo_sedi").select("profilo_id, primaria, ufficio_id"),
+        supabase.from("user_roles").select("user_id, role"),
+      ]);
+      const failed = [profilesRes, ufficiRes, sediRes, rolesRes].find((res) => res.error);
+      if (failed?.error) throw failed.error;
+
+      const ufficioNome = new Map((ufficiRes.data || []).map((u) => [u.id, u.nome_ufficio]));
+      const sediByUser = new Map<string, { primaria: boolean; uffici: { nome_ufficio: string | null } }[]>();
+      for (const sede of sediRes.data || []) {
+        const list = sediByUser.get(sede.profilo_id) || [];
+        list.push({
+          primaria: sede.primaria,
+          uffici: { nome_ufficio: ufficioNome.get(sede.ufficio_id) ?? null },
+        });
+        sediByUser.set(sede.profilo_id, list);
+      }
+      const ruoliByUser = new Map<string, string[]>();
+      for (const row of rolesRes.data || []) {
+        const list = ruoliByUser.get(row.user_id) || [];
+        list.push(row.role);
+        ruoliByUser.set(row.user_id, list);
+      }
+
+      return (profilesRes.data || []).map((profile) => ({
+        ...profile,
+        uffici: profile.ufficio_id
+          ? { nome_ufficio: ufficioNome.get(profile.ufficio_id) ?? null }
+          : null,
+        profilo_sedi: sediByUser.get(profile.id) || [],
+        ruoli_rls: ruoliByUser.get(profile.id) || [],
+      }));
     },
   });
 
@@ -190,7 +222,14 @@ const GestioneUtentiPrivilegi = () => {
       {/* Lista raggruppata per livello */}
       <div className="space-y-4">
         {isLoading && <p className="text-sm text-muted-foreground text-center py-8">Caricamento…</p>}
-        {!isLoading && filtered.length === 0 && (
+        {isError && (
+          <Card>
+            <CardContent className="py-10 text-center text-destructive">
+              Impossibile caricare gli utenti{error instanceof Error && error.message ? `: ${error.message}` : ""}
+            </CardContent>
+          </Card>
+        )}
+        {!isLoading && !isError && filtered.length === 0 && (
           <Card><CardContent className="py-10 text-center text-muted-foreground">Nessun utente trovato</CardContent></Card>
         )}
 
@@ -218,15 +257,20 @@ const GestioneUtentiPrivilegi = () => {
                         </AvatarFallback>
                       </Avatar>
                       <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-2">
+                        <div className="flex items-center gap-2 flex-wrap">
                           <p className="font-medium text-sm truncate">{u.cognome} {u.nome}</p>
-                          <Badge variant="outline" className="text-[10px] h-4">{ROLE_LABELS[u.ruolo] || u.ruolo}</Badge>
+                          <Badge variant="outline" className="text-[10px] h-4">Ruolo: {roleLabel(u.ruolo)}</Badge>
+                          {(u.ruoli_rls?.length ? u.ruoli_rls : []).map((role: string) => (
+                            <Badge key={role} variant="secondary" className="text-[10px] h-4">Sistema: {roleLabel(role)}</Badge>
+                          ))}
+                          {!u.ruoli_rls?.length && (
+                            <Badge variant="destructive" className="text-[10px] h-4">Ruolo di sistema assente</Badge>
+                          )}
                           {!u.attivo && <Badge variant="destructive" className="text-[10px] h-4">Sospeso</Badge>}
                         </div>
-                        <p className="text-xs text-muted-foreground truncate">
-                          {u.email}
-                          {u.uffici?.nome_ufficio && <> · {u.uffici.nome_ufficio}</>}
-                        </p>
+                        <p className="text-xs text-muted-foreground truncate">{u.email || "Email assente"}</p>
+                        <p className="text-xs text-muted-foreground truncate">Sede: {sedeAssegnataLabel(u)}</p>
+                        <p className="text-xs text-muted-foreground truncate">Permessi: {permissionSummary(u)}</p>
                       </div>
                       <div className="flex items-center gap-2">
                         <div className="flex items-center gap-1.5">
