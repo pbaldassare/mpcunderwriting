@@ -1,0 +1,22 @@
+---
+description: URL dev locale CBnet/Consulnet — porta dedicata per evitare conflitti con altri progetti
+alwaysApply: true
+---
+
+# CBnet — dev server locale
+
+**Questo workspace è Consulnet/CBnet.** Non usare `localhost:8080` (spesso occupata da altri progetti, es. Ielts Test).
+
+| Uso | URL |
+|---|---|
+| App (login) | **http://localhost:5175/login** |
+| Root | http://localhost:5175/ |
+| E/C Agenzie | http://localhost:5175/contabilita/ec-agenzia |
+
+**Porta:** definita in `.env` come `VITE_DEV_PORT=5175`.
+
+**Avvio:** `npm run dev` (o `bun run dev`) — parte automaticamente all'apertura del workspace via `.vscode/tasks.json`.
+
+**Produzione:** https://cbnet.it · **Preview Lovable:** https://id-preview--a3b1457e-dbbe-41da-866b-8411e8cba913.lovable.app
+
+Quando l'utente chiede di aprire CBnet in locale, usare sempre **http://localhost:5175**.

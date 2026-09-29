@@ -1,0 +1,2 @@
+INSERT INTO clienti (ragione_sociale, tipo_cliente, tipo_persona, indirizzo_sede, cap_sede, citta_sede, provincia_sede, nazione, email, attivo, stato_cliente, codice_ricerca, ufficio_id)
+VALUES ('RSM SOC. DI REV. E ORGANIZ. CONT.', 'azienda', 'giuridica', 'Va San Prospero, 1', '20121', 'MILANO', 'MI', 'ITALIA', 'nsciorio@consulbrokers.it', true, 'attivo', 'RSM SPA', '68506cb3-3662-4967-bc88-8f5992f8efdc');

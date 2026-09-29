@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 210 20% 16%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 20% 16%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 20% 16%;
+
+    --primary: 199 58% 22%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 200 20% 95%;
+    --secondary-foreground: 199 58% 22%;
+
+    --muted: 210 15% 96%;
+    --muted-foreground: 215 14% 50%;
+
+    --accent: 170 55% 42%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 90%;
+    --input: 214 20% 90%;
+    --ring: 199 58% 22%;
+
+    --radius: 0.625rem;
+
+    /* Sidebar dark theme */
+    --sidebar-width: 240px;
+    --sidebar-bg-from: 199 58% 16%;
+    --sidebar-bg-to: 199 50% 22%;
+    --sidebar-foreground: 200 20% 85%;
+    --sidebar-active: 0 0% 100%;
+    --sidebar-active-foreground: 199 58% 18%;
+    --sidebar-hover: 0 0% 100%;
+    --sidebar-border: 199 40% 28%;
+    --sidebar-muted: 200 20% 65%;
+
+    --topbar-bg: 0 0% 100%;
+    --topbar-border: 214 20% 92%;
+
+    --kpi-green-bg: 145 40% 95%;
+    --kpi-green-border: 160 45% 80%;
+    --kpi-green-text: 160 60% 35%;
+
+    --kpi-blue-bg: 205 50% 95%;
+    --kpi-blue-border: 205 45% 80%;
+    --kpi-blue-text: 205 60% 35%;
+
+    --kpi-yellow-bg: 45 60% 95%;
+    --kpi-yellow-border: 45 50% 80%;
+    --kpi-yellow-text: 40 60% 35%;
+
+    --kpi-orange-bg: 25 60% 95%;
+    --kpi-orange-border: 25 50% 80%;
+    --kpi-orange-text: 20 60% 35%;
+
+    --kpi-teal-bg: 175 40% 95%;
+    --kpi-teal-border: 175 45% 75%;
+    --kpi-teal-text: 175 60% 30%;
+
+    --badge-green-bg: 160 55% 40%;
+    --badge-green-fg: 0 0% 100%;
+
+    --badge-blue-bg: 199 58% 22%;
+    --badge-blue-fg: 0 0% 100%;
+
+    --badge-orange-bg: 30 80% 55%;
+    --badge-orange-fg: 0 0% 100%;
+
+    --badge-yellow-bg: 45 80% 55%;
+    --badge-yellow-fg: 0 0% 100%;
+
+    /* Polizza vs Quietanza */
+    --polizza: 173 80% 30%;
+    --polizza-foreground: 0 0% 100%;
+    --polizza-soft: 173 60% 95%;
+    --quietanza: 38 92% 50%;
+    --quietanza-foreground: 26 83% 14%;
+    --quietanza-soft: 38 92% 96%;
+    --appendice: 262 83% 58%;
+    --appendice-foreground: 0 0% 100%;
+    --appendice-soft: 262 83% 96%;
+  }
+
+  .dark {
+    --background: 210 20% 8%;
+    --foreground: 210 15% 90%;
+    --card: 210 18% 12%;
+    --card-foreground: 210 15% 90%;
+    --popover: 210 18% 12%;
+    --popover-foreground: 210 15% 90%;
+    --primary: 199 58% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 18% 18%;
+    --secondary-foreground: 210 15% 85%;
+    --muted: 210 15% 18%;
+    --muted-foreground: 215 14% 60%;
+    --accent: 170 50% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 210 15% 22%;
+    --input: 210 15% 22%;
+    --ring: 199 58% 45%;
+
+    --sidebar-bg-from: 210 20% 8%;
+    --sidebar-bg-to: 210 18% 12%;
+    --sidebar-foreground: 210 15% 75%;
+    --sidebar-active: 199 58% 45%;
+    --sidebar-active-foreground: 0 0% 100%;
+    --sidebar-hover: 210 15% 18%;
+    --sidebar-border: 210 15% 22%;
+    --sidebar-muted: 210 15% 55%;
+
+    --topbar-bg: 210 18% 12%;
+    --topbar-border: 210 15% 22%;
+
+    /* KPI cards — dark variant: bg scuro + bordo soft + testo chiaro */
+    --kpi-green-bg: 160 35% 14%;
+    --kpi-green-border: 160 40% 28%;
+    --kpi-green-text: 160 55% 70%;
+
+    --kpi-blue-bg: 205 40% 14%;
+    --kpi-blue-border: 205 40% 28%;
+    --kpi-blue-text: 205 55% 70%;
+
+    --kpi-yellow-bg: 45 40% 14%;
+    --kpi-yellow-border: 45 40% 28%;
+    --kpi-yellow-text: 45 65% 70%;
+
+    --kpi-orange-bg: 25 40% 14%;
+    --kpi-orange-border: 25 40% 28%;
+    --kpi-orange-text: 25 65% 70%;
+
+    --kpi-teal-bg: 175 35% 14%;
+    --kpi-teal-border: 175 40% 28%;
+    --kpi-teal-text: 175 55% 70%;
+
+    --badge-green-bg: 160 45% 35%;
+    --badge-green-fg: 0 0% 100%;
+    --badge-blue-bg: 199 58% 40%;
+    --badge-blue-fg: 0 0% 100%;
+    --badge-orange-bg: 30 70% 45%;
+    --badge-orange-fg: 0 0% 100%;
+    --badge-yellow-bg: 45 70% 45%;
+    --badge-yellow-fg: 0 0% 100%;
+
+    /* Polizza vs Quietanza (dark) */
+    --polizza: 173 70% 45%;
+    --polizza-foreground: 0 0% 100%;
+    --polizza-soft: 173 40% 16%;
+    --quietanza: 38 85% 55%;
+    --quietanza-foreground: 38 30% 10%;
+    --quietanza-soft: 38 35% 14%;
+    --appendice: 262 70% 65%;
+    --appendice-foreground: 0 0% 100%;
+    --appendice-soft: 262 40% 16%;
+  }
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Table styling */
+@layer components {
+  .table-header-colored thead th {
+    background: hsl(var(--primary) / 0.06);
+    color: hsl(var(--primary));
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+  }
+
+  .table-striped tbody tr:nth-child(even) {
+    background: hsl(var(--muted) / 0.5);
+  }
+
+  /* Card with left accent border */
+  .card-accent-left {
+    border-left: 3px solid hsl(var(--primary));
+  }
+
+  /* Primary button gradient */
+  .btn-primary-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(199 58% 30%));
+  }
+  .btn-primary-gradient:hover {
+    background: linear-gradient(135deg, hsl(199 58% 26%), hsl(199 58% 34%));
+  }
+}
+
+/* =====================================================================
+   Print-friendly CSS — applicato a tutto, ottimizzato per E/C, distinte,
+   report. La sidebar, la topbar, i pulsanti azione e gli elementi
+   marcati `.print:hidden` (Tailwind) vengono nascosti in stampa.
+   ===================================================================== */
+@media print {
+  :root {
+    /* Forza tema chiaro in stampa per leggibilità anche se l'utente
+       sta usando dark mode. */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 30%;
+    --border: 0 0% 80%;
+    --primary: 199 58% 22%;
+    --primary-foreground: 0 0% 100%;
+  }
+  html, body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 11pt;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  /* Chrome di app — non si stampano */
+  header, aside, nav,
+  [data-sidebar],
+  .app-sidebar,
+  .topbar,
+  .print\:hidden,
+  [data-print-hide="true"] {
+    display: none !important;
+  }
+  /* Main usa tutta la pagina */
+  main, .main-content {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+    width: 100% !important;
+  }
+  /* Card: niente ombre, bordo sottile */
+  .card, [class*="rounded"] {
+    box-shadow: none !important;
+    border-color: #ccc !important;
+    page-break-inside: avoid;
+  }
+  /* Tabelle leggibili: bordi visibili, no hover */
+  table { border-collapse: collapse !important; width: 100% !important; }
+  table, th, td { border: 1px solid #999 !important; }
+  th, td { padding: 4px 6px !important; }
+  thead { display: table-header-group; } /* ripete header su pagine multiple */
+  tr, td, th { page-break-inside: avoid; }
+  /* Link: mostra URL accanto */
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #555;
+  }
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after { content: ""; }
+  /* Niente sticky/fixed in stampa */
+  .sticky, .fixed { position: static !important; }
+  /* Page break helpers */
+  .page-break-before { page-break-before: always; }
+  .page-break-after { page-break-after: always; }
+  .avoid-break { page-break-inside: avoid; }
+}

@@ -1,0 +1,177 @@
+/**
+ * Mappa codice catastale → { comune, provincia }
+ * Include i comuni italiani più frequenti (capoluoghi + grandi comuni).
+ */
+
+export interface ComuneInfo {
+  comune: string;
+  provincia: string;
+}
+
+const COMUNI: Record<string, ComuneInfo> = {
+  A024: { comune: "Abbiategrasso", provincia: "MI" },
+  A089: { comune: "Acireale", provincia: "CT" },
+  A271: { comune: "Ancona", provincia: "AN" },
+  A347: { comune: "Bologna", provincia: "BO" },
+  A479: { comune: "Aprilia", provincia: "LT" },
+  A515: { comune: "Aosta", provincia: "AO" },
+  A662: { comune: "Arezzo", provincia: "AR" },
+  A783: { comune: "Ascoli Piceno", provincia: "AP" },
+  A794: { comune: "Asti", provincia: "AT" },
+  A809: { comune: "Avellino", provincia: "AV" },
+  A944: { comune: "Bari", provincia: "BA" },
+  A952: { comune: "Barletta", provincia: "BT" },
+  B006: { comune: "Bolzano", provincia: "BZ" },
+  B149: { comune: "Bergamo", provincia: "BG" },
+  B157: { comune: "Belluno", provincia: "BL" },
+  B160: { comune: "Benevento", provincia: "BN" },
+  B180: { comune: "Brindisi", provincia: "BR" },
+  B192: { comune: "Biella", provincia: "BI" },
+  B272: { comune: "Brescia", provincia: "BS" },
+  B354: { comune: "Cagliari", provincia: "CA" },
+  B428: { comune: "Caltanissetta", provincia: "CL" },
+  B519: { comune: "Campobasso", provincia: "CB" },
+  B715: { comune: "Carrara", provincia: "MS" },
+  B745: { comune: "Caserta", provincia: "CE" },
+  B832: { comune: "Castellammare di Stabia", provincia: "NA" },
+  B963: { comune: "Catania", provincia: "CT" },
+  C003: { comune: "Catanzaro", provincia: "CZ" },
+  C129: { comune: "Cesena", provincia: "FC" },
+  C261: { comune: "Cerignola", provincia: "FG" },
+  C351: { comune: "Chieti", provincia: "CH" },
+  C495: { comune: "Città di Castello", provincia: "PG" },
+  C573: { comune: "Civitavecchia", provincia: "RM" },
+  C632: { comune: "Como", provincia: "CO" },
+  C722: { comune: "Collegno", provincia: "TO" },
+  C933: { comune: "Cosenza", provincia: "CS" },
+  C975: { comune: "Corigliano-Rossano", provincia: "CS" },
+  D005: { comune: "Cremona", provincia: "CR" },
+  D086: { comune: "Crotone", provincia: "KR" },
+  D205: { comune: "Cuneo", provincia: "CN" },
+  D390: { comune: "Enna", provincia: "EN" },
+  D458: { comune: "Fermo", provincia: "FM" },
+  D508: { comune: "Faenza", provincia: "RA" },
+  D530: { comune: "Fano", provincia: "PU" },
+  D548: { comune: "Ferrara", provincia: "FE" },
+  D612: { comune: "Firenze", provincia: "FI" },
+  D643: { comune: "Foggia", provincia: "FG" },
+  D757: { comune: "Francavilla Fontana", provincia: "BR" },
+  D862: { comune: "Frosinone", provincia: "FR" },
+  D969: { comune: "Forlì", provincia: "FC" },
+  E038: { comune: "Gallarate", provincia: "VA" },
+  E041: { comune: "Genova", provincia: "GE" },
+  E098: { comune: "Giugliano in Campania", provincia: "NA" },
+  E205: { comune: "Gorizia", provincia: "GO" },
+  E256: { comune: "Gragnano", provincia: "NA" },
+  E289: { comune: "Grosseto", provincia: "GR" },
+  E388: { comune: "Imperia", provincia: "IM" },
+  E506: { comune: "Isernia", provincia: "IS" },
+  E507: { comune: "Ivrea", provincia: "TO" },
+  E522: { comune: "Jesi", provincia: "AN" },
+  E625: { comune: "L'Aquila", provincia: "AQ" },
+  E648: { comune: "La Spezia", provincia: "SP" },
+  E716: { comune: "Latina", provincia: "LT" },
+  E745: { comune: "Lecce", provincia: "LE" },
+  E753: { comune: "Lecco", provincia: "LC" },
+  E791: { comune: "Legnano", provincia: "MI" },
+  E819: { comune: "Livorno", provincia: "LI" },
+  E884: { comune: "Lodi", provincia: "LO" },
+  E897: { comune: "Lucca", provincia: "LU" },
+  F023: { comune: "Lucera", provincia: "FG" },
+  F052: { comune: "Macerata", provincia: "MC" },
+  F148: { comune: "Mantova", provincia: "MN" },
+  F158: { comune: "Marcianise", provincia: "CE" },
+  F205: { comune: "Massa", provincia: "MS" },
+  F257: { comune: "Matera", provincia: "MT" },
+  F376: { comune: "Messina", provincia: "ME" },
+  F537: { comune: "Milano", provincia: "MI" },
+  F704: { comune: "Modena", provincia: "MO" },
+  F784: { comune: "Molfetta", provincia: "BA" },
+  F839: { comune: "Monza", provincia: "MB" },
+  F952: { comune: "Napoli", provincia: "NA" },
+  G113: { comune: "Novara", provincia: "NO" },
+  G141: { comune: "Noto", provincia: "SR" },
+  G148: { comune: "Nuoro", provincia: "NU" },
+  G224: { comune: "Olbia", provincia: "SS" },
+  G273: { comune: "Oristano", provincia: "OR" },
+  G337: { comune: "Padova", provincia: "PD" },
+  G478: { comune: "Palermo", provincia: "PA" },
+  G482: { comune: "Palmi", provincia: "RC" },
+  G535: { comune: "Parma", provincia: "PR" },
+  G580: { comune: "Paternò", provincia: "CT" },
+  G596: { comune: "Pavia", provincia: "PV" },
+  G614: { comune: "Perugia", provincia: "PG" },
+  G693: { comune: "Pescara", provincia: "PE" },
+  G702: { comune: "Pisa", provincia: "PI" },
+  G713: { comune: "Pesaro", provincia: "PU" },
+  G752: { comune: "Piacenza", provincia: "PC" },
+  G774: { comune: "Piombino", provincia: "LI" },
+  G786: { comune: "Pinerolo", provincia: "TO" },
+  G888: { comune: "Pioltello", provincia: "MI" },
+  G942: { comune: "Pistoia", provincia: "PT" },
+  G964: { comune: "Pomezia", provincia: "RM" },
+  G999: { comune: "Pordenone", provincia: "PN" },
+  H004: { comune: "Potenza", provincia: "PZ" },
+  H090: { comune: "Pozzuoli", provincia: "NA" },
+  H096: { comune: "Prato", provincia: "PO" },
+  H163: { comune: "Ragusa", provincia: "RG" },
+  H194: { comune: "Ravenna", provincia: "RA" },
+  H223: { comune: "Reggio Emilia", provincia: "RE" },
+  H224: { comune: "Reggio Calabria", provincia: "RC" },
+  H282: { comune: "Rieti", provincia: "RI" },
+  H294: { comune: "Rimini", provincia: "RN" },
+  H501: { comune: "Roma", provincia: "RM" },
+  H620: { comune: "Rovigo", provincia: "RO" },
+  H703: { comune: "Salerno", provincia: "SA" },
+  H855: { comune: "Sassari", provincia: "SS" },
+  H856: { comune: "Savona", provincia: "SV" },
+  H926: { comune: "Scafati", provincia: "SA" },
+  I119: { comune: "San Benedetto del Tronto", provincia: "AP" },
+  I138: { comune: "San Donà di Piave", provincia: "VE" },
+  I452: { comune: "Siena", provincia: "SI" },
+  I480: { comune: "Siracusa", provincia: "SR" },
+  I551: { comune: "Sondrio", provincia: "SO" },
+  L049: { comune: "Taranto", provincia: "TA" },
+  L120: { comune: "Trani", provincia: "BT" },
+  L174: { comune: "Teramo", provincia: "TE" },
+  L219: { comune: "Terni", provincia: "TR" },
+  L378: { comune: "Torino", provincia: "TO" },
+  L407: { comune: "Torre del Greco", provincia: "NA" },
+  L424: { comune: "Trapani", provincia: "TP" },
+  L425: { comune: "Trento", provincia: "TN" },
+  L461: { comune: "Treviso", provincia: "TV" },
+  L483: { comune: "Torre Annunziata", provincia: "NA" },
+  L490: { comune: "Trieste", provincia: "TS" },
+  L565: { comune: "Udine", provincia: "UD" },
+  L682: { comune: "Varese", provincia: "VA" },
+  L736: { comune: "Venezia", provincia: "VE" },
+  L746: { comune: "Verbania", provincia: "VB" },
+  L781: { comune: "Vercelli", provincia: "VC" },
+  L840: { comune: "Verona", provincia: "VR" },
+  L844: { comune: "Vicenza", provincia: "VI" },
+  M072: { comune: "Vibo Valentia", provincia: "VV" },
+  M082: { comune: "Viterbo", provincia: "VT" },
+  G812: { comune: "Pontecagnano Faiano", provincia: "SA" },
+};
+
+export function lookupComune(codiceCatastale: string): ComuneInfo | null {
+  return COMUNI[codiceCatastale.toUpperCase()] || null;
+}
+
+/**
+ * Lista comuni in formato "Comune (PROV)" pronta per i combobox/SearchableSelect.
+ * Ordinata alfabeticamente per nome comune. Deduplicata sul label.
+ */
+export const COMUNI_OPTIONS: { value: string; label: string }[] = (() => {
+  const seen = new Set<string>();
+  const arr: { value: string; label: string }[] = [];
+  Object.values(COMUNI).forEach((c) => {
+    const label = `${c.comune} (${c.provincia})`;
+    if (!seen.has(label)) {
+      seen.add(label);
+      arr.push({ value: label, label });
+    }
+  });
+  arr.sort((a, b) => a.label.localeCompare(b.label, "it"));
+  return arr;
+})();

@@ -1,0 +1,1 @@
+CREATE POLICY "Admin delete titoli" ON public.titoli FOR DELETE TO authenticated USING (has_role(auth.uid(), 'admin'));

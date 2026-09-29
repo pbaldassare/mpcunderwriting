@@ -1,0 +1,1 @@
+UPDATE titoli SET durata_a = '2026-04-15', garanzia_da = '2025-04-15', provvigioni_quietanza = 376.28, regolazione = true, giorni_presentazione = 0, id_legacy = '143283' WHERE id = '50770f13-d2d6-403d-9d1f-0b3a17459dab';

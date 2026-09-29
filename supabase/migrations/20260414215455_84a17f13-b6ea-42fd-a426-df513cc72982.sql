@@ -1,0 +1,1 @@
+UPDATE titoli SET data_messa_cassa = updated_at::date WHERE stato = 'incassato' AND data_messa_cassa IS NULL;

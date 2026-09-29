@@ -1,0 +1,1 @@
+ALTER TABLE public.sinistri ADD COLUMN IF NOT EXISTS tipo_sinistro_personalizzato text;

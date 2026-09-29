@@ -1,0 +1,17 @@
+ALTER TABLE public.anagrafiche_professionali
+  ADD COLUMN sigla text,
+  ADD COLUMN banca_riga1 text,
+  ADD COLUMN banca_riga2 text,
+  ADD COLUMN banca_riga3 text,
+  ADD COLUMN nome_rui text,
+  ADD COLUMN iscrizione_rui text,
+  ADD COLUMN numero_rui text,
+  ADD COLUMN sezione_rui text,
+  ADD COLUMN annullato boolean DEFAULT false,
+  ADD COLUMN percentuale_base numeric DEFAULT 0,
+  ADD COLUMN codice_fornitore text,
+  ADD COLUMN percentuale_ra numeric DEFAULT 0,
+  ADD COLUMN abi text,
+  ADD COLUMN cab text,
+  ADD COLUMN iban text,
+  ADD COLUMN intestatario_cc text;

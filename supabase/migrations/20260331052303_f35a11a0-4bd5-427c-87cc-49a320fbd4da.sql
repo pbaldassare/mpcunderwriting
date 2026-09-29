@@ -1,0 +1,18 @@
+INSERT INTO rca_garanzie (codice, descrizione, aliquota_tasse) VALUES
+  ('01', 'Cristalli veicolo', 13.5),
+  ('02', 'ARD Terremoto', 13.5),
+  ('03', 'ARD - Alluvione / Inondazione', 13.5),
+  ('04', 'ARD Eventi socio politici', 13.5),
+  ('05', 'ARD Incendio autovetture', 13.5),
+  ('06', 'ARD Eventi atmosferici', 13.5),
+  ('07', 'Grandine', 13.5),
+  ('08', 'Garanzie accessorie RCA', 13.5),
+  ('09', 'ARD Garanzie accessorie', 13.5),
+  ('10', 'Spese recupero unibox', 13.5),
+  ('11', 'ARD Furto autovetture', 13.5),
+  ('12', 'PAS Assistenza auto', 10.0),
+  ('13', 'Tutela giudiziaria', 12.5),
+  ('14', 'Infortuni', 2.5),
+  ('15', 'Casko / Collisione guasti tecnici', 13.5),
+  ('90', 'Diritti', 13.5),
+  ('91', 'CANONE BLACK BOX', 0.0);

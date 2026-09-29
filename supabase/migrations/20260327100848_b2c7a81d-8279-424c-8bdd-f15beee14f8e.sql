@@ -1,0 +1,2 @@
+INSERT INTO clienti (ragione_sociale, tipo_cliente, tipo_persona, indirizzo_sede, cap_sede, citta_sede, provincia_sede, nazione, email, attivo, stato_cliente, codice_ricerca, ufficio_id)
+VALUES ('CONSULBROKERS S.P.A.', 'azienda', 'giuridica', 'VIALE MARCONI, 90', '85100', 'POTENZA', 'PZ', 'ITALIA', NULL, true, 'attivo', 'CONSULBROKERS', '68506cb3-3662-4967-bc88-8f5992f8efdc');

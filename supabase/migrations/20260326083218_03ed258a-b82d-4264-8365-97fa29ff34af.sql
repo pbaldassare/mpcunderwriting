@@ -1,0 +1,2 @@
+ALTER TABLE public.profiles DROP CONSTRAINT profiles_ruolo_check;
+ALTER TABLE public.profiles ADD CONSTRAINT profiles_ruolo_check CHECK (ruolo = ANY (ARRAY['admin','ufficio','produttore','contabilita','cfo','cliente','backoffice']));

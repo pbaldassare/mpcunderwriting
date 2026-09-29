@@ -1,0 +1,1 @@
+ALTER TABLE public.provvigioni_compagnia_ramo ALTER COLUMN categoria_id DROP NOT NULL;

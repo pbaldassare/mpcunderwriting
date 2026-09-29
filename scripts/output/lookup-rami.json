@@ -1,0 +1,1780 @@
+[
+  {
+    "id": "3cbffc0d-d70b-41a0-8eca-ef9e290179c7",
+    "sottoramo": "Grandine",
+    "sottoramo_codice": "066",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "4f2afb7a-76e7-4951-900b-872cf0653a99",
+    "sottoramo": "Infortunio Rca",
+    "sottoramo_codice": "093",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "05a08f98-2daa-4b74-92ef-c16c43412753",
+    "sottoramo": "Animali Selvatici",
+    "sottoramo_codice": "023",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "680e3ca9-5788-4dd6-b00e-fff5ecc032a4",
+    "sottoramo": "premio incendio",
+    "sottoramo_codice": "Incendio cvt",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "ebeadc55-4525-462d-96e4-38b5c6e0184c",
+    "sottoramo": "Incendio/furto - rc auto",
+    "sottoramo_codice": "52",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "8bb44856-4eea-4d86-92dd-6407fa5a0e74",
+    "sottoramo": "R. C. AUTOVEICOLI",
+    "sottoramo_codice": "PI",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "0aad8398-c1a0-448c-994a-f9fc69a83973",
+    "sottoramo": "ARD Varie",
+    "sottoramo_codice": "0345",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "dfb9335a-617d-466a-96b0-7be92180e0e3",
+    "sottoramo": "BBB-BANKERS BLANKET BOND",
+    "sottoramo_codice": "BB",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "55a503fd-b9e7-4c4f-8d89-bc9f0ed13ff0",
+    "sottoramo": "AVIAZIONE CORPI",
+    "sottoramo_codice": "BC",
+    "gruppo_ramo": "CORPI",
+    "gruppo_ramo_codice": "ZD"
+  },
+  {
+    "id": "2361e8ab-ac33-49bd-9cbb-f6613cd45b3c",
+    "sottoramo": "AVIAZIONE GUERRA",
+    "sottoramo_codice": "BG",
+    "gruppo_ramo": "ALTRI RAMI DANNI",
+    "gruppo_ramo_codice": "ZY"
+  },
+  {
+    "id": "e9fac46e-7fc6-4a24-a3ba-d5408ac78b84",
+    "sottoramo": "P&I",
+    "sottoramo_codice": "BG2",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "12cbbd25-34e2-4ad1-9cde-b1515ecf88a9",
+    "sottoramo": "AVIAZIONE INFORTUNI",
+    "sottoramo_codice": "BI",
+    "gruppo_ramo": "INFORTUNI",
+    "gruppo_ramo_codice": "ZN"
+  },
+  {
+    "id": "ded0820d-3475-4821-9932-c93416e6cfb6",
+    "sottoramo": "AVIAZIONE R. C.",
+    "sottoramo_codice": "BR",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "88e5398e-b47c-43f6-ab65-c2afb8f18f2d",
+    "sottoramo": "EVENTI SPECIALI",
+    "sottoramo_codice": "CAF",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "a8f12c7d-58ee-48b8-b685-80710eebc3b5",
+    "sottoramo": "CREDITO ILOR",
+    "sottoramo_codice": "CB",
+    "gruppo_ramo": "CREDITO CAUZIONI",
+    "gruppo_ramo_codice": "ZC"
+  },
+  {
+    "id": "a10a3886-c214-4e97-80c4-a1918a0fdae8",
+    "sottoramo": "CREDITO COMMERCIALE",
+    "sottoramo_codice": "CC",
+    "gruppo_ramo": "CREDITO CAUZIONI",
+    "gruppo_ramo_codice": "ZC"
+  },
+  {
+    "id": "76fd7bc5-0f0a-4d92-9195-e49cbea67d70",
+    "sottoramo": "CREDITO IRPEF",
+    "sottoramo_codice": "CE",
+    "gruppo_ramo": "CREDITO CAUZIONI",
+    "gruppo_ramo_codice": "ZC"
+  },
+  {
+    "id": "5f351c85-fd58-4326-873e-7c2c53d18815",
+    "sottoramo": "CREDITO FIDEJUSSIONI IVA",
+    "sottoramo_codice": "CF",
+    "gruppo_ramo": "CREDITO CAUZIONI",
+    "gruppo_ramo_codice": "ZC"
+  },
+  {
+    "id": "3188c5e3-3a50-48a4-9f70-8d11823fe48b",
+    "sottoramo": "CREDITO IRPEG",
+    "sottoramo_codice": "CG",
+    "gruppo_ramo": "CREDITO CAUZIONI",
+    "gruppo_ramo_codice": "ZC"
+  },
+  {
+    "id": "4560ebd9-8452-437b-8c49-e50f761ec311",
+    "sottoramo": "AUTENTICHE POL. IVA",
+    "sottoramo_codice": "CI",
+    "gruppo_ramo": "CREDITO CAUZIONI",
+    "gruppo_ramo_codice": "ZC"
+  },
+  {
+    "id": "4be9c1e8-6011-4915-a2ea-e1aa25aa92f7",
+    "sottoramo": "AUTENTICA DI FIRMA",
+    "sottoramo_codice": "CN",
+    "gruppo_ramo": "CREDITO CAUZIONI",
+    "gruppo_ramo_codice": "ZC"
+  },
+  {
+    "id": "385db4cd-948b-4c86-a183-09e90107b07f",
+    "sottoramo": "DPO",
+    "sottoramo_codice": "CW",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "89f53f6d-79ae-42a0-a095-838c131881a1",
+    "sottoramo": "COVID-19",
+    "sottoramo_codice": "DAE",
+    "gruppo_ramo": "ASSISTENZA",
+    "gruppo_ramo_codice": "DI"
+  },
+  {
+    "id": "ce781eb2-7cec-41cc-84ef-dfa2d3c5c39c",
+    "sottoramo": "TRIPY EQUALIZZATORE",
+    "sottoramo_codice": "DAF",
+    "gruppo_ramo": "ASSISTENZA",
+    "gruppo_ramo_codice": "DI"
+  },
+  {
+    "id": "7341acc5-97d9-4c2e-be76-6f4c380e834d",
+    "sottoramo": "TRIPY VACANZA INSIEME",
+    "sottoramo_codice": "DAG",
+    "gruppo_ramo": "ASSISTENZA",
+    "gruppo_ramo_codice": "DI"
+  },
+  {
+    "id": "28a32f24-dd7c-4e22-80c6-9d046018e2e3",
+    "sottoramo": "CORPI IMBARCAZIONI DIPOR.",
+    "sottoramo_codice": "DD",
+    "gruppo_ramo": "CORPI",
+    "gruppo_ramo_codice": "ZD"
+  },
+  {
+    "id": "de0dcf06-009c-4a9f-9d6c-5b194b97fbf5",
+    "sottoramo": "CORPI DRONE",
+    "sottoramo_codice": "DE",
+    "gruppo_ramo": "CORPI",
+    "gruppo_ramo_codice": "ZD"
+  },
+  {
+    "id": "86d7e1a6-c3d9-464c-929f-ba1f4a35eafe",
+    "sottoramo": "CORPI VEICOLI FERROVIARI",
+    "sottoramo_codice": "DF",
+    "gruppo_ramo": "CORPI",
+    "gruppo_ramo_codice": "ZD"
+  },
+  {
+    "id": "0da3f4bf-8ba1-46ad-ac77-69e1d23873ef",
+    "sottoramo": "CAUZIONI ANTICIPAZIONI",
+    "sottoramo_codice": "CA",
+    "gruppo_ramo": "CREDITO CAUZIONI",
+    "gruppo_ramo_codice": "ZC"
+  },
+  {
+    "id": "747e239e-66a5-4d9f-9c50-f0ccad7408c8",
+    "sottoramo": "CAUZIONI DEFINITIVE",
+    "sottoramo_codice": "CD",
+    "gruppo_ramo": "CREDITO CAUZIONI",
+    "gruppo_ramo_codice": "ZC"
+  },
+  {
+    "id": "da4c73a0-1438-4941-839b-af40876cb177",
+    "sottoramo": "CAUZIONI PROVVISORIE",
+    "sottoramo_codice": "CP",
+    "gruppo_ramo": "CREDITO CAUZIONI",
+    "gruppo_ramo_codice": "ZC"
+  },
+  {
+    "id": "d5adcb94-d45e-48df-8009-4f19d3dca6d6",
+    "sottoramo": "CAUZIONI SVINC. RIT. GAR.",
+    "sottoramo_codice": "CR",
+    "gruppo_ramo": "CREDITO CAUZIONI",
+    "gruppo_ramo_codice": "ZC"
+  },
+  {
+    "id": "4e2e55fe-d4a5-4a33-a71c-fcd4651ee0bb",
+    "sottoramo": "CAUZIONI SVINCOLO DECIMI",
+    "sottoramo_codice": "CS",
+    "gruppo_ramo": "CREDITO CAUZIONI",
+    "gruppo_ramo_codice": "ZC"
+  },
+  {
+    "id": "c7304734-8077-4993-995d-65d0e255102a",
+    "sottoramo": "CAUZIONI RATA DI SALDO",
+    "sottoramo_codice": "CT",
+    "gruppo_ramo": "CREDITO CAUZIONI",
+    "gruppo_ramo_codice": "ZC"
+  },
+  {
+    "id": "6b226598-a5a5-4526-b3a4-056c3d59b211",
+    "sottoramo": "CAUZIONI SV. REV. PREZZI",
+    "sottoramo_codice": "CZ",
+    "gruppo_ramo": "CREDITO CAUZIONI",
+    "gruppo_ramo_codice": "ZC"
+  },
+  {
+    "id": "71dd96df-2bae-4525-aa25-42e471faedf5",
+    "sottoramo": "ASSISTENZA",
+    "sottoramo_codice": "DA",
+    "gruppo_ramo": "ASSISTENZA",
+    "gruppo_ramo_codice": "DI"
+  },
+  {
+    "id": "875f1412-6d2d-4d4a-b3f9-f3d16fd29935",
+    "sottoramo": "ASSISTENZA AL CITTADINO",
+    "sottoramo_codice": "DAA",
+    "gruppo_ramo": "ASSISTENZA",
+    "gruppo_ramo_codice": "DI"
+  },
+  {
+    "id": "07b4a7ed-52a6-4fb8-ae94-a410c56370f7",
+    "sottoramo": "ASSISTENZA RCA",
+    "sottoramo_codice": "DAB",
+    "gruppo_ramo": "ASSISTENZA",
+    "gruppo_ramo_codice": "DI"
+  },
+  {
+    "id": "b7befc2a-650d-4938-a528-36123736f8b1",
+    "sottoramo": "ASSISTENZA-RC-INFORTUNI",
+    "sottoramo_codice": "DAC",
+    "gruppo_ramo": "ASSISTENZA",
+    "gruppo_ramo_codice": "DI"
+  },
+  {
+    "id": "1c9e8025-9920-4468-ae2b-77e7fbc67065",
+    "sottoramo": "ASSISTENZA, R.C. INFORTUNI",
+    "sottoramo_codice": "DAD",
+    "gruppo_ramo": "ASSISTENZA",
+    "gruppo_ramo_codice": "DI"
+  },
+  {
+    "id": "4061135b-3470-41d4-94f6-d145ff4e2b67",
+    "sottoramo": "ALL RISKS ESTERO",
+    "sottoramo_codice": "A1",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "262b647f-f811-4880-81ad-c935a248d0a3",
+    "sottoramo": "LEASING IMMOBILIARE",
+    "sottoramo_codice": "AI",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "fd34f9a2-3665-4e5d-be22-f25d6721c6c4",
+    "sottoramo": "ALL RISKS",
+    "sottoramo_codice": "AR",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "d31921ea-48f2-460a-bb50-493322dc2625",
+    "sottoramo": "ALL RISK CENTRALI",
+    "sottoramo_codice": "ARA",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "80149aed-e581-4498-a363-5337600ec7d2",
+    "sottoramo": "ALL RISK IMPIANTI FOTOVOLTAICI",
+    "sottoramo_codice": "ARB",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "dac9705a-11f0-4474-baa3-733fb1742f15",
+    "sottoramo": "ALL RISK OPERE D'ARTE",
+    "sottoramo_codice": "ARC",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "c0a93507-aa23-4aef-8762-ab37499349eb",
+    "sottoramo": "ALL PATRIMONIO",
+    "sottoramo_codice": "ARD",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "bfa23d98-6ff5-44e9-8778-143b134242bc",
+    "sottoramo": "ALL RISK PATRIMONIO VINCOLATO",
+    "sottoramo_codice": "ARG",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "22f868e7-ff2f-4019-a0e4-c9a1a2d45bb2",
+    "sottoramo": "ALL RISK SCUOLE",
+    "sottoramo_codice": "ARH",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "afe81272-0a89-46a4-a8f3-7df0605246f3",
+    "sottoramo": "ALL RISK STRUMENTI MUSICALI",
+    "sottoramo_codice": "ARI",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "9141aa3d-b4e6-4e21-ab86-ad71d364cdbb",
+    "sottoramo": "LEASING STRUMENTALE",
+    "sottoramo_codice": "AS",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "3a6626d8-0824-45ed-80eb-f238542abb11",
+    "sottoramo": "MOSTRE D'ARTE",
+    "sottoramo_codice": "AT",
+    "gruppo_ramo": "TRASPORTI",
+    "gruppo_ramo_codice": "ZT"
+  },
+  {
+    "id": "0f7b0e5e-b587-4cd9-b5c6-c6990bacbe8d",
+    "sottoramo": "FRANCHIGIE POL. KASKO",
+    "sottoramo_codice": "FR",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "00b8f218-4c69-431b-a39c-c87cd2c755ce",
+    "sottoramo": "Furto",
+    "sottoramo_codice": "0943",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "833bedfd-d7d3-41b3-9bac-b842515ac609",
+    "sottoramo": "Ard tassazione libera",
+    "sottoramo_codice": "12",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "9c001eee-def0-4329-ab15-b57b6e05da13",
+    "sottoramo": "R. C. MACCHINE AGRICOLE",
+    "sottoramo_codice": "QQ",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "a4c415b3-b3d7-472f-a69c-e24af9f97bfb",
+    "sottoramo": "R. C. I/F NATANTI",
+    "sottoramo_codice": "QT",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "dc5721af-6b25-436c-93b2-de08a3b9020a",
+    "sottoramo": "R. C. I/F AUTOVEICOLI",
+    "sottoramo_codice": "QR",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "d864cdf0-a042-47a9-993b-a09295b154f6",
+    "sottoramo": "R. C. I/F KASKO AUTO",
+    "sottoramo_codice": "QU",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "da07ff59-fc77-4418-b67d-f077688de0c4",
+    "sottoramo": "Resp Verso Terzi ",
+    "sottoramo_codice": "0304",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "d28dea4c-e08d-4d38-98d6-bb5ec1c8d4d1",
+    "sottoramo": "R. C. I/F MOTO",
+    "sottoramo_codice": "QO",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "a4923f64-ede0-4f01-b2ff-17c6869b4ac1",
+    "sottoramo": "CRISTALLI",
+    "sottoramo_codice": "EC",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "be82e02b-bcfb-4661-b7e9-6cb7e8aee309",
+    "sottoramo": "Incendio Doloso ",
+    "sottoramo_codice": "098",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "f944850c-7c45-4b23-a2c9-150e8baa04da",
+    "sottoramo": "Infortuni Conducente Morte",
+    "sottoramo_codice": "344",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "dc750133-50ad-4902-bdfa-1809b7cf6d3e",
+    "sottoramo": "A.R.D",
+    "sottoramo_codice": "DRA",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "e5610ac6-e2fe-482f-a786-861be673ac0b",
+    "sottoramo": "DIRITTI DI AGENZIA",
+    "sottoramo_codice": "ZL-DAG",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "8d25c68d-9bbc-4fe3-8d18-cffaa7583a75",
+    "sottoramo": "DIRITTI DI AGENZIA",
+    "sottoramo_codice": "ZT-DAG",
+    "gruppo_ramo": "TRASPORTI",
+    "gruppo_ramo_codice": "ZT"
+  },
+  {
+    "id": "51e5ef5e-d4ff-492e-96db-83cb5a4a9720",
+    "sottoramo": "DIRITTI DI AGENZIA",
+    "sottoramo_codice": "ZD-DAG",
+    "gruppo_ramo": "CORPI",
+    "gruppo_ramo_codice": "ZD"
+  },
+  {
+    "id": "acb20929-bd6a-48b6-ae99-9e62d1a069f0",
+    "sottoramo": "DIRITTI DI AGENZIA",
+    "sottoramo_codice": "ZY-DAG",
+    "gruppo_ramo": "ALTRI RAMI DANNI",
+    "gruppo_ramo_codice": "ZY"
+  },
+  {
+    "id": "c5c65404-b35c-4e04-b551-72e2c04512fc",
+    "sottoramo": "DIRITTI DI AGENZIA",
+    "sottoramo_codice": "ZP-DAG",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "0ed2656e-b755-4c79-bcc6-250878bcd614",
+    "sottoramo": "DIRITTI DI AGENZIA",
+    "sottoramo_codice": "ZN-DAG",
+    "gruppo_ramo": "INFORTUNI",
+    "gruppo_ramo_codice": "ZN"
+  },
+  {
+    "id": "91dc440b-fd13-490a-86b1-fa9f66292e8a",
+    "sottoramo": "DIRITTI DI AGENZIA",
+    "sottoramo_codice": "ZC-DAG",
+    "gruppo_ramo": "CREDITO CAUZIONI",
+    "gruppo_ramo_codice": "ZC"
+  },
+  {
+    "id": "e575093b-52fe-4f2c-988d-37d4ac6ca252",
+    "sottoramo": "DIRITTI DI AGENZIA",
+    "sottoramo_codice": "DI-DAG",
+    "gruppo_ramo": "ASSISTENZA",
+    "gruppo_ramo_codice": "DI"
+  },
+  {
+    "id": "f0ad757d-2b3f-4c15-9dc7-8c93a08974c1",
+    "sottoramo": "ANIMALI DOMESTICI",
+    "sottoramo_codice": "MB",
+    "gruppo_ramo": "MALATTIA",
+    "gruppo_ramo_codice": "ZM"
+  },
+  {
+    "id": "99093e88-26df-458b-b06c-a508fc6b2e09",
+    "sottoramo": "MALATTIA CUMULATIVA",
+    "sottoramo_codice": "MC",
+    "gruppo_ramo": "MALATTIA",
+    "gruppo_ramo_codice": "ZM"
+  },
+  {
+    "id": "1b3667a4-fa7e-46a2-a93d-fb7b8945961d",
+    "sottoramo": "MALATTIA",
+    "sottoramo_codice": "MCA",
+    "gruppo_ramo": "MALATTIA",
+    "gruppo_ramo_codice": "ZM"
+  },
+  {
+    "id": "dca00014-357a-4e71-ba39-836690164ec9",
+    "sottoramo": "MALATTIA INDIVIDUALE",
+    "sottoramo_codice": "MI",
+    "gruppo_ramo": "MALATTIA",
+    "gruppo_ramo_codice": "ZM"
+  },
+  {
+    "id": "b9511615-e51b-4603-9b6d-6d9d5b993cea",
+    "sottoramo": "ASSISTENZA VIAGGI",
+    "sottoramo_codice": "DVA",
+    "gruppo_ramo": "ASSISTENZA",
+    "gruppo_ramo_codice": "DI"
+  },
+  {
+    "id": "7c14124a-ffa7-47bc-b924-b6c3d72d09da",
+    "sottoramo": "INFORTUNI CONDUCENTE",
+    "sottoramo_codice": "NA",
+    "gruppo_ramo": "INFORTUNI",
+    "gruppo_ramo_codice": "ZN"
+  },
+  {
+    "id": "c13a6d7a-e8ae-4d4a-8bc3-870f256a7ff7",
+    "sottoramo": "ELETTRONICA",
+    "sottoramo_codice": "HE",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "11321d5d-41c6-4a80-bbac-27f9a0a80ce1",
+    "sottoramo": "FURTO",
+    "sottoramo_codice": "IB",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "050c9dba-ff4f-454e-a71a-cab2576f26b9",
+    "sottoramo": "FURTO/RAPINA CITTADINI",
+    "sottoramo_codice": "IBA",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "25eb2209-18b8-4633-8ef2-9526e13895a3",
+    "sottoramo": "FURTO COMMERCIALE",
+    "sottoramo_codice": "IC",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "460ed201-b0b2-42a4-8df3-1538f11dc5ab",
+    "sottoramo": "FURTO GLOBALE",
+    "sottoramo_codice": "IG",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "825f0736-b70d-43f3-bc06-18aee46ee762",
+    "sottoramo": "FURTO INDUSTRIALE",
+    "sottoramo_codice": "II",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "aec015c1-0c4c-46d3-a31e-fedb9c8749b2",
+    "sottoramo": "FURTO PORTAVALORI",
+    "sottoramo_codice": "IP",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "d4e49fa0-e8e8-4ba5-b32e-0e64363a723d",
+    "sottoramo": "FURTO CIVILE",
+    "sottoramo_codice": "IV",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "cac850c0-4570-4e66-9186-1986f9161612",
+    "sottoramo": "INCENDIO AGRICOLO",
+    "sottoramo_codice": "LA",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "bc0cec3e-926b-4e25-bc48-119e347173c1",
+    "sottoramo": "LEASING IMMOBILIARE",
+    "sottoramo_codice": "LB",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "dbbd0609-d604-45a5-affb-c83d2d50913e",
+    "sottoramo": "INCENDIO CIVILE",
+    "sottoramo_codice": "LC",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "40a09a2a-d016-44fa-bc41-63c165fabb49",
+    "sottoramo": "INCENDIO EXT. COVERAGE",
+    "sottoramo_codice": "LE",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "52070761-b8de-4d5b-a328-f5706d3e7702",
+    "sottoramo": "INCENDIO INDUSTRIALE",
+    "sottoramo_codice": "LI",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "80a23060-4fb9-4747-ae50-226439dfa1ed",
+    "sottoramo": "INCENDIO COMMERCIALE",
+    "sottoramo_codice": "LM",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "d0fb1f88-3bcc-4a06-9eb7-7fa91e3a5e51",
+    "sottoramo": "INCENDIO RISCHI ORDINARI",
+    "sottoramo_codice": "LO",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "42cf5978-526b-481d-ae79-c8a7aaea5356",
+    "sottoramo": "INCENDIO E GAR. ACC. P.A.",
+    "sottoramo_codice": "LOA",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "a58d25c9-3d35-40da-8320-c859aa267886",
+    "sottoramo": "INCENDIO PICCOLA INDUSTR.",
+    "sottoramo_codice": "LP",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "54adf1fd-62e2-444e-a96c-184054d88475",
+    "sottoramo": "INCENDIO",
+    "sottoramo_codice": "LS",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "6eef943b-d789-4475-bae3-592d450fe4be",
+    "sottoramo": "DIRITTI DI AGENZIA",
+    "sottoramo_codice": "ZM-DAG",
+    "gruppo_ramo": "MALATTIA",
+    "gruppo_ramo_codice": "ZM"
+  },
+  {
+    "id": "5c70200b-d304-47eb-a7a4-ff59e4c0a59e",
+    "sottoramo": "DIRITTI DI AGENZIA",
+    "sottoramo_codice": "ZQ-DAG",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "2ac6ba4e-c486-4514-8c72-3077713bd4a8",
+    "sottoramo": "DIRITTI DI AGENZIA",
+    "sottoramo_codice": "ZS-DAG",
+    "gruppo_ramo": "TUTELA GIUDIZIARIA",
+    "gruppo_ramo_codice": "ZS"
+  },
+  {
+    "id": "1c01486f-b09f-4ecb-a6d8-e27a846c487a",
+    "sottoramo": "DIARIA DA RICOVERO",
+    "sottoramo_codice": "DIA",
+    "gruppo_ramo": "INFORTUNI",
+    "gruppo_ramo_codice": "ZN"
+  },
+  {
+    "id": "30f6afc6-43bc-4f43-8cb9-b3cdc964ff08",
+    "sottoramo": "CORPI NAVI",
+    "sottoramo_codice": "DN",
+    "gruppo_ramo": "CORPI",
+    "gruppo_ramo_codice": "ZD"
+  },
+  {
+    "id": "06f7ce75-d4bd-4ee3-abc3-252d667743ee",
+    "sottoramo": "CORPI NAUTICA",
+    "sottoramo_codice": "DNA",
+    "gruppo_ramo": "CORPI",
+    "gruppo_ramo_codice": "ZD"
+  },
+  {
+    "id": "c592b3c7-4603-40aa-bf20-65e7ae9c923f",
+    "sottoramo": "POLIZZA VIAGGI",
+    "sottoramo_codice": "DV",
+    "gruppo_ramo": "ASSISTENZA",
+    "gruppo_ramo_codice": "DI"
+  },
+  {
+    "id": "a71874fa-e1ca-4142-9bcb-9bc6326728a6",
+    "sottoramo": "CORPI WAR RISKS",
+    "sottoramo_codice": "DW",
+    "gruppo_ramo": "CORPI",
+    "gruppo_ramo_codice": "ZD"
+  },
+  {
+    "id": "bc0fe530-f6b2-4903-b163-daa1b0887d28",
+    "sottoramo": "E.A.R.",
+    "sottoramo_codice": "FE",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "c6333681-791f-42a5-8019-1de25fbbc9e2",
+    "sottoramo": "C.A.R./E.A.R.",
+    "sottoramo_codice": "FG",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "0da16e77-bdf6-4c57-9927-01f4a4df5c57",
+    "sottoramo": "FIDEJUSSIONE",
+    "sottoramo_codice": "FID",
+    "gruppo_ramo": "CREDITO CAUZIONI",
+    "gruppo_ramo_codice": "ZC"
+  },
+  {
+    "id": "aa9d0286-a35b-4225-a97d-f49e69fdf538",
+    "sottoramo": "C.A.R.",
+    "sottoramo_codice": "GC",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "4533135b-9e0f-441f-a603-f1c833aaff4d",
+    "sottoramo": "GL. ATTIVITA'",
+    "sottoramo_codice": "GLA",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "137af312-95ad-4aad-89f4-00dd0b400257",
+    "sottoramo": "GUASTI MACCHINE",
+    "sottoramo_codice": "GM",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "cde05ae2-22db-44e0-95b6-d4e73d6ff84b",
+    "sottoramo": "EVENTI SPECIALI",
+    "sottoramo_codice": "LN",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "0247b917-312d-4a6b-8eb5-6dd0433cf79b",
+    "sottoramo": "RISCHIO PIOGGIA",
+    "sottoramo_codice": "LNA",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "78d52470-52f6-4579-bcb5-2d23be0aa0d0",
+    "sottoramo": "MULTIRISCHIO",
+    "sottoramo_codice": "LQ",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "432b7b66-7e19-4a3e-81ac-56a3f098b103",
+    "sottoramo": "DIRITTI DI AGENZIA",
+    "sottoramo_codice": "ZV-DAG",
+    "gruppo_ramo": "VITA",
+    "gruppo_ramo_codice": "ZV"
+  },
+  {
+    "id": "8696de8d-1d57-470c-a2f6-db3fdeadaaad",
+    "sottoramo": "GLOBALE FABBRICATO",
+    "sottoramo_codice": "LT",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "314a9b0a-4d94-4004-87dd-5f0324294b5c",
+    "sottoramo": "GLOBALE ABITAZIONE",
+    "sottoramo_codice": "LTA",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "5e40659d-184e-40b4-8d6e-4c84ccc609d4",
+    "sottoramo": "SPESE MEDICHE",
+    "sottoramo_codice": "MS",
+    "gruppo_ramo": "MALATTIA",
+    "gruppo_ramo_codice": "ZM"
+  },
+  {
+    "id": "856ae6a4-126e-4234-856d-e9b57c72c674",
+    "sottoramo": "INFORTUNI VOLONTARI",
+    "sottoramo_codice": "NB",
+    "gruppo_ramo": "INFORTUNI",
+    "gruppo_ramo_codice": "ZN"
+  },
+  {
+    "id": "f3478e36-2d2a-4827-9a56-a059c826ce14",
+    "sottoramo": "INFORTUNI CUMULATIVA",
+    "sottoramo_codice": "NC",
+    "gruppo_ramo": "INFORTUNI",
+    "gruppo_ramo_codice": "ZN"
+  },
+  {
+    "id": "472e564a-cefb-48fc-9912-475bff5a0f9b",
+    "sottoramo": "INFORTUNI CUMULATIVA",
+    "sottoramo_codice": "NCA",
+    "gruppo_ramo": "INFORTUNI",
+    "gruppo_ramo_codice": "ZN"
+  },
+  {
+    "id": "8d13b7c0-1850-4ec6-a36f-254f2c15eb6a",
+    "sottoramo": "INFORTUNI INDIVIDUALE",
+    "sottoramo_codice": "NI",
+    "gruppo_ramo": "INFORTUNI",
+    "gruppo_ramo_codice": "ZN"
+  },
+  {
+    "id": "86b41bdb-14d3-4d0a-9046-cddfa3bc2922",
+    "sottoramo": "INFORTUNI",
+    "sottoramo_codice": "NIA",
+    "gruppo_ramo": "INFORTUNI",
+    "gruppo_ramo_codice": "ZN"
+  },
+  {
+    "id": "5d5dfaa4-e0ae-48cb-b8e8-8e59ac1b1e60",
+    "sottoramo": "INFORTUNI IND. SPORTIVI",
+    "sottoramo_codice": "NS",
+    "gruppo_ramo": "INFORTUNI",
+    "gruppo_ramo_codice": "ZN"
+  },
+  {
+    "id": "aaf435d1-85dc-4b93-9f52-b916d109a611",
+    "sottoramo": "R.C.T./O. escluso tasse",
+    "sottoramo_codice": "PA",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "d9b03bc6-c566-4659-b28b-0e9c0ac56588",
+    "sottoramo": "RESP. CIVILE VERSO TERZI",
+    "sottoramo_codice": "PB",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "48c837bf-7775-4c64-93c5-ce170e76cb5d",
+    "sottoramo": "R.C.T./R.C.O",
+    "sottoramo_codice": "PC",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "21a1ee58-d04a-4e9d-ad54-67f1b91ccda1",
+    "sottoramo": "FRANCHIGIE POL. RCA",
+    "sottoramo_codice": "PJ",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "bb7cbeee-0e2d-4f6c-ac70-1f6c560b9490",
+    "sottoramo": "RC + TUTELA LEGALE",
+    "sottoramo_codice": "PCB",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "7699ad4b-b112-4886-8a97-9cdaa80d8634",
+    "sottoramo": "R. C. DIVERSI",
+    "sottoramo_codice": "PD",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "77191a53-6884-475d-a0b9-e95c509853c7",
+    "sottoramo": "RC CENTRALE ENERGIA",
+    "sottoramo_codice": "PDA",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "9aa52fc8-25be-4b4d-89e8-bd191389f23b",
+    "sottoramo": "RC DRONE",
+    "sottoramo_codice": "PDB",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "974e99d4-2ff8-4e09-891f-cddbef82ad23",
+    "sottoramo": "R. C. CAPOFAMIGLIA",
+    "sottoramo_codice": "PE",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "8973997e-49ea-4add-bbfc-cb0d74ca7128",
+    "sottoramo": "R. C. FABBRICATI",
+    "sottoramo_codice": "PF",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "6c7dd61e-d1bb-4e22-9c66-1304dde434b4",
+    "sottoramo": "SPESE LEGALI",
+    "sottoramo_codice": "PG",
+    "gruppo_ramo": "TUTELA GIUDIZIARIA",
+    "gruppo_ramo_codice": "ZS"
+  },
+  {
+    "id": "fd2ed61a-e0d1-499e-9bd1-b337fdfb8701",
+    "sottoramo": "R.C.O.",
+    "sottoramo_codice": "PH",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "2931c0ef-57c7-4c79-acc8-ddd6eecfb3fc",
+    "sottoramo": "DECENNALE POSTUMA",
+    "sottoramo_codice": "PL",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "52f17500-d28c-466f-8a7a-d12f08387f88",
+    "sottoramo": "RC POSTUMA QUINQUENNALE",
+    "sottoramo_codice": "PLA",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "b1f5bff3-50d0-4999-b250-0d396a54125f",
+    "sottoramo": "RC PROF. POSTUMA",
+    "sottoramo_codice": "PLB",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "2886ae91-c834-4328-a337-f7b3d4e2af49",
+    "sottoramo": "R. C. COMMERCIALE",
+    "sottoramo_codice": "PM",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "d7b52e53-870c-4f17-8c92-6deb9f71e96e",
+    "sottoramo": "R.C. AZIENDA AGRICOLA",
+    "sottoramo_codice": "PMA",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "8240208a-db7b-491f-b873-b09c73be4e07",
+    "sottoramo": "R. C. INQUINAMENTO",
+    "sottoramo_codice": "PN",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "b11ae5b2-b70a-4364-a058-c45f0822186d",
+    "sottoramo": "R. C. VETTORE STRADALE",
+    "sottoramo_codice": "PO",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "7c3ab3bd-2360-460c-a430-817e7f50e3cf",
+    "sottoramo": "R. C. PRODOTTI",
+    "sottoramo_codice": "PP",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "457beca5-68ba-49d9-8141-65b76193669c",
+    "sottoramo": "Infortuni Conducente IP",
+    "sottoramo_codice": "3454",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "502176d5-8595-4d98-b451-67cbd4f9c3fe",
+    "sottoramo": "R. C. PROFESSIONALE",
+    "sottoramo_codice": "PR",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "97c230a9-91df-4001-a8f6-3b5ae161c391",
+    "sottoramo": "R.C. SANITARIA",
+    "sottoramo_codice": "PRA",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "97851c89-7e55-4484-88fb-4c0a064300f5",
+    "sottoramo": "R.C. VOLONTARI",
+    "sottoramo_codice": "PRB",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "147810f9-7a4e-469a-8639-0ca387c80f85",
+    "sottoramo": "R.C. PROFESSIONALE COLPA GRAVE",
+    "sottoramo_codice": "PRC",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "3e164997-6f36-4bce-a1d6-5cb73f21a5f0",
+    "sottoramo": "R.C. PROGETTISTI",
+    "sottoramo_codice": "PRD",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "e2b1b8f0-7263-4800-8918-8c84e0ee07b8",
+    "sottoramo": "R.C. VERIFICATORI",
+    "sottoramo_codice": "PRE",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "b8261bd8-3416-45f5-8bb4-3441dc290847",
+    "sottoramo": "R.C. MEDIAZIONE",
+    "sottoramo_codice": "PRF",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "d1d50944-7f5c-4354-b9f3-836441d6dc61",
+    "sottoramo": "CONVENZIONE FIMMG",
+    "sottoramo_codice": "PRG",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "e1a48bd2-887c-4fd3-bdde-d5008de8cc8b",
+    "sottoramo": "3 VIRUS",
+    "sottoramo_codice": "PRH",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "e2f09c7f-43c5-482c-8be0-0fe064f4145c",
+    "sottoramo": "R. C. PATRIMONIALE",
+    "sottoramo_codice": "PS",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "3475af3c-90ab-43bf-9258-840bed242db2",
+    "sottoramo": "R. C. AUTO",
+    "sottoramo_codice": "QA",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "6d8dac72-3a40-4aca-bec9-7b39ce6703a9",
+    "sottoramo": "R.C. PATR. DIPEN.",
+    "sottoramo_codice": "PSB",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "76315ca0-7365-48d2-bd93-0bae71bce9e1",
+    "sottoramo": "R.C. PATR. TECNICI",
+    "sottoramo_codice": "PSC",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "9744f136-2be3-4b6f-b93a-c9b9fde96d2f",
+    "sottoramo": "CONTRIBUTO FORZOSO",
+    "sottoramo_codice": "ZL-CF",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "036fdfff-8eb0-4b0c-9d40-a62aa916698d",
+    "sottoramo": "COLPA GRAVE \"RCP\"",
+    "sottoramo_codice": "PU",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "fc869f37-2e28-458a-9ab5-2f4bf45635b5",
+    "sottoramo": "FRANCHIGIE POL. RCD",
+    "sottoramo_codice": "PW",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "44827ed6-0a5f-43c9-807c-e78855453dba",
+    "sottoramo": "COLPA GRAVE \"RCT\"",
+    "sottoramo_codice": "PX",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "a07c4703-904e-4f84-b9a6-f40f56d4b43d",
+    "sottoramo": "COLPA GRAVE \"D&O\"",
+    "sottoramo_codice": "PY",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "f42d71cc-abe1-496c-bdcb-1850003ec985",
+    "sottoramo": "LIBRO MATRICOLA",
+    "sottoramo_codice": "QAB",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "0b1d9e65-529b-4d17-a5ad-c82c9ddded77",
+    "sottoramo": "RCA & ARD",
+    "sottoramo_codice": "QAC",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "c207b43a-08ee-4c21-87f7-b456c6a1f05a",
+    "sottoramo": "R. C. I/F AUTO",
+    "sottoramo_codice": "QF",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "fd703383-e2bf-4cf2-8e29-477aa9410359",
+    "sottoramo": "R. C. I/F AUTOCARRI",
+    "sottoramo_codice": "QG",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "78600031-c2df-459f-914a-9e354e8c6810",
+    "sottoramo": "CONTRIBUTO FORZOSO",
+    "sottoramo_codice": "ZT-CF",
+    "gruppo_ramo": "TRASPORTI",
+    "gruppo_ramo_codice": "ZT"
+  },
+  {
+    "id": "e236bf65-ffd0-4048-aa0d-c0f1835c3b61",
+    "sottoramo": "R. C. MOTO",
+    "sottoramo_codice": "QM",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "c37f6a53-074b-4c3a-87ea-333f8838d82e",
+    "sottoramo": "TEMPORANEA CASO MORTE",
+    "sottoramo_codice": "RA",
+    "gruppo_ramo": "VITA",
+    "gruppo_ramo_codice": "ZV"
+  },
+  {
+    "id": "3975bd69-3d51-4492-81e1-328339db8634",
+    "sottoramo": "T.F.R.",
+    "sottoramo_codice": "RB",
+    "gruppo_ramo": "VITA",
+    "gruppo_ramo_codice": "ZV"
+  },
+  {
+    "id": "f7e27e49-8bb4-48b2-abe0-a2375d2fd13f",
+    "sottoramo": "R. C. NATANTI",
+    "sottoramo_codice": "QN",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "8d778af3-995a-45c6-b09f-4d8184ad5191",
+    "sottoramo": "TFM",
+    "sottoramo_codice": "RC1",
+    "gruppo_ramo": "VITA",
+    "gruppo_ramo_codice": "ZV"
+  },
+  {
+    "id": "9bca5ee4-459f-46dc-baf8-d143836cfe3b",
+    "sottoramo": "TCM-IPT",
+    "sottoramo_codice": "RD",
+    "gruppo_ramo": "VITA",
+    "gruppo_ramo_codice": "ZV"
+  },
+  {
+    "id": "a8026d03-e6a0-48fd-b9c0-88ab470f9107",
+    "sottoramo": "RC+CORPI NAUTICA",
+    "sottoramo_codice": "QNA",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "c97ec66a-161e-4358-a7a0-04ba31c47599",
+    "sottoramo": "RISCHIO POLITICO",
+    "sottoramo_codice": "RP",
+    "gruppo_ramo": "ALTRI RAMI DANNI",
+    "gruppo_ramo_codice": "ZY"
+  },
+  {
+    "id": "8534aea6-dd50-4beb-ba70-1beabc5e7192",
+    "sottoramo": "R.C. SPERIM. CLINICA",
+    "sottoramo_codice": "RS",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "21b2a2d6-9545-496a-9cb0-247674ba2a91",
+    "sottoramo": "R. C. AUTOCARRI",
+    "sottoramo_codice": "QC",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "91ae4f5d-a68c-44b6-acbc-f225a024ef27",
+    "sottoramo": "CONTRIBUTO FORZOSO",
+    "sottoramo_codice": "ZD-CF",
+    "gruppo_ramo": "CORPI",
+    "gruppo_ramo_codice": "ZD"
+  },
+  {
+    "id": "d483fd88-df8d-4a3d-ad1c-53c4d294db20",
+    "sottoramo": "Ritiro patente",
+    "sottoramo_codice": "QB",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "c26c3422-20cc-4ccc-bdd4-04a8f1740cba",
+    "sottoramo": "CONTRIBUTO FORZOSO",
+    "sottoramo_codice": "ZY-CF",
+    "gruppo_ramo": "ALTRI RAMI DANNI",
+    "gruppo_ramo_codice": "ZY"
+  },
+  {
+    "id": "5a82c31d-0b71-4e1e-aebe-b87707ad11f9",
+    "sottoramo": "CONTRIBUTO FORZOSO",
+    "sottoramo_codice": "ZP-CF",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "b9ee83f9-f842-41a8-aacf-4efeeea268f8",
+    "sottoramo": "Ricorso Terzi e ripristino locali di proprietà",
+    "sottoramo_codice": "045",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "77f8380b-ece7-4299-b265-3b9ed3cdb80d",
+    "sottoramo": "Eventi Socio Politici",
+    "sottoramo_codice": "034",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "8b8fa2c1-bdcd-425c-9964-654ac5ab9ef7",
+    "sottoramo": "CONTRIBUTO FORZOSO",
+    "sottoramo_codice": "ZN-CF",
+    "gruppo_ramo": "INFORTUNI",
+    "gruppo_ramo_codice": "ZN"
+  },
+  {
+    "id": "359987e9-bdb4-40bf-a2fb-8a2c5e3b2885",
+    "sottoramo": "CONTRIBUTO FORZOSO",
+    "sottoramo_codice": "ZC-CF",
+    "gruppo_ramo": "CREDITO CAUZIONI",
+    "gruppo_ramo_codice": "ZC"
+  },
+  {
+    "id": "909d45a4-585d-42ec-a09b-69ec6c327a80",
+    "sottoramo": "CONTRIBUTO FORZOSO",
+    "sottoramo_codice": "DI-CF",
+    "gruppo_ramo": "ASSISTENZA",
+    "gruppo_ramo_codice": "DI"
+  },
+  {
+    "id": "f3a2a6cb-a7da-4167-8d93-65eba444d943",
+    "sottoramo": "CONTRIBUTO FORZOSO",
+    "sottoramo_codice": "ZM-CF",
+    "gruppo_ramo": "MALATTIA",
+    "gruppo_ramo_codice": "ZM"
+  },
+  {
+    "id": "1a8b56ef-12e2-47cc-8595-d1da61e2ccc6",
+    "sottoramo": "CONTRIBUTO FORZOSO",
+    "sottoramo_codice": "ZQ-CF",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "abcc14cf-9303-4332-b804-afb96a065a19",
+    "sottoramo": "CONTRIBUTO FORZOSO",
+    "sottoramo_codice": "ZS-CF",
+    "gruppo_ramo": "TUTELA GIUDIZIARIA",
+    "gruppo_ramo_codice": "ZS"
+  },
+  {
+    "id": "3cddb2b4-e8fb-4d25-b594-ecc0b0bb3364",
+    "sottoramo": "CONTRIBUTO FORZOSO",
+    "sottoramo_codice": "ZV-CF",
+    "gruppo_ramo": "VITA",
+    "gruppo_ramo_codice": "ZV"
+  },
+  {
+    "id": "d2597167-aa33-49f2-b449-ec0b5127c35e",
+    "sottoramo": "SPECIAL CONTINGENCY",
+    "sottoramo_codice": "SC",
+    "gruppo_ramo": "ALTRI RAMI DANNI",
+    "gruppo_ramo_codice": "ZY"
+  },
+  {
+    "id": "993a51c3-ac45-4531-a80a-917b2dcc0d9d",
+    "sottoramo": "TUTELA GIUDIZIARIA",
+    "sottoramo_codice": "SL",
+    "gruppo_ramo": "TUTELA GIUDIZIARIA",
+    "gruppo_ramo_codice": "ZS"
+  },
+  {
+    "id": "7303119e-b230-4e6a-8613-6b8bc4aa32dc",
+    "sottoramo": "TUTELA GIUDIZIARIA GRAVE",
+    "sottoramo_codice": "SL1",
+    "gruppo_ramo": "TUTELA GIUDIZIARIA",
+    "gruppo_ramo_codice": "ZS"
+  },
+  {
+    "id": "49f13d22-533d-4660-b8ea-8088e9f6c33f",
+    "sottoramo": "DONAZIONE",
+    "sottoramo_codice": "SL2",
+    "gruppo_ramo": "TUTELA GIUDIZIARIA",
+    "gruppo_ramo_codice": "ZS"
+  },
+  {
+    "id": "f6b4b187-16bc-4fd6-9a13-2a3efad43894",
+    "sottoramo": "TUTELA POSTUMA",
+    "sottoramo_codice": "SL3",
+    "gruppo_ramo": "TUTELA GIUDIZIARIA",
+    "gruppo_ramo_codice": "ZS"
+  },
+  {
+    "id": "d149c52e-3683-43ed-85c5-1ad684244664",
+    "sottoramo": "STOCK IN TRANSIT",
+    "sottoramo_codice": "ST",
+    "gruppo_ramo": "TRASPORTI",
+    "gruppo_ramo_codice": "ZT"
+  },
+  {
+    "id": "e3a2ab26-07db-4086-908a-d625b103c982",
+    "sottoramo": "TRASPORTO MERCI",
+    "sottoramo_codice": "TM",
+    "gruppo_ramo": "TRASPORTI",
+    "gruppo_ramo_codice": "ZT"
+  },
+  {
+    "id": "e6ffc88d-b40c-464f-aec1-8a9e2fa3683c",
+    "sottoramo": "TRASPORTO VALORI",
+    "sottoramo_codice": "TV",
+    "gruppo_ramo": "TRASPORTI",
+    "gruppo_ramo_codice": "ZT"
+  },
+  {
+    "id": "7379d7af-92ee-44f3-b6da-9dee23ce4c3a",
+    "sottoramo": "ALTRI RAMI DANNI",
+    "sottoramo_codice": "ZY",
+    "gruppo_ramo": "ALTRI RAMI DANNI",
+    "gruppo_ramo_codice": "ZY"
+  },
+  {
+    "id": "afbf952c-6cd3-4527-ac99-282267132d6a",
+    "sottoramo": "VITA COLLETTIVA",
+    "sottoramo_codice": "RC",
+    "gruppo_ramo": "VITA",
+    "gruppo_ramo_codice": "ZV"
+  },
+  {
+    "id": "8f3a4bef-af5b-4c8d-b928-ecefb95403f7",
+    "sottoramo": "VITA INDIVIDUALE",
+    "sottoramo_codice": "RI",
+    "gruppo_ramo": "VITA",
+    "gruppo_ramo_codice": "ZV"
+  },
+  {
+    "id": "c8f5fc15-ab3b-4eea-a40c-42cfee277342",
+    "sottoramo": "ASSISTENZA SOCC. STRADALE",
+    "sottoramo_codice": "PQ",
+    "gruppo_ramo": "ASSISTENZA",
+    "gruppo_ramo_codice": "DI"
+  },
+  {
+    "id": "fd052756-7bae-4ceb-90cd-42af14828b06",
+    "sottoramo": "AVIATION",
+    "sottoramo_codice": "BGA",
+    "gruppo_ramo": "ALTRI RAMI DANNI",
+    "gruppo_ramo_codice": "ZY"
+  },
+  {
+    "id": "64aa825a-4db8-43ac-9e74-b635045e91a4",
+    "sottoramo": "CATASTROFALI",
+    "sottoramo_codice": "CAT",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "f479640c-7722-4700-8914-236fcb1ec9bb",
+    "sottoramo": "CYBER RISK",
+    "sottoramo_codice": "CY",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "7dc539de-9e42-4753-b05a-d60167c76aaf",
+    "sottoramo": "RC INQUINAMENTO",
+    "sottoramo_codice": "DI",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "537718ef-7097-4e59-9ff8-d2cd023da199",
+    "sottoramo": "INCENDIO RISCHI INDUSTR.",
+    "sottoramo_codice": "LR",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "3abde018-42cf-4b0a-8a75-e09254763206",
+    "sottoramo": "INCENDIO ELETTRONICA NON VINCOLATI",
+    "sottoramo_codice": "LSA",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "d1f71b19-3490-4db8-afd2-c9c29fc800b5",
+    "sottoramo": "INCENDIO ELETTRONICA VINCOLATI",
+    "sottoramo_codice": "LSB",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "2ce2d61a-e97c-4ad2-8236-060b4d1077da",
+    "sottoramo": "INCENDIO - FURTO",
+    "sottoramo_codice": "LU",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "4abd8c7e-ffb3-47f7-9b0d-925ee470f9dd",
+    "sottoramo": "RCTO + RC PATRIMONIALE",
+    "sottoramo_codice": "PCA",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "09f9ae33-14c7-471d-af7f-533a987c1068",
+    "sottoramo": "RC PATRIMONIALE COLPA GRAVE",
+    "sottoramo_codice": "PSA",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "505b1d86-aa4f-4eff-9e04-42e2f665c63f",
+    "sottoramo": "D&O",
+    "sottoramo_codice": "PT",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "dc6a71a4-b811-4a22-9d53-fa04b7599a89",
+    "sottoramo": "KASKO ENTE+AMM.RI/DIP.",
+    "sottoramo_codice": "QKB",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "846710ce-ba90-451c-8eb9-d515a742d8f0",
+    "sottoramo": "VEICOLO - AUTOCARRI O AUTOVEICOLI PER TRASPORTO COSE",
+    "sottoramo_codice": "RV04",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "b4e1f457-2f2e-4679-bcaa-32afef92e28e",
+    "sottoramo": "KASKO MEZZI",
+    "sottoramo_codice": "QKC",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "3b69b3c7-5646-4bd4-862d-635d9672c881",
+    "sottoramo": "VEICOLO - CICLOMOTORI O QUADRICICLI LEGG.TRASPORTO PERSONE",
+    "sottoramo_codice": "RV06",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "53108b02-a694-4862-86f3-053bb722f042",
+    "sottoramo": "VEICOLO - MOTOVEICOLI PER TRASPORTO PERSONE",
+    "sottoramo_codice": "RV07",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "05df37c7-f64e-4458-b31d-de500cd9f054",
+    "sottoramo": "KASKO KM",
+    "sottoramo_codice": "QKA",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "fdc50ac3-8806-4944-8df0-7ea4ba6f35b2",
+    "sottoramo": "INCENDIO/FURTO",
+    "sottoramo_codice": "QI",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "c014e611-89be-4ea3-8005-8bc326a2e732",
+    "sottoramo": "VEICOLO - MACCHINE AGRICOLE",
+    "sottoramo_codice": "RV09",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "ef59abc4-eac8-4156-9b30-7663668d729b",
+    "sottoramo": "VEICOLO - RIMORCHI - CONTO TERZI",
+    "sottoramo_codice": "RV12",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "ea67757c-9580-4a31-8d93-9d5c4fe5b3ab",
+    "sottoramo": "VEICOLO - CARRELLI",
+    "sottoramo_codice": "RV13",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "30b52cfb-ad16-4321-8ee6-f0ddacf41608",
+    "sottoramo": "VEICOLO - AUTOARTICOLATO",
+    "sottoramo_codice": "RV14",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "49aaad10-a3cc-45fe-8696-5710904975ef",
+    "sottoramo": "VEICOLO - RIMORCHI - CONTO PROPRIO",
+    "sottoramo_codice": "RV15",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "fcd6c4cd-cdb3-459e-a34b-a7a656d99f3b",
+    "sottoramo": "VEICOLO - CAMPER",
+    "sottoramo_codice": "RV16",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "8b95a999-66f7-409d-9af0-2a4c7af23430",
+    "sottoramo": "Accessori Rca ",
+    "sottoramo_codice": "09093",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "9f98d0cf-21e3-4c8c-9e4f-d4907a6955c9",
+    "sottoramo": "RCA Scuolabus",
+    "sottoramo_codice": "0903",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "c5a2c346-69f5-4c8e-8cf2-a093bb5989a0",
+    "sottoramo": "ONERI",
+    "sottoramo_codice": "ZL-ON",
+    "gruppo_ramo": "INCENDIO FURTO RISCHI TECNOLOGICI",
+    "gruppo_ramo_codice": "ZL"
+  },
+  {
+    "id": "8c014ba1-2e74-41cc-bcab-d641e847c21c",
+    "sottoramo": "ONERI",
+    "sottoramo_codice": "ZT-ON",
+    "gruppo_ramo": "TRASPORTI",
+    "gruppo_ramo_codice": "ZT"
+  },
+  {
+    "id": "1063820c-a510-43ef-b883-61969029301b",
+    "sottoramo": "ONERI",
+    "sottoramo_codice": "ZD-ON",
+    "gruppo_ramo": "CORPI",
+    "gruppo_ramo_codice": "ZD"
+  },
+  {
+    "id": "dd1eea40-ce45-49ff-85cd-09b2289c5d2c",
+    "sottoramo": "ONERI",
+    "sottoramo_codice": "ZY-ON",
+    "gruppo_ramo": "ALTRI RAMI DANNI",
+    "gruppo_ramo_codice": "ZY"
+  },
+  {
+    "id": "ec79d603-0453-45e7-b391-8fd23542ce9a",
+    "sottoramo": "ONERI",
+    "sottoramo_codice": "ZP-ON",
+    "gruppo_ramo": "R.C.T.",
+    "gruppo_ramo_codice": "ZP"
+  },
+  {
+    "id": "5bf0401b-e139-4860-8ae6-6198ef259626",
+    "sottoramo": "ONERI",
+    "sottoramo_codice": "ZN-ON",
+    "gruppo_ramo": "INFORTUNI",
+    "gruppo_ramo_codice": "ZN"
+  },
+  {
+    "id": "503f3cba-494c-44c6-be98-3dc00c1e995b",
+    "sottoramo": "VEICOLO - NATANTI DA DIPORTO/USO PRIVATO/MOTORE AMOVIBILE",
+    "sottoramo_codice": "RV10",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "1757f708-14a9-4ac0-9a6c-69918c3f784e",
+    "sottoramo": "VEICOLO - NATANTI IN SERVIZIO PUBBLICO",
+    "sottoramo_codice": "RV11",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "d2e87e24-106f-48ad-b298-96f07248d3ae",
+    "sottoramo": "VEICOLO - MACCHINE OPERATICI E CARRELLI",
+    "sottoramo_codice": "RV08",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "94e7dab2-4cf0-4966-949f-856f79aa7c93",
+    "sottoramo": "ONERI",
+    "sottoramo_codice": "ZC-ON",
+    "gruppo_ramo": "CREDITO CAUZIONI",
+    "gruppo_ramo_codice": "ZC"
+  },
+  {
+    "id": "e6461500-400f-4f40-bab8-251cb9620c87",
+    "sottoramo": "VEICOLO - AUTOTASSAMETRI",
+    "sottoramo_codice": "RV02",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "691f3a9e-19de-4e65-83eb-146e91852301",
+    "sottoramo": "Ard - tassazione 13,50",
+    "sottoramo_codice": "83",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "7bfdf4f6-b011-4012-954f-34dd49e90ba8",
+    "sottoramo": "Kasko",
+    "sottoramo_codice": "QK",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "02f97bea-792a-4eb4-a0ce-b1d360ee30d8",
+    "sottoramo": "ONERI",
+    "sottoramo_codice": "DI-ON",
+    "gruppo_ramo": "ASSISTENZA",
+    "gruppo_ramo_codice": "DI"
+  },
+  {
+    "id": "04ed89ad-1ecd-4be7-bfb1-57b2870c7da7",
+    "sottoramo": "VEICOLO - AUTOBUS E FILOBUS",
+    "sottoramo_codice": "RV03",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "8d1218bb-1b14-4e5d-a530-4af40c3c80c4",
+    "sottoramo": "ONERI",
+    "sottoramo_codice": "ZM-ON",
+    "gruppo_ramo": "MALATTIA",
+    "gruppo_ramo_codice": "ZM"
+  },
+  {
+    "id": "a57d28bb-77c1-48ec-86c6-983b45a05103",
+    "sottoramo": "VEICOLO - AUTOVETTURE",
+    "sottoramo_codice": "RV01",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "510afce8-c1f8-424a-a265-8e683299a026",
+    "sottoramo": "VEICOLO - CICLOMOTORI O MOTOVEICOLI PER TRASPORTO COSE",
+    "sottoramo_codice": "RV05",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "33e3c605-fd5a-4b2e-adcb-d221355b5796",
+    "sottoramo": "Eventi Atmosferici",
+    "sottoramo_codice": "056",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "5f6fb8a1-4468-4c43-b44b-c18ce16f321a",
+    "sottoramo": "Atti Vandalici",
+    "sottoramo_codice": "934",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "7d64e170-d850-42c2-b15d-8da5b88c0445",
+    "sottoramo": "Infortuni Conducente Rsm",
+    "sottoramo_codice": "355",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "1268818f-adc8-4fa9-affe-74dcdd9830e7",
+    "sottoramo": "ONERI",
+    "sottoramo_codice": "ZQ-ON",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "e07ce177-66bd-4ca1-a613-3dc9f05b3ed9",
+    "sottoramo": "INCENDIO/FURTO/KASKO",
+    "sottoramo_codice": "QZ",
+    "gruppo_ramo": "R.C.A.",
+    "gruppo_ramo_codice": "ZQ"
+  },
+  {
+    "id": "dadbf864-4d0e-4563-a721-3ade79ed4f26",
+    "sottoramo": "ONERI",
+    "sottoramo_codice": "ZS-ON",
+    "gruppo_ramo": "TUTELA GIUDIZIARIA",
+    "gruppo_ramo_codice": "ZS"
+  },
+  {
+    "id": "583da6b0-d634-4b8f-bd67-fa87f3f0575f",
+    "sottoramo": "ONERI",
+    "sottoramo_codice": "ZV-ON",
+    "gruppo_ramo": "VITA",
+    "gruppo_ramo_codice": "ZV"
+  }
+]

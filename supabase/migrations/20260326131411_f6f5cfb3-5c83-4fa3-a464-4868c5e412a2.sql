@@ -1,0 +1,1 @@
+ALTER TABLE public.prospect ADD COLUMN convertito_cliente_id uuid REFERENCES public.clienti(id);

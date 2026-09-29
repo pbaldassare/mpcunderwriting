@@ -1,0 +1,2 @@
+INSERT INTO clienti (ragione_sociale, tipo_cliente, tipo_persona, indirizzo_sede, cap_sede, citta_sede, provincia_sede, nazione, email, attivo, stato_cliente, codice_ricerca, ufficio_id)
+VALUES ('COMUNE DI POMIGLIANO D''ARCO', 'ente', 'giuridica', 'PIAZZA MUNICIPIO, 1', '80038', 'POMIGLIANO D''ARCO', 'NA', 'ITALIA', 'maria.antignani@comune.pomiglianodarco.na.it', true, 'attivo', 'POMIGLIANO', '68506cb3-3662-4967-bc88-8f5992f8efdc');

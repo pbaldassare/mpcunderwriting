@@ -1,0 +1,11 @@
+$ vitest run src/lib/__tests__/quietanzeClienteView.test.ts
+
+ RUN  v3.2.4 C:/Users/Utente/visionary-canvas-09
+
+ Ô£ô src/lib/__tests__/quietanzeClienteView.test.ts (6 tests) 15ms
+
+ Test Files  1 passed (1)
+      Tests  6 passed (6)
+   Start at  06:53:39
+   Duration  35.94s (transform 369ms, setup 1.45s, collect 160ms, tests 15ms, environment 18.60s, prepare 960ms)
+

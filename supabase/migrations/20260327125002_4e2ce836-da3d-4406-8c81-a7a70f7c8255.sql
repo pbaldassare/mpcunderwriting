@@ -1,0 +1,1 @@
+ALTER TABLE compagnie DROP CONSTRAINT IF EXISTS compagnie_nome_key;

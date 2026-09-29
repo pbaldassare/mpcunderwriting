@@ -1,0 +1,2 @@
+ALTER TABLE public.rimessa_premi DROP CONSTRAINT rimessa_premi_stato_check;
+ALTER TABLE public.rimessa_premi ADD CONSTRAINT rimessa_premi_stato_check CHECK (stato = ANY (ARRAY['bozza'::text, 'in_pagamento'::text, 'pronta'::text, 'inviata'::text, 'errore'::text, 'pagata'::text, 'annullata'::text]));

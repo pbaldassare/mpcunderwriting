@@ -1,0 +1,36 @@
+{
+  "name": "cbnet-dev-status",
+  "displayName": "CBnet Dev Status",
+  "description": "Mostra nome progetto e porta dev server CBnet nella status bar",
+  "version": "0.0.1",
+  "publisher": "consulbrokers",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cbnetDevStatus.openBrowser",
+        "title": "CBnet: Apri dev server nel browser"
+      }
+    ],
+    "configuration": {
+      "title": "CBnet Dev Status",
+      "properties": {
+        "cbnetDevStatus.projectName": {
+          "type": "string",
+          "default": "CBnet",
+          "description": "Nome progetto mostrato nella status bar"
+        },
+        "cbnetDevStatus.port": {
+          "type": "number",
+          "default": 5175,
+          "description": "Porta dev server (fallback se .env assente)"
+        }
+      }
+    }
+  }
+}

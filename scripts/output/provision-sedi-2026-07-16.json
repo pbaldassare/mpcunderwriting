@@ -1,0 +1,86 @@
+{
+  "success": true,
+  "dry_run": false,
+  "password": "Leone123!",
+  "counts": {
+    "sedi_con_email": 6,
+    "processate": 6,
+    "ok": 6,
+    "failed": 0,
+    "skipped_no_email": 2
+  },
+  "results": [
+    {
+      "email": "segreteria@consulbrokers.it",
+      "codice": "001",
+      "nome_ufficio": "Ufficio di Napoli",
+      "ok": true,
+      "action": "updated",
+      "user_id": "a2684d11-a20d-4951-8e3c-e36618178c5a",
+      "ufficio_id": "f5163c49-1e7e-48b5-9ac6-5494a9d4ce4a",
+      "password_reset": true
+    },
+    {
+      "email": "campobasso@consulbrokers.it",
+      "codice": "0033",
+      "nome_ufficio": "Ufficio Campobasso",
+      "ok": true,
+      "action": "updated",
+      "user_id": "77cb4823-b980-4f95-a689-c2d374c25475",
+      "ufficio_id": "ebd881c6-cc52-4fbe-a423-2bf1f8498e5c",
+      "password_reset": true
+    },
+    {
+      "email": "lurbani@consulbrokers.it",
+      "codice": "0088",
+      "nome_ufficio": "Ufficio di Bergamo",
+      "ok": true,
+      "action": "updated",
+      "user_id": "3ef8a754-7657-4ea6-8931-73a9e3d83ea8",
+      "ufficio_id": "d2d73996-a161-4a04-be84-260f6c514c23",
+      "password_reset": true
+    },
+    {
+      "email": "catania@consulbrokers.it",
+      "codice": "CT",
+      "nome_ufficio": "SEDE CATANIA",
+      "ok": true,
+      "action": "updated",
+      "user_id": "d1707ee3-4334-4f0f-9e12-763f206857fb",
+      "ufficio_id": "d2c47452-4bb2-4b3b-8a24-a1606357e909",
+      "password_reset": true
+    },
+    {
+      "email": "gestionemilano@consulbrokers.it",
+      "codice": "MI",
+      "nome_ufficio": "SEDE MILANO",
+      "ok": true,
+      "action": "updated",
+      "user_id": "6a5614bb-d1e1-4202-afe2-cb2fa61290ee",
+      "ufficio_id": "193e0821-4105-4ad6-a72e-0ebb6c116797",
+      "password_reset": true
+    },
+    {
+      "email": "sandona@consulbrokers.it",
+      "codice": "SDO",
+      "nome_ufficio": "SEDE SAN DONA' DI PIAVE",
+      "ok": true,
+      "action": "updated",
+      "user_id": "3fb3682c-8451-447b-95ac-08f069396811",
+      "ufficio_id": "327e92f7-64f0-48b9-9e48-73611d8cb406",
+      "password_reset": true
+    }
+  ],
+  "skipped": [
+    {
+      "codice": "SS",
+      "nome_ufficio": "Sedi Sicilia",
+      "motivo": "Email mancante su sede"
+    },
+    {
+      "codice": "SP",
+      "nome_ufficio": "Aziende Sanitarie Puglia",
+      "motivo": "Email mancante su sede"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+DELETE FROM public.sinistri WHERE id IN ('ae0e7702-da56-4dee-9951-30c109758fae','5666462b-175f-4ffc-a778-36ab14b2a7f5');
+DELETE FROM public.titoli WHERE id IN ('85aa81c4-4d7b-4d48-9ff7-543bc3735447','baa52123-1e2a-4483-b36f-0dffff0c76a3');

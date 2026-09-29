@@ -1,0 +1,67 @@
+[
+  {
+    "file": "fix-date-batch-000.sql",
+    "bytes": 14730,
+    "lines": 16
+  },
+  {
+    "file": "fix-date-batch-001.sql",
+    "bytes": 15487,
+    "lines": 16
+  },
+  {
+    "file": "fix-date-batch-002.sql",
+    "bytes": 15291,
+    "lines": 16
+  },
+  {
+    "file": "fix-date-batch-003.sql",
+    "bytes": 14935,
+    "lines": 16
+  },
+  {
+    "file": "fix-date-batch-004.sql",
+    "bytes": 14601,
+    "lines": 16
+  },
+  {
+    "file": "fix-date-batch-005.sql",
+    "bytes": 14158,
+    "lines": 16
+  },
+  {
+    "file": "fix-date-batch-006.sql",
+    "bytes": 14134,
+    "lines": 16
+  },
+  {
+    "file": "fix-date-batch-007.sql",
+    "bytes": 15023,
+    "lines": 16
+  },
+  {
+    "file": "fix-date-batch-008.sql",
+    "bytes": 15074,
+    "lines": 16
+  },
+  {
+    "file": "fix-date-batch-009.sql",
+    "bytes": 14144,
+    "lines": 16
+  },
+  {
+    "file": "fix-date-batch-010.sql",
+    "bytes": 18064,
+    "lines": 16
+  },
+  {
+    "file": "fix-date-batch-011.sql",
+    "bytes": 24423,
+    "lines": 16
+  },
+  {
+    "file": "fix-date-batch-012.sql",
+    "bytes": 14078,
+    "lines": 16
+  }
+]

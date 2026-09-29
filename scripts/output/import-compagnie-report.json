@@ -1,0 +1,4832 @@
+{
+  "source_files": {
+    "main": "C:\\Users\\Utente\\Downloads\\Compagnie_20260714085952.xlsx",
+    "intermedia": "C:\\Users\\Utente\\Downloads\\Compagnie_INTERMEDIA.xlsx"
+  },
+  "generated_at": "15/07/2026, 00:20:55",
+  "summary": {
+    "Righe uniche dopo merge Excel": 430,
+    "Scartate in validazione pre-import": 0,
+    "Agenzie importate con successo": 430,
+    "Fallite su database": 0,
+    "Rapporti a compagnia assicuratrice creati": 430,
+    "Rapporti falliti": 0,
+    "Non congiunte (senza collegamento assicuratore)": 0,
+    "IBAN collegati (import iniziale)": 278,
+    "IBAN non collegati (formato legacy/invalido)": 14,
+    "Totale compagnie in CBnet dopo import": 477,
+    "Totale rapporti in CBnet dopo import": 482
+  },
+  "non_importate_validazione": [],
+  "non_importate_db": [],
+  "saltate_esistenti": [],
+  "importate": [
+    {
+      "codice": "B0001",
+      "id": "c84de24b-320f-4ce5-aa39-19a7eaa3f64e",
+      "nome": "Arag Assicurazioni",
+      "gruppo_label": "ARAG"
+    },
+    {
+      "codice": "B0002",
+      "id": "4aa4d50b-ab36-434d-8b18-97bc83093930",
+      "nome": "*GENERALI ITALIA SPA - AG. ASSITALIA CONEGLIANO LA",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0004",
+      "id": "daf21070-93c9-4a24-9eb1-300ba27af92a",
+      "nome": "*Generali Italia Spa",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0007",
+      "id": "85c4b3ac-b418-43ec-9c4b-cccc6d73788e",
+      "nome": "FUSCO NELLO & MARIAN CLAUDIO SNC",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0008",
+      "id": "bd206482-3b7d-4230-885b-4b6aeb3b5c22",
+      "nome": "Societa' Reale Mutua Assicurazioni",
+      "gruppo_label": "Societa' Reale Mutua di Assicurazioni"
+    },
+    {
+      "codice": "B0009",
+      "id": "4846ef8b-941a-443d-a491-b58bd76d75ba",
+      "nome": "Itas Mutua",
+      "gruppo_label": "Itas Mutua"
+    },
+    {
+      "codice": "B0010",
+      "id": "4f27d854-1cd9-4307-a1c6-373c96c45c14",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. SAN DONA' DI PIAVE",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0011",
+      "id": "5ec60889-f42e-4e12-9085-94d73c0b5b55",
+      "nome": "Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0012",
+      "id": "8eea783c-4d18-4ccc-8a4d-b450542fcac6",
+      "nome": "ALLIANZ VENEZIA",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0013",
+      "id": "e5c2ef70-25f2-4dec-a024-dc4be62c624a",
+      "nome": "*GENERALI ITALIA SPA - AG. LLOYD ITALICO TREVISO -",
+      "gruppo_label": "Lloyd Italico"
+    },
+    {
+      "codice": "B0015",
+      "id": "91b40aeb-5534-42a8-af09-4a3173d895a0",
+      "nome": "CORRADINI SNC INTERMEDIAZIONI ASSICURATIVE",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0017",
+      "id": "e146260d-fbc8-429e-8815-41c73cb6952a",
+      "nome": "Allianz Assicurazioni",
+      "gruppo_label": "ALLIANZ"
+    },
+    {
+      "codice": "B0019",
+      "id": "1e518fec-cac8-44b8-b7f3-a4c1c1ecfbe3",
+      "nome": "Societa' Reale Mutua Assicurazioni",
+      "gruppo_label": "Societa' Reale Mutua di Assicurazioni"
+    },
+    {
+      "codice": "B0020",
+      "id": "dbced2d5-0bd4-4528-8bd1-53f51152098f",
+      "nome": "LUCA ANDREOSI E C. S.A.S.",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0021",
+      "id": "b23ab13a-157a-4792-8f78-55eead6592c2",
+      "nome": "ITALIANA ASS.NI",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0022",
+      "id": "35207a24-b7b8-41fe-8196-d14b506b8d59",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. SAN DONA' DI PIAVE",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0023",
+      "id": "b66c869f-12ab-4db3-bb20-c745ecdc7d31",
+      "nome": "*AURORA ASS.NI ODERZO-CADAMURO MARIO",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0026",
+      "id": "d7886988-44a5-450b-8efe-31f881a2373d",
+      "nome": "M. CIVAI & P. TENDERINI SNC",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0028",
+      "id": "d7508430-2f5a-455d-b823-c6f59c3ed6d9",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. SAN DONA' DI PIAVE",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0029",
+      "id": "c5b8869d-6d56-45cc-9297-8ca3bed5783d",
+      "nome": "*UNIPOL  MESTRE - 3932",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0031",
+      "id": "9a34deca-462c-4607-bc33-e222b4d0ef53",
+      "nome": "*Lloyd Italico",
+      "gruppo_label": "Lloyd Italico"
+    },
+    {
+      "codice": "B0032",
+      "id": "70c0636b-bb3d-4994-8de4-d447fb22ddc6",
+      "nome": "Itas Mutua",
+      "gruppo_label": "Itas Mutua"
+    },
+    {
+      "codice": "B0043",
+      "id": "392474ce-902e-48cf-90da-146f0f851309",
+      "nome": "Allianz Assicurazioni",
+      "gruppo_label": "ALLIANZ"
+    },
+    {
+      "codice": "B0044",
+      "id": "d5ed3218-e617-45a5-90c3-842dcc308855",
+      "nome": "*Societa' Reale Mutua Assicurazioni",
+      "gruppo_label": "Societa' Reale Mutua di Assicurazioni"
+    },
+    {
+      "codice": "B0052",
+      "id": "a573ecb4-064f-4589-b5b2-9110f9ebd1f3",
+      "nome": "*ANTONVENETA ASS.NI VENEZIA",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0054",
+      "id": "cd155b0e-f23c-4d08-b4e3-12f3e18bdd42",
+      "nome": "Allianz Assicurazioni",
+      "gruppo_label": "ALLIANZ"
+    },
+    {
+      "codice": "B0057",
+      "id": "95dfd85c-795e-45a8-bc3d-ce5012ed12df",
+      "nome": "Generali Italia Spa",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0060",
+      "id": "2e063319-0dbb-4e48-a032-4469fead2300",
+      "nome": "INASS SRL STUDIO DI ASSICURAZIONI",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0066",
+      "id": "7cb7ab2e-0bb7-4c55-8fb2-d1562ca7104e",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. TREVISO",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0068",
+      "id": "e98878f9-fb9c-4f9b-9b0a-48375ee762f2",
+      "nome": "*Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0070",
+      "id": "dafd6d1a-ca37-460c-ac3b-f082eadf5ed1",
+      "nome": "Generali Italia Spa",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0081",
+      "id": "0386e697-4991-4604-88a8-fdf50c951f96",
+      "nome": "*ALLIANZ RAS SAN DONA' - GALESSO & PARTNERS SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0090",
+      "id": "3a47df89-eca0-45f4-88d7-24739f8453d5",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. PADOVA",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0095",
+      "id": "48b2482d-8634-4bef-bb80-ef5c19444689",
+      "nome": "Societa' Reale Mutua Assicurazioni",
+      "gruppo_label": "Societa' Reale Mutua di Assicurazioni"
+    },
+    {
+      "codice": "B0102",
+      "id": "b9772acc-8598-42d1-93b8-c8694785369b",
+      "nome": "*Giuliana Ass.ni",
+      "gruppo_label": "Giuliana Ass.ni"
+    },
+    {
+      "codice": "B0103",
+      "id": "bd672c81-2693-442c-ae9f-77de6bc68250",
+      "nome": "ITALIANA ASS.NI",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0107",
+      "id": "ae6a0647-001f-4ced-8d14-f7a520894542",
+      "nome": "*Liguria Assicurazioni",
+      "gruppo_label": "Liguria Assicurazioni"
+    },
+    {
+      "codice": "B0113",
+      "id": "b5dc9f2e-a45d-4104-b9ac-37af576dc66b",
+      "nome": "Vittoria Ass.ni",
+      "gruppo_label": "Vittoria Ass.ni"
+    },
+    {
+      "codice": "B0116",
+      "id": "74408337-2d06-4d95-9367-37972e694b03",
+      "nome": "*Lloyd Adriatico",
+      "gruppo_label": "Lloyd Adriatico"
+    },
+    {
+      "codice": "B0128",
+      "id": "30504a9d-8a3e-478b-98d7-24fcbc119de1",
+      "nome": "REALE MUTUA MARCON",
+      "gruppo_label": "Societa' Reale Mutua di Assicurazioni"
+    },
+    {
+      "codice": "B0130",
+      "id": "9a9336c3-811b-4cb0-9b85-0d9597a4d087",
+      "nome": "*Generali Italia S.p.a.",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0133",
+      "id": "9fddec5d-e3e8-4099-95e7-6a825aa7d15b",
+      "nome": "*GENERALI ITALIA SPA - AG. CONEGLIANO TEZZA",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0140",
+      "id": "8fc9506a-a7ce-451c-8248-4bc3d7314371",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. ASOLO",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0156",
+      "id": "af44201e-6b58-48fa-bbd2-c5536eebf58f",
+      "nome": "*LO.SA.MA SNC",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0157",
+      "id": "6d125d34-a054-41b7-a2d3-88b14831febc",
+      "nome": "*UNIPOL MESTRE - ASSITIME SAS",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0158",
+      "id": "9ee2257e-1933-4f58-a55e-d23dc039e330",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. MESTRE",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0165",
+      "id": "8340eaad-f55b-42b2-a0ef-06ae2e53ba2b",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. AZZANO DECIMO",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0167",
+      "id": "676a69c5-94a9-4c8a-a3cd-738e43f2b43b",
+      "nome": "ITALIANA ASS.NI PADOVA GIOTTO",
+      "gruppo_label": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0169",
+      "id": "6146fdef-0003-4570-a544-7c9d56b711e5",
+      "nome": "Generali Italia Spa",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0170",
+      "id": "c29659b2-d1cf-4b26-947e-a0dc06adf251",
+      "nome": "*Generali Italia Spa",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0171",
+      "id": "dcc4e4fa-d078-4ca4-affe-35e8be238ed2",
+      "nome": "*Generali Italia S.p.a.",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0173",
+      "id": "c04790ee-581b-43a1-a6ff-8655bbd5e312",
+      "nome": "MI&TI SRL",
+      "gruppo_label": "Societa' Cattolica Di Assicurazione"
+    },
+    {
+      "codice": "B0180",
+      "id": "10b2942a-d2dc-48f7-879d-8294647bc6a0",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. BELLUNO",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0182",
+      "id": "974bfbde-6e01-460d-9a0b-e6532a22514f",
+      "nome": "*AURORA ASS.NI TREVISO-ASSIZORZI & CO. SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0183",
+      "id": "aed70fe1-c9fe-40b6-9b81-10a64e675d80",
+      "nome": "*GENERALI ITALIA SPA  AG. BELLUNO",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0185",
+      "id": "b9646d8f-bd7b-437d-8b0f-1cbe406dfc68",
+      "nome": "*GENERALI ITALIA SPA AG. PORDENONE",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0191",
+      "id": "713f80d7-2004-4a66-bc99-fe7bdb96de48",
+      "nome": "DAVIDE PIOL & ROLANDO ZANELLA SNC",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0198",
+      "id": "71accaf6-1d29-4624-b999-a36deab8d878",
+      "nome": "*Allianz Assicurazioni",
+      "gruppo_label": "ALLIANZ"
+    },
+    {
+      "codice": "B0200",
+      "id": "32e303b6-d32b-4536-a9f8-574297be4800",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. VICENZA CASTELLO",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0208",
+      "id": "d44fef0a-3372-4cbf-891b-e057c993b248",
+      "nome": "VALPIAVE BL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0211",
+      "id": "eda51512-8f33-4da3-a193-95512bd18462",
+      "nome": "REALE MUTUA BELLUNO",
+      "gruppo_label": "REALE MUTUA"
+    },
+    {
+      "codice": "B0217",
+      "id": "b0d0f516-66e6-47a6-b674-5d415e96f55b",
+      "nome": "*ZANDONELLA ASSICURAZIONI SAS - SAI ASS.NI",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0232",
+      "id": "8101593d-fe83-43b8-a135-483ac0038267",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. BELLUNO",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0248",
+      "id": "9acb5148-ee2e-43c9-89b8-1291a90a8b42",
+      "nome": "*AXA BELLUNO-MONTENERO",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0250",
+      "id": "91546fb4-c32b-419e-82ba-5b6491ecb69f",
+      "nome": "Societa' Reale Mutua Assicurazioni",
+      "gruppo_label": "Societa' Reale Mutua di Assicurazioni"
+    },
+    {
+      "codice": "B0260",
+      "id": "c1f4b531-637d-4d89-af60-320c164ec487",
+      "nome": "VALPIAVE PIEVE D'ALPAGO",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0272",
+      "id": "3735810a-e8c6-4635-a129-98adb3ee26cd",
+      "nome": "*GENERALI ITALIA SPA  AG. CONEGLIANO",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0274",
+      "id": "2b570c1c-a936-4717-8fda-24ef9498a592",
+      "nome": "Societa' Reale Mutua Assicurazioni",
+      "gruppo_label": "Societa' Reale Mutua di Assicurazioni"
+    },
+    {
+      "codice": "B0282",
+      "id": "8d915350-a51a-425c-a6c4-bf006bba458c",
+      "nome": "VALPIAVE PIEVE DI CADORE",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0283",
+      "id": "19533481-cd86-4450-b9d0-3b69120086d0",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. TREVISO",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0286",
+      "id": "02017822-746a-4808-9f96-332b72cd3f93",
+      "nome": "HELVETIA - AG. TRENTO 1304",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0288",
+      "id": "f0346b94-c567-4582-8621-0703a11cd03a",
+      "nome": "*UNIPOL  FELTRE NON USARE",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0295",
+      "id": "1574c5ce-43d1-4743-b387-6dc91186208f",
+      "nome": "*Allianz Assicurazioni",
+      "gruppo_label": "ALLIANZ"
+    },
+    {
+      "codice": "B0303",
+      "id": "6c75ad5e-839e-4d62-8295-d4b50e486363",
+      "nome": "A.E.C. SPA",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0306",
+      "id": "60f1c29f-b302-4cd0-886d-74c80861655d",
+      "nome": "CORTINA ASSICURAZIONI SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0307",
+      "id": "1e435821-3d33-4a5c-829e-90645e93843f",
+      "nome": "*GENERALI ITALIA SPA - AG. ROVIGO",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0308",
+      "id": "e92a8445-2331-4076-8811-582ec0a20d3b",
+      "nome": "*Helvetia Assicurazioni",
+      "gruppo_label": "HELVETIA"
+    },
+    {
+      "codice": "B0329",
+      "id": "0f23d502-430d-47cb-bee7-eaa5e8ec6a6a",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. UDINE",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0335",
+      "id": "dba680f8-b68b-43d4-a750-bb91a326479c",
+      "nome": "Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0337",
+      "id": "b1a2bc06-f8e5-498a-819d-5b4e98093b9d",
+      "nome": "DUAL ITALIA SPA - ARCH INSURANCE",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0345",
+      "id": "fdd931fc-78f0-4ef2-b682-2623f6da9d11",
+      "nome": "*Italiana Assicurazioni",
+      "gruppo_label": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0346",
+      "id": "89638134-4e1c-40d7-a871-31f229b06589",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. PORDENONE",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0349",
+      "id": "ffcaefdf-6a42-49d6-bffe-51c98d6e3746",
+      "nome": "*Italiana Assicurazioni",
+      "gruppo_label": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0353",
+      "id": "84fe94a0-de21-4477-9275-731827ff8a6a",
+      "nome": "GRUPPO ACC",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0354",
+      "id": "d6f357f2-d19f-465d-9a09-796d212a7cfe",
+      "nome": "Chubb Insurance",
+      "gruppo_label": "CHUBB"
+    },
+    {
+      "codice": "B0379",
+      "id": "839ade77-af90-448f-a4e9-9ee035c274a1",
+      "nome": "ASSIGECO S.R.L. ENTI PUBBLICI",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0381",
+      "id": "64ccc5a2-b12c-43c8-8ebb-1970ff80087f",
+      "nome": "*Viscontea",
+      "gruppo_label": "Viscontea"
+    },
+    {
+      "codice": "B0383",
+      "id": "6f3208f0-75de-48d3-b67c-7f6947cc0278",
+      "nome": "Europ Assistance Italia Spa",
+      "gruppo_label": "EUROP ASSISTANCE ITALIA"
+    },
+    {
+      "codice": "B0393",
+      "id": "38cf51bc-beb8-4761-bf14-4b61cd8d08b0",
+      "nome": "*Generali Italia Spa",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0399",
+      "id": "8cbfc504-8358-4ae4-8383-61b3c7dfefd3",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. BELVEDERE DI TEZZE SUL BR",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0410",
+      "id": "75ff8ddb-29eb-4fa8-9f5e-b38e72b286da",
+      "nome": "Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0413",
+      "id": "c31740a7-d62e-4ee5-a1a8-43ed3b84af0b",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. FELTRE",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0414",
+      "id": "889f35d7-7a9a-4c8e-9ee5-adf80513e097",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. PORTOGRUARO",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0416",
+      "id": "2e633131-004f-42ce-8cca-2a320937307a",
+      "nome": "*Axa Assicurazioni",
+      "gruppo_label": "AXA"
+    },
+    {
+      "codice": "B0432",
+      "id": "bdf8a7d4-9b03-453a-96ca-af1a4cac1665",
+      "nome": "*Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0436",
+      "id": "86bb260f-636c-45d5-95a9-71667956c7bc",
+      "nome": "*Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0441",
+      "id": "4a32e358-44af-4dd3-8fb4-faa9ee3845d3",
+      "nome": "*Helvetia Assicurazioni",
+      "gruppo_label": "HELVETIA"
+    },
+    {
+      "codice": "B0442",
+      "id": "f8601f34-c507-4f00-81fc-ec05dc1b8d94",
+      "nome": "British Marine",
+      "gruppo_label": "British Marine"
+    },
+    {
+      "codice": "B0446",
+      "id": "06ea9883-f734-4739-966e-d05ad6a3f635",
+      "nome": "*Generali Italia Spa",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0450",
+      "id": "0aac6c73-bf26-4582-8484-27f9cb0f54d2",
+      "nome": "*Generali Italia Spa",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0451",
+      "id": "6db89490-5d2c-43be-a246-17d14f8b3805",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. UDINE",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0452",
+      "id": "0291683a-bf56-4406-8c9e-0e4201800701",
+      "nome": "*Generali Italia S.p.a.",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0455",
+      "id": "86f125dd-271b-4da1-a9a2-31add2f82f6d",
+      "nome": "*Generali Italia S.p.a.",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0457",
+      "id": "369f9229-9514-42cd-8ff1-fde4ff1ccceb",
+      "nome": "Roland",
+      "gruppo_label": "ROLAND"
+    },
+    {
+      "codice": "B0458",
+      "id": "8a25825b-9b03-4a05-a37c-a847dc4858dd",
+      "nome": "ASSIPLUS SAS",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0467",
+      "id": "df1dcee8-f169-4eb4-98b9-79498af290c4",
+      "nome": "*Generali Italia Spa",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0473",
+      "id": "a6713692-d9f8-49e2-955a-4d1fb41f2416",
+      "nome": "AIG EUROPE S.A.",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0474",
+      "id": "39189dd5-9d1b-49e4-8bcf-f0b82b814cfd",
+      "nome": "*Zurich Insurance Company Ltd",
+      "gruppo_label": "Zurich Insurance Company Ltd"
+    },
+    {
+      "codice": "B0476",
+      "id": "be83137e-056a-4c23-81a1-ce789a9e605e",
+      "nome": "*GENERALI ITALIA SPA  AG. TRIESTE UNITA' D'ITALIA",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0477",
+      "id": "8eb02f32-6d7d-41c1-a894-931f2eb8551d",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. GRADISCA D'ISONZO",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0480",
+      "id": "08d14bc7-099d-4125-91ab-10260ecb71d7",
+      "nome": "Axa Assicurazioni",
+      "gruppo_label": "AXA"
+    },
+    {
+      "codice": "B0482",
+      "id": "375fb0cc-a007-4b59-82e7-a0cac2354c10",
+      "nome": "CAMPOLONGO & MARIN SNC",
+      "gruppo_label": "Zurich Insurance Company Ltd"
+    },
+    {
+      "codice": "B0483",
+      "id": "3c9e020c-eb4e-4354-a6e0-9d8b02c28a8a",
+      "nome": "GENERALI ITALIA SPA - AG. VENEZIA SAN MARCO",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0490",
+      "id": "a54f14a5-8867-43c9-ac85-16f800ce7cc4",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. CONEGLIANO",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0491",
+      "id": "3de83bbb-98ab-40e9-bde2-e4d4335c76a3",
+      "nome": "*Milano Divisione Nuova Maa Assicurazioni",
+      "gruppo_label": "Milano Divisione Nuova Maa Assicurazioni"
+    },
+    {
+      "codice": "B0494",
+      "id": "8f3214af-64f4-406d-af75-38500b6364d3",
+      "nome": "AIB ALL INSURANCE BROKER SRL - LIBERTY",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0495",
+      "id": "4b7db6d1-b71f-4033-8200-cf6f26618dd4",
+      "nome": "*Liguria Assicurazioni",
+      "gruppo_label": "Liguria Assicurazioni"
+    },
+    {
+      "codice": "B0496",
+      "id": "a14359d1-8724-4d43-942f-be729796f460",
+      "nome": "*Generali Italia Spa",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0498",
+      "id": "3594591f-b0c5-4a5a-8a3d-1f3f172ff5bf",
+      "nome": "GENERALI ITALIA SPA - AG. CONEGLIANO/PIEVE DI SOLI",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0501",
+      "id": "329c8566-278f-45bf-9938-f5ff058eec21",
+      "nome": "*Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0502",
+      "id": "00fd69ef-8ce7-4e0b-8676-377f4ec09f66",
+      "nome": "D.a.s",
+      "gruppo_label": "DAS"
+    },
+    {
+      "codice": "B0505",
+      "id": "cd417a0f-e49d-43e1-a4e9-511697f000f1",
+      "nome": "*Zurich Insurance Company Ltd",
+      "gruppo_label": "Zurich Insurance Company Ltd"
+    },
+    {
+      "codice": "B0507",
+      "id": "76d940ab-7701-4981-a910-e524dbf75826",
+      "nome": "*AON S.P.A.",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0508",
+      "id": "d2084ac4-2af2-4982-a439-c213ed997bf5",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. ODERZO",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0511",
+      "id": "8925fa21-352f-41aa-aa10-362fd431185c",
+      "nome": "*Axa Assicurazioni",
+      "gruppo_label": "AXA"
+    },
+    {
+      "codice": "B0512",
+      "id": "db195037-1de1-44ec-a81c-90a16496051c",
+      "nome": "*Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0514",
+      "id": "5bbf45a1-e209-4df2-9306-17bc0db68b83",
+      "nome": "ASSIB UNDERWRITING SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0518",
+      "id": "e459c354-9c25-473a-9824-5a10ec922566",
+      "nome": "*Helvetia Assicurazioni",
+      "gruppo_label": "HELVETIA"
+    },
+    {
+      "codice": "B0521",
+      "id": "14f44946-96c1-410f-ac77-a996f645c4a0",
+      "nome": "VITTORIA ASS.NI SAN DONA' DI PIAVE",
+      "gruppo_label": "Vittoria Ass.ni"
+    },
+    {
+      "codice": "B0523",
+      "id": "b498782b-6024-423f-bf03-8a72c3bc21d8",
+      "nome": "*Generali Italia Spa",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0526",
+      "id": "d083a955-9d54-4b09-a8b5-4bb11bf9d238",
+      "nome": "ITALIANA PORTOGRAURO",
+      "gruppo_label": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0528",
+      "id": "d195f563-561e-40b3-88bb-e258f9f58419",
+      "nome": "*Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0529",
+      "id": "72c4a1f4-2545-47d7-9202-26a3c705e77b",
+      "nome": "Allianz Assicurazioni",
+      "gruppo_label": "ALLIANZ"
+    },
+    {
+      "codice": "B0530",
+      "id": "8b3a3252-5633-4d9e-b701-80541493babd",
+      "nome": "*AVIVA ASS.NI - A.B.F. SAS",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0535",
+      "id": "9ecccc29-8404-4f76-8421-40e75941023e",
+      "nome": "*Amissima Assicurazioni",
+      "gruppo_label": "AMISSIMA"
+    },
+    {
+      "codice": "B0537",
+      "id": "22578cc9-9bb3-4956-a07f-81b58927c595",
+      "nome": "*Nuova Tirrena Ass.ni",
+      "gruppo_label": "Nuova Tirrena Ass.ni"
+    },
+    {
+      "codice": "B0538",
+      "id": "b7845ccf-b91a-42f4-9560-b92ca1da1a70",
+      "nome": "*Generali Italia S.p.a.",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0539",
+      "id": "c7bba38c-61b2-41ef-9066-3f3b59945861",
+      "nome": "LORENZONI ENRICO, GARGANO GUIDO G. & CAMPAGNARO LU",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0542",
+      "id": "1c4d2cbe-8f29-4030-a14a-da73a4f53d47",
+      "nome": "FABBIAN SRL",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0543",
+      "id": "d0966f18-2d8c-4785-bcbc-9aff229c941f",
+      "nome": "AIBA",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0544",
+      "id": "d59388fe-1361-4e81-8ae3-6e0d3ac46788",
+      "nome": "*Generali Italia S.p.a.",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0545",
+      "id": "ae086f0c-4078-432e-984f-3215fc70eebe",
+      "nome": "*ZOCCATELLI ASSICURAZIONI",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0546",
+      "id": "950d83db-1a26-48ad-be7c-8d63311484ee",
+      "nome": "*D.a.s.",
+      "gruppo_label": "DAS"
+    },
+    {
+      "codice": "B0547",
+      "id": "73e7455d-0afb-4a44-83a8-f421a3d20819",
+      "nome": "*Faro Ass.ni",
+      "gruppo_label": "Faro Ass.ni"
+    },
+    {
+      "codice": "B0548",
+      "id": "201eebb2-b204-491d-b995-beb076e399e7",
+      "nome": "ITAS GENOVA AG. DOTT. ANGELO M. GIULIANO DI VALENT",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0549",
+      "id": "ac2b4974-ac3b-4067-b96e-63ff7a676621",
+      "nome": "*Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0550",
+      "id": "e25989ce-1e02-4ca2-96b5-fb90cab650bc",
+      "nome": "*Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0551",
+      "id": "5775ba27-1391-4d73-b30a-febd73d2e387",
+      "nome": "Reale Mutua Assicurazioni",
+      "gruppo_label": "REALE MUTUA"
+    },
+    {
+      "codice": "B0552",
+      "id": "fb90bfce-7ef4-43e1-9cd1-b572f70d32bc",
+      "nome": "Coface Assicurazioni",
+      "gruppo_label": "COFACE"
+    },
+    {
+      "codice": "B0553",
+      "id": "a4b80403-7ccd-4689-be5c-a6f277a0998c",
+      "nome": "Allianz Assicurazioni",
+      "gruppo_label": "ALLIANZ"
+    },
+    {
+      "codice": "B0554",
+      "id": "5b8d4de3-21bb-4f3b-80ab-ab47535f8db2",
+      "nome": "*LANZILLOTTA ASS.NI",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0555",
+      "id": "9c82d432-69f0-4386-9b21-644a5414603f",
+      "nome": "*Filo Diretto",
+      "gruppo_label": "Filo Diretto"
+    },
+    {
+      "codice": "B0556",
+      "id": "b055decf-cab1-47c4-90cf-4ca71ef7ecfd",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. PADOVA",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0557",
+      "id": "ddc5585b-2a7b-4c71-82b4-6e8a55a143ad",
+      "nome": "BENACQUISTA ASSICURAZIONI SRL SCUOLE",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0558",
+      "id": "137ce530-260e-4796-bc30-550bef4c0f4d",
+      "nome": "Itas Mutua",
+      "gruppo_label": "Itas Mutua"
+    },
+    {
+      "codice": "B0559",
+      "id": "6c1666a8-2adf-4fa0-8ef1-f8a8241b39d0",
+      "nome": "*Italiana Assicurazioni",
+      "gruppo_label": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0560",
+      "id": "a03b869e-c346-4b09-ab23-6b73340f7ab3",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. PADOVA",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0562",
+      "id": "9e9d9191-0a9c-4998-a16a-62d8eccc2004",
+      "nome": "Lloyd's",
+      "gruppo_label": "Lloyd's"
+    },
+    {
+      "codice": "B0564",
+      "id": "0a7be144-e2ac-463a-af59-4c49459168e3",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. BELLUNO",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0566",
+      "id": "c57d341c-87fe-4355-9f23-f0921c349eaa",
+      "nome": "Lloyd's",
+      "gruppo_label": "Lloyd's"
+    },
+    {
+      "codice": "B0567",
+      "id": "e43a6a05-96f4-4209-b3b0-7fc468301a30",
+      "nome": "UNIPOLSAI DIV. UNIPOL FELTRE MARCHESAN",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0568",
+      "id": "4514b467-9a53-4c81-a1fe-93f02d3f1548",
+      "nome": "Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0569",
+      "id": "23a99f22-0c6c-4d39-ba12-eb477bc1e1ef",
+      "nome": "F.C.V. BROKER SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0570",
+      "id": "c072c219-ad50-461f-a1fe-ff9ecfe8b7b1",
+      "nome": "*Allianz Assicurazioni",
+      "gruppo_label": "ALLIANZ"
+    },
+    {
+      "codice": "B0571",
+      "id": "fa33f1c6-892a-4c5f-9b7d-741398abdd57",
+      "nome": "*ANDREA DAL PRÀ Assicurazioni",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0573",
+      "id": "97fc0a40-3545-48bc-af47-6ed12e5a3f09",
+      "nome": "*Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0574",
+      "id": "85ef4141-6630-4067-ae4c-ade7e62556b7",
+      "nome": "ZANDONELLA ASSICURAZIONI SAS",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0577",
+      "id": "a095baf2-9b9a-4baa-a71c-edc98daa25dd",
+      "nome": "BORTOLI ASS.NI SNC",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0578",
+      "id": "a35669b9-a765-426f-8d15-dc39d132bc6a",
+      "nome": "*Coface Assicurazioni",
+      "gruppo_label": "COFACE"
+    },
+    {
+      "codice": "B0579",
+      "id": "e151d2a6-a232-4a65-aee8-a3bb5cedcd8f",
+      "nome": "*Allianz Assicurazioni",
+      "gruppo_label": "ALLIANZ"
+    },
+    {
+      "codice": "B0580",
+      "id": "3e2b8ecc-dbd9-4884-b75f-c3682b05a1db",
+      "nome": "OFFICINA ASSICURATIVA SRLS",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0582",
+      "id": "abcf52e7-7c45-44ea-8b84-593310f5bf2b",
+      "nome": "Allianz Assicurazioni",
+      "gruppo_label": "ALLIANZ"
+    },
+    {
+      "codice": "B0583",
+      "id": "bb11fb2d-6ff5-4b91-9b58-1e29be7d1de5",
+      "nome": "*Reale Mutua Assicurazioni",
+      "gruppo_label": "REALE MUTUA"
+    },
+    {
+      "codice": "B0584",
+      "id": "5d6e5a38-ee10-424f-820d-1c4fe9955f88",
+      "nome": "Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0587",
+      "id": "fe52daa1-86f9-44c1-85ec-4c63636026d7",
+      "nome": "*Axa Assicurazioni",
+      "gruppo_label": "AXA"
+    },
+    {
+      "codice": "B0588",
+      "id": "fb4bb865-dbcf-4811-893a-85fda0e80e4d",
+      "nome": "Reale Mutua Assicurazioni",
+      "gruppo_label": "REALE MUTUA"
+    },
+    {
+      "codice": "B0591",
+      "id": "27497478-8269-455b-9683-024b297d4c5e",
+      "nome": "*Lloyd's",
+      "gruppo_label": "Lloyd's"
+    },
+    {
+      "codice": "B0592",
+      "id": "bc22408a-f8f5-438f-85bd-0690ebc376ef",
+      "nome": "*Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0593",
+      "id": "29c12aac-dedb-40c5-ac5b-071ffcefebee",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. PADOVA",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0594",
+      "id": "1c2da880-06b5-4f29-a725-908c94eaa5fc",
+      "nome": "*ALBERTI ASS.NI SNC",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0596",
+      "id": "5f07a3f0-2050-49e8-a57e-1ffef1f1bafd",
+      "nome": "ALLIANZ SPA VENEZIA CENTRO STORICO",
+      "gruppo_label": "ALLIANZ"
+    },
+    {
+      "codice": "B0597",
+      "id": "f0259c05-9f19-4dfd-a264-57d250abd285",
+      "nome": "*Genertel",
+      "gruppo_label": "Genertel"
+    },
+    {
+      "codice": "B0598",
+      "id": "39ce5c9b-ed14-4d6a-8a14-60ed5e9329ca",
+      "nome": "UNIPOLSAI DIV. UNIPOL CERVIGNANO DEL FRIULI TOMASI",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0599",
+      "id": "63e9b574-ab1c-40df-ac93-9cda2fb2db46",
+      "nome": "*Hdi Assicurazioni Spa",
+      "gruppo_label": "Hdi Assicurazioni Spa"
+    },
+    {
+      "codice": "B0600",
+      "id": "622426c7-c62a-4fca-8480-5a5d66fa33dd",
+      "nome": "*Filo Diretto",
+      "gruppo_label": "Filo Diretto"
+    },
+    {
+      "codice": "B0601",
+      "id": "4aa0753d-2128-48cb-b50b-a2d3e929e964",
+      "nome": "Sace Bt Spa",
+      "gruppo_label": "Sace Bt Spa"
+    },
+    {
+      "codice": "B0602",
+      "id": "b07aadb4-261e-4e7a-ae6e-be77bbce14a2",
+      "nome": "*Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0603",
+      "id": "27c557c5-f6fd-49f6-b731-64779e8ac428",
+      "nome": "MANTOVANI & PARTNERS ASSICURAZIONI SRL",
+      "gruppo_label": "Itas Mutua"
+    },
+    {
+      "codice": "B0604",
+      "id": "92b312b5-58d0-49d2-b0b2-d79d5f978ff1",
+      "nome": "*Itas Mutua",
+      "gruppo_label": "Itas Mutua"
+    },
+    {
+      "codice": "B0605",
+      "id": "039c5577-079b-4cd7-83e1-d6268910cd37",
+      "nome": "MITHRAS UNDERWRITING LTD",
+      "gruppo_label": "Lloyd's"
+    },
+    {
+      "codice": "B0606",
+      "id": "0e20ba1c-e4ee-4b93-b423-f254f93addd9",
+      "nome": "AXA VENEZIA",
+      "gruppo_label": "AXA"
+    },
+    {
+      "codice": "B0607",
+      "id": "67de6bbc-80e7-41ed-9674-04d05fb9159e",
+      "nome": "ASSIMEDICI SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0608",
+      "id": "d28f4e0b-3255-4f09-9da9-429b7e72a99f",
+      "nome": "TOP SERVICE SAS",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0610",
+      "id": "af69eb83-e1d4-486d-bea2-bc2ea2483bd9",
+      "nome": "ITALIANA AG.VITTORIO VENETO",
+      "gruppo_label": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0611",
+      "id": "c49ba8be-0c76-4f02-aeac-2094f0ad13d9",
+      "nome": "*Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0612",
+      "id": "63edd605-9590-462d-9c46-3f5882703827",
+      "nome": "*Lloyd's",
+      "gruppo_label": "Lloyd's"
+    },
+    {
+      "codice": "B0613",
+      "id": "c74708ca-193f-4ba7-a981-0ff3c673cf0a",
+      "nome": "*ASSITECA SPA",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0614",
+      "id": "e90225f4-c1ac-4acf-8c29-9e189294ad30",
+      "nome": "*Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0615",
+      "id": "50a22846-a03d-4135-91f8-dcfa5d3643c5",
+      "nome": "Axa Assistance",
+      "gruppo_label": "Axa Assistance"
+    },
+    {
+      "codice": "B0616",
+      "id": "77f00dd0-da62-4215-9e86-02bb0f2cf7b5",
+      "nome": "BENACQUISTA ASSICURAZIONI SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0617",
+      "id": "8b6f45c6-18e7-458b-8bc1-f4b9922391be",
+      "nome": "*UNIPOLSAI DIV. UNIPOL TREVISO ASSIDUE SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0618",
+      "id": "363b139d-42e1-47e5-971a-96d8e4a0eead",
+      "nome": "ASSIDUE SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0619",
+      "id": "83f5dfce-4789-41bc-9cad-fa955e4cc644",
+      "nome": "*Reale Mutua Assicurazioni",
+      "gruppo_label": "REALE MUTUA"
+    },
+    {
+      "codice": "B0620",
+      "id": "4a279d66-28d1-41ee-83d4-5827f001276e",
+      "nome": "*DOLOMITI ASSICURAZIONI SNC",
+      "gruppo_label": "CATTOLICA"
+    },
+    {
+      "codice": "B0621",
+      "id": "6f830cef-705a-4d6b-8e75-55f8714d5188",
+      "nome": "SPECIAL RISK UNDERWRITING SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0623",
+      "id": "a0007dd5-04c1-49ce-aee8-ef984c831c58",
+      "nome": "*Generali Italia S.p.a.",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0624",
+      "id": "1922a7d3-d839-4fe3-b531-f4a4205aed5f",
+      "nome": "ING. G. STOPPATO SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0626",
+      "id": "21bfa026-09e3-4ab4-b0cd-1004bea29718",
+      "nome": "B&B CONSULENZE ASSICURATIVE S.A.S. - HELVETIA",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0627",
+      "id": "ea40ff57-e0bb-481a-84d2-d65e3957b02c",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. MANIAGO",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0628",
+      "id": "ccd5be19-f9d4-4ae5-b5b2-c4370f5220fa",
+      "nome": "Vittoria Ass.ni",
+      "gruppo_label": "Vittoria Ass.ni"
+    },
+    {
+      "codice": "B0629",
+      "id": "a2c1c57b-6f02-4a8c-8b2b-e56e873822a0",
+      "nome": "PROVA",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0632",
+      "id": "6e129e46-64cb-4237-932a-425ac3a91b3d",
+      "nome": "*Lloyd Adriatico",
+      "gruppo_label": "Lloyd Adriatico"
+    },
+    {
+      "codice": "B0634",
+      "id": "5599808f-edc1-488c-8b98-90453578adf8",
+      "nome": "INSURANCE GREEN SOLUTION SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0635",
+      "id": "97e84af4-46fe-4d77-aa9c-0100a4c8aceb",
+      "nome": "*GENERALI ITALIA SPA - AG. ASSITALIA ASOLO VIALE T",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0636",
+      "id": "75adbfe6-362d-4753-9584-cec24d1f3637",
+      "nome": "MEDIORISCHI SRL LLOYD'S",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0637",
+      "id": "8d1753b4-fc31-40ce-b535-06630de63675",
+      "nome": "UNIPOLSAI ASS.NI",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0638",
+      "id": "0daddb5e-2eb3-4628-a9cf-57fd68a1f248",
+      "nome": "Itas Mutua",
+      "gruppo_label": "Itas Mutua"
+    },
+    {
+      "codice": "B0639",
+      "id": "4d1bae9f-a23e-4271-80ca-a6821d8b9873",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. VERONA",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0640",
+      "id": "74f87576-489f-4de8-acd4-6db539469c16",
+      "nome": "Reale Mutua Assicurazioni",
+      "gruppo_label": "REALE MUTUA"
+    },
+    {
+      "codice": "B0643",
+      "id": "a561c673-14af-4925-a9e1-4064792e8b4c",
+      "nome": "Convenzione Fimmg",
+      "gruppo_label": "Convenzione Fimmg"
+    },
+    {
+      "codice": "B0644",
+      "id": "630a45cc-d72f-4580-b7e2-7fb1ea093aa3",
+      "nome": "*ASSIB UNDERWRITING SRL - CONV. EXTRA FIMMG",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0645",
+      "id": "54f8e380-eb08-4394-9969-2b24d170ba21",
+      "nome": "MORELLI MARCO, FONZI RAFFAELLA E DONDI DALL’OROLOG",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0646",
+      "id": "a552c23d-8626-46cc-b8f8-e60574e7afb4",
+      "nome": "*Allianz Assicurazioni",
+      "gruppo_label": "ALLIANZ"
+    },
+    {
+      "codice": "B0648",
+      "id": "56ad5490-8c6e-469c-8db8-e597e1f33d19",
+      "nome": "*Tutela Legale Spa",
+      "gruppo_label": "Tutela Legale Spa"
+    },
+    {
+      "codice": "B0649",
+      "id": "9b13a97e-8030-4d2f-8697-648d229bda0c",
+      "nome": "Helvetia Assicurazioni",
+      "gruppo_label": "HELVETIA"
+    },
+    {
+      "codice": "B0650",
+      "id": "3709555c-fd57-4b95-b31e-f8d7d8857bde",
+      "nome": "*Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0651",
+      "id": "5c5c78bb-66a5-4a76-86e7-64d72f279e32",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. TRIESTE",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0652",
+      "id": "e1f17723-f8b6-4e6c-af7f-3566ced68c3a",
+      "nome": "DUAL ITALIA SPA - ITALIANA ASS.NI",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0653",
+      "id": "7a96d201-a7a4-479e-8fe0-b7c610577e91",
+      "nome": "*Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0654",
+      "id": "9efb7e44-96d4-4ad3-ad71-0010a511a308",
+      "nome": "*Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0655",
+      "id": "cc0a17e2-b904-4174-8448-08d0b9b5bf27",
+      "nome": "*Italiana Assicurazioni",
+      "gruppo_label": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0659",
+      "id": "17d00e85-bb78-4e6e-a46b-eb635cff000c",
+      "nome": "*Cattolica Assicurazioni",
+      "gruppo_label": "CATTOLICA"
+    },
+    {
+      "codice": "B0660",
+      "id": "1c50b746-8d95-41fc-bfeb-c45823025f5e",
+      "nome": "Italiana Assicurazioni",
+      "gruppo_label": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0661",
+      "id": "71f20197-d644-4064-abcf-78663a12f8bd",
+      "nome": "Itas Mutua",
+      "gruppo_label": "Itas Mutua"
+    },
+    {
+      "codice": "B0662",
+      "id": "0a4ea2d1-313b-45e1-9929-23c1eb4b86bb",
+      "nome": "*Lloyd's",
+      "gruppo_label": "Lloyd's"
+    },
+    {
+      "codice": "B0663",
+      "id": "8b2b779a-ca13-4051-973e-cc23bd06038c",
+      "nome": "*Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0664",
+      "id": "92e25f9d-7494-424a-b9b6-3b255f93721f",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. ROVIGO",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0665",
+      "id": "576f406b-3065-4aee-bd4e-6778f10fb049",
+      "nome": "BENACQUISTA ASSICURAZIONI FIMMG",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0666",
+      "id": "17895aba-091b-4319-958d-c1eaa4acca94",
+      "nome": "Lloyd's",
+      "gruppo_label": "Lloyd's"
+    },
+    {
+      "codice": "B0667",
+      "id": "b52bacd0-1ba2-4d85-a2b6-b13f82dbdbe5",
+      "nome": "Allianz Assicurazioni",
+      "gruppo_label": "ALLIANZ"
+    },
+    {
+      "codice": "B0668",
+      "id": "187e0843-77a1-4059-8e31-5b87e2598499",
+      "nome": "Sace Bt Spa",
+      "gruppo_label": "Sace Bt Spa"
+    },
+    {
+      "codice": "B0670",
+      "id": "e7de17f6-75a7-425e-ba8d-79f0ea399e10",
+      "nome": "Qbe Europe Sa/nv",
+      "gruppo_label": "Qbe Europe Sa/nv"
+    },
+    {
+      "codice": "B0671",
+      "id": "8675ee73-bc1a-4eee-aa37-6eb7e0ee326b",
+      "nome": "*ASSIB UNDERWRITING SRL - CONV. FIMMG ROVIGO",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0672",
+      "id": "b4faff66-3e10-43d8-9200-2b456766b365",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. PADOVA",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0675",
+      "id": "0aa8644f-7c2e-4a31-ab54-7c21b431c50c",
+      "nome": "*ASSIB UNDERWRITING SRL - CONV. FIMMG VENEZIA",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0676",
+      "id": "8fc85300-8060-49c6-a387-63af1e147be3",
+      "nome": "DORIA G. E BELLISARIO P. SNC",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0677",
+      "id": "81f27990-f86e-4701-8285-14cd7deaee03",
+      "nome": "*ASSIB UNDERWRITING SRL - CONV. FIMMG PORDENONE",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0679",
+      "id": "821bac64-42ec-482e-857d-ee658bfdeb65",
+      "nome": "UNDERWRITING AGENCY SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0681",
+      "id": "c2d47e17-8afc-42b0-b0b3-ffe24306d139",
+      "nome": "Itas Mutua",
+      "gruppo_label": "Itas Mutua"
+    },
+    {
+      "codice": "B0682",
+      "id": "54935871-c1f6-4995-a868-287e936daa17",
+      "nome": "*Italiana Assicurazioni",
+      "gruppo_label": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0683",
+      "id": "4bbd4ce1-69f8-4db0-9dcd-18804a41ccd3",
+      "nome": "GEA NETWORK SRL",
+      "gruppo_label": "DAS"
+    },
+    {
+      "codice": "B0686",
+      "id": "7154fcd0-6956-44a5-acd2-401bb42c4f50",
+      "nome": "*Zurich Insurance Company Ltd",
+      "gruppo_label": "Zurich Insurance Company Ltd"
+    },
+    {
+      "codice": "B0687",
+      "id": "5446208b-5f86-4e58-a2ed-f3a38d908d0d",
+      "nome": "ASSINORD & PARTNERS SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0689",
+      "id": "502bc7b4-cb9d-4f76-8952-5657ac317e86",
+      "nome": "Allianz Assicurazioni",
+      "gruppo_label": "ALLIANZ"
+    },
+    {
+      "codice": "B0690",
+      "id": "a0361ba5-8ec9-41ab-9574-4c53a5f20263",
+      "nome": "Revo Insurance S.p.a.",
+      "gruppo_label": "REVO"
+    },
+    {
+      "codice": "B0691",
+      "id": "f43e0929-2cd4-4ead-bfc8-379fa8eef888",
+      "nome": "CARASS INTERNATIONAL SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0692",
+      "id": "1222c9ea-f7c8-41b3-8ef7-d6ee056ffe7a",
+      "nome": "*UNIPOLSAI DIV. UNIPOL THIENE",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0693",
+      "id": "6a7c3052-60b7-4f0e-8d96-97081e4ad563",
+      "nome": "PARODI SCARSO CAROSINI COVA SRL",
+      "gruppo_label": "REALE MUTUA"
+    },
+    {
+      "codice": "B0696",
+      "id": "94a7e34c-4568-4611-9d7d-c8c4a5171132",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. CASSOLA",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0697",
+      "id": "9304b716-0e56-4ab2-9783-e58ae8d9c59f",
+      "nome": "LEADER ASSICURAZIONI SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0699",
+      "id": "2054fca1-4cae-427b-86fc-8b19845f38a0",
+      "nome": "Balcia Insurance Se",
+      "gruppo_label": "Balcia Insurance Se"
+    },
+    {
+      "codice": "B0700",
+      "id": "67810b19-80aa-430c-9fe3-d882cc024d29",
+      "nome": "Uca Assicurazioni S.p.a.",
+      "gruppo_label": "Uca Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0701",
+      "id": "c0cca5c8-e1bf-43e7-b376-d23c38b02662",
+      "nome": "CASALEGNO ASSICURAZIONI SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0702",
+      "id": "775b6195-b32a-4cb5-bb8d-478a00bc267c",
+      "nome": "C&C SOLUZIONI ASSICURATIVE SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0703",
+      "id": "b92f42cb-1d4c-430a-bd77-e8a51232a6bf",
+      "nome": "Amtrust Assicurazioni Spa",
+      "gruppo_label": "Amtrust Assicurazioni Spa"
+    },
+    {
+      "codice": "B0704",
+      "id": "c1cca67b-e15f-4a9e-b72a-58c5f32d4785",
+      "nome": "CAMBIASO RISSO MARINE SPA",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0705",
+      "id": "1ba52478-13ec-4b7b-beaa-81e53dbda4aa",
+      "nome": "Hdi Assicurazioni Spa",
+      "gruppo_label": "Hdi Assicurazioni Spa"
+    },
+    {
+      "codice": "B0706",
+      "id": "da6060d9-aace-4561-bce5-8f3cae5866a9",
+      "nome": "Italiana Assicurazioni",
+      "gruppo_label": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0707",
+      "id": "d853f9e6-c047-413a-b850-4cfe0f61e4ee",
+      "nome": "Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0708",
+      "id": "62e9cf95-08ac-491b-87c9-71a61f59ac1c",
+      "nome": "*GENERALI ITALIA SPA - AG. CENTO",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0709",
+      "id": "89c95bee-83e7-424a-946b-7cd318f3560e",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. TOLMEZZO",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0710",
+      "id": "fd0c25f7-58ef-47c1-815b-7bd608504964",
+      "nome": "M.P.A. S.R.L.",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0711",
+      "id": "6ae58dab-6d2e-4fe8-b0e6-5416eb5d6b2b",
+      "nome": "Lloyd's",
+      "gruppo_label": "Lloyd's"
+    },
+    {
+      "codice": "B0712",
+      "id": "cf65ebc6-a1ec-4f4c-9d00-4823f44b539f",
+      "nome": "CALLIERA GIANPIERO E CALLIERA MASSIMO SNC",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0713",
+      "id": "02fa0b58-5754-419c-9504-764e09f70617",
+      "nome": "D.a.s",
+      "gruppo_label": "DAS"
+    },
+    {
+      "codice": "B0714",
+      "id": "066a80ab-22d3-42f6-9e68-e3d9aa4811c0",
+      "nome": "Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0715",
+      "id": "ff3d516e-3440-4458-9e14-aad9e1f7d89c",
+      "nome": "KRM Underwriting srl",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0716",
+      "id": "474033e5-c8bd-417d-9afd-59c7cff5121b",
+      "nome": "*AMBIENTESCUOLA SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0717",
+      "id": "ef330c91-3c61-46e0-9e53-9b7af01e43bb",
+      "nome": "Itas Mutua",
+      "gruppo_label": "Itas Mutua"
+    },
+    {
+      "codice": "B0718",
+      "id": "02411af2-d994-4727-ad5c-171b35a7fb1b",
+      "nome": "GALGANO SPA",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0719",
+      "id": "d26d658d-ce22-4b22-a2eb-da3d6bcc95e4",
+      "nome": "*Generali Italia Spa",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0721",
+      "id": "00dcc675-ca59-43d7-ba2a-33395f646dff",
+      "nome": "*Aig",
+      "gruppo_label": "AIG"
+    },
+    {
+      "codice": "B0722",
+      "id": "c20318ee-0329-4925-9686-85df132231f1",
+      "nome": "Poste Vita Spa",
+      "gruppo_label": "Poste Vita Spa"
+    },
+    {
+      "codice": "B0723",
+      "id": "5f212c2a-1de4-4cf2-9fc9-302c4107a279",
+      "nome": "Groupama Assicurazioni Spa",
+      "gruppo_label": "Groupama Assicurazioni Spa"
+    },
+    {
+      "codice": "B0724",
+      "id": "94e058c2-8ae0-463f-81cb-ab9acd618d54",
+      "nome": "UNIPOLSAI DIV. UNIPOL MONSELICE",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0726",
+      "id": "247158cb-9527-464a-accb-50515b92a12f",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. MONTEBELLUNA",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0727",
+      "id": "ffdfa2e7-aff3-4177-9966-fd591b072737",
+      "nome": "Sara Ass.ni",
+      "gruppo_label": "Sara Ass.ni"
+    },
+    {
+      "codice": "B0728",
+      "id": "a42a69fe-4251-402d-8f3e-2e48034f6713",
+      "nome": "MEDIORISCHI SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0729",
+      "id": "af1d26d2-3944-47a6-8206-f33db9e9419e",
+      "nome": "Sace Bt Spa",
+      "gruppo_label": "Sace Bt Spa"
+    },
+    {
+      "codice": "B0731",
+      "id": "fa1c9fcf-0b38-433f-8ea6-d9573bb19486",
+      "nome": "*GENERALI ITALIA SPA - AG. REGGIO EMILIA",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0732",
+      "id": "ed1af7fa-78a8-4916-813a-a5a2476c49e7",
+      "nome": "BUCCHIONI'S STUDIO SAS",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0733",
+      "id": "c7e3c737-21f2-4a76-ab8b-07ac6db75557",
+      "nome": "GENERALI ITALIA SPA - AG. PAVULLO NEL FRIGNANO",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0734",
+      "id": "3cbf0e55-9314-4ed4-ae49-a9c276bb4cd6",
+      "nome": "Great Lakes Insurance Re",
+      "gruppo_label": "Great Lakes Insurance Re"
+    },
+    {
+      "codice": "B0735",
+      "id": "25496711-a10e-4cd1-9104-3c67f37b4ab2",
+      "nome": "AIMUW S.P.A.",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0736",
+      "id": "09eae359-adcd-4daa-8fe3-f0f333abbf06",
+      "nome": "*ASSIMOCO ASS.NI",
+      "gruppo_label": "ASSIMOCO"
+    },
+    {
+      "codice": "B0737",
+      "id": "f81153af-1a19-48af-9740-6a17225c97c8",
+      "nome": "*GENERALI ITALIA SPA - AG. TRIESTE SANT'ANTONIO",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0738",
+      "id": "a200f24e-601b-44b8-ae9f-995518469570",
+      "nome": "*ANTHEA WHOLESALE SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0739",
+      "id": "6208d28b-2c16-4226-bc69-2a9cf8263dbb",
+      "nome": "Reale Mutua Assicurazioni",
+      "gruppo_label": "REALE MUTUA"
+    },
+    {
+      "codice": "B0740",
+      "id": "c7d89b21-49df-488e-8fc1-aebd27a28dd7",
+      "nome": "ITAS VICENZA OVEST",
+      "gruppo_label": "Itas Mutua"
+    },
+    {
+      "codice": "B0741",
+      "id": "629e27ce-6d94-4fbd-801a-c06088bea44e",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. VICENZA",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0744",
+      "id": "9c2854a1-51d3-4464-b423-1c92764c7bed",
+      "nome": "Assicuratrice Milanese",
+      "gruppo_label": "ASSICURATRICE MILANESE"
+    },
+    {
+      "codice": "B0745",
+      "id": "bc440789-5d29-4e40-912d-49ace3aa94b0",
+      "nome": "Sara Ass.ni",
+      "gruppo_label": "Sara Ass.ni"
+    },
+    {
+      "codice": "B0746",
+      "id": "8ee15095-3d71-44ec-ba56-e2ef2999399c",
+      "nome": "FILIPPETTI ASSICURAZIONI & C. SAS",
+      "gruppo_label": "Vittoria Ass.ni"
+    },
+    {
+      "codice": "B0747",
+      "id": "1c10ec0f-5600-45e0-805f-c6c3bd4b0b47",
+      "nome": "*GENERALI ITALIA SPA - AG. BRENO",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0748",
+      "id": "53fc37d7-8563-426f-9a04-e0001b02660d",
+      "nome": "Lloyd's",
+      "gruppo_label": "Lloyd's"
+    },
+    {
+      "codice": "B0749",
+      "id": "1905d63c-5a20-4270-afa9-896191c1d371",
+      "nome": "ITAS TRENTO-CLES",
+      "gruppo_label": "Itas Mutua"
+    },
+    {
+      "codice": "B0750",
+      "id": "03ab9f2a-d399-4d72-befb-1b16dc14b29f",
+      "nome": "*Zurich Insurance Company Ltd",
+      "gruppo_label": "Zurich Insurance Company Ltd"
+    },
+    {
+      "codice": "B0751",
+      "id": "8bf3a0cf-bfd7-4d95-b923-22aaa598e711",
+      "nome": "Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0752",
+      "id": "1eadfa0c-bb6f-44d5-bf30-5518dfccb038",
+      "nome": "Liberty Mutual Insurance Europe S.e.",
+      "gruppo_label": "Liberty Mutual Insurance Europe S.e."
+    },
+    {
+      "codice": "B0753",
+      "id": "918dd151-88da-4cb8-8db6-ff23d0094f52",
+      "nome": "Reale Mutua Assicurazioni",
+      "gruppo_label": "REALE MUTUA"
+    },
+    {
+      "codice": "B0754",
+      "id": "de6dd45a-ae4d-4d51-b297-22ae71fd49a8",
+      "nome": "Lloyd's",
+      "gruppo_label": "Lloyd's"
+    },
+    {
+      "codice": "B0755",
+      "id": "4c25e450-7b31-46cf-adc5-9c712c1e2b5e",
+      "nome": "Groupama Assicurazioni Spa",
+      "gruppo_label": "Groupama Assicurazioni Spa"
+    },
+    {
+      "codice": "B0756",
+      "id": "b433ad15-d8f3-45bb-a007-baf94d8982e3",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. VERONA CASTELVECCHIO",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0759",
+      "id": "00df9b8b-3fae-4389-be2e-17810b929161",
+      "nome": "SIVIERO INSURANCE SNC",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0760",
+      "id": "efbdae93-b0dd-4273-8b19-bf7e2192f89e",
+      "nome": "*Generali Italia Spa",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0761",
+      "id": "eb9da6cb-3c7b-4922-8dc1-b342d1ffcd40",
+      "nome": "AESSE INTERMEDIAZIONI ASSICURATIVE SRL",
+      "gruppo_label": "Itas Mutua"
+    },
+    {
+      "codice": "B0762",
+      "id": "6d099d9a-3d7d-4d5b-8d13-2dcd9712f02e",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. ROVIGO",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0764",
+      "id": "757965b9-7575-448e-b77b-d41da7b9da74",
+      "nome": "Reale Mutua Assicurazioni",
+      "gruppo_label": "REALE MUTUA"
+    },
+    {
+      "codice": "B0767",
+      "id": "72e5cfd8-01d5-4c9e-a0a8-3dca086d3956",
+      "nome": "Reale Mutua Assicurazioni",
+      "gruppo_label": "REALE MUTUA"
+    },
+    {
+      "codice": "B0768",
+      "id": "d986ce26-30ec-4694-b307-f695c651cbf2",
+      "nome": "ARCIERI & ARCIERI SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0769",
+      "id": "b3fb2960-273e-48a4-84ab-9015ff1b6990",
+      "nome": "Lloyd's",
+      "gruppo_label": "Lloyd's"
+    },
+    {
+      "codice": "B0772",
+      "id": "b1e826af-fc3f-444f-b580-b95fcc25cbb6",
+      "nome": "Lloyd's",
+      "gruppo_label": "Lloyd's"
+    },
+    {
+      "codice": "B0773",
+      "id": "55ff977f-98b1-41e9-982e-1d2df070bee1",
+      "nome": "Lloyd's",
+      "gruppo_label": "Lloyd's"
+    },
+    {
+      "codice": "B0775",
+      "id": "98e8e482-c451-4583-8044-b285825c9d8e",
+      "nome": "ZANETTI ASSICURAZIONI SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0776",
+      "id": "d459747c-b3cf-46ab-b4f3-3ecca4bfe12c",
+      "nome": "Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0778",
+      "id": "94d5601a-c906-4cd5-b9db-06faec7cacda",
+      "nome": "*Argoglobal Assicurazioni Spa",
+      "gruppo_label": "Argoglobal Assicurazioni Spa"
+    },
+    {
+      "codice": "B0780",
+      "id": "5dccbd3b-97f6-43a6-9d9a-aac040684564",
+      "nome": "SPECIAL RISK UNDERWRITING SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0781",
+      "id": "152d3d73-7470-4c15-9be5-8b9f057c4e69",
+      "nome": "Reale Mutua Assicurazioni",
+      "gruppo_label": "REALE MUTUA"
+    },
+    {
+      "codice": "B0782",
+      "id": "44960975-9e26-4d9c-817b-cb54e6bcb683",
+      "nome": "SABIAGROUP SRL",
+      "gruppo_label": "BENE"
+    },
+    {
+      "codice": "B0783",
+      "id": "d817b08a-c322-4861-96f9-3cbdc15031b5",
+      "nome": "AIMUW S.P.A.",
+      "gruppo_label": "Lloyd's"
+    },
+    {
+      "codice": "B0785",
+      "id": "c2507690-da41-4ac5-9508-30b75940049d",
+      "nome": "Italiana Assicurazioni",
+      "gruppo_label": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0786",
+      "id": "6be7d142-4364-4611-b227-9bdd2dec21d4",
+      "nome": "Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0787",
+      "id": "fc9bc177-4618-45c7-8dfb-5557e3897252",
+      "nome": "*Generali Italia Spa",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0788",
+      "id": "9e6c6211-df27-4f10-a85f-0f6b57c168b0",
+      "nome": "COFACE AG. DI UDINE",
+      "gruppo_label": "COFACE"
+    },
+    {
+      "codice": "B0790",
+      "id": "129cf31f-bc8e-4607-a9d9-bda1a295b09c",
+      "nome": "Generali Italia S.p.a.",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0791",
+      "id": "5393ceb6-288b-429c-83ee-a2095e9b90bf",
+      "nome": "Vittoria Ass.ni",
+      "gruppo_label": "Vittoria Ass.ni"
+    },
+    {
+      "codice": "B0792",
+      "id": "7a1abac6-e40a-410f-855c-59edc670e32c",
+      "nome": "*Generali Italia S.p.a.",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0793",
+      "id": "d6695242-073e-49c2-8cd4-5e4f1ead78fa",
+      "nome": "Sara Ass.ni",
+      "gruppo_label": "Sara Ass.ni"
+    },
+    {
+      "codice": "B0794",
+      "id": "1b94dbd6-f650-4748-b0c4-2bc81bfe041f",
+      "nome": "UNIPOLSAI AG. MILANO",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0795",
+      "id": "aded7c63-c82c-467f-9697-e14730a8302d",
+      "nome": "Lloyd's",
+      "gruppo_label": "Lloyd's"
+    },
+    {
+      "codice": "B0796",
+      "id": "958f08fe-23df-4e61-b908-fc99f46a4ec2",
+      "nome": "MILAZZO & MILAZZO ASS.NI",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0797",
+      "id": "b8224857-0642-4994-badf-cce110c12915",
+      "nome": "TEINER SAS DI GIULIA TEINER",
+      "gruppo_label": "ALLIANZ"
+    },
+    {
+      "codice": "B0798",
+      "id": "002b5e15-0206-4bbd-ab61-610462383fa6",
+      "nome": "PORTFOLIO SNC DI SARCINELLI ENRICO & SPANGARO FABR",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0799",
+      "id": "d1bd36ef-4fd3-4d24-b77a-3213b8860fec",
+      "nome": "Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0800",
+      "id": "8e1f00eb-1fe4-4159-a60c-fc4dc0e8dcc7",
+      "nome": "SARA ASSICURAZIONI SASSUOLO",
+      "gruppo_label": "Sara Ass.ni"
+    },
+    {
+      "codice": "B0801",
+      "id": "73cc4680-1c25-4b5f-8b6b-2139ce4540cf",
+      "nome": "Hdi Global Se",
+      "gruppo_label": "Hdi Global Se"
+    },
+    {
+      "codice": "B0802",
+      "id": "14cb8dde-d8f8-4562-a35c-2eabad4818da",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. VENEZIA",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0803",
+      "id": "2e6833bf-5044-4804-bad6-cdced5da835e",
+      "nome": "Vittoria Ass.ni",
+      "gruppo_label": "Vittoria Ass.ni"
+    },
+    {
+      "codice": "B0805",
+      "id": "1feb763e-09d5-41f1-b4cb-ee83f201cd3a",
+      "nome": "Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0806",
+      "id": "e0613e5d-7523-4e0a-b828-e16f4d9e2a24",
+      "nome": "MFB UNDERWRITING AGENCY SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0808",
+      "id": "c3499d61-34d4-4f1f-a5bd-188ca1721ae1",
+      "nome": "CONSULENZE ASSICURATIVE SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0809",
+      "id": "8ccde45d-282c-46cf-8613-9fc33575351b",
+      "nome": "AEC UNDERWRITING",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0810",
+      "id": "080a10ae-b65a-4b40-a5d7-e92cd6061178",
+      "nome": "Italiana Assicurazioni",
+      "gruppo_label": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0811",
+      "id": "4bc55686-65da-463a-9b62-210e28d57e07",
+      "nome": "*Generali Italia S.p.a.",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0812",
+      "id": "ca387fdd-f06c-47de-8685-17db77230b29",
+      "nome": "Uca Assicurazioni S.p.a.",
+      "gruppo_label": "Uca Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0813",
+      "id": "9f51d9dc-d403-4044-8921-a803533a65fe",
+      "nome": "CASALEGNO ASSICURAZIONI SRL",
+      "gruppo_label": "Allianz Viva Spa"
+    },
+    {
+      "codice": "B0814",
+      "id": "284110a0-8387-4aed-b910-091d115b2e8f",
+      "nome": "LA F.& D. S.R.L.",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0817",
+      "id": "e96eee7d-1e21-4002-9b8f-5bbe9bd211b9",
+      "nome": "AIMUW S.P.A.",
+      "gruppo_label": "Berkshire Hathaway International Insurance Limite"
+    },
+    {
+      "codice": "B0818",
+      "id": "d449b903-1ccc-4bbe-b1a2-a289bc5c6794",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. ALESSANDRIA",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0819",
+      "id": "6560809c-2cbd-4e97-86df-bce5d8f9409e",
+      "nome": "REALE MUTUA MORBEGNO",
+      "gruppo_label": "REALE MUTUA"
+    },
+    {
+      "codice": "B0820",
+      "id": "be31cbca-803e-4f9f-87aa-e8cdc8794663",
+      "nome": "REALE MUTUA LEGNANO",
+      "gruppo_label": "REALE MUTUA"
+    },
+    {
+      "codice": "B0821",
+      "id": "6df211c8-ced3-4e9a-a733-f28b4148b220",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. OVADA",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0822",
+      "id": "356572b0-bc27-49b1-83f1-efd11b179394",
+      "nome": "SARA ASSICURAZIONI PISTOIA",
+      "gruppo_label": "Sara Ass.ni"
+    },
+    {
+      "codice": "B0823",
+      "id": "a77d8565-8a52-42c2-a459-5e0475cb4c47",
+      "nome": "REALE MUTUA VERONA EST",
+      "gruppo_label": "REALE MUTUA"
+    },
+    {
+      "codice": "B0824",
+      "id": "4e0f1fd8-9592-40c1-877f-733c55821049",
+      "nome": "Qbe Europe Sa/nv",
+      "gruppo_label": "Qbe Europe Sa/nv"
+    },
+    {
+      "codice": "B0825",
+      "id": "05fd77c1-88ba-432f-a852-16a6483ea6bc",
+      "nome": "*Generali Italia S.p.a.",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0826",
+      "id": "024c98cc-29db-49cf-99e2-30bf101df169",
+      "nome": "Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0827",
+      "id": "adcf7452-195e-464b-9838-a11c7441f495",
+      "nome": "Reale Mutua Assicurazioni",
+      "gruppo_label": "REALE MUTUA"
+    },
+    {
+      "codice": "B0828",
+      "id": "3081dcf8-8fff-4645-a3e0-f1a7fb9c67e2",
+      "nome": "*ITAS TRENTO ALBERE",
+      "gruppo_label": "Itas Mutua"
+    },
+    {
+      "codice": "B0829",
+      "id": "a7c35589-4375-4a2c-ace4-d11a9c06c35e",
+      "nome": "VITTORIA ASS.NI ROVATO",
+      "gruppo_label": "Vittoria Ass.ni"
+    },
+    {
+      "codice": "B0830",
+      "id": "e049dd94-2556-4e28-b9a4-6b5d2cd42fdf",
+      "nome": "Allianz Assicurazioni",
+      "gruppo_label": "ALLIANZ"
+    },
+    {
+      "codice": "B0831",
+      "id": "02b88840-4057-456e-b11a-9a2be8039d7f",
+      "nome": "Hdi Assicurazioni Spa",
+      "gruppo_label": "Hdi Assicurazioni Spa"
+    },
+    {
+      "codice": "B0833",
+      "id": "fd39a723-3d4b-4400-a537-14d341ae735b",
+      "nome": "R.AS. SRL RISCHI ASSICURATIVI",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0835",
+      "id": "cd8f8a8f-fb3c-4c50-9edc-079371e6df0a",
+      "nome": "Hdi Assicurazioni Spa",
+      "gruppo_label": "Hdi Assicurazioni Spa"
+    },
+    {
+      "codice": "B0836",
+      "id": "908bacb3-f1d1-4cc3-b065-ea07d32a23fa",
+      "nome": "Itas Mutua",
+      "gruppo_label": "Itas Mutua"
+    },
+    {
+      "codice": "B0837",
+      "id": "7e7f73ff-a8c6-474b-b5f0-e1425cdd824e",
+      "nome": "S2c Spa",
+      "gruppo_label": "S2C"
+    },
+    {
+      "codice": "B0840",
+      "id": "f2f653d6-484f-48bd-aa90-daf5cb4b6764",
+      "nome": "Societa' Reale Mutua Assicurazioni",
+      "gruppo_label": "Societa' Reale Mutua di Assicurazioni"
+    },
+    {
+      "codice": "B0841",
+      "id": "e423606b-bdd1-41c4-8e0a-c7654de1bca7",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. MODENA",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0842",
+      "id": "17b49a19-7a54-4c66-a372-5875c2965b4f",
+      "nome": "*GENERALI ITALIA SPA AG. MESTRINO",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0843",
+      "id": "aabbb07b-c86e-438e-b0ac-6aa0303391d7",
+      "nome": "Vittoria Ass.ni",
+      "gruppo_label": "Vittoria Ass.ni"
+    },
+    {
+      "codice": "B0844",
+      "id": "d6952032-38be-4b8c-8418-8f6b24a8ffdb",
+      "nome": "UNIPOLSAI AG. BOLOGNA 2145",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0845",
+      "id": "89ef183c-cd90-4505-a1af-ef6c19e91719",
+      "nome": "ITAS MUTUA TRENTO ALBERE",
+      "gruppo_label": "Itas Mutua"
+    },
+    {
+      "codice": "B0846",
+      "id": "9e5dd96b-d1f7-4cea-b157-a7ed3b6e65a3",
+      "nome": "Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0847",
+      "id": "d3b77ea1-e3c7-4702-b18c-49ff7081d13b",
+      "nome": "UNIPOLSAI Ag. SAN BONIFACIO",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0850",
+      "id": "62110a7a-25f8-4fe9-9dfb-e0b0f428795f",
+      "nome": "Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0851",
+      "id": "8c3a6f4b-3d67-4b67-9e3a-3e8c0817f281",
+      "nome": "Generali Italia S.p.a.",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0852",
+      "id": "2a57f04b-ba80-40e9-b678-2a5319f3e06d",
+      "nome": "Itas Mutua",
+      "gruppo_label": "Itas Mutua"
+    },
+    {
+      "codice": "B0854",
+      "id": "a0b0cbbe-e00b-43d6-b116-9db22ea2128e",
+      "nome": "AIMUW S.P.A.",
+      "gruppo_label": "REVO"
+    },
+    {
+      "codice": "B0855",
+      "id": "6af383b8-fdc2-46aa-be84-192b2570abd0",
+      "nome": "Axa Assicurazioni",
+      "gruppo_label": "AXA"
+    },
+    {
+      "codice": "B0856",
+      "id": "f2e7b599-3ac1-4e07-9c49-2712a874f047",
+      "nome": "SIMPLYMORE SRL SOCIETA’ BENEFIT",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0857",
+      "id": "c390c1ca-4466-42dd-b7fa-39ff24fedbac",
+      "nome": "Agenzia BEST SRL",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0859",
+      "id": "30af6907-6d1f-4c45-9f85-e95f1c4db6df",
+      "nome": "Lloyd's",
+      "gruppo_label": "Lloyd's"
+    },
+    {
+      "codice": "B0860",
+      "id": "1e75f393-d43c-4c1e-ac0f-ac7b52cba904",
+      "nome": "Tutela Legale Spa",
+      "gruppo_label": "Tutela Legale Spa"
+    },
+    {
+      "codice": "B0862",
+      "id": "c239a235-daea-4b4c-8f28-6eabab60849b",
+      "nome": "Hdi Assicurazioni Spa",
+      "gruppo_label": "Hdi Assicurazioni Spa"
+    },
+    {
+      "codice": "B0866",
+      "id": "3e975a48-1c91-48a8-ad1b-f57f5b681879",
+      "nome": "SIMPLYMORE SRL SOCIETA’ BENEFIT",
+      "gruppo_label": "Lloyd's"
+    },
+    {
+      "codice": "B0867",
+      "id": "34695fb9-f66a-470c-9738-3bf70fe46d60",
+      "nome": "Coface Assicurazioni",
+      "gruppo_label": "COFACE"
+    },
+    {
+      "codice": "B0868",
+      "id": "98ad1e2d-bf17-401a-bd03-0e0768bcdb3a",
+      "nome": "Allianz Assicurazioni",
+      "gruppo_label": "ALLIANZ"
+    },
+    {
+      "codice": "B0869",
+      "id": "da57fa91-ae4e-41ec-9a92-d2e669fed133",
+      "nome": "Itas Mutua",
+      "gruppo_label": "Itas Mutua"
+    },
+    {
+      "codice": "B0871",
+      "id": "dfc22e1f-9227-4a18-9a89-22fc7fef182d",
+      "nome": "ANTENORE SRL",
+      "gruppo_label": "Generali Div. Cattolica"
+    },
+    {
+      "codice": "B0872",
+      "id": "ac14a08b-3256-49dd-a50d-7752a0487cd1",
+      "nome": "Generali Italia S.p.a.",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0873",
+      "id": "eba538c9-aee4-4181-aad8-9813c1a921cd",
+      "nome": "Lloyd's",
+      "gruppo_label": "Lloyd's"
+    },
+    {
+      "codice": "B0874",
+      "id": "fc2497e0-8f8b-45f0-873b-b1d74c25f42f",
+      "nome": "ASPEVI MILAMO SRL",
+      "gruppo_label": "Vittoria Ass.ni"
+    },
+    {
+      "codice": "B0875",
+      "id": "95f5d3e2-f2b2-462c-87a9-6f1c96dec3fc",
+      "nome": "UNIPOL SPA  AGENZIA DI FICAROLO",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0876",
+      "id": "e2eb62af-0f10-4e18-8e7b-c198a270d058",
+      "nome": "SARA ASSICURAZIONI",
+      "gruppo_label": "Sara Ass.ni"
+    },
+    {
+      "codice": "B0877",
+      "id": "941ec834-390c-4c9b-8490-f6ccd75c3405",
+      "nome": "Allianz Assicurazioni",
+      "gruppo_label": "ALLIANZ"
+    },
+    {
+      "codice": "B0878",
+      "id": "fbe178d2-fdd2-4501-8b1b-60fc4b5fd21d",
+      "nome": "UNIPOL ASS.NI AG. PADOVA",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0879",
+      "id": "ea429ac5-5718-4bdd-9037-72ca16902187",
+      "nome": "DOGE INTERMEDIA SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0880",
+      "id": "2551a854-aff3-47af-99e5-d3649146517c",
+      "nome": "PLURIASS SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0881",
+      "id": "6754597e-9d9a-4d68-b621-9a2eeea2a01f",
+      "nome": "*Generali Italia S.p.a.",
+      "gruppo_label": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0883",
+      "id": "fee0f9d4-76b2-4dc5-9cdb-3783caaf5b1f",
+      "nome": "ETISICURA SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0885",
+      "id": "26eec345-0e7e-4f5b-b0ea-41153a149c55",
+      "nome": "UNIPOL ASS.NI S.P.A. AG. PADOVA",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0886",
+      "id": "b12a8061-b182-4ee2-82d5-02e5fe5f2dd6",
+      "nome": "UNIPOL VERONA AG. 64213",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0887",
+      "id": "8752f806-5264-4d26-88ce-fd935aa69393",
+      "nome": "Italiana Assicurazioni",
+      "gruppo_label": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0888",
+      "id": "d10bfc70-d35f-4623-8c78-db3a1e23a51f",
+      "nome": "Lloyd's",
+      "gruppo_label": "Lloyd's"
+    },
+    {
+      "codice": "B0889",
+      "id": "5f18a53a-6967-4757-ac4f-0a8532542b8b",
+      "nome": "Sara Ass.ni",
+      "gruppo_label": "Sara Ass.ni"
+    },
+    {
+      "codice": "B0890",
+      "id": "2253f1f9-da60-4dc0-81b6-6427c4b70036",
+      "nome": "*Unipol Assicurazioni S.p.a.",
+      "gruppo_label": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0891",
+      "id": "deb1f21b-df3b-4d8b-9881-b9a68c5b735d",
+      "nome": "SPECIAL RISK UNDERWRITING SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0892",
+      "id": "c39ad34c-b221-4364-82e4-8683253a068d",
+      "nome": "CASALEGNO ASSICURAZIONI SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0893",
+      "id": "bdab3b71-e869-44c4-b03c-37ef5044720e",
+      "nome": "SIMPLYMORE SRL SOCIETA’ BENEFIT",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0894",
+      "id": "14f39fa1-8335-4711-96ef-46d5e74e5c75",
+      "nome": "ING. G. STOPPATO SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0895",
+      "id": "25a99e1f-c112-4632-896a-62c4470a062b",
+      "nome": "ING. G. STOPPATO SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0896",
+      "id": "6eb1c7c2-29cd-494a-9f23-4f07ba2c9a41",
+      "nome": "ALL RISKS Insurance Brokers S.r.L. - LLOYD'S",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0898",
+      "id": "1fd609b2-b638-4ba5-9888-7a37d6d8ee64",
+      "nome": "Allianz CALDOGNO",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0899",
+      "id": "8ce34eb1-3cd1-44c6-8bbd-e0fe56e81865",
+      "nome": "International Professional Risks Europe SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0900",
+      "id": "23b9d7e1-5b88-4fd1-a9d1-2953b6bda41d",
+      "nome": "SIMPLYMORE SRL SOCIETA’ BENEFIT",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0901",
+      "id": "1a0a6b72-cf9d-41bc-a56d-b06978a2c13f",
+      "nome": "CASALEGNO ASSICURAZIONI SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0902",
+      "id": "cf2bbd15-50d9-4acc-a639-681a12c48297",
+      "nome": "MEDINSURE SRL",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0903",
+      "id": "a58711e4-5c73-4d4a-8dbf-ca583294e10a",
+      "nome": "REVO INSURANCE SPA",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0904",
+      "id": "5b75ad75-036b-4a7b-adb9-68d42d5e9515",
+      "nome": "GENERALI ITALIA S.p.A. AG. GEN. DI ACQUI TERME",
+      "gruppo_label": "Da definire"
+    },
+    {
+      "codice": "B0905",
+      "id": "d8445ba6-f4f7-4713-9dc1-74a8e85d9c2a",
+      "nome": "DUAL ITALIA S.P.A.",
+      "gruppo_label": "Da definire"
+    }
+  ],
+  "rapporti_created": [
+    {
+      "codice": "B0001",
+      "rapporto_id": "27314342-e2b0-4e1f-b84f-88d1ad484cd7",
+      "gruppo": "ARAG"
+    },
+    {
+      "codice": "B0002",
+      "rapporto_id": "b66dba81-d6c0-4b96-9a9f-38c0dabc2c42",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0004",
+      "rapporto_id": "2b95fa90-8003-4c60-8cc3-1884a03e949b",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0007",
+      "rapporto_id": "c4d394a1-c3b6-4d5f-ae18-778e30353fb5",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0008",
+      "rapporto_id": "df14b5f9-f4f0-4720-aaac-eeca5b6efff1",
+      "gruppo": "Societa' Reale Mutua di Assicurazioni"
+    },
+    {
+      "codice": "B0009",
+      "rapporto_id": "57d91a1c-4887-41e4-874c-df5b53ce6709",
+      "gruppo": "Itas Mutua"
+    },
+    {
+      "codice": "B0010",
+      "rapporto_id": "2f267b33-3014-404e-b17f-d02815e773c4",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0011",
+      "rapporto_id": "9146bf11-a4c6-4e1c-9dc7-209bab5b9dcc",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0012",
+      "rapporto_id": "5fa641f0-7886-45fc-9c99-27948b578cb2",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0013",
+      "rapporto_id": "22090d21-7de4-49d3-bef1-727fab8d298f",
+      "gruppo": "Lloyd Italico"
+    },
+    {
+      "codice": "B0015",
+      "rapporto_id": "ac3ecdd4-58a1-40a9-9b94-dd8c826abe4c",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0017",
+      "rapporto_id": "c88b6a53-3566-42d7-9f74-df256a869872",
+      "gruppo": "ALLIANZ"
+    },
+    {
+      "codice": "B0019",
+      "rapporto_id": "616b60d4-fdd0-411c-a5d0-d9d59a673b37",
+      "gruppo": "Societa' Reale Mutua di Assicurazioni"
+    },
+    {
+      "codice": "B0020",
+      "rapporto_id": "8ea65043-bba3-494b-ae25-af8cef7ba611",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0021",
+      "rapporto_id": "ba22c4e0-20d6-4f78-b9a1-f6bbd7c4f843",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0022",
+      "rapporto_id": "cf4eb84b-1c7d-413e-9bd1-635e3171115a",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0023",
+      "rapporto_id": "68e99b86-c277-440e-bfaa-8de29291922c",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0026",
+      "rapporto_id": "a63f62de-ef82-4bea-a13d-d7990b14f24a",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0028",
+      "rapporto_id": "dbbec039-c77f-4119-a5ba-8a06efbef49e",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0029",
+      "rapporto_id": "1fe758d3-2284-42ec-bc94-58d44fde9dc6",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0031",
+      "rapporto_id": "30906b56-4409-4264-b42a-95229c23c377",
+      "gruppo": "Lloyd Italico"
+    },
+    {
+      "codice": "B0032",
+      "rapporto_id": "7a8350a7-d833-4176-927b-ab879139e2e9",
+      "gruppo": "Itas Mutua"
+    },
+    {
+      "codice": "B0043",
+      "rapporto_id": "807ce907-c21e-4677-8c32-728ba059e781",
+      "gruppo": "ALLIANZ"
+    },
+    {
+      "codice": "B0044",
+      "rapporto_id": "ba1463ad-419b-4abb-9f7e-841d42893f6f",
+      "gruppo": "Societa' Reale Mutua di Assicurazioni"
+    },
+    {
+      "codice": "B0052",
+      "rapporto_id": "9966d157-1b60-432c-9cd7-43266400194e",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0054",
+      "rapporto_id": "30707874-da22-4233-b257-6c270d593fa4",
+      "gruppo": "ALLIANZ"
+    },
+    {
+      "codice": "B0057",
+      "rapporto_id": "c85ebf90-7372-4b05-904b-63fb6d9738db",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0060",
+      "rapporto_id": "54cccf93-6906-4139-a416-3f472d70d086",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0066",
+      "rapporto_id": "a79776ca-8ccb-4d23-b6d3-5a2913deb8ea",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0068",
+      "rapporto_id": "12f06025-073d-4428-b3cf-785ddde305e7",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0070",
+      "rapporto_id": "11d75cd4-d3bf-4f96-8d36-2b318714cc83",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0081",
+      "rapporto_id": "80e04740-099c-4930-8357-117eb9378f02",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0090",
+      "rapporto_id": "3df239f3-7f37-4937-b8ec-283321f3e8a1",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0095",
+      "rapporto_id": "3b6c76b3-7a94-41f4-a5d8-6eb806d52e4b",
+      "gruppo": "Societa' Reale Mutua di Assicurazioni"
+    },
+    {
+      "codice": "B0102",
+      "rapporto_id": "12aefdaf-6bac-41a0-84f8-073aff1802b4",
+      "gruppo": "Giuliana Ass.ni"
+    },
+    {
+      "codice": "B0103",
+      "rapporto_id": "200430af-4160-4c53-8bfe-0c0c099cd161",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0107",
+      "rapporto_id": "e0ac7bd5-6c46-4c7a-b23e-c811b18c5299",
+      "gruppo": "Liguria Assicurazioni"
+    },
+    {
+      "codice": "B0113",
+      "rapporto_id": "8b549c86-90b7-4dd3-b1e7-ebaf70b7c2b9",
+      "gruppo": "Vittoria Ass.ni"
+    },
+    {
+      "codice": "B0116",
+      "rapporto_id": "7a22dba9-dacc-4b5b-bf98-76b3ad280d31",
+      "gruppo": "Lloyd Adriatico"
+    },
+    {
+      "codice": "B0128",
+      "rapporto_id": "76722f57-b81b-43e1-a4bd-91fc50f996df",
+      "gruppo": "Societa' Reale Mutua di Assicurazioni"
+    },
+    {
+      "codice": "B0130",
+      "rapporto_id": "9292ed5c-8bde-42cf-8806-b78e18f27c1b",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0133",
+      "rapporto_id": "87851d74-39ba-4fd6-b29e-b828f686725a",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0140",
+      "rapporto_id": "9e69b61f-5761-4f2a-a76c-003520dbdc74",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0156",
+      "rapporto_id": "b3557bf0-1570-4a0d-8424-05029fe8d1e9",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0157",
+      "rapporto_id": "a88df7db-9598-46a4-a216-98e55e47e497",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0158",
+      "rapporto_id": "606dbe55-2bbf-4e5c-aaad-c7baaa2275a5",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0165",
+      "rapporto_id": "bd5d7ea1-749d-4d26-b6c2-09608082dff8",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0167",
+      "rapporto_id": "7eeff499-a61a-4243-a221-dc4469849e91",
+      "gruppo": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0169",
+      "rapporto_id": "bc779dae-3eb7-4496-ab45-a211df5ec951",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0170",
+      "rapporto_id": "c2c7dc06-675c-4e80-8f71-a63ee75dd99b",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0171",
+      "rapporto_id": "4c63262a-6c1b-46c4-b036-6a50ce5304fe",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0173",
+      "rapporto_id": "a566bed0-7c98-4a45-aae0-2b146165bda2",
+      "gruppo": "Societa' Cattolica Di Assicurazione"
+    },
+    {
+      "codice": "B0180",
+      "rapporto_id": "fa764918-2c3c-4977-85f7-ef0c7c81ba5f",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0182",
+      "rapporto_id": "a9c27797-7bdb-4485-be9d-04d809b76867",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0183",
+      "rapporto_id": "6c54bf06-bfba-4f9e-a6e9-bdedf91a6b67",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0185",
+      "rapporto_id": "cfb5ec26-ae08-44cc-9977-7b0f3f9da8e5",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0191",
+      "rapporto_id": "bbedfd0c-1b38-4009-be8e-9570efa95316",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0198",
+      "rapporto_id": "f27fa3ba-49bd-4778-96b3-5308295472f3",
+      "gruppo": "ALLIANZ"
+    },
+    {
+      "codice": "B0200",
+      "rapporto_id": "38067ddd-0947-42b1-a794-72dc52f6a565",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0208",
+      "rapporto_id": "a7bfb280-fc43-41c2-a4b3-0117d856b63e",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0211",
+      "rapporto_id": "be442165-2866-4b5d-8dc9-4b40132890a5",
+      "gruppo": "REALE MUTUA"
+    },
+    {
+      "codice": "B0217",
+      "rapporto_id": "58f19090-0de5-4c38-82ee-5cdbc1f57166",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0232",
+      "rapporto_id": "fedc7646-dc8c-477a-8453-9fce3843fe71",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0248",
+      "rapporto_id": "f9c71715-7468-4903-a64d-3e2cb80241c2",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0250",
+      "rapporto_id": "46516321-c5e6-4f7c-9111-c57259f887d2",
+      "gruppo": "Societa' Reale Mutua di Assicurazioni"
+    },
+    {
+      "codice": "B0260",
+      "rapporto_id": "1a00e828-b9b4-4488-b2a3-5f5acae8ce92",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0272",
+      "rapporto_id": "e07f7b36-b649-4993-93c9-910ac1068351",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0274",
+      "rapporto_id": "33a8c9d6-626b-4438-a165-ba2ed1adaecd",
+      "gruppo": "Societa' Reale Mutua di Assicurazioni"
+    },
+    {
+      "codice": "B0282",
+      "rapporto_id": "5b30feb3-ca99-45ae-8bb2-93cc12b82f1e",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0283",
+      "rapporto_id": "62fc5de7-9c96-4b21-a782-3b0d80b52d03",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0286",
+      "rapporto_id": "302813b6-360f-480b-820c-b6ec2530b2a1",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0288",
+      "rapporto_id": "c311226c-3640-4a86-9d4d-d5ca3ea1bafd",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0295",
+      "rapporto_id": "14cb7341-63c1-4039-b771-88c1306e931e",
+      "gruppo": "ALLIANZ"
+    },
+    {
+      "codice": "B0303",
+      "rapporto_id": "1e5f0006-ea39-4557-85c4-7cfa3aab3f73",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0306",
+      "rapporto_id": "17c3d2e6-9f95-4d6d-ac87-fb7d5a43828a",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0307",
+      "rapporto_id": "0f654dbe-6248-4494-abc6-bfec3333f2c6",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0308",
+      "rapporto_id": "885a953a-6351-4feb-9160-961af9f501f4",
+      "gruppo": "HELVETIA"
+    },
+    {
+      "codice": "B0329",
+      "rapporto_id": "708f027a-d74d-4662-a1ba-b2ba9ff99f7c",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0335",
+      "rapporto_id": "e35e0500-43d0-4b93-9ab6-478c3042a25f",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0337",
+      "rapporto_id": "ef8e719a-d29f-4116-b0e9-e79ee461e3f1",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0345",
+      "rapporto_id": "aaa0110b-3925-4fd3-a330-cc6654972915",
+      "gruppo": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0346",
+      "rapporto_id": "d86e0110-b44b-44c4-b0d2-88cff9c55469",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0349",
+      "rapporto_id": "c9a3375a-dac2-4aa5-b32c-8374d99e4e12",
+      "gruppo": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0353",
+      "rapporto_id": "4e674999-96df-4980-8397-22b80005a19c",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0354",
+      "rapporto_id": "7ac01f00-744b-4ea3-9654-65621dd83daf",
+      "gruppo": "CHUBB"
+    },
+    {
+      "codice": "B0379",
+      "rapporto_id": "74288850-d9b8-492a-8abd-16024b0f1375",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0381",
+      "rapporto_id": "843219b8-27c9-4a5e-a5ba-964a000c60af",
+      "gruppo": "Viscontea"
+    },
+    {
+      "codice": "B0383",
+      "rapporto_id": "5a912289-8524-4d24-9db1-2f50310dd0cc",
+      "gruppo": "EUROP ASSISTANCE ITALIA"
+    },
+    {
+      "codice": "B0393",
+      "rapporto_id": "7d99627e-bebe-44bd-a8c3-6f1e57162538",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0399",
+      "rapporto_id": "6090925e-8173-4616-8690-d54baa92f9af",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0410",
+      "rapporto_id": "45d29cd5-ed11-43d2-811f-43d0634598ec",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0413",
+      "rapporto_id": "a8b74830-32ab-445d-a724-1aca7dd911a9",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0414",
+      "rapporto_id": "cfe22ebb-3335-4dab-8cd0-0534b11a7a06",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0416",
+      "rapporto_id": "ccdeb7c9-0b3a-4d73-b5c7-cd73b1fed8a3",
+      "gruppo": "AXA"
+    },
+    {
+      "codice": "B0432",
+      "rapporto_id": "f76061da-a7d6-4c93-aad5-4163c3264617",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0436",
+      "rapporto_id": "68e546c4-429e-4bcd-8688-fc8c4362f4cd",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0441",
+      "rapporto_id": "495a90b8-c3d9-4b7b-a4c4-5b1c4fac943b",
+      "gruppo": "HELVETIA"
+    },
+    {
+      "codice": "B0442",
+      "rapporto_id": "bfbfaeb2-8365-4c9a-9998-6d234467306d",
+      "gruppo": "British Marine"
+    },
+    {
+      "codice": "B0446",
+      "rapporto_id": "a9dd192e-2b12-4eec-9dde-ad085fa901e1",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0450",
+      "rapporto_id": "1ce38be6-6f7f-42dc-90c0-0be1eb32c646",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0451",
+      "rapporto_id": "a462fd96-8d53-49ca-b6d1-b282103ff8a8",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0452",
+      "rapporto_id": "6364ad29-d28c-41c9-aed2-c647e1f68cd6",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0455",
+      "rapporto_id": "8d83e5ce-5c58-41f1-b296-f705334bfcdd",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0457",
+      "rapporto_id": "699f5b0d-083b-47d7-9d8c-c73a364e4375",
+      "gruppo": "ROLAND"
+    },
+    {
+      "codice": "B0458",
+      "rapporto_id": "6d714ed4-3654-4a0b-84c9-c6ba0f978810",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0467",
+      "rapporto_id": "ba1438ed-453b-4f49-be01-29fa4ec333eb",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0473",
+      "rapporto_id": "42281f24-0c1d-47a5-9a0d-d0f32136f7f4",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0474",
+      "rapporto_id": "7116c449-9605-4df4-a49b-efa015e6ce54",
+      "gruppo": "Zurich Insurance Company Ltd"
+    },
+    {
+      "codice": "B0476",
+      "rapporto_id": "12eea205-018a-4328-bf49-2cbde9fd5f14",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0477",
+      "rapporto_id": "4f2a3e1a-5257-4613-a7b6-2ee20916f72e",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0480",
+      "rapporto_id": "e217e4ef-3d87-4ed1-9140-4de61959f525",
+      "gruppo": "AXA"
+    },
+    {
+      "codice": "B0482",
+      "rapporto_id": "21467e4d-1200-4f9b-bdde-9d232fffa762",
+      "gruppo": "Zurich Insurance Company Ltd"
+    },
+    {
+      "codice": "B0483",
+      "rapporto_id": "b3ce7dfb-4861-4cef-8b0a-539182ac0de0",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0490",
+      "rapporto_id": "36bac0a8-9dc9-4d99-81d8-bebd1778918b",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0491",
+      "rapporto_id": "5378d5c6-66d9-4f88-afe6-4110ae2d3947",
+      "gruppo": "Milano Divisione Nuova Maa Assicurazioni"
+    },
+    {
+      "codice": "B0494",
+      "rapporto_id": "07177648-2c8f-48cd-afe5-944bf111f663",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0495",
+      "rapporto_id": "cb21a99b-5d10-4185-964c-4448fa2597d6",
+      "gruppo": "Liguria Assicurazioni"
+    },
+    {
+      "codice": "B0496",
+      "rapporto_id": "35bc6cbc-a19f-4379-a666-04749502c37b",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0498",
+      "rapporto_id": "2d39dc5e-f6bd-47dd-8542-61990da33aef",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0501",
+      "rapporto_id": "87aac53d-4050-404e-a6bd-178a34aac4d0",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0502",
+      "rapporto_id": "85b0debb-48d3-447f-8714-8fca6ad4324f",
+      "gruppo": "DAS"
+    },
+    {
+      "codice": "B0505",
+      "rapporto_id": "d64570fb-92ad-4b9d-b5fb-89d10060bd88",
+      "gruppo": "Zurich Insurance Company Ltd"
+    },
+    {
+      "codice": "B0507",
+      "rapporto_id": "0e1678ce-8aed-48b7-aecd-df3611af0673",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0508",
+      "rapporto_id": "85218562-9a53-4eb6-9156-3f9916621fd7",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0511",
+      "rapporto_id": "a895d5b7-922a-4bb4-911c-d3d3c98d8c82",
+      "gruppo": "AXA"
+    },
+    {
+      "codice": "B0512",
+      "rapporto_id": "5bfdb316-8618-4136-b0dc-60631cdc6f2f",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0514",
+      "rapporto_id": "3a2a7d4f-05cb-420a-9456-0ebac55ea7c9",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0518",
+      "rapporto_id": "f43a34ac-5e7e-4c91-b88b-3b9632c12dc4",
+      "gruppo": "HELVETIA"
+    },
+    {
+      "codice": "B0521",
+      "rapporto_id": "2f6eb1b6-f618-4862-9d20-be98c24ebc3e",
+      "gruppo": "Vittoria Ass.ni"
+    },
+    {
+      "codice": "B0523",
+      "rapporto_id": "8e68945a-bfc5-40ad-b97b-8774a53851c9",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0526",
+      "rapporto_id": "2e313c37-6316-4e25-a87b-e0835702b37b",
+      "gruppo": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0528",
+      "rapporto_id": "d8cb5729-9d65-4f9b-8f20-898835e2276f",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0529",
+      "rapporto_id": "2b415d69-3257-41b5-9d86-71e45cd50d0b",
+      "gruppo": "ALLIANZ"
+    },
+    {
+      "codice": "B0530",
+      "rapporto_id": "6e35cfbd-3894-43b0-9b16-215877bea5dd",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0535",
+      "rapporto_id": "c8081c75-0b62-46b8-b244-e45f09387d7b",
+      "gruppo": "AMISSIMA"
+    },
+    {
+      "codice": "B0537",
+      "rapporto_id": "73e7dcf4-6a16-49d9-b96f-dc59e43b7721",
+      "gruppo": "Nuova Tirrena Ass.ni"
+    },
+    {
+      "codice": "B0538",
+      "rapporto_id": "fe777627-08ac-465c-b0f4-2ec65f182fc5",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0539",
+      "rapporto_id": "25588581-43e1-4294-aeb6-dce03651e779",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0542",
+      "rapporto_id": "6b1297fb-eb9e-4d8e-ae96-ba4df60ef281",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0543",
+      "rapporto_id": "370d5460-2b17-492e-b98d-b0818b57865a",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0544",
+      "rapporto_id": "049c3f3e-6d20-4635-bb62-f57a86e3f1d1",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0545",
+      "rapporto_id": "b2d4e552-c617-48cd-801b-287af254d998",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0546",
+      "rapporto_id": "6ea91dc8-8f2c-4eb7-9d9a-33ee338e4aa0",
+      "gruppo": "DAS"
+    },
+    {
+      "codice": "B0547",
+      "rapporto_id": "61d7e2fb-2243-4899-8bb6-88acf66ebc02",
+      "gruppo": "Faro Ass.ni"
+    },
+    {
+      "codice": "B0548",
+      "rapporto_id": "98b9f082-76e3-4b72-9461-183d4c5d267b",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0549",
+      "rapporto_id": "575e6d17-8f9e-421c-9474-c20f6d6f6908",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0550",
+      "rapporto_id": "0bbffc8b-d7be-4375-aeac-7978f00b23d0",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0551",
+      "rapporto_id": "08a165b6-521c-4be8-9917-2496d9c18be0",
+      "gruppo": "REALE MUTUA"
+    },
+    {
+      "codice": "B0552",
+      "rapporto_id": "aa130543-93fc-4fb8-80c9-ebf3915a82fa",
+      "gruppo": "COFACE"
+    },
+    {
+      "codice": "B0553",
+      "rapporto_id": "abe3090f-bb8a-4c63-97d4-54c5147a376b",
+      "gruppo": "ALLIANZ"
+    },
+    {
+      "codice": "B0554",
+      "rapporto_id": "10dfcc68-c9a2-448e-b2fa-faaae36f0970",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0555",
+      "rapporto_id": "367b266d-ea0f-42c9-bc5e-5ec7bba85f71",
+      "gruppo": "Filo Diretto"
+    },
+    {
+      "codice": "B0556",
+      "rapporto_id": "e38889d0-38f0-4fce-9681-5fc7262bfa04",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0557",
+      "rapporto_id": "d6bb576b-06c0-4937-b6e1-ed2edd903bc0",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0558",
+      "rapporto_id": "dca68c70-b611-4e25-968a-c60e6f25183f",
+      "gruppo": "Itas Mutua"
+    },
+    {
+      "codice": "B0559",
+      "rapporto_id": "7b156921-3e70-4117-8800-956cf326577c",
+      "gruppo": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0560",
+      "rapporto_id": "b49b3872-a50b-403e-a076-fb2f860d0093",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0562",
+      "rapporto_id": "009056db-1407-48d7-b644-91150e4008f4",
+      "gruppo": "Lloyd's"
+    },
+    {
+      "codice": "B0564",
+      "rapporto_id": "8325628d-d45c-4898-af1f-04e1c59615a9",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0566",
+      "rapporto_id": "ad6ed5e1-f4b4-4264-aa1e-462ad3b81864",
+      "gruppo": "Lloyd's"
+    },
+    {
+      "codice": "B0567",
+      "rapporto_id": "a424c4fc-e85a-417e-a2a5-90aaa1b6181c",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0568",
+      "rapporto_id": "20d0bcbb-1990-4acc-b339-3d6a01bc54bb",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0569",
+      "rapporto_id": "1a1922c5-d0b9-4633-95db-936b15fd7799",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0570",
+      "rapporto_id": "e6918816-4a95-4ba9-8d07-e4edcba00d36",
+      "gruppo": "ALLIANZ"
+    },
+    {
+      "codice": "B0571",
+      "rapporto_id": "d7fa8cc1-43b1-4e35-b624-e3307ffbd45a",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0573",
+      "rapporto_id": "ddbc21a0-ca20-4a6c-b9f8-4a69a01990e8",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0574",
+      "rapporto_id": "440e1003-d105-4699-90b1-8c759c2b2ffb",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0577",
+      "rapporto_id": "76fe92c2-0ec3-468a-86d9-5ab5de31b2d0",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0578",
+      "rapporto_id": "7ec25e93-fb4f-4ee0-84fe-5ecdabb02119",
+      "gruppo": "COFACE"
+    },
+    {
+      "codice": "B0579",
+      "rapporto_id": "dc0d9c61-16f1-4ffb-8855-132402d68442",
+      "gruppo": "ALLIANZ"
+    },
+    {
+      "codice": "B0580",
+      "rapporto_id": "e0489627-bef5-4190-920a-81d2fb225b1a",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0582",
+      "rapporto_id": "d5aeb6ba-2aa2-44b0-9212-ddaaf9e8ed08",
+      "gruppo": "ALLIANZ"
+    },
+    {
+      "codice": "B0583",
+      "rapporto_id": "f6670690-d46a-4b49-9c57-1db4cf43a0ce",
+      "gruppo": "REALE MUTUA"
+    },
+    {
+      "codice": "B0584",
+      "rapporto_id": "e7a23f43-c9a6-40b4-ae78-d0f6aaad41e8",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0587",
+      "rapporto_id": "dda8ecc1-ced2-467b-86c0-1da97f3fecb6",
+      "gruppo": "AXA"
+    },
+    {
+      "codice": "B0588",
+      "rapporto_id": "4eb92e73-0543-4b5c-b0aa-4b13d100f7cf",
+      "gruppo": "REALE MUTUA"
+    },
+    {
+      "codice": "B0591",
+      "rapporto_id": "2abd8faf-1ab2-4965-ba50-69c06d302393",
+      "gruppo": "Lloyd's"
+    },
+    {
+      "codice": "B0592",
+      "rapporto_id": "a14e3d3a-7941-4c24-96e1-d9be67c96ff6",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0593",
+      "rapporto_id": "ca77980a-32d2-4db5-a6f6-34deca4ff366",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0594",
+      "rapporto_id": "35141eec-8ac0-42d5-90c7-318f9536c87e",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0596",
+      "rapporto_id": "7ed4812a-6cbe-4785-b6a8-60b22a4aa72a",
+      "gruppo": "ALLIANZ"
+    },
+    {
+      "codice": "B0597",
+      "rapporto_id": "f3b2d1b4-246f-4e97-975d-ea3fbb9c7d5c",
+      "gruppo": "Genertel"
+    },
+    {
+      "codice": "B0598",
+      "rapporto_id": "2d91b4a8-e156-486d-aa84-7415c88e5cbb",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0599",
+      "rapporto_id": "cc06610a-25c2-4b2c-9aeb-13e9fd64230b",
+      "gruppo": "Hdi Assicurazioni Spa"
+    },
+    {
+      "codice": "B0600",
+      "rapporto_id": "84f1f30c-e58b-49df-ac8c-1e6a9fa746fa",
+      "gruppo": "Filo Diretto"
+    },
+    {
+      "codice": "B0601",
+      "rapporto_id": "f50f9b57-028a-422d-8b80-c9f91b1d0606",
+      "gruppo": "Sace Bt Spa"
+    },
+    {
+      "codice": "B0602",
+      "rapporto_id": "ea7222fa-590c-46bd-aae0-22a7439b4b61",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0603",
+      "rapporto_id": "0ce16a3c-1e44-4e8f-8e2a-47da4f00207c",
+      "gruppo": "Itas Mutua"
+    },
+    {
+      "codice": "B0604",
+      "rapporto_id": "8e73530b-5a7b-443d-823b-c4549aa3c105",
+      "gruppo": "Itas Mutua"
+    },
+    {
+      "codice": "B0605",
+      "rapporto_id": "2419eb46-1166-4607-b3d7-76a7743c9303",
+      "gruppo": "Lloyd's"
+    },
+    {
+      "codice": "B0606",
+      "rapporto_id": "937659d6-efc9-4abc-a274-d19b46de947b",
+      "gruppo": "AXA"
+    },
+    {
+      "codice": "B0607",
+      "rapporto_id": "1713d669-f169-4858-b695-341f65a26249",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0608",
+      "rapporto_id": "65a32374-1628-4a37-b909-77987b7cb64e",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0610",
+      "rapporto_id": "79dab18a-e4a7-4a33-a5c9-34c0547b8fd5",
+      "gruppo": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0611",
+      "rapporto_id": "8c893077-0c77-4b7e-93a9-e5366df51a99",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0612",
+      "rapporto_id": "321272ed-4619-486b-afdc-864d862a2726",
+      "gruppo": "Lloyd's"
+    },
+    {
+      "codice": "B0613",
+      "rapporto_id": "fb16a388-a148-4047-b714-28d0ca10e51b",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0614",
+      "rapporto_id": "b9de215f-93e9-467a-8147-9fd6236cb600",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0615",
+      "rapporto_id": "707f1ea9-6a10-4c9c-be20-9725c288b7c8",
+      "gruppo": "Axa Assistance"
+    },
+    {
+      "codice": "B0616",
+      "rapporto_id": "0bcbf17a-1a16-4e14-929d-ff42bc4c4a4d",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0617",
+      "rapporto_id": "5347a58c-2259-4315-9abb-a0cadc4396eb",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0618",
+      "rapporto_id": "06d2b7fb-5467-4680-a53b-53950a82d376",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0619",
+      "rapporto_id": "4ff37147-0bdc-4883-819a-2b20b3c65e97",
+      "gruppo": "REALE MUTUA"
+    },
+    {
+      "codice": "B0620",
+      "rapporto_id": "76511a44-3ae0-4ca9-b33a-e52a3f1b0493",
+      "gruppo": "CATTOLICA"
+    },
+    {
+      "codice": "B0621",
+      "rapporto_id": "dc38555f-fa38-44b9-948c-952f0e267fac",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0623",
+      "rapporto_id": "6130f7d9-8eab-45e9-b5a1-9b2078fc59b1",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0624",
+      "rapporto_id": "37ed3cb7-cde9-4e48-b7b6-0f02adab13dc",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0626",
+      "rapporto_id": "7fd577cb-d89a-464b-ad6f-44917922af5e",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0627",
+      "rapporto_id": "d9e79d0e-6fe6-4fb3-886c-c5300974edda",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0628",
+      "rapporto_id": "1de1ed7d-4e7c-4683-800b-e435a48092e0",
+      "gruppo": "Vittoria Ass.ni"
+    },
+    {
+      "codice": "B0629",
+      "rapporto_id": "bbad8b41-2c61-4ef3-b0e8-b220e0dc3919",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0632",
+      "rapporto_id": "f4024c23-3aa5-4b1e-bc13-3883ab0add37",
+      "gruppo": "Lloyd Adriatico"
+    },
+    {
+      "codice": "B0634",
+      "rapporto_id": "31e807be-f6be-4cc1-b560-cce29b77a240",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0635",
+      "rapporto_id": "5475b3c9-fb3d-40b8-85bf-a9203e48b75c",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0636",
+      "rapporto_id": "7b5b0f4e-29e6-4e83-be27-092c09089740",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0637",
+      "rapporto_id": "09089117-4997-4baa-b686-5117855cd467",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0638",
+      "rapporto_id": "d95eff15-12dc-4b7f-9aa7-f3988269fce9",
+      "gruppo": "Itas Mutua"
+    },
+    {
+      "codice": "B0639",
+      "rapporto_id": "ae877ba7-dc27-49bc-9fa5-bebeddc7ba56",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0640",
+      "rapporto_id": "d0c11557-6b64-4869-8a7d-725ab77860e2",
+      "gruppo": "REALE MUTUA"
+    },
+    {
+      "codice": "B0643",
+      "rapporto_id": "83d60b76-194d-4c01-b214-007f5c70b512",
+      "gruppo": "Convenzione Fimmg"
+    },
+    {
+      "codice": "B0644",
+      "rapporto_id": "00f5b437-7d31-4e7e-8b79-65c655ad2b5d",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0645",
+      "rapporto_id": "9f9baf2d-c271-4b3c-a0f9-d43dbba90c21",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0646",
+      "rapporto_id": "68878ba6-5bee-4946-aabb-defd9db8ad2d",
+      "gruppo": "ALLIANZ"
+    },
+    {
+      "codice": "B0648",
+      "rapporto_id": "8ccd3464-374c-4278-9673-e4d9348eb730",
+      "gruppo": "Tutela Legale Spa"
+    },
+    {
+      "codice": "B0649",
+      "rapporto_id": "2ae0b233-dea7-432d-aba5-1a0a98fcbb3c",
+      "gruppo": "HELVETIA"
+    },
+    {
+      "codice": "B0650",
+      "rapporto_id": "bfc3c2b1-8eae-4f7b-b0f5-26e0d9e436d0",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0651",
+      "rapporto_id": "4991890b-1703-417b-9200-3cf8e90cffa2",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0652",
+      "rapporto_id": "24f32516-d64e-4093-b2f0-b271c437ca52",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0653",
+      "rapporto_id": "bb5bc9c1-9a01-47ff-8ae4-ff9fb714774f",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0654",
+      "rapporto_id": "3d928f4b-b253-4a7e-9cbb-3fe4e56b948d",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0655",
+      "rapporto_id": "6c045b5d-5ff7-4b36-b6b6-a73304d211ad",
+      "gruppo": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0659",
+      "rapporto_id": "21a76054-f9da-46c1-a3c9-a28986cb50b5",
+      "gruppo": "CATTOLICA"
+    },
+    {
+      "codice": "B0660",
+      "rapporto_id": "8978fdce-bf2e-40cc-87ca-27720ce3f646",
+      "gruppo": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0661",
+      "rapporto_id": "1073633c-626a-45e2-b1dd-d6ae51205eed",
+      "gruppo": "Itas Mutua"
+    },
+    {
+      "codice": "B0662",
+      "rapporto_id": "6dd2a296-3076-4c29-b9d1-9653ecc4d5f5",
+      "gruppo": "Lloyd's"
+    },
+    {
+      "codice": "B0663",
+      "rapporto_id": "7eb5b968-3c65-4de5-b7df-942909149dfa",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0664",
+      "rapporto_id": "aa22a37c-318d-461a-9a35-ab66396583d7",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0665",
+      "rapporto_id": "12ff939f-5b9e-49ff-a290-1e321d6efb6d",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0666",
+      "rapporto_id": "4d32e8cd-76a4-452d-99ac-b6cdf6244ee3",
+      "gruppo": "Lloyd's"
+    },
+    {
+      "codice": "B0667",
+      "rapporto_id": "e7248bf9-1965-47ec-802d-4ea60675e9fe",
+      "gruppo": "ALLIANZ"
+    },
+    {
+      "codice": "B0668",
+      "rapporto_id": "1de90e94-a1c0-425e-99f8-ec18f501d4d2",
+      "gruppo": "Sace Bt Spa"
+    },
+    {
+      "codice": "B0670",
+      "rapporto_id": "2241bd56-c006-483b-87c7-4c5c7223c247",
+      "gruppo": "Qbe Europe Sa/nv"
+    },
+    {
+      "codice": "B0671",
+      "rapporto_id": "f87da704-f68e-4e63-b8fb-7e845ae74b96",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0672",
+      "rapporto_id": "531467eb-0327-463a-b0c4-7fe817b81401",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0675",
+      "rapporto_id": "bbd4dd1d-12ac-4082-ab53-963b35ebde54",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0676",
+      "rapporto_id": "a6152888-3f1c-4a93-99dd-8005a8ebf282",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0677",
+      "rapporto_id": "690800dd-2157-414e-9a8f-f04837e9a79a",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0679",
+      "rapporto_id": "3c27eb3a-4bf3-4748-a8fd-e7059d32e99a",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0681",
+      "rapporto_id": "8eabd617-939e-46ca-9918-81f4c085a393",
+      "gruppo": "Itas Mutua"
+    },
+    {
+      "codice": "B0682",
+      "rapporto_id": "298874b8-0d31-47b7-9fa4-f8a4a431d61d",
+      "gruppo": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0683",
+      "rapporto_id": "4b9900a5-2e72-4c0e-9400-d89f13acbf0d",
+      "gruppo": "DAS"
+    },
+    {
+      "codice": "B0686",
+      "rapporto_id": "9d4ead45-c18c-4fd6-bb7f-6ca593b8bab8",
+      "gruppo": "Zurich Insurance Company Ltd"
+    },
+    {
+      "codice": "B0687",
+      "rapporto_id": "1f7f0781-df8d-405e-86ce-9520a51c119e",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0689",
+      "rapporto_id": "7127a310-bd22-43ca-8e35-dfa0a76677a7",
+      "gruppo": "ALLIANZ"
+    },
+    {
+      "codice": "B0690",
+      "rapporto_id": "19247cda-cfb9-4e26-8469-58b3a9a9c5cc",
+      "gruppo": "REVO"
+    },
+    {
+      "codice": "B0691",
+      "rapporto_id": "e318e090-83ff-4907-bf79-47e13e5d6e5d",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0692",
+      "rapporto_id": "dc2944be-f8a9-496d-b64b-58a275bbcede",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0693",
+      "rapporto_id": "7ef9f969-9de3-4acd-8867-2dfeea866c5c",
+      "gruppo": "REALE MUTUA"
+    },
+    {
+      "codice": "B0696",
+      "rapporto_id": "542c5bbc-4b26-4fb2-820d-ad6f5319f8e6",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0697",
+      "rapporto_id": "360d888d-8a57-486b-8894-e11f0b1d3c6c",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0699",
+      "rapporto_id": "47bc20f4-fe8e-44d2-9ed2-6039b551a1c9",
+      "gruppo": "Balcia Insurance Se"
+    },
+    {
+      "codice": "B0700",
+      "rapporto_id": "77df8d6c-aaea-4120-9e82-41362b0cc3f6",
+      "gruppo": "Uca Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0701",
+      "rapporto_id": "acc74cee-fb1e-480a-8d48-ce3c8e40eb28",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0702",
+      "rapporto_id": "7ae0b816-7885-476e-a879-7091d602ab14",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0703",
+      "rapporto_id": "1df23267-f6e9-45a0-bf41-7cf41723657b",
+      "gruppo": "Amtrust Assicurazioni Spa"
+    },
+    {
+      "codice": "B0704",
+      "rapporto_id": "e84146ed-537a-4a0c-9c9f-3947d2a0a6ef",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0705",
+      "rapporto_id": "f753a7d8-5d33-4dc2-a209-d69373ba350b",
+      "gruppo": "Hdi Assicurazioni Spa"
+    },
+    {
+      "codice": "B0706",
+      "rapporto_id": "2e23018e-d6c8-4b4a-866e-8a5456fa0ab7",
+      "gruppo": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0707",
+      "rapporto_id": "ebbab00a-1988-48e0-89fc-e86355f0a0b0",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0708",
+      "rapporto_id": "7e7be0ce-3204-421b-810c-1ae432ec4354",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0709",
+      "rapporto_id": "5e09e7ba-74e5-4b08-b6da-70c47f3aac4e",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0710",
+      "rapporto_id": "5f7e5ceb-6378-4b76-bc30-c5cef47ca6e8",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0711",
+      "rapporto_id": "6691ec4d-1e4e-4849-8f10-62754b0e7059",
+      "gruppo": "Lloyd's"
+    },
+    {
+      "codice": "B0712",
+      "rapporto_id": "e745fb89-72d7-4d3d-8511-92d3f650db1a",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0713",
+      "rapporto_id": "322f72a4-5f92-403d-aae2-f7c2e2f4adc5",
+      "gruppo": "DAS"
+    },
+    {
+      "codice": "B0714",
+      "rapporto_id": "996c91ee-9585-48b8-b80b-7e970d108067",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0715",
+      "rapporto_id": "98c82a12-bb31-44ab-99ee-729a05ecf024",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0716",
+      "rapporto_id": "f659e665-4c13-43a1-bac2-17525e59287d",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0717",
+      "rapporto_id": "79403456-f1db-4fb5-85df-355972ace990",
+      "gruppo": "Itas Mutua"
+    },
+    {
+      "codice": "B0718",
+      "rapporto_id": "48668c35-61be-482d-97de-0cef3c02903b",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0719",
+      "rapporto_id": "5b271bc5-4a7b-4cda-b8b4-892ce1c10da5",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0721",
+      "rapporto_id": "639980e5-a349-4d81-b7b6-8322f30608b9",
+      "gruppo": "AIG"
+    },
+    {
+      "codice": "B0722",
+      "rapporto_id": "603f31f0-a569-4964-acfd-497593674eaa",
+      "gruppo": "Poste Vita Spa"
+    },
+    {
+      "codice": "B0723",
+      "rapporto_id": "bbf166ba-9ac7-45ab-9912-3af5aa0631b9",
+      "gruppo": "Groupama Assicurazioni Spa"
+    },
+    {
+      "codice": "B0724",
+      "rapporto_id": "ed262bb5-f036-4123-8f79-63262d0895bc",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0726",
+      "rapporto_id": "53609a1c-bf46-46d6-84f4-684168b39d50",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0727",
+      "rapporto_id": "5218cdae-4edd-49c1-8653-fb3ebc118106",
+      "gruppo": "Sara Ass.ni"
+    },
+    {
+      "codice": "B0728",
+      "rapporto_id": "012cd342-fa07-491e-8674-7e78fe430269",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0729",
+      "rapporto_id": "2be0bfff-db28-45f4-992c-272392764a63",
+      "gruppo": "Sace Bt Spa"
+    },
+    {
+      "codice": "B0731",
+      "rapporto_id": "144b15ed-feb1-4f8c-8c30-d8428ab8eb97",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0732",
+      "rapporto_id": "b782efb3-8301-4e25-8930-61aef4b3b9a1",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0733",
+      "rapporto_id": "07289ed7-7374-436e-bf2f-35ee59928287",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0734",
+      "rapporto_id": "ba917f30-0802-422e-a0ee-05137bbdd64e",
+      "gruppo": "Great Lakes Insurance Re"
+    },
+    {
+      "codice": "B0735",
+      "rapporto_id": "2ad65cae-2f6d-4b09-8305-be62652157f1",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0736",
+      "rapporto_id": "359fee16-eac7-4a98-aeb5-e87420e5d357",
+      "gruppo": "ASSIMOCO"
+    },
+    {
+      "codice": "B0737",
+      "rapporto_id": "1c835588-a47b-4eca-ab4f-a5d63360e091",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0738",
+      "rapporto_id": "e45cdab3-c44e-43c3-b2a2-d02cef7fc07b",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0739",
+      "rapporto_id": "06a72e23-9ec3-49b8-8272-8a5e1b0280c1",
+      "gruppo": "REALE MUTUA"
+    },
+    {
+      "codice": "B0740",
+      "rapporto_id": "2e42630f-db10-4340-a121-b15404a89cdc",
+      "gruppo": "Itas Mutua"
+    },
+    {
+      "codice": "B0741",
+      "rapporto_id": "cbd0a201-d37b-4f41-b089-ae1a04cec0a5",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0744",
+      "rapporto_id": "05991cbd-8fde-4abf-9b11-48ea3f6f371f",
+      "gruppo": "ASSICURATRICE MILANESE"
+    },
+    {
+      "codice": "B0745",
+      "rapporto_id": "4fe79d89-9e16-4126-a7d3-930bcb140364",
+      "gruppo": "Sara Ass.ni"
+    },
+    {
+      "codice": "B0746",
+      "rapporto_id": "efd6bf83-4c6d-4d48-b531-45d3f1b1fcba",
+      "gruppo": "Vittoria Ass.ni"
+    },
+    {
+      "codice": "B0747",
+      "rapporto_id": "17d110c2-d748-40ea-8a87-2a827c06b53f",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0748",
+      "rapporto_id": "e144d159-f475-47b8-b80b-254a67752498",
+      "gruppo": "Lloyd's"
+    },
+    {
+      "codice": "B0749",
+      "rapporto_id": "2e2e9dd3-c889-4ba0-9e09-3620aee963bb",
+      "gruppo": "Itas Mutua"
+    },
+    {
+      "codice": "B0750",
+      "rapporto_id": "f30948e0-bc3a-45cd-8183-fb7ef76f4e74",
+      "gruppo": "Zurich Insurance Company Ltd"
+    },
+    {
+      "codice": "B0751",
+      "rapporto_id": "15ff7033-de1d-4071-8fd9-4ad051688f78",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0752",
+      "rapporto_id": "0d3a3bb2-d0bf-4e10-9fe2-39563397a07a",
+      "gruppo": "Liberty Mutual Insurance Europe S.e."
+    },
+    {
+      "codice": "B0753",
+      "rapporto_id": "1e882207-0186-45ca-bf20-0be4128d3e17",
+      "gruppo": "REALE MUTUA"
+    },
+    {
+      "codice": "B0754",
+      "rapporto_id": "27137008-62bd-4d4e-8502-2657cb242281",
+      "gruppo": "Lloyd's"
+    },
+    {
+      "codice": "B0755",
+      "rapporto_id": "8572d5f5-a039-4d26-9b71-4b228d0e256f",
+      "gruppo": "Groupama Assicurazioni Spa"
+    },
+    {
+      "codice": "B0756",
+      "rapporto_id": "5b201745-61e9-4b0b-b072-4470eb958beb",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0759",
+      "rapporto_id": "af5c819d-7d83-45a9-8b20-d591c7b8aebf",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0760",
+      "rapporto_id": "6f269d27-dad2-408e-a233-5f8eb21da059",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0761",
+      "rapporto_id": "82bb6535-dbb6-4dd3-ac20-3587d6f33059",
+      "gruppo": "Itas Mutua"
+    },
+    {
+      "codice": "B0762",
+      "rapporto_id": "4c01ef87-9e31-44ad-b90b-454c3510a160",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0764",
+      "rapporto_id": "fa8e0842-0cc5-4a19-af55-14c73c9cce2d",
+      "gruppo": "REALE MUTUA"
+    },
+    {
+      "codice": "B0767",
+      "rapporto_id": "56a03a8c-a01d-472a-8da6-54af948f7325",
+      "gruppo": "REALE MUTUA"
+    },
+    {
+      "codice": "B0768",
+      "rapporto_id": "ac702c61-02f4-4c2a-9b58-592ece69e3b4",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0769",
+      "rapporto_id": "cc0ae21e-28b4-49a0-b689-7d40a2732796",
+      "gruppo": "Lloyd's"
+    },
+    {
+      "codice": "B0772",
+      "rapporto_id": "5f33e7b1-13d4-4cde-9307-a37db20e9bca",
+      "gruppo": "Lloyd's"
+    },
+    {
+      "codice": "B0773",
+      "rapporto_id": "5d0983e4-6b15-4e63-a789-29e9cb5f908f",
+      "gruppo": "Lloyd's"
+    },
+    {
+      "codice": "B0775",
+      "rapporto_id": "7576c1dd-e64e-4ebd-859e-c8ef6f12becc",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0776",
+      "rapporto_id": "c29522fe-17fd-42b4-bf42-d0e4b9110f35",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0778",
+      "rapporto_id": "ce5b77ed-2913-4460-a4a2-fd1bebc562aa",
+      "gruppo": "Argoglobal Assicurazioni Spa"
+    },
+    {
+      "codice": "B0780",
+      "rapporto_id": "e03cacf4-89ca-462d-9637-ac81b63675e2",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0781",
+      "rapporto_id": "7ea79a63-7d41-491b-a7e1-ff95402ad8cb",
+      "gruppo": "REALE MUTUA"
+    },
+    {
+      "codice": "B0782",
+      "rapporto_id": "1ee32dd2-034d-44a8-99fa-c402390b173e",
+      "gruppo": "BENE"
+    },
+    {
+      "codice": "B0783",
+      "rapporto_id": "c0c40aad-fa1f-469f-9f86-93a3d16e735d",
+      "gruppo": "Lloyd's"
+    },
+    {
+      "codice": "B0785",
+      "rapporto_id": "18cd011a-97d0-4814-b2c5-2cf519c54638",
+      "gruppo": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0786",
+      "rapporto_id": "411f8ee9-27f3-4609-878f-69459513bf15",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0787",
+      "rapporto_id": "32026b9d-5397-43d1-a5b3-41e757f50ba4",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0788",
+      "rapporto_id": "847669fd-3d50-4c4a-bef3-c4cc259c9eb0",
+      "gruppo": "COFACE"
+    },
+    {
+      "codice": "B0790",
+      "rapporto_id": "6f874f17-8189-4d05-a44a-a5c007bf135d",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0791",
+      "rapporto_id": "31c56283-ebad-4098-8d1a-404a3ccb35c4",
+      "gruppo": "Vittoria Ass.ni"
+    },
+    {
+      "codice": "B0792",
+      "rapporto_id": "ce7475b6-84e8-49f6-ac50-1b7ab57ebf3d",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0793",
+      "rapporto_id": "d9de8568-ca1e-4e9f-b1e5-edfddbf9917c",
+      "gruppo": "Sara Ass.ni"
+    },
+    {
+      "codice": "B0794",
+      "rapporto_id": "ba5b5cb2-4350-4fb0-91be-bba364fb3390",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0795",
+      "rapporto_id": "9d5346b4-6a1e-42a2-9c51-59a28a7fadd7",
+      "gruppo": "Lloyd's"
+    },
+    {
+      "codice": "B0796",
+      "rapporto_id": "082e03a5-1dfc-49d6-8d62-67cdf0fe14e1",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0797",
+      "rapporto_id": "e170a3c0-c0c2-49ac-8f5a-bc1bed19ede8",
+      "gruppo": "ALLIANZ"
+    },
+    {
+      "codice": "B0798",
+      "rapporto_id": "2c5cf105-cd69-472d-96e5-46c816126c6f",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0799",
+      "rapporto_id": "6559a471-1def-44ef-baac-1c6bdea1f532",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0800",
+      "rapporto_id": "546718bd-75b0-4909-9e4f-53fd4b7a3a93",
+      "gruppo": "Sara Ass.ni"
+    },
+    {
+      "codice": "B0801",
+      "rapporto_id": "d8d96f2f-4f54-465b-8733-847552f15c86",
+      "gruppo": "Hdi Global Se"
+    },
+    {
+      "codice": "B0802",
+      "rapporto_id": "2d988322-63c3-4393-b01f-71720a0aa013",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0803",
+      "rapporto_id": "b2208639-e257-42bf-84ef-a01fc9d49c1a",
+      "gruppo": "Vittoria Ass.ni"
+    },
+    {
+      "codice": "B0805",
+      "rapporto_id": "f30d44f8-b939-4e55-83c1-977b32a594d9",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0806",
+      "rapporto_id": "44c77030-a046-467a-a4c4-d8fb7f3dc333",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0808",
+      "rapporto_id": "14fe3098-3777-48c6-8897-aef807fe5fae",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0809",
+      "rapporto_id": "1a4e4fa2-d22c-4b4d-a735-ea3e7fb5100b",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0810",
+      "rapporto_id": "27302720-7a18-4dc4-91fd-a02fcd5f65e4",
+      "gruppo": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0811",
+      "rapporto_id": "1ed3a24e-7b8d-42e6-8394-0a8e8fca8890",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0812",
+      "rapporto_id": "eda9f761-d57f-4173-a952-b8c18566ee3b",
+      "gruppo": "Uca Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0813",
+      "rapporto_id": "21825c9c-8bbf-468f-9ae7-33441081cba9",
+      "gruppo": "Allianz Viva Spa"
+    },
+    {
+      "codice": "B0814",
+      "rapporto_id": "0bbc44d3-c327-435b-a20f-0e2a6069c2d3",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0817",
+      "rapporto_id": "1b099853-9ce9-4374-9586-05c2d1eb2d31",
+      "gruppo": "Berkshire Hathaway International Insurance Limite"
+    },
+    {
+      "codice": "B0818",
+      "rapporto_id": "9bd9b3fb-581b-4192-b4b9-4fb3ed05180e",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0819",
+      "rapporto_id": "c8e6ae68-2b6e-448d-8b2e-73b7bef10914",
+      "gruppo": "REALE MUTUA"
+    },
+    {
+      "codice": "B0820",
+      "rapporto_id": "e2a81dae-27bf-47ce-af9a-2e335c5f228c",
+      "gruppo": "REALE MUTUA"
+    },
+    {
+      "codice": "B0821",
+      "rapporto_id": "ce1af749-9ed6-4040-ba3a-d7c8ce069cc5",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0822",
+      "rapporto_id": "5a441bfa-ba18-40c5-b662-5ebe438dea62",
+      "gruppo": "Sara Ass.ni"
+    },
+    {
+      "codice": "B0823",
+      "rapporto_id": "3d59cbe6-e21b-4141-b9c3-f16a32ead0dd",
+      "gruppo": "REALE MUTUA"
+    },
+    {
+      "codice": "B0824",
+      "rapporto_id": "5131a228-5784-488f-9f76-5a953bb6ab03",
+      "gruppo": "Qbe Europe Sa/nv"
+    },
+    {
+      "codice": "B0825",
+      "rapporto_id": "cb2baae7-6b8d-46da-bb56-452c007fa00c",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0826",
+      "rapporto_id": "fa6259a8-10db-419d-93f1-d9378cfde229",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0827",
+      "rapporto_id": "2d617ceb-bb8e-4c8a-ac4b-a7cd943d69d4",
+      "gruppo": "REALE MUTUA"
+    },
+    {
+      "codice": "B0828",
+      "rapporto_id": "e6e7fe33-b975-4709-8c16-5afb74ba2bc8",
+      "gruppo": "Itas Mutua"
+    },
+    {
+      "codice": "B0829",
+      "rapporto_id": "6a8427d4-83dd-4fd4-9543-14709de04217",
+      "gruppo": "Vittoria Ass.ni"
+    },
+    {
+      "codice": "B0830",
+      "rapporto_id": "f0fd9d88-c285-44de-bbd7-e904b8660bec",
+      "gruppo": "ALLIANZ"
+    },
+    {
+      "codice": "B0831",
+      "rapporto_id": "e9f94c6b-43ad-4f1f-8a94-01d46f270f54",
+      "gruppo": "Hdi Assicurazioni Spa"
+    },
+    {
+      "codice": "B0833",
+      "rapporto_id": "111fded8-89ee-4f71-98d5-1d81dba8a998",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0835",
+      "rapporto_id": "96a87366-5efa-4154-a8ce-6d1212a68b1d",
+      "gruppo": "Hdi Assicurazioni Spa"
+    },
+    {
+      "codice": "B0836",
+      "rapporto_id": "830a3729-d049-4ea8-be5f-de5ea28bc481",
+      "gruppo": "Itas Mutua"
+    },
+    {
+      "codice": "B0837",
+      "rapporto_id": "a5988da1-c766-4cfd-bf75-be52d5a8618a",
+      "gruppo": "S2C"
+    },
+    {
+      "codice": "B0840",
+      "rapporto_id": "90d906ec-acca-4c22-885a-96ca29bb61dc",
+      "gruppo": "Societa' Reale Mutua di Assicurazioni"
+    },
+    {
+      "codice": "B0841",
+      "rapporto_id": "ab866c94-0068-4a3e-a2f5-01a75b5f00d2",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0842",
+      "rapporto_id": "362c51f9-11d4-4726-aa14-7e138e9f985d",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0843",
+      "rapporto_id": "eae46cf9-c1e7-4d97-8ec6-b6035f60723b",
+      "gruppo": "Vittoria Ass.ni"
+    },
+    {
+      "codice": "B0844",
+      "rapporto_id": "659a3297-bc76-4d38-952d-55bacfc2fe44",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0845",
+      "rapporto_id": "999fd283-63a9-4244-beeb-b21b02cfe928",
+      "gruppo": "Itas Mutua"
+    },
+    {
+      "codice": "B0846",
+      "rapporto_id": "89f32f2c-32b1-4dbe-8df2-5abeb402f683",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0847",
+      "rapporto_id": "27294ed0-6091-47fb-a834-825496f266e6",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0850",
+      "rapporto_id": "6ca4d675-0498-4a43-9254-7fa8e163637e",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0851",
+      "rapporto_id": "625dee73-e8a2-4d7b-91b8-de30fab10e7b",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0852",
+      "rapporto_id": "66ff14e3-76ab-4e6d-9669-bd458f4d5686",
+      "gruppo": "Itas Mutua"
+    },
+    {
+      "codice": "B0854",
+      "rapporto_id": "d71f4ad4-4020-4c5c-b188-10bb5f9199a7",
+      "gruppo": "REVO"
+    },
+    {
+      "codice": "B0855",
+      "rapporto_id": "38fda4b3-0111-4d51-b6b5-5dab413e4825",
+      "gruppo": "AXA"
+    },
+    {
+      "codice": "B0856",
+      "rapporto_id": "0f2c0bfe-691e-43d4-8ff0-101907f1df82",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0857",
+      "rapporto_id": "a5c41745-c8cf-4d9e-b425-ec2ba9b7298c",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0859",
+      "rapporto_id": "d938de39-c8e9-4186-87ca-4d7d37228c59",
+      "gruppo": "Lloyd's"
+    },
+    {
+      "codice": "B0860",
+      "rapporto_id": "5bba8ce0-e7b7-4e8a-9917-a4a70fe6dd56",
+      "gruppo": "Tutela Legale Spa"
+    },
+    {
+      "codice": "B0862",
+      "rapporto_id": "9dc2227f-f1ce-4298-88de-4e42b87b594a",
+      "gruppo": "Hdi Assicurazioni Spa"
+    },
+    {
+      "codice": "B0866",
+      "rapporto_id": "95092567-b981-4883-aa03-8af13eb97cfa",
+      "gruppo": "Lloyd's"
+    },
+    {
+      "codice": "B0867",
+      "rapporto_id": "c04add96-0dcd-41fc-8a23-d5e7b77e98e8",
+      "gruppo": "COFACE"
+    },
+    {
+      "codice": "B0868",
+      "rapporto_id": "685ac4a6-ce8d-4ac3-bd9c-087d55929da3",
+      "gruppo": "ALLIANZ"
+    },
+    {
+      "codice": "B0869",
+      "rapporto_id": "8949bdfd-f9ee-4f31-830e-951f16d38cde",
+      "gruppo": "Itas Mutua"
+    },
+    {
+      "codice": "B0871",
+      "rapporto_id": "03eb3277-aa82-4146-99fa-1fdc661cf385",
+      "gruppo": "Generali Div. Cattolica"
+    },
+    {
+      "codice": "B0872",
+      "rapporto_id": "e2a01770-3a07-4f2c-b145-9dfafe20da22",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0873",
+      "rapporto_id": "2516d0d1-c7ef-498f-8a37-7322a31f50c1",
+      "gruppo": "Lloyd's"
+    },
+    {
+      "codice": "B0874",
+      "rapporto_id": "18026170-3425-45b1-8396-2a90e51b1f96",
+      "gruppo": "Vittoria Ass.ni"
+    },
+    {
+      "codice": "B0875",
+      "rapporto_id": "f4cdd60c-3ddc-4c34-846f-cbbe592d115d",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0876",
+      "rapporto_id": "1d732878-138b-40bb-bb21-f9589d139645",
+      "gruppo": "Sara Ass.ni"
+    },
+    {
+      "codice": "B0877",
+      "rapporto_id": "7723b565-ffc3-40df-bcab-a8389f05e8d0",
+      "gruppo": "ALLIANZ"
+    },
+    {
+      "codice": "B0878",
+      "rapporto_id": "0fdcde34-9aa1-4171-903e-1477a2ff500c",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0879",
+      "rapporto_id": "fbc94a71-274c-43f9-afd1-f9af7dc3f2a5",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0880",
+      "rapporto_id": "70b76dc1-284e-4da7-ad05-3a8d670721e2",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0881",
+      "rapporto_id": "e45fb23f-e396-4b24-9efb-29f82f2402e2",
+      "gruppo": "GENERALI ITALIA"
+    },
+    {
+      "codice": "B0883",
+      "rapporto_id": "2d5e6e56-c291-458f-a476-12edf359592b",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0885",
+      "rapporto_id": "976fc219-e8d6-45a8-b8e5-1202dc38e668",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0886",
+      "rapporto_id": "36976b07-d598-4e6b-ad93-f35da7755b05",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0887",
+      "rapporto_id": "90856cad-1858-470d-9035-eff3344c75eb",
+      "gruppo": "Italiana Assicurazioni"
+    },
+    {
+      "codice": "B0888",
+      "rapporto_id": "8d614f37-e171-4155-b015-37cefde84307",
+      "gruppo": "Lloyd's"
+    },
+    {
+      "codice": "B0889",
+      "rapporto_id": "1de16d3a-7071-4f94-863b-d31b915557e4",
+      "gruppo": "Sara Ass.ni"
+    },
+    {
+      "codice": "B0890",
+      "rapporto_id": "b3a23d84-fe1e-495e-bd75-1edcf8621840",
+      "gruppo": "Unipol Assicurazioni S.p.a."
+    },
+    {
+      "codice": "B0891",
+      "rapporto_id": "16b2735f-eeee-4268-9d1e-e0a2821e02d8",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0892",
+      "rapporto_id": "c31da9d6-b4f3-4efe-98df-5430f14a6483",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0893",
+      "rapporto_id": "7c1e4700-b420-4530-b9fa-81645951c3f3",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0894",
+      "rapporto_id": "b067f800-dd95-46a9-8fef-0b6bc963a5b2",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0895",
+      "rapporto_id": "34dfa8c0-5b5c-4702-aed9-80cba95e8002",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0896",
+      "rapporto_id": "05a81d57-e8a3-4e2b-81f4-86a8c40242d5",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0898",
+      "rapporto_id": "7c065f37-2e72-4aed-94bc-cbe8b1fe5d24",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0899",
+      "rapporto_id": "c6c1d625-ed9c-4252-801f-9fbaed025bcf",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0900",
+      "rapporto_id": "4711a068-c156-4778-9886-7a20d58c0bf1",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0901",
+      "rapporto_id": "50143d5d-4eee-46b9-91ee-d5986882f0fc",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0902",
+      "rapporto_id": "9c2cb8eb-893c-4f8a-b03a-b894d5667706",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0903",
+      "rapporto_id": "04d70a96-8dd9-41df-b26c-4993d89b8a3a",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0904",
+      "rapporto_id": "1c9b5f17-2dbb-48cc-a8b0-4e305c580243",
+      "gruppo": "Da definire"
+    },
+    {
+      "codice": "B0905",
+      "rapporto_id": "ba8494b2-fb11-4a71-99af-801908d7d156",
+      "gruppo": "Da definire"
+    }
+  ],
+  "rapporti_failed": [],
+  "non_congiunte": [],
+  "iban_linked": [],
+  "iban_skipped": [
+    {
+      "codice": "B0044",
+      "iban": "0560836282",
+      "motivo": "IBAN non valido o formato legacy"
+    },
+    {
+      "codice": "B0052",
+      "iban": "0504002000",
+      "motivo": "IBAN non valido o formato legacy"
+    },
+    {
+      "codice": "B0102",
+      "iban": "504002230",
+      "motivo": "IBAN non valido o formato legacy"
+    },
+    {
+      "codice": "B0182",
+      "iban": "0322312011",
+      "motivo": "IBAN non valido o formato legacy"
+    },
+    {
+      "codice": "B0272",
+      "iban": "0",
+      "motivo": "IBAN non valido o formato legacy"
+    },
+    {
+      "codice": "B0288",
+      "iban": "0585661110",
+      "motivo": "IBAN non valido o formato legacy"
+    },
+    {
+      "codice": "B0381",
+      "iban": "0622512108",
+      "motivo": "IBAN non valido o formato legacy"
+    },
+    {
+      "codice": "B0432",
+      "iban": "ITG0312712100CC0040013000",
+      "motivo": "IBAN non valido o formato legacy"
+    },
+    {
+      "codice": "B0442",
+      "iban": "GB06CITI18500811269275",
+      "motivo": "IBAN non valido o formato legacy"
+    },
+    {
+      "codice": "B0621",
+      "iban": "IT78Z0306912711100000009611HELVETIAIT42Q0312403210000000238524GLOBALASSISTANCE",
+      "motivo": "IBAN non valido o formato legacy"
+    },
+    {
+      "codice": "B0624",
+      "iban": "IT89R0898262680030000502071STOPPATOSRLLU600670006550208329CONVEXEUROPES.A.-EURTECHIT62A0306912711100000012852LLOYD'SINSURANCECOMPANYS.A.",
+      "motivo": "IBAN non valido o formato legacy"
+    },
+    {
+      "codice": "B0699",
+      "iban": "LV02RIKO0000084271923",
+      "motivo": "IBAN non valido o formato legacy"
+    },
+    {
+      "codice": "B0752",
+      "iban": "LU740670006550211375",
+      "motivo": "IBAN non valido o formato legacy"
+    },
+    {
+      "codice": "B0899",
+      "iban": "BE51736044745962",
+      "motivo": "IBAN non valido o formato legacy"
+    }
+  ]
+}

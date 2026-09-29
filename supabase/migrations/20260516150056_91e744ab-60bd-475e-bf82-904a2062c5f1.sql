@@ -1,0 +1,1 @@
+DELETE FROM public.compagnie WHERE id IN ('5fcb5e72-eb9f-40e4-b1d6-b31887a10047','bca0c964-a0f3-4c17-b941-b2c51ccfa392') AND nome ILIKE 'TEST AGENZIA%';

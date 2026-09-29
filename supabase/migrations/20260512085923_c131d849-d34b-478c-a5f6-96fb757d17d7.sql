@@ -1,0 +1,2 @@
+ALTER TABLE public.premi_garanzia_polizza ADD COLUMN IF NOT EXISTS tipo_premio text NOT NULL DEFAULT 'firma' CHECK (tipo_premio IN ('firma','quietanza'));
+CREATE INDEX IF NOT EXISTS idx_premi_garanzia_polizza_tipo ON public.premi_garanzia_polizza(titolo_id, tipo_premio);

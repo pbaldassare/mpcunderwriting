@@ -1,0 +1,1 @@
+UPDATE public.email_branding SET mittente_default = 'ConsulNet <noreply@iaconnect.it>' WHERE singleton = true;

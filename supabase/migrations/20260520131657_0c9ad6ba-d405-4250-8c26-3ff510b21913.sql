@@ -1,0 +1,1 @@
+DROP INDEX IF EXISTS public.conti_bancari_iban_unique;

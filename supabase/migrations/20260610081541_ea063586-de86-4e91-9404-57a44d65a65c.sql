@@ -1,0 +1,1 @@
+UPDATE public.email_branding SET logo_url = 'https://cbnet.it/__l5e/assets-v1/7a2d94ba-9224-4f49-ba7e-17dd63623383/logo-cbnet.svg';

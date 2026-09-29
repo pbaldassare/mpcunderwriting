@@ -1,0 +1,33 @@
+WITH corrections(descrizione, data_movimento, importo_ok, importo_v) AS (
+VALUES
+('Bonifico a vs favore *DIGITAL LIGHTHOUSE S R L 38548119CSG2617841137574710.2141032 SALDO ESTRATTO CONTO POLIZZA 195357450'::text, '2026-07-16'::date, 226::numeric, 22600::numeric),
+('Bonifico a vs favore *COMUNE DI BUSSO 2026-00578-000010534 CIG BC453EACB0 COPERTURA ASSICURATIVA RELATIVO AL NUOVO SCUOLA'::text, '2026-07-16'::date, 38::numeric, 3800::numeric),
+('Bonifico a vs favore *CONSORZIO DI BONIFICA BASSO MO CIG BC56F3CA57 CORRESPONSIONE PREMIO DI RINNOVO POLIZZA RCT DEC.17.0'::text, '2026-07-16'::date, 42000::numeric, 42::numeric),
+('Bonifico a vs favore *FEDERFARMA INSURANCE BROKER S R L EC DEL 10.07.2026 Info aggiuntive: Data ordine: 15/07/2026 Localita ordinante: 00185  ROMA  RM IT Ragione sociale ordinante: FEDERFARMA INSURANCE BROKER S R L IBAN ordinante: IT82H0306904214100000017642 Indirizzo ordinante: VIA EMANUELE FILIBERTO 190 ID_BONIFICO: 0306914326618611S90421404214IT Descrizione aggiuntiva del movimento: *FEDERFARMA INSURANCE BROKER S R L EC DEL 10.07.2026'::text, '2026-07-15'::date, 5787.4::numeric, 5.7874::numeric),
+('Bonifico a vs favore *AZIENDA OSPEDALIERO UNIVERSITARIA OSPEDA 0526200006712026M00043870000001 CIG B745198112 ASSICURAZIONE SPERIMENTAZIONE STUDIO FIBROMIALGIA F-2/AA.GG.-18/06/2026, MANDATO NUMERO 4387.1 Info aggiuntive: Data ordine: 15/07/2026 Localita ordinante: FOGGIA Ragione sociale ordinante: AZIENDA OSPEDALIERO UNIVERSITARIA OSPEDA IBAN ordinante: IT82R0526279748T20990000671 Indirizzo ordinante: VIALE LUIGI PINTO 1 ID_BONIFICO: 2077246730000000487974015700IT Descrizione aggiuntiva del movimento: *AZIENDA OSPEDALIERO UNIVERSITARIA OSPEDA 0526200006712026M00043870000001 CIG B745198112 ASSICURAZIO Descrizione estesa del movimento: NE SPERIMENTAZIONE STUDIO FIBROMIALGIA F-2/AA.GG.-18/06/2026, MANDATO NUMERO  4387.1'::text, '2026-07-15'::date, 1000::numeric, 1::numeric),
+('Bonifico a vs favore *AZIENDA OSPEDALIERO UNIVERSITARIA OSPEDA 0526200006712026M00043860000001 CIG 98994726B9 PAGAMENTO POLIZZA KASKO F-14761/AA.GG./1-17/06/2026, MANDATO NUMERO 4386.1 Info aggiuntive: Data ordine: 15/07/2026 Localita ordinante: FOGGIA Ragione sociale ordinante: AZIENDA OSPEDALIERO UNIVERSITARIA OSPEDA IBAN ordinante: IT82R0526279748T20990000671 Indirizzo ordinante: VIALE LUIGI PINTO 1 ID_BONIFICO: 2077056730600000487974015700IT Descrizione aggiuntiva del movimento: *AZIENDA OSPEDALIERO UNIVERSITARIA OSPEDA 0526200006712026M00043860000001 CIG 98994726B9 PAGAMENTO P Descrizione estesa del movimento: OLIZZA KASKO F-14761/AA.GG./1-17/06/2026, MANDATO NUMERO  4386.1'::text, '2026-07-15'::date, 2263.25::numeric, 2.26325::numeric),
+('Bonifico a vs favore *COMUNE SAN GIOVANNI IN GALDO 2026-00448-000002125 CIG BC5CAE4D71 LIQUIDAZIONE POLIZZA CAMPUS ESTIVO2026 - COMUNE DI SAN GIOVANNI IN GALDO (CB) Info aggiuntive: Data ordine: 15/07/2026 Ragione sociale ordinante: COMUNE SAN GIOVANNI IN GALDO IBAN ordinante: IT62E0760103200001052474994 Indirizzo ordinante: VIA GUGLIELMO MARCONI 29 SAN G ID_BONIFICO: EA26071454235151480320099999IT Descrizione aggiuntiva del movimento: *COMUNE SAN GIOVANNI IN GALDO 2026-00448-000002125 CIG BC5CAE4D71 LIQUIDAZIONE POLIZZA CAMPUS ESTIVO Descrizione estesa del movimento: 2026 - COMUNE DI SAN GIOVANNI IN GALDO (CB)'::text, '2026-07-15'::date, 150::numeric, 15000::numeric),
+('Bonifico a vs favore *COMUNE DI PISTICCI 202600022521 CIG.BC251686DD MAND.0002252 LIQUIDAZIONE ALLA CONSULBROKERS S.P.A.DI MILANO (MI) DELLA SOMMA DI EURO 19.581,52 PER IL PAGAMENTO POLIZZA Info aggiuntive: Data ordine: 15/07/2026 Localita ordinante: 75015 PISTICCI MT  MT Ragione sociale ordinante: COMUNE DI PISTICCI IBAN ordinante: IT05T0538712900000090000550 Indirizzo ordinante: PIAZZA UMBERTO I ID_BONIFICO: 261950100173511-481290000000IT05387 Descrizione aggiuntiva del movimento: *COMUNE DI PISTICCI 202600022521 CIG.BC251686DD MAND.0002252 LIQUIDAZIONE ALLA CONSULBROKERS S.P.A. Descrizione estesa del movimento: DI MILANO (MI) DELLA SOMMA DI EURO 19.581,52 PER IL PAGAMENTO POLIZZA'::text, '2026-07-15'::date, 5905.29::numeric, 5.90529::numeric)
+),
+upd AS (
+  UPDATE movimenti_bancari m
+  SET importo = c.importo_ok
+  FROM corrections c
+  WHERE m.data_movimento = c.data_movimento
+    AND m.stato IN ('importato','matchato','assegnato')
+    AND round(m.importo::numeric, 2) IS DISTINCT FROM round(c.importo_ok, 2)
+    AND (
+      m.descrizione = c.descrizione
+      OR (
+        left(m.descrizione, 90) = left(c.descrizione, 90)
+        AND c.importo_v IS NOT NULL
+        AND (
+          round(m.importo::numeric, 2) = round(c.importo_v, 2)
+          OR abs(m.importo - c.importo_ok * 100) < 0.05
+          OR abs(m.importo * 1000 - c.importo_ok) < 0.05
+        )
+      )
+    )
+  RETURNING m.id
+)
+SELECT count(*)::int AS updated FROM upd;

@@ -1,0 +1,16 @@
+{
+  "dbRows": 220,
+  "primaryKeys": 220,
+  "contentKeys": 153,
+  "fileWithImporto": 149,
+  "withSerialDates": {
+    "matchPrimary": 76,
+    "matchContent": 124,
+    "matchEither": 124,
+    "nuovi": 25
+  },
+  "withBrokenUsParse": {
+    "matchBrokenPrimary": 48,
+    "nuoviEst": 101
+  }
+}

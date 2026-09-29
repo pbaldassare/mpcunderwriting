@@ -1,0 +1,2 @@
+INSERT INTO clienti (cognome, nome, tipo_cliente, tipo_persona, indirizzo_sede, cap_sede, citta_sede, provincia_sede, nazione, attivo, stato_cliente, prospect, codice_ricerca, ufficio_id)
+VALUES ('BRIGUORI', 'CARLO', 'privato', 'fisica', 'VIA CHIATAMONE, 57', '80121', 'NAPOLI', 'NA', 'ITALIA', true, 'attivo', 'si', 'BRIGUORI CARLO', '68506cb3-3662-4967-bc88-8f5992f8efdc');

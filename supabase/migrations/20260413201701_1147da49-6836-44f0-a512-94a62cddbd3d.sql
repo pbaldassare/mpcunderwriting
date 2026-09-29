@@ -1,0 +1,1 @@
+DELETE FROM titoli WHERE numero_titolo IN ('VA-LM-2025-004', '2217048');

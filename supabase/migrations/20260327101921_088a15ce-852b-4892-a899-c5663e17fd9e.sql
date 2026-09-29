@@ -1,0 +1,2 @@
+INSERT INTO clienti (ragione_sociale, tipo_cliente, tipo_persona, indirizzo_sede, cap_sede, citta_sede, provincia_sede, nazione, email, telefono, attivo, stato_cliente, codice_ricerca, ufficio_id)
+VALUES ('COMUNE DI AFRAGOLA', 'ente', 'giuridica', 'PIAZZA MUNICIPIO, 1', '80021', 'AFRAGOLA', 'NA', 'ITALIA', 'u.setola@comune.afragola.na.it', '0818529283', true, 'attivo', 'AFRAGOLA', '68506cb3-3662-4967-bc88-8f5992f8efdc');

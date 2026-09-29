@@ -1,0 +1,13 @@
+---
+description: Ogni modifica va sempre pushata su main. Non lasciare lavoro solo in PR.
+alwaysApply: true
+---
+
+# Push sempre su main
+
+Da settembre 2026: **ogni modifica finita va su `origin/main`**, non resta ferma su un branch/PR.
+
+- Commit sul lavoro, poi **fast-forward o cherry-pick su `main`** e `git push origin main`.
+- Non aprire PR “per dopo” al posto del push su main: così le schermate non tornano indietro.
+- Le PR **#1–#49** (e comunque tutto prima della #50) **non si toccano** se non chiesto esplicitamente.
+- Eccezione: l’utente vieta esplicitamente il push su main per quel singolo pezzo.

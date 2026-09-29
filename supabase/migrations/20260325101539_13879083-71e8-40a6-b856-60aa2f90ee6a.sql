@@ -1,0 +1,1 @@
+ALTER TABLE public.titoli ADD COLUMN IF NOT EXISTS data_scadenza DATE;

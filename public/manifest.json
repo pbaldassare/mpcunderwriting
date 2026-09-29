@@ -1,0 +1,14 @@
+{
+  "name": "CBnet",
+  "short_name": "CBnet",
+  "description": "Gestionale CBnet",
+  "theme_color": "#1a4a5c",
+  "background_color": "#0f172a",
+  "display": "browser",
+  "start_url": "/",
+  "scope": "/",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

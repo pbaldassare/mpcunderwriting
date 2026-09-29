@@ -1,0 +1,23 @@
+{
+  "task.allowAutomaticTasks": "on",
+  "cbnetDevStatus.projectName": "CBnet",
+  "cbnetDevStatus.port": 5175,
+  "remote.autoForwardPorts": true,
+  "remote.autoForwardPortsSource": "hybrid",
+  "remote.restoreForwardedPorts": true,
+  "remote.forwardOnOpen": true,
+  "remote.portsAttributes": {
+    "5175": {
+      "label": "CBnet",
+      "onAutoForward": "openBrowser",
+      "protocol": "http",
+      "requireLocalPort": true
+    },
+    "8080": {
+      "onAutoForward": "ignore"
+    },
+    "5173": {
+      "onAutoForward": "ignore"
+    }
+  }
+}

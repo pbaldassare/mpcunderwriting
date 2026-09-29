@@ -1,0 +1,1 @@
+DELETE FROM public.titoli WHERE id = 'cf0d9c0d-10f7-4d20-a1eb-e92fda8453e5';

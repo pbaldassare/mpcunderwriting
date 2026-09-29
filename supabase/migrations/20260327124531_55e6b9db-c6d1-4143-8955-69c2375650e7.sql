@@ -1,0 +1,1 @@
+ALTER TABLE compagnie ADD COLUMN gruppo_compagnia_id uuid REFERENCES gruppi_compagnia(id);

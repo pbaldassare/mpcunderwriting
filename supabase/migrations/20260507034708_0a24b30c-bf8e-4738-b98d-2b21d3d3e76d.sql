@@ -1,0 +1,1 @@
+UPDATE public.clienti SET area_riservata_tipo='completa' WHERE id='94dc5a3c-1682-4aea-a9e2-190bf8bf34b1';

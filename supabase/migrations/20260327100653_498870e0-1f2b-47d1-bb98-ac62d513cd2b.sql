@@ -1,0 +1,2 @@
+INSERT INTO clienti (ragione_sociale, tipo_cliente, tipo_persona, indirizzo_sede, cap_sede, citta_sede, provincia_sede, nazione, email, attivo, stato_cliente, codice_ricerca, ufficio_id)
+VALUES ('CANTIERE NAVALE BASILIO POSTIGLIONE SRL', 'azienda', 'giuridica', 'VIA LUCULLO, 4', '80070', 'BACOLI', 'NA', 'ITALIA', 'info@cantierepostiglione.it', true, 'attivo', 'CANTIERE NAVALE', '68506cb3-3662-4967-bc88-8f5992f8efdc');

@@ -1,0 +1,1 @@
+UPDATE public.titoli SET comp_assicurativa = '2025-11-19' WHERE id = '7938cab5-45f5-4a38-895e-0aa785967f76';

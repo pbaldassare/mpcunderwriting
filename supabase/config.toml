@@ -1,0 +1,133 @@
+project_id = "zbjmnnlojxprlogbnxef"
+
+[functions.create-user]
+verify_jwt = false
+
+[functions.calcola-provvigioni]
+verify_jwt = false
+
+[functions.gestione-rimessa]
+verify_jwt = false
+
+[functions.incrocio-bancario]
+verify_jwt = false
+
+[functions.gestione-sinistri]
+verify_jwt = false
+
+[functions.parse-bank-document]
+verify_jwt = false
+
+[functions.match-bank-rows]
+verify_jwt = false
+
+[functions.seed-users]
+verify_jwt = false
+
+[functions.seed-lookup-tables]
+verify_jwt = false
+
+[functions.seed-demo-data]
+verify_jwt = false
+
+[functions.extract-document-data]
+verify_jwt = false
+
+[functions.parse-provvigioni-pdf]
+verify_jwt = false
+
+[functions.parse-tariffario-rami]
+verify_jwt = false
+
+[functions.import-corrispondenti]
+verify_jwt = false
+
+[functions.import-clienti]
+verify_jwt = false
+
+[functions.import-portafoglio]
+verify_jwt = false
+
+[functions.import-rinnovi]
+verify_jwt = false
+
+[functions.provision-corrispondenti-users]
+verify_jwt = false
+
+[functions.provision-sedi-users]
+verify_jwt = false
+
+[functions.cerca-bandi]
+verify_jwt = false
+
+[functions.scarica-bando-pdf]
+verify_jwt = false
+
+[functions.arricchisci-bando]
+verify_jwt = false
+
+[functions.genera-monitor-bando]
+verify_jwt = false
+
+[functions.provision-user]
+verify_jwt = false
+
+[functions.bootstrap-admin]
+verify_jwt = false
+
+[functions.send-email]
+verify_jwt = false
+
+[functions.check-resend-domain]
+verify_jwt = true
+
+[functions.import-storico-gare-oneshot]
+verify_jwt = false
+
+[functions.parse-polizza-completa]
+verify_jwt = false
+
+[functions.seed-comune-varese-polizze]
+verify_jwt = false
+
+[functions.seed-ospedale-demo]
+verify_jwt = false
+
+[functions.notifica-messa-cassa-agenzia]
+verify_jwt = false
+
+[functions.invia-ec-cliente]
+verify_jwt = false
+
+[functions.ai-match-movimenti-bancari]
+verify_jwt = false
+
+[functions.parse-cga]
+verify_jwt = false
+
+[functions.chiedi-polizza-cga]
+verify_jwt = false
+
+[functions.chiedi-libreria-cga]
+verify_jwt = false
+
+[functions.chiedi-mercato-assicurativo]
+verify_jwt = false
+
+[functions.cb-bot-analizza-documenti]
+verify_jwt = false
+
+[functions.elabora-documento-polizza]
+verify_jwt = false
+
+[functions.flush-messa-cassa-serale]
+verify_jwt = false
+
+[functions.idguard-check]
+verify_jwt = false
+
+[functions.idguard-webhook]
+verify_jwt = false
+
+[functions.assicurapp-rca]
+verify_jwt = false

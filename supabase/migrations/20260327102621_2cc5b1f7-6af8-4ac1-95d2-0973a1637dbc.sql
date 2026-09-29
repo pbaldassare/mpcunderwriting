@@ -1,0 +1,2 @@
+INSERT INTO clienti (ragione_sociale, tipo_cliente, tipo_persona, indirizzo_sede, cap_sede, citta_sede, provincia_sede, nazione, attivo, stato_cliente, codice_ricerca, ufficio_id)
+VALUES ('REGIONE CAMPANIA', 'ente', 'giuridica', 'VIA SANTA LUCIA, 81', '80132', 'NAPOLI', 'NA', 'ITALIA', true, 'attivo', 'REGIONE CAMPANI', '68506cb3-3662-4967-bc88-8f5992f8efdc');

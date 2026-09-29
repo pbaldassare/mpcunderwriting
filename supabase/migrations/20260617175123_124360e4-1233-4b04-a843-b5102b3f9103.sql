@@ -1,0 +1,1 @@
+ALTER TABLE public.appendici_polizza ADD COLUMN IF NOT EXISTS allegati jsonb NOT NULL DEFAULT '[]'::jsonb;

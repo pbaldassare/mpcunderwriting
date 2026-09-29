@@ -1,0 +1,2 @@
+ALTER TABLE trattative ADD COLUMN IF NOT EXISTS fonte TEXT;
+ALTER TABLE bandi_pubblici ADD COLUMN IF NOT EXISTS keyword TEXT;

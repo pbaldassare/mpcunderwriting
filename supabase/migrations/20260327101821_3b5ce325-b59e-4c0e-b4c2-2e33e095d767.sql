@@ -1,0 +1,2 @@
+INSERT INTO clienti (ragione_sociale, tipo_cliente, tipo_persona, indirizzo_sede, cap_sede, citta_sede, provincia_sede, nazione, attivo, stato_cliente, codice_ricerca, ufficio_id)
+VALUES ('ASSOCIAZIONE ASIS CB AIUTO IMMEDIATO', 'ente', 'giuridica', 'VIA PIETRO COSSA, 41', '00193', 'ROMA', 'RM', 'ITALIA', true, 'attivo', 'ASIS CB SDL', '68506cb3-3662-4967-bc88-8f5992f8efdc');

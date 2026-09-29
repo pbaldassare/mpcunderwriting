@@ -1,0 +1,20 @@
+
+ALTER TABLE public.compagnie
+  ADD COLUMN IF NOT EXISTS nazione text DEFAULT 'ITALIA',
+  ADD COLUMN IF NOT EXISTS cellulare text,
+  ADD COLUMN IF NOT EXISTS note text,
+  ADD COLUMN IF NOT EXISTS iscrizione_rui_sez text,
+  ADD COLUMN IF NOT EXISTS iscrizione_rui_num text,
+  ADD COLUMN IF NOT EXISTS pagamento text,
+  ADD COLUMN IF NOT EXISTS tipo_pagamento text,
+  ADD COLUMN IF NOT EXISTS codice_abi text,
+  ADD COLUMN IF NOT EXISTS codice_cab text,
+  ADD COLUMN IF NOT EXISTS bic text,
+  ADD COLUMN IF NOT EXISTS citta_banca text,
+  ADD COLUMN IF NOT EXISTS aut_incasso_118 boolean DEFAULT false,
+  ADD COLUMN IF NOT EXISTS tipo_copertura text,
+  ADD COLUMN IF NOT EXISTS ra_ec_negativi boolean DEFAULT false,
+  ADD COLUMN IF NOT EXISTS allegato_excel_avvisi boolean DEFAULT false,
+  ADD COLUMN IF NOT EXISTS allegato_excel_ec boolean DEFAULT false,
+  ADD COLUMN IF NOT EXISTS firma_digitale text DEFAULT 'No',
+  ADD COLUMN IF NOT EXISTS escluso_all4 boolean DEFAULT false;

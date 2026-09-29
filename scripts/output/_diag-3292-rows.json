@@ -1,0 +1,45 @@
+{
+  "headers": [
+    "Data contabile",
+    "Data valuta",
+    "Importo",
+    "Descrizione",
+    "",
+    ""
+  ],
+  "count": 149,
+  "sample": [
+    {
+      "Data contabile": "7/29/26",
+      "Data valuta": "7/29/26",
+      "Importo": "193",
+      "Descrizione": "Bonifico a vs favore *COMUNE DI SANTA MARINA SALINA 37105012026MAN000104000000010001106 CIG BC6BF91723 - LIQUIDAZIONE ALL"
+    },
+    {
+      "Data contabile": "7/28/26",
+      "Data valuta": "7/28/26",
+      "Importo": "5,000.00",
+      "Descrizione": "Bonifico a vs favore *PROVINCIA DI MATERA 2026-01813-000011222 CIG B78CC12B45 POLIZZA RCT/RCO STIPULATA CON LA COMPAGNIAREVO INSURANCE SPA - LIQUIDAZIONE PERIODO LUGLIO - DICEMBRE 2026 MANDATO NUMERO Info aggiuntive: Data ordine: 28/07/2026 Localita ordinante: MATERA Ragione sociale ordinante: PROVINCIA DI MATERA IBAN ordinante: IT44H0526279748T20990001236 Indirizzo ordinante: VIA RIDOLA 60 ID_BONIFICO: 2079606700800000487974016100IT Descrizione aggiuntiva del movimento: *PROVINCIA DI MATERA 2026-01813-000011222 CIG B78CC12B45 POLIZZA RCT/RCO STIPULATA CON LA COMPAGNIA Descrizione estesa del movimento: REVO INSURANCE SPA - LIQUIDAZIONE PERIODO LUGLIO - DICEMBRE 2026 MANDATO NUMERO"
+    },
+    {
+      "Data contabile": "7/28/26",
+      "Data valuta": "7/28/26",
+      "Importo": "9,000.00",
+      "Descrizione": "Bonifico a vs favore *PROVINCIA DI MATERA 2026-01814-000011222 CIG B78CC12B45 POLIZZA RCT/RCO STIPULATA CON LA COMPAGNIAREVO INSURANCE SPA - LIQUIDAZIONE PERIODO LUGLIO - DICEMBRE 2026 MANDATO NUMERO Info aggiuntive: Data ordine: 28/07/2026 Localita ordinante: MATERA Ragione sociale ordinante: PROVINCIA DI MATERA IBAN ordinante: IT44H0526279748T20990001236 Indirizzo ordinante: VIA RIDOLA 60 ID_BONIFICO: 2079236700600000487974016100IT Descrizione aggiuntiva del movimento: *PROVINCIA DI MATERA 2026-01814-000011222 CIG B78CC12B45 POLIZZA RCT/RCO STIPULATA CON LA COMPAGNIA Descrizione estesa del movimento: REVO INSURANCE SPA - LIQUIDAZIONE PERIODO LUGLIO - DICEMBRE 2026 MANDATO NUMERO"
+    }
+  ],
+  "last": [
+    {
+      "Data contabile": "7/1/26",
+      "Data valuta": "7/1/26",
+      "Importo": "2,944.93",
+      "Descrizione": "Bonifico a vs favore *COMUNE DI SESTO CAMPANO 2026.1228.1 RINNOVO POLIZZE AUTOMEZZI Info aggiuntive: Data ordine: 01/07/2026 Ragione sociale ordinante: COMUNE DI SESTO CAMPANO IBAN ordinante: IT86K0760103200001050270766 Indirizzo ordinante: VIA G. MARCONI SNC SESTO CAMPA ID_BONIFICO: EA26063038771167480320099999IT Descrizione aggiuntiva del movimento: *COMUNE DI SESTO CAMPANO 2026.1228.1 RINNOVO POLIZZE AUTOMEZZI"
+    },
+    {
+      "Data contabile": "7/1/26",
+      "Data valuta": "7/1/26",
+      "Importo": "6,000.00",
+      "Descrizione": "Bonifico a vs favore *COMUNE DI SESTO CAMPANO 2026.1227.1 RINNOVO POLIZZE AUTOMEZZI Info aggiuntive: Data ordine: 01/07/2026 Ragione sociale ordinante: COMUNE DI SESTO CAMPANO IBAN ordinante: IT86K0760103200001050270766 Indirizzo ordinante: VIA G. MARCONI SNC SESTO CAMPA ID_BONIFICO: EA26063038771165480320099999IT Descrizione aggiuntiva del movimento: *COMUNE DI SESTO CAMPANO 2026.1227.1 RINNOVO POLIZZE AUTOMEZZI"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+ALTER TABLE public.compagnie DROP CONSTRAINT IF EXISTS compagnie_tipo_check;
+ALTER TABLE public.compagnie ADD CONSTRAINT compagnie_tipo_check CHECK (tipo IN ('agenzia','broker','direzione','plurimandataria'));
