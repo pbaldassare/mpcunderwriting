@@ -14,6 +14,13 @@ export function resolveProfileAfterFetch<T>(
   return { profile: null, confirmedMissing: true };
 }
 
+export const ACCOUNT_SUSPENDED_MESSAGE = "Il tuo account è stato sospeso";
+
+/** Sospeso solo se l'admin ha messo attivo = false. null resta un account utilizzabile. */
+export function isAccountSuspended(attivo: boolean | null | undefined): boolean {
+  return attivo === false;
+}
+
 /** Eventi auth su cui ha senso ricaricare `profiles`. TOKEN_REFRESHED no: il profilo non cambia. */
 export function shouldRefetchProfileOnAuthEvent(event: string): boolean {
   return event === "SIGNED_IN" || event === "INITIAL_SESSION" || event === "USER_UPDATED";

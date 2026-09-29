@@ -2,6 +2,7 @@ import { ReactNode, useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
 import { Loader2 } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
+import { isAccountSuspended } from "@/lib/authProfile";
 import { supabase } from "@/integrations/supabase/client";
 
 const ClienteGuard = ({ children }: { children: ReactNode }) => {
@@ -40,7 +41,7 @@ const ClienteGuard = ({ children }: { children: ReactNode }) => {
       </div>
     );
   }
-  if (!user) return <Navigate to="/login" replace />;
+  if (!user || (profile && isAccountSuspended(profile.attivo))) return <Navigate to="/login" replace />;
   if (isPreviewRole) return <>{children}</>;
   if (profile?.ruolo !== "cliente") return <Navigate to="/" replace />;
   if (areaType === "nessuna") return <Navigate to="/login" replace />;

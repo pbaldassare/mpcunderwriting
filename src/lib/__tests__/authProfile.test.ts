@@ -1,5 +1,10 @@
 import { describe, expect, it } from "vitest";
-import { resolveProfileAfterFetch, shouldRefetchProfileOnAuthEvent } from "../authProfile";
+import {
+  ACCOUNT_SUSPENDED_MESSAGE,
+  isAccountSuspended,
+  resolveProfileAfterFetch,
+  shouldRefetchProfileOnAuthEvent,
+} from "../authProfile";
 
 describe("resolveProfileAfterFetch", () => {
   it("tiene il profilo corrente se il fetch fallisce", () => {
@@ -23,6 +28,16 @@ describe("resolveProfileAfterFetch", () => {
       profile: null,
       confirmedMissing: true,
     });
+  });
+});
+
+describe("isAccountSuspended", () => {
+  it("blocca solo gli account con attivo false", () => {
+    expect(isAccountSuspended(false)).toBe(true);
+    expect(isAccountSuspended(true)).toBe(false);
+    expect(isAccountSuspended(null)).toBe(false);
+    expect(isAccountSuspended(undefined)).toBe(false);
+    expect(ACCOUNT_SUSPENDED_MESSAGE).toBe("Il tuo account è stato sospeso");
   });
 });
 

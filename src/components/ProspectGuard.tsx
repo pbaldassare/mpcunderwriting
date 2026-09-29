@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import { Navigate } from "react-router-dom";
 import { Loader2 } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
+import { isAccountSuspended } from "@/lib/authProfile";
 
 const ProspectGuard = ({ children }: { children: ReactNode }) => {
   const { user, profile, loading } = useAuth();
@@ -13,7 +14,7 @@ const ProspectGuard = ({ children }: { children: ReactNode }) => {
       </div>
     );
   }
-  if (!user) return <Navigate to="/login" replace />;
+  if (!user || (profile && isAccountSuspended(profile.attivo))) return <Navigate to="/login" replace />;
 
   // Admin/ufficio possono fare anteprima del portale prospect
   if (profile?.ruolo === "admin" || profile?.ruolo === "ufficio") return <>{children}</>;

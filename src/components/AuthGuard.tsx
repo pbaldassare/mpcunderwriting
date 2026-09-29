@@ -5,6 +5,7 @@ import { toast } from "sonner";
 import { useAuth } from "@/contexts/AuthContext";
 import { supabase } from "@/integrations/supabase/client";
 import { getDefaultRoute } from "@/lib/getDefaultRoute";
+import { isAccountSuspended } from "@/lib/authProfile";
 
 const AuthGuard = ({ children }: { children: ReactNode }) => {
   const { user, profile, profileMissing, loading } = useAuth();
@@ -28,7 +29,7 @@ const AuthGuard = ({ children }: { children: ReactNode }) => {
     );
   }
 
-  if (!user) return <Navigate to="/login" replace />;
+  if (!user || (profile && isAccountSuspended(profile.attivo))) return <Navigate to="/login" replace />;
   if (!profile) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-background">

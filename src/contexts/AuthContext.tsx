@@ -1,7 +1,13 @@
-import { createContext, useContext, useEffect, useState, ReactNode } from "react";
+import { createContext, useContext, useEffect, useRef, useState, ReactNode } from "react";
+import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 import type { User } from "@supabase/supabase-js";
-import { resolveProfileAfterFetch, shouldRefetchProfileOnAuthEvent } from "@/lib/authProfile";
+import {
+  ACCOUNT_SUSPENDED_MESSAGE,
+  isAccountSuspended,
+  resolveProfileAfterFetch,
+  shouldRefetchProfileOnAuthEvent,
+} from "@/lib/authProfile";
 import { isSedeSistemaRole } from "@/lib/sistemaSede";
 
 export interface UserProfile {
@@ -46,6 +52,17 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [profileMissing, setProfileMissing] = useState(false);
   const [loading, setLoading] = useState(true);
+  const suspendedSignOut = useRef(false);
+
+  const rejectSuspendedAccount = () => {
+    if (suspendedSignOut.current) return;
+    suspendedSignOut.current = true;
+    setProfile(null);
+    setProfileMissing(false);
+    setLoading(false);
+    toast.error(ACCOUNT_SUSPENDED_MESSAGE);
+    void supabase.auth.signOut();
+  };
 
   const fetchProfile = async (userId: string) => {
     const { data, error } = await supabase
@@ -55,6 +72,10 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       .maybeSingle();
 
     if (error) console.error("[AuthContext] fetchProfile error:", error);
+    if (data && isAccountSuspended((data as UserProfile).attivo)) {
+      rejectSuspendedAccount();
+      return;
+    }
     setProfile((current) => {
       const next = resolveProfileAfterFetch(current, data as UserProfile | null, error);
       setProfileMissing(next.confirmedMissing);
@@ -67,6 +88,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
       (_event, session) => {
         if (_event === "SIGNED_OUT") {
+          suspendedSignOut.current = false;
           setUser(null);
           setProfile(null);
           setProfileMissing(false);

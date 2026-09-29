@@ -10,6 +10,7 @@ import { Lock, Mail, Eye, EyeOff, Loader2 } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useConsultazione } from "@/contexts/ConsultazioneContext";
 import { getDefaultRoute } from "@/lib/getDefaultRoute";
+import { isAccountSuspended } from "@/lib/authProfile";
 import {
   CONSULTAZIONE_DISCLAIMER_TEXT,
   isConsultazioneEmailAllowed,
@@ -51,8 +52,9 @@ const LoginPage = () => {
     return <Navigate to="/consultazione/documentale" replace />;
   }
 
-  // Già loggato gestionale + profilo → rotta di default
-  if (mode === "gestionale" && !authLoading && user && profile) {
+  // Già loggato gestionale + profilo attivo → rotta di default.
+  // Un account sospeso resta sulla login: AuthContext chiude la sessione.
+  if (mode === "gestionale" && !authLoading && user && profile && !isAccountSuspended(profile.attivo)) {
     const route = getDefaultRoute(profile) || "/";
     return <Navigate to={route === "/login" ? "/" : route} replace />;
   }
