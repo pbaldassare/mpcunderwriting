@@ -32,8 +32,7 @@ const ROLE_LABELS: Record<string, string> = {
 const Topbar = ({ onToggleSidebar }: TopbarProps) => {
   const { profile, signOut } = useAuth();
   const navigate = useNavigate();
-  const appEnv = import.meta.env.VITE_APP_ENV || "DEV";
-  const isDev = appEnv !== "PROD";
+  const showDevBadge = import.meta.env.DEV;
 
   const displayName = profile
     ? `${profile.nome || ""} ${profile.cognome || ""}`.trim() || profile.email || "Utente"
@@ -62,9 +61,11 @@ const Topbar = ({ onToggleSidebar }: TopbarProps) => {
             ⌘K
           </kbd>
         </div>
-        <Badge variant={isDev ? "destructive" : "default"} className="hidden sm:inline-flex text-[10px] px-2 py-0.5 uppercase tracking-wider">
-          {appEnv}
-        </Badge>
+        {showDevBadge && (
+          <Badge variant="destructive" className="hidden sm:inline-flex text-[10px] px-2 py-0.5 uppercase tracking-wider">
+            DEV
+          </Badge>
+        )}
       </div>
 
       <div className="flex items-center gap-1 sm:gap-4 shrink-0">
