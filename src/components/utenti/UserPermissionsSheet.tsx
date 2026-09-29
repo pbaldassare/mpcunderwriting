@@ -11,6 +11,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Separator } from "@/components/ui/separator";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { supabase } from "@/integrations/supabase/client";
+import { useAuth } from "@/contexts/AuthContext";
 import { toast } from "sonner";
 import { ALL_PERMISSION_KEYS, getLevelByRole, ROLE_LABELS, VISIBILITY_LABEL, VisibilityScope, LEVELS } from "@/lib/userLevels";
 import { roleLabel, sedeAssegnataLabel } from "@/lib/userPrivilegiDisplay";
@@ -29,6 +30,7 @@ interface Props {
 }
 
 const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
+  const { user: authUser } = useAuth();
   const [permissions, setPermissions] = useState<Record<string, boolean>>({});
   const [visibility, setVisibility] = useState<VisibilityScope>("self_only");
   const [ruolo, setRuolo] = useState<string>("");
@@ -60,6 +62,7 @@ const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
   if (!user) return null;
   const level = getLevelByRole(ruolo);
   const Icon = level.icon;
+  const isSelf = authUser?.id === user.id;
 
   const handleSave = async () => {
     setSaving(true);
@@ -71,7 +74,7 @@ const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
 
     const { error } = await supabase.from("profiles").update({
       ruolo,
-      attivo,
+      attivo: isSelf ? user.attivo !== false : attivo,
       permessi_json: newPermissions,
     }).eq("id", user.id);
 
@@ -205,9 +208,21 @@ const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
               <div className="flex items-center justify-between rounded-lg border p-3">
                 <div>
                   <Label className="font-medium">Account attivo</Label>
-                  <p className="text-xs text-muted-foreground">Se disattivato, l'utente non può accedere</p>
+                  <p className="text-xs text-muted-foreground">
+                    {isSelf
+                      ? "Non puoi disattivare il tuo account"
+                      : "Se disattivato, l'utente non può accedere"}
+                  </p>
                 </div>
-                <Switch checked={attivo} onCheckedChange={setAttivo} />
+                <span title={isSelf ? "Non puoi disattivare il tuo account" : undefined}>
+                  <Switch
+                    checked={isSelf ? true : attivo}
+                    disabled={isSelf}
+                    className={isSelf ? "grayscale" : undefined}
+                    onCheckedChange={setAttivo}
+                    aria-label={isSelf ? "Non puoi disattivare il tuo account" : "Account attivo"}
+                  />
+                </span>
               </div>
               <div className="rounded-lg border bg-primary/5 p-3 flex items-start gap-2">
                 <ExternalLink className="w-4 h-4 mt-0.5 text-primary" />

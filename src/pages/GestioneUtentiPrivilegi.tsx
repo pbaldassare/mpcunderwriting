@@ -18,8 +18,10 @@ import UserPermissionsSheet from "@/components/utenti/UserPermissionsSheet";
 import DeleteWithImpactDialog from "@/components/common/DeleteWithImpactDialog";
 import { toast } from "sonner";
 import { matchesProfileNameSearch } from "@/lib/searchNoEmail";
+import { useAuth } from "@/contexts/AuthContext";
 
 const GestioneUtentiPrivilegi = () => {
+  const { user: authUser } = useAuth();
   const [searchParams, setSearchParams] = useSearchParams();
   const [filterLevel, setFilterLevel] = useState<UserLevel | "all">("all");
   const [statusFilter, setStatusFilter] = useState<"all" | "active" | "suspended">("all");
@@ -119,6 +121,10 @@ const GestioneUtentiPrivilegi = () => {
   }, [filtered]);
 
   const toggleAttivo = async (user: any, value: boolean) => {
+    if (authUser?.id === user.id && !value) {
+      toast.error("Non puoi disattivare il tuo account");
+      return;
+    }
     const { error } = await supabase.from("profiles").update({ attivo: value }).eq("id", user.id);
     if (error) toast.error("Errore");
     else {
@@ -275,9 +281,17 @@ const GestioneUtentiPrivilegi = () => {
                       <div className="flex items-center gap-2">
                         <div className="flex items-center gap-1.5">
                           <span className="text-[10px] text-muted-foreground hidden md:inline">
-                            {u.attivo ? "Attivo" : "Sospeso"}
+                            {authUser?.id === u.id ? "Il tuo account" : u.attivo ? "Attivo" : "Sospeso"}
                           </span>
-                          <Switch checked={!!u.attivo} onCheckedChange={(v) => toggleAttivo(u, v)} />
+                          <span title={authUser?.id === u.id ? "Non puoi disattivare il tuo account" : undefined}>
+                            <Switch
+                              checked={!!u.attivo}
+                              disabled={authUser?.id === u.id}
+                              className={authUser?.id === u.id ? "grayscale" : undefined}
+                              onCheckedChange={(v) => toggleAttivo(u, v)}
+                              aria-label={authUser?.id === u.id ? "Non puoi disattivare il tuo account" : "Attiva o sospendi utente"}
+                            />
+                          </span>
                         </div>
                         <Button size="sm" variant="outline" onClick={() => { setSheetUser(u); setSheetOpen(true); }}>
                           <Settings2 className="w-3.5 h-3.5 mr-1" /> Permessi
