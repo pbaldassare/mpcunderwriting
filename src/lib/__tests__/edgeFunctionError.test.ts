@@ -3,6 +3,7 @@ import {
   edgeFunctionErrorMessage,
   formatEdgeFunctionError,
   hideAiVendorNames,
+  readInvokeErrorMessage,
 } from "@/lib/edgeFunctionError";
 
 describe("hideAiVendorNames", () => {
@@ -48,6 +49,18 @@ describe("edgeFunctionErrorMessage", () => {
     expect(edgeFunctionErrorMessage({ ok: true }, { message: "Failed to send" })).toBe(
       "Failed to send",
     );
+  });
+
+  it("legge il messaggio JSON dalla Response di un errore HTTP", async () => {
+    const response = new Response(JSON.stringify({ error: "Sede obbligatoria per il ruolo responsabile_sede" }), {
+      status: 400,
+      headers: { "Content-Type": "application/json" },
+    });
+    const message = await readInvokeErrorMessage(null, {
+      message: "Edge Function returned a non-2xx status code",
+      context: response,
+    });
+    expect(message).toBe("Sede obbligatoria per il ruolo responsabile_sede");
   });
 
   it("ritorna null se non c'è nulla di utile", () => {

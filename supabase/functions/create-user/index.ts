@@ -188,7 +188,8 @@ Deno.serve(async (req) => {
     });
 
     if (roleError) {
-      console.error("Error assigning role:", roleError.message);
+      await adminClient.auth.admin.deleteUser(newUserId);
+      return jsonResponse({ error: `Errore assegnazione ruolo: ${roleError.message}` }, 400);
     }
 
     const { error: logError } = await adminClient.from("log_attivita").insert({

@@ -45,6 +45,28 @@ export function formatEdgeFunctionError(
   return hideAiVendorNames(generic) || "Errore sconosciuto";
 }
 
+/** Messaggio da mostrare dopo functions.invoke, anche quando il body sta sulla Response di errore. */
+export async function readInvokeErrorMessage(
+  data: unknown,
+  error: { message?: string; context?: { clone?: () => { json: () => Promise<unknown> } } } | null | undefined,
+): Promise<string> {
+  const fromData = edgeFunctionErrorMessage(data, null);
+  if (fromData) return fromData;
+
+  const context = error?.context;
+  if (context && typeof context.clone === "function") {
+    try {
+      const body = await context.clone().json();
+      const fromBody = edgeFunctionErrorMessage(body, null);
+      if (fromBody) return fromBody;
+    } catch {
+      // body non JSON
+    }
+  }
+
+  return edgeFunctionErrorMessage(null, error) || "Errore sconosciuto";
+}
+
 /** Estrae il messaggio utile da supabase.functions.invoke (body JSON o FunctionsHttpError). */
 export function edgeFunctionErrorMessage(
   data: unknown,

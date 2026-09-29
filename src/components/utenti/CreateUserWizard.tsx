@@ -12,6 +12,7 @@ import { LEVELS, LevelConfig, ROLE_LABELS } from "@/lib/userLevels";
 import { Sparkles, UserPlus, Building2, ShieldCheck, ChevronRight, CheckCircle2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
+import { readInvokeErrorMessage } from "@/lib/edgeFunctionError";
 
 type Source = "scratch" | "anagrafica" | "cliente";
 
@@ -112,8 +113,8 @@ const CreateUserWizard = ({ open, onOpenChange, onCreated }: Props) => {
       headers: token ? { Authorization: `Bearer ${token}` } : {},
     });
 
-    if (res.error || (res.data as any)?.error) {
-      toast.error("Errore", { description: (res.data as any)?.error || res.error?.message });
+    if (res.error || (res.data as { error?: string } | null)?.error) {
+      toast.error("Errore", { description: await readInvokeErrorMessage(res.data, res.error) });
       setSaving(false);
       return;
     }

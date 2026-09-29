@@ -13,6 +13,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
 import { toast } from "sonner";
+import { readInvokeErrorMessage } from "@/lib/edgeFunctionError";
 import { ALL_PERMISSION_KEYS, getLevelByRole, ROLE_LABELS, VISIBILITY_LABEL, VisibilityScope, LEVELS } from "@/lib/userLevels";
 import { roleLabel, sedeAssegnataLabel } from "@/lib/userPrivilegiDisplay";
 import PermissionsMatrix from "./PermissionsMatrix";
@@ -108,12 +109,14 @@ const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
     }
     const { data: s } = await supabase.auth.getSession();
     const token = s?.session?.access_token;
-    const res = await supabase.functions.invoke("provision-user", {
-      body: { user_id: user.id, password: resetPwd, only_password: true },
+    const res = await supabase.functions.invoke("create-user", {
+      body: { action: "reset-password", user_id: user.id, password: resetPwd },
       headers: token ? { Authorization: `Bearer ${token}` } : {},
     });
-    if (res.error) {
-      toast.info("Per reset password contatta l'admin sistema (richiede edge function dedicata)");
+    if (res.error || (res.data as { error?: string } | null)?.error) {
+      toast.error("Reset password non riuscito", {
+        description: await readInvokeErrorMessage(res.data, res.error),
+      });
     } else {
       toast.success("Password reimpostata");
       setResetPwd("");
