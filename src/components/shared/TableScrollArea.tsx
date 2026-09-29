@@ -1,15 +1,19 @@
-import { useCallback, useEffect, useRef, useState, type HTMLAttributes, type ReactNode } from "react";
+import { useCallback, useEffect, useRef, useState, type CSSProperties, type HTMLAttributes, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 type Props = Omit<HTMLAttributes<HTMLDivElement>, "children"> & {
   children: ReactNode;
+  /** Classi extra sulla barra orizzontale visibile. */
+  barClassName?: string;
+  /** Stile della barra, per esempio scrollbarColor. */
+  barStyle?: CSSProperties;
 };
 
 /**
  * Scroll orizzontale in alto e in basso, sincronizzati.
  * Lo scroller alto compare solo se il contenuto è più largo del contenitore.
  */
-export function TableScrollArea({ children, className, ...props }: Props) {
+export function TableScrollArea({ children, className, barClassName, barStyle, ...props }: Props) {
   const topRef = useRef<HTMLDivElement>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
   const [contentWidth, setContentWidth] = useState(0);
@@ -63,9 +67,10 @@ export function TableScrollArea({ children, className, ...props }: Props) {
         ref={topRef}
         data-table-h-scroll-top=""
         aria-hidden
+        style={barStyle}
         className={cn(
           "overflow-x-scroll overflow-y-hidden [scrollbar-gutter:stable]",
-          "[&::-webkit-scrollbar]:h-2.5 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-muted-foreground/40",
+          barClassName ?? "[&::-webkit-scrollbar]:h-2.5 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-muted-foreground/40",
           needsHScroll ? "h-3.5 mb-0.5" : "hidden",
         )}
         onScroll={() => syncFrom("top")}

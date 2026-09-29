@@ -28,6 +28,7 @@ import ProduttoreProvvigioniRamoTab from "@/components/anagrafiche/ProduttorePro
 import DeleteWithImpactDialog from "@/components/common/DeleteWithImpactDialog";
 import { ValidatedInput } from "@/components/ui/validated-input";
 import { matchesAnagraficaListSearch } from "@/lib/searchNoEmail";
+import { TableScrollArea } from "@/components/shared/TableScrollArea";
 
 /** value ISO yyyy-MM-dd o "" */
 const DateField = ({ value, onChange }: { value: string; onChange: (v: string) => void }) => (
@@ -861,18 +862,20 @@ const AnagraficheInternePage = () => {
       </div>
 
       <Tabs value={activeTab} onValueChange={(v) => { setActiveTab(v as TabValue); setSearch(""); }}>
-        <TabsList>
-          {TIPI.map((t) => (
-            <TabsTrigger key={t.value} value={t.value} className="gap-1.5">
-              <t.icon className="w-4 h-4" />{t.label}
-            </TabsTrigger>
-          ))}
-          {EXTRA_TABS.map((t) => (
-            <TabsTrigger key={t.value} value={t.value} className="gap-1.5">
-              <t.icon className="w-4 h-4" />{t.label}
-            </TabsTrigger>
-          ))}
-        </TabsList>
+        <TableScrollArea barStyle={{ scrollbarWidth: "thin", scrollbarColor: "#475569 #e2e8f0" }}>
+          <TabsList className="inline-flex h-10 w-max min-w-full justify-start">
+            {TIPI.map((t) => (
+              <TabsTrigger key={t.value} value={t.value} className="shrink-0 gap-1.5">
+                <t.icon className="w-4 h-4" />{t.label}
+              </TabsTrigger>
+            ))}
+            {EXTRA_TABS.map((t) => (
+              <TabsTrigger key={t.value} value={t.value} className="shrink-0 gap-1.5">
+                <t.icon className="w-4 h-4" />{t.label}
+              </TabsTrigger>
+            ))}
+          </TabsList>
+        </TableScrollArea>
 
         {isAnagraficaTab && (
           <div className="mt-4 flex items-center gap-3">
