@@ -129,7 +129,7 @@ const sidebarEntries: SidebarEntry[] = [
     type: "single",
     item: {
       label: "MPC Bot",
-      path: "/cb-bot",
+      path: "/mpc-bot",
       icon: Bot,
       permissionKey: "dashboard",
       showForRoles: ["admin"],
@@ -196,7 +196,7 @@ const sidebarEntries: SidebarEntry[] = [
     type: "single",
     item: {
       label: "MPC Bot",
-      path: "/portafoglio/documentale?tab=cb-bot",
+      path: "/portafoglio/documentale?tab=mpc-bot",
       icon: Bot,
       permissionKey: "portafoglio",
       hideForRoles: ["admin"],

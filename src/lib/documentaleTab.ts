@@ -1,12 +1,14 @@
+import { isMpcBotTabQuery, MPC_BOT_TAB_QUERY } from "@/lib/mpcBotPaths";
+
 export const DOCUMENTALE_TABS = ["archivio", "libreria-cga", "assistente-garanzie"] as const;
 export type DocumentaleTab = (typeof DOCUMENTALE_TABS)[number];
 
 /** Etichetta visibile in UI (sidebar, tab, H1, breadcrumb). */
 export const CB_BOT_LABEL = "MPC Bot";
 
-/** Query `tab=cb-bot` (sidebar) → tab interno `assistente-garanzie`. */
+/** Query `tab=mpc-bot` (sidebar) → tab interno `assistente-garanzie`. `cb-bot` resta accettato. */
 export function parseDocumentaleTab(raw: string | null, consultazioneMode: boolean): DocumentaleTab {
-  if (raw === "cb-bot" || raw === "assistente-garanzie") return "assistente-garanzie";
+  if (isMpcBotTabQuery(raw)) return "assistente-garanzie";
   if (raw === "libreria-cga") return "libreria-cga";
   if (raw === "archivio") return "archivio";
   return consultazioneMode ? "assistente-garanzie" : "archivio";
@@ -38,7 +40,7 @@ export function documentaleTabFromLocation(pathname: string, search: string): Do
 }
 
 export function documentaleTabToQuery(tab: DocumentaleTab, consultazioneMode: boolean): string | null {
-  if (tab === "assistente-garanzie") return "cb-bot";
+  if (tab === "assistente-garanzie") return MPC_BOT_TAB_QUERY;
   if (tab === "archivio" && !consultazioneMode) return null;
   return tab;
 }

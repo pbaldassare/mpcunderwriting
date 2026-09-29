@@ -47,6 +47,7 @@ const ROUTE_LABELS: Record<string, string> = {
   "doc-precontrattuale": "Doc. Precontrattuale",
   "estrazioni-stampe": "Estrazioni e Stampe",
   "cb-bot": "MPC Bot",
+  "mpc-bot": "MPC Bot",
   "assistente-web": "Assistente Web",
   "fonti-siti": "Fonti siti",
   "libreria-cga": "Libreria CGA",

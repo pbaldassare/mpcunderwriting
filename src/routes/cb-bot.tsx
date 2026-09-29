@@ -1,4 +1,4 @@
-import { Route } from "react-router-dom";
+import { Navigate, Route, useLocation } from "react-router-dom";
 import { Globe, BookOpen, Mail, ScrollText } from "lucide-react";
 import RoleGuard from "@/components/RoleGuard";
 import CbBotPage from "@/pages/cb-bot/CbBotPage";
@@ -6,11 +6,20 @@ import CbBotSectionPage from "@/pages/cb-bot/CbBotSectionPage";
 import CbBotFontiSitiPage from "@/pages/cb-bot/CbBotFontiSitiPage";
 import CbBotRicerchePage from "@/pages/cb-bot/CbBotRicerchePage";
 import { CONSULTAZIONE_ALLOWED_EMAIL_DOMAINS } from "@/lib/consultazioneSession";
+import { MPC_BOT_PATH, mpcBotPath } from "@/lib/mpcBotPaths";
+
+function LegacyCbBotRedirect() {
+  const { pathname, search, hash } = useLocation();
+  const next = pathname.replace(/^\/cb-bot(?=\/|$)/, MPC_BOT_PATH) + search + hash;
+  return <Navigate to={next} replace />;
+}
 
 export const cbBotRoutes = (
   <>
+    <Route path="/cb-bot" element={<Navigate to={MPC_BOT_PATH} replace />} />
+    <Route path="/cb-bot/*" element={<LegacyCbBotRedirect />} />
     <Route
-      path="/cb-bot"
+      path={MPC_BOT_PATH}
       element={
         <RoleGuard allowedRoles={["admin"]}>
           <CbBotPage />
@@ -18,7 +27,7 @@ export const cbBotRoutes = (
       }
     />
     <Route
-      path="/cb-bot/assistente-web"
+      path={mpcBotPath("assistente-web")}
       element={
         <RoleGuard allowedRoles={["admin"]}>
           <CbBotSectionPage
@@ -30,7 +39,7 @@ export const cbBotRoutes = (
       }
     />
     <Route
-      path="/cb-bot/fonti-siti"
+      path={mpcBotPath("fonti-siti")}
       element={
         <RoleGuard allowedRoles={["admin"]}>
           <CbBotFontiSitiPage />
@@ -38,7 +47,7 @@ export const cbBotRoutes = (
       }
     />
     <Route
-      path="/cb-bot/libreria-cga"
+      path={mpcBotPath("libreria-cga")}
       element={
         <RoleGuard allowedRoles={["admin"]}>
           <CbBotSectionPage
@@ -50,7 +59,7 @@ export const cbBotRoutes = (
       }
     />
     <Route
-      path="/cb-bot/accessi"
+      path={mpcBotPath("accessi")}
       element={
         <RoleGuard allowedRoles={["admin"]}>
           <CbBotSectionPage
@@ -71,7 +80,7 @@ export const cbBotRoutes = (
       }
     />
     <Route
-      path="/cb-bot/istruzioni"
+      path={mpcBotPath("istruzioni")}
       element={
         <RoleGuard allowedRoles={["admin"]}>
           <CbBotSectionPage
@@ -83,7 +92,7 @@ export const cbBotRoutes = (
       }
     />
     <Route
-      path="/cb-bot/ricerche"
+      path={mpcBotPath("ricerche")}
       element={
         <RoleGuard allowedRoles={["admin"]}>
           <CbBotRicerchePage />

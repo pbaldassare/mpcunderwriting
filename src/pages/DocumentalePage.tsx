@@ -26,6 +26,7 @@ import {
   parseDocumentaleTab,
   type DocumentaleTab,
 } from "@/lib/documentaleTab";
+import { isLegacyBotTabQuery, MPC_BOT_TAB_QUERY } from "@/lib/mpcBotPaths";
 
 interface Folder {
   id: string;
@@ -59,7 +60,15 @@ export default function DocumentalePage({ consultazioneMode = false }: Documenta
   const { isAdmin, profile, user } = useAuth();
   const { logRicerca } = useConsultazione();
   const [searchParams, setSearchParams] = useSearchParams();
-  const tab = parseDocumentaleTab(searchParams.get("tab"), consultazioneMode);
+  const rawTab = searchParams.get("tab");
+  const tab = parseDocumentaleTab(rawTab, consultazioneMode);
+
+  useEffect(() => {
+    if (!isLegacyBotTabQuery(rawTab)) return;
+    const sp = new URLSearchParams(searchParams);
+    sp.set("tab", MPC_BOT_TAB_QUERY);
+    setSearchParams(sp, { replace: true });
+  }, [rawTab, searchParams, setSearchParams]);
   const setTab = (v: string) => {
     const next = v as DocumentaleTab;
     const sp = new URLSearchParams(searchParams);

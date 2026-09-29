@@ -8,7 +8,8 @@ import {
 } from "@/lib/documentaleTab";
 
 describe("parseDocumentaleTab", () => {
-  it("mappa tab=cb-bot sul tab interno MPC Bot", () => {
+  it("mappa tab=mpc-bot sul tab interno MPC Bot e accetta i vecchi valori", () => {
+    expect(parseDocumentaleTab("mpc-bot", false)).toBe("assistente-garanzie");
     expect(parseDocumentaleTab("cb-bot", false)).toBe("assistente-garanzie");
     expect(parseDocumentaleTab("assistente-garanzie", false)).toBe("assistente-garanzie");
   });
@@ -26,16 +27,16 @@ describe("documentale chrome labels", () => {
     expect(documentaleRouteLabel("archivio")).toBe("Archivio Documentale");
   });
 
-  it("legge ?tab=cb-bot dalla location", () => {
-    expect(documentaleTabFromLocation("/portafoglio/documentale", "?tab=cb-bot")).toBe("assistente-garanzie");
-    expect(documentaleRouteLabel(documentaleTabFromLocation("/portafoglio/documentale", "?tab=cb-bot"))).toBe("MPC Bot");
+  it("legge ?tab=mpc-bot dalla location", () => {
+    expect(documentaleTabFromLocation("/portafoglio/documentale", "?tab=mpc-bot")).toBe("assistente-garanzie");
+    expect(documentaleRouteLabel(documentaleTabFromLocation("/portafoglio/documentale", "?tab=mpc-bot"))).toBe("MPC Bot");
     expect(documentaleRouteLabel(documentaleTabFromLocation("/portafoglio/documentale", ""))).toBe("Archivio Documentale");
   });
 });
 
 describe("documentaleTabToQuery", () => {
-  it("serializza MPC Bot come tab=cb-bot", () => {
-    expect(documentaleTabToQuery("assistente-garanzie", false)).toBe("cb-bot");
+  it("serializza MPC Bot come tab=mpc-bot", () => {
+    expect(documentaleTabToQuery("assistente-garanzie", false)).toBe("mpc-bot");
   });
 
   it("omette tab sull'archivio in modalità normale", () => {

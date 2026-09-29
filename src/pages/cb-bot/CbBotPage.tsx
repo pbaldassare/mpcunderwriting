@@ -11,13 +11,14 @@ import { supabase } from "@/integrations/supabase/client";
 import { countCbBotFontiSiti } from "@/lib/cbBotFontiSiti";
 import { Badge } from "@/components/ui/badge";
 import AssistenteGaranzieSection from "@/components/documentale/AssistenteGaranzieSection";
+import { mpcBotPath } from "@/lib/mpcBotPaths";
 
 const adminLinks = [
-  { label: "Fonti siti", path: "/cb-bot/fonti-siti", icon: Link2, key: "fonti" },
-  { label: "Libreria CGA", path: "/cb-bot/libreria-cga", icon: BookOpen, key: "cga" },
-  { label: "Ricerche salvate", path: "/cb-bot/ricerche", icon: History, key: "ricerche" },
-  { label: "Accessi", path: "/cb-bot/accessi", icon: Mail, key: "accessi" },
-  { label: "Istruzioni", path: "/cb-bot/istruzioni", icon: ScrollText, key: "istruzioni" },
+  { label: "Fonti siti", path: mpcBotPath("fonti-siti"), icon: Link2, key: "fonti" },
+  { label: "Libreria CGA", path: mpcBotPath("libreria-cga"), icon: BookOpen, key: "cga" },
+  { label: "Ricerche salvate", path: mpcBotPath("ricerche"), icon: History, key: "ricerche" },
+  { label: "Accessi", path: mpcBotPath("accessi"), icon: Mail, key: "accessi" },
+  { label: "Istruzioni", path: mpcBotPath("istruzioni"), icon: ScrollText, key: "istruzioni" },
 ] as const;
 
 const CbBotPage = () => {
