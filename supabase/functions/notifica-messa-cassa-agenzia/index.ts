@@ -12,7 +12,7 @@ const corsHeaders = {
 };
 
 const FALLBACK_EMAIL = "pscarpelli@consulbrokers.it";
-const FROM_EMAIL = "ConsulNet <noreply@cbnet.it>";
+const FROM_EMAIL = "MPC Underwriting <noreply@mpcunderwriting.it>";
 const DOC_BUCKET = "documenti_titoli";
 const DOC_CATEGORIA = "notifica_messa_cassa";
 

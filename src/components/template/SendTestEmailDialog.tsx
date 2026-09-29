@@ -99,9 +99,9 @@ export function SendTestEmailDialog({
       .join("");
     return `<div style="font-family:system-ui;background:#f4f6f8;padding:16px;border-radius:8px;">
       <div style="background:#fff;border-radius:6px;overflow:hidden;border:1px solid hsl(var(--border));">
-        <div style="background:hsl(var(--primary));color:#fff;padding:12px 16px;font-weight:600;">ConsulNet</div>
+        <div style="background:hsl(var(--primary));color:#fff;padding:12px 16px;font-weight:600;">MPC Underwriting</div>
         <div style="padding:16px;font-size:14px;color:hsl(var(--foreground));">${safeBody}</div>
-        <div style="padding:12px 16px;border-top:1px solid hsl(var(--border));font-size:12px;color:hsl(var(--muted-foreground));">Cordiali saluti,<br/><strong>ConsulNet</strong></div>
+        <div style="padding:12px 16px;border-top:1px solid hsl(var(--border));font-size:12px;color:hsl(var(--muted-foreground));">Cordiali saluti,<br/><strong>MPC Underwriting</strong></div>
       </div>
     </div>`;
   }, [renderedBody]);
@@ -188,8 +188,8 @@ export function SendTestEmailDialog({
               ✅ Modalità produzione attiva
             </p>
             <p className="text-green-800 dark:text-green-300">
-              Dominio <code className="bg-background px-1 rounded">iaconnect.it</code> verificato su Resend.
-              L'email verrà recapitata <strong>direttamente al destinatario indicato</strong> dal mittente configurato in <strong>Branding email</strong> (default: <code className="bg-background px-1 rounded">noreply@iaconnect.it</code>).
+              Dominio <code className="bg-background px-1 rounded">mpcunderwriting.it</code> verificato su Resend.
+              L'email verrà recapitata <strong>direttamente al destinatario indicato</strong> dal mittente configurato in <strong>Branding email</strong> (default: <code className="bg-background px-1 rounded">noreply@mpcunderwriting.it</code>).
             </p>
           </div>
 

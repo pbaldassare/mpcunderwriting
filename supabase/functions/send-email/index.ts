@@ -66,7 +66,7 @@ function wrapHtml(opts: {
       <table role="presentation" width="600" cellspacing="0" cellpadding="0" border="0" style="background:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.08);max-width:600px;width:100%;">
         <tr>
           <td style="background:${colorePrimario};padding:20px 24px;text-align:left;">
-            ${logoUrl ? `<img src="${logoUrl}" alt="Logo" style="max-height:48px;display:block;" />` : `<div style="color:#fff;font-size:18px;font-weight:600;">ConsulNet</div>`}
+            ${logoUrl ? `<img src="${logoUrl}" alt="Logo" style="max-height:48px;display:block;" />` : `<div style="color:#fff;font-size:18px;font-weight:600;">MPC Underwriting</div>`}
           </td>
         </tr>
         ${intestazione ? `<tr><td style="padding:16px 24px 0 24px;font-size:13px;color:#6b7280;">${intestazione}</td></tr>` : ""}
@@ -207,7 +207,7 @@ serve(async (req) => {
           logoUrl: branding?.logo_url || null,
           colorePrimario: branding?.colore_primario || "#0e7490",
           intestazione: branding?.intestazione_html || "",
-          firma: branding?.firma_html || "<p>Cordiali saluti,<br/><strong>ConsulNet</strong></p>",
+          firma: branding?.firma_html || "<p>Cordiali saluti,<br/><strong>MPC Underwriting</strong></p>",
         });
         if (!finalFrom && branding?.mittente_default) {
           finalFrom = branding.mittente_default;
@@ -219,7 +219,7 @@ serve(async (req) => {
 
     // STEP 2: Fallback al sender sandbox se ancora niente from
     if (!finalFrom) {
-      finalFrom = "ConsulNet <onboarding@resend.dev>";
+      finalFrom = "MPC Underwriting <noreply@mpcunderwriting.it>";
     }
 
     // STEP 3: Sandbox check sul finalFrom DEFINITIVO (dopo branding)

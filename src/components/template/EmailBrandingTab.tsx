@@ -28,7 +28,7 @@ const EMPTY_BRANDING: Branding = {
   colore_primario: "#0e7490",
   firma_html: "",
   intestazione_html: "",
-  mittente_default: "ConsulNet <onboarding@resend.dev>",
+  mittente_default: "MPC Underwriting <noreply@mpcunderwriting.it>",
 };
 
 export function EmailBrandingTab() {
@@ -101,7 +101,7 @@ export function EmailBrandingTab() {
         colore_primario: form.colore_primario || "#0e7490",
         firma_html: form.firma_html || "",
         intestazione_html: form.intestazione_html || "",
-        mittente_default: form.mittente_default || "ConsulNet <onboarding@resend.dev>",
+        mittente_default: form.mittente_default || "MPC Underwriting <noreply@mpcunderwriting.it>",
         ufficio_id: sedeId,
         singleton: sedeId ? false : true,
       };
@@ -231,10 +231,10 @@ export function EmailBrandingTab() {
             <Input
               value={form.mittente_default || ""}
               onChange={(e) => setForm((f) => ({ ...f, mittente_default: e.target.value }))}
-              placeholder="ConsulNet <onboarding@resend.dev>"
+              placeholder="MPC Underwriting <noreply@mpcunderwriting.it>"
             />
             <p className="text-xs text-muted-foreground">
-              In test usa <code>onboarding@resend.dev</code>. Per usare un dominio custom occorre verificarlo su Resend.
+              Il mittente è <code>noreply@mpcunderwriting.it</code>. Il dominio è già verificato su Resend.
             </p>
           </div>
 
@@ -275,7 +275,7 @@ export function EmailBrandingTab() {
               <div style={{ background: previewColor }} className="px-5 py-4 text-white">
                 {form.logo_url
                   ? <img src={form.logo_url} alt="Logo" className="h-10" />
-                  : <div className="font-semibold text-lg">ConsulNet</div>}
+                  : <div className="font-semibold text-lg">MPC Underwriting</div>}
               </div>
               {form.intestazione_html && (
                 <div

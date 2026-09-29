@@ -106,7 +106,7 @@ export function ResendDomainStatus() {
             <ShieldAlert className="h-4 w-4" />
             <AlertTitle>Nessun dominio configurato su Resend</AlertTitle>
             <AlertDescription>
-              La API key non vede alcun dominio. Devi aggiungere <code>iaconnect.it</code> dalla dashboard Resend.
+              La API key non vede alcun dominio. Devi aggiungere <code>mpcunderwriting.it</code> dalla dashboard Resend.
               <a
                 href="https://resend.com/domains"
                 target="_blank"
