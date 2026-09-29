@@ -13,7 +13,7 @@ Guida operativa per agenti AI esterni (Cursor, Claude Code, ecc.) che devono lav
 **Origine:** Progetto Lovable (Project ID: `a3b1457e-dbbe-41da-866b-8411e8cba913`).  
 **URL produzione:** https://cbnet.it · https://consulnet.iaconnect.it  
 **URL preview:** https://id-preview--a3b1457e-dbbe-41da-866b-8411e8cba913.lovable.app  
-**Supabase Ref:** `zbjmnnlojxprlogbnxef`  
+**Supabase Ref:** `gzuaxqxtfqmhhoafbmhm`  
 **Database:** Postgres 15+ su Supabase, ~130 tabelle, RLS abilitata su tutte.
 
 ---

@@ -10,7 +10,7 @@
 **Project**: Consulnet / CBnet — Gestionale assicurativo per il mercato italiano (Consulbrokers)
 **Stack**: React 18.3 + TypeScript 5 + Vite 5 + shadcn/ui + TanStack Query v5 + Supabase + Resend
 **Lovable Project ID**: `a3b1457e-dbbe-41da-866b-8411e8cba913`
-**Supabase Ref**: `zbjmnnlojxprlogbnxef`
+**Supabase Ref**: `gzuaxqxtfqmhhoafbmhm`
 **Production URLs**: https://cbnet.it · https://consulnet.iaconnect.it
 
 Your job is to:
@@ -334,9 +334,9 @@ CREATE POLICY "users see own data" ON profiles
 
 ```env
 # Frontend (Vite)
-VITE_SUPABASE_URL=https://zbjmnnlojxprlogbnxef.supabase.co
+VITE_SUPABASE_URL=https://gzuaxqxtfqmhhoafbmhm.supabase.co
 VITE_SUPABASE_PUBLISHABLE_KEY=<anon JWT>
-VITE_SUPABASE_PROJECT_ID=zbjmnnlojxprlogbnxef
+VITE_SUPABASE_PROJECT_ID=gzuaxqxtfqmhhoafbmhm
 VITE_APP_ENV=DEV  # or PROD
 VITE_GOOGLE_MAPS_API_KEY=<key>
 

@@ -17,7 +17,7 @@ test.describe('Cattura Screenshot Sinistri', () => {
     // 0. Esegui il provision dell'utente segreteria prima di procedere
     try {
       console.log('Chiamata a provision-user per segreteria@consulbrokers.it...');
-      const resp = await request.post('https://zbjmnnlojxprlogbnxef.supabase.co/functions/v1/provision-user', {
+      const resp = await request.post(`${process.env.VITE_SUPABASE_URL}/functions/v1/provision-user`, {
         data: { secret: 'provision-segreteria-2026' }
       });
       console.log('Provision user status:', resp.status(), await resp.text());
