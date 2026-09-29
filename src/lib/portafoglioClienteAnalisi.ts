@@ -275,7 +275,7 @@ function drawPageFooter(ctx: PdfCtx) {
     thickness: 0.4,
     color: COLOR.line,
   });
-  const left = `CONSULBROKERS S.p.A.  ·  CBnet  ·  ${ctx.generatedAt}`;
+  const left = `CONSULBROKERS S.p.A.  ·  MPCUnderwriting  ·  ${ctx.generatedAt}`;
   const mid = "Documento riservato — uso interno / cliente";
   const right = `Pag. ${ctx.pageNum}`;
   ctx.page.drawText(left, { x: MARGIN.left, y: fy + 14, size: 6.5, font: ctx.font, color: COLOR.muted });
@@ -363,7 +363,7 @@ function drawBrandHeader(ctx: PdfCtx, title: string, subtitle: string) {
     font: ctx.bold,
     color: COLOR.headerText,
   });
-  ctx.page.drawText("S.p.A.  ·  CBnet", {
+  ctx.page.drawText("S.p.A.  ·  MPCUnderwriting", {
     x: MARGIN.left + 112,
     y: A4.h - 22,
     size: 8,

@@ -61,7 +61,7 @@ export default function CbBotKnowHowPanel() {
         <div>
           <h3 className="text-sm font-semibold">Know-how</h3>
           <p className="text-xs text-muted-foreground max-w-2xl">
-            Risposte salvate dalla stella sulle ricerche. Se la domanda torna, CB Bot
+            Risposte salvate dalla stella sulle ricerche. Se la domanda torna, MPC Bot
             risponde da qui senza una nuova ricerca.
           </p>
         </div>

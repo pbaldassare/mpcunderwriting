@@ -94,7 +94,7 @@ describe("resolveRomaExeCliente", () => {
     expect(hit.partitaIva).toBeNull();
   });
 
-  it("collega un cliente CBnet già presente per P.IVA senza sovrascrivere", () => {
+  it("collega un cliente MPCUnderwriting già presente per P.IVA senza sovrascrivere", () => {
     const hit = resolveRomaExeCliente(
       99999,
       [{ ragione_sociale: "AIR CANADA", partita_iva: "04432261008" }],

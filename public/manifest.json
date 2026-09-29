@@ -1,7 +1,7 @@
 {
-  "name": "CBnet",
-  "short_name": "CBnet",
-  "description": "Gestionale CBnet",
+  "name": "MPCUnderwriting",
+  "short_name": "MPCUnderwriting",
+  "description": "Gestionale MPCUnderwriting",
   "theme_color": "#1a4a5c",
   "background_color": "#0f172a",
   "display": "browser",

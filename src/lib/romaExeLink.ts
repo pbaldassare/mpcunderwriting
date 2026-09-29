@@ -13,7 +13,7 @@ export type RomaExeRefs = {
   clienteId: string | null;
 };
 
-/** Collega rami + compagnia + cliente EXE ai record CBnet già in catalogo. */
+/** Collega rami + compagnia + cliente EXE ai record MPCUnderwriting già in catalogo. */
 export function resolveRomaExeRefs(
   input: {
     ramoCodice?: string | number | null;

@@ -61,7 +61,7 @@ export async function exportStaffChatToPdf({
     entitaLabel = "Argomento";
   }
 
-  const staffNome = `${profileNome || ""} ${profileCognome || ""}`.trim() || "Staff CBnet";
+  const staffNome = `${profileNome || ""} ${profileCognome || ""}`.trim() || "Staff MPCUnderwriting";
 
   const log: { data: string; evento: string; attore?: string | null }[] = [];
   log.push({ data: canale.created_at as string, evento: "Conversazione creata" });

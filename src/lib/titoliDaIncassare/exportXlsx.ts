@@ -46,7 +46,7 @@ export function exportTitoliDaIncassareXlsx(
   const tot = totaliPivot(rows);
 
   const meta: (string | number)[][] = [
-    ["Titoli da incassare — Consulnet"],
+    ["Titoli da incassare — MPCUnderwriting"],
     ["Competenza", opts.meseLabel],
     ["Generato il", format(new Date(), "dd/MM/yyyy HH:mm", { locale: it })],
     [],

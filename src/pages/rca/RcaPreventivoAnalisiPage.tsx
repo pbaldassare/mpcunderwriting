@@ -196,7 +196,7 @@ export default function RcaPreventivoAnalisiPage() {
             {form.targa}
           </Badge>
         )}
-        {isLoading && <span className="text-sm text-muted-foreground">Caricamento dati CBnet…</span>}
+        {isLoading && <span className="text-sm text-muted-foreground">Caricamento dati MPCUnderwriting…</span>}
       </div>
 
       {missing.length > 0 && (
@@ -331,7 +331,7 @@ export default function RcaPreventivoAnalisiPage() {
         <CardHeader>
           <CardTitle className="text-base">Cosa quotare</CardTitle>
           <p className="text-sm font-normal text-muted-foreground">
-            Le compagnie ricevono già queste scelte. Precompilate dalla polizza CBnet, le puoi cambiare prima di lanciare.
+            Le compagnie ricevono già queste scelte. Precompilate dalla polizza MPCUnderwriting, le puoi cambiare prima di lanciare.
           </p>
         </CardHeader>
         <CardContent>

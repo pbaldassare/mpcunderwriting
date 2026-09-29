@@ -8,7 +8,7 @@ import {
 } from "@/lib/rca/assicurapp";
 
 describe("Assicurapp mapping", () => {
-  it("deriva CVT dalle garanzie CBnet", () => {
+  it("deriva CVT dalle garanzie MPCUnderwriting", () => {
     expect(selectedCvtsFromGaranzie(["cristalli", "rinuncia_rivalsa"])).toEqual([]);
     expect(selectedCvtsFromGaranzie(["infortuni_conducente", "furto_incendio", "kasko"])).toEqual([
       "IF",

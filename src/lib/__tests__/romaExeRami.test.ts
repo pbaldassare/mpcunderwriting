@@ -44,7 +44,7 @@ describe("resolveRomaExeRamo", () => {
     { id: "ramo-fid", codice: "FID", gruppo_ramo_id: "g-zc" },
   ];
 
-  it("risolve il ramo_id CBnet dal catalogo", () => {
+  it("risolve il ramo_id MPCUnderwriting dal catalogo", () => {
     const hit = resolveRomaExeRamo("15", "GLOBALE ESERCIZI", catalogo);
     expect(hit?.ramoId).toBe("ramo-lq");
     expect(hit?.gruppoRamoId).toBe("g-zl");

@@ -128,7 +128,7 @@ const sidebarEntries: SidebarEntry[] = [
   {
     type: "single",
     item: {
-      label: "CB Bot",
+      label: "MPC Bot",
       path: "/cb-bot",
       icon: Bot,
       permissionKey: "dashboard",
@@ -195,7 +195,7 @@ const sidebarEntries: SidebarEntry[] = [
   {
     type: "single",
     item: {
-      label: "CB Bot",
+      label: "MPC Bot",
       path: "/portafoglio/documentale?tab=cb-bot",
       icon: Bot,
       permissionKey: "portafoglio",

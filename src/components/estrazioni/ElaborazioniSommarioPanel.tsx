@@ -216,7 +216,7 @@ export default function ElaborazioniSommarioPanel({
       })
       .filter(Boolean) as Array<{ p: (typeof selectedPolizze)[0]; doc: DocumentoRow }>;
     if (!jobs.length) {
-      toast.error("Nessun documento sulle polizze selezionate. Puoi comunque generare il sommario dai dati CBnet.");
+      toast.error("Nessun documento sulle polizze selezionate. Puoi comunque generare il sommario dai dati MPCUnderwriting.");
       return;
     }
     try {

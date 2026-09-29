@@ -612,7 +612,7 @@ export default function SinistroReportSirPage() {
 
           {/* Pulsantiera Stampa Form (mostrata in fondo al foglio) */}
           <div className="hidden print:flex justify-between items-center border-t pt-4 mt-8">
-            <span className="text-[10px] text-muted-foreground">ConsulNet Software — Modulo SIR</span>
+            <span className="text-[10px] text-muted-foreground">MPCUnderwriting Software — Modulo SIR</span>
             <span className="text-[10px] font-semibold">Firma dell'Infortunato / Medico: ___________________________</span>
           </div>
 

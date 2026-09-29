@@ -33,7 +33,7 @@ describe("filialiSedi", () => {
     expect(piano.find((p) => p.riga.codice === "BO")?.esito).toBe("crea");
   });
 
-  it("sovrascrive l'indirizzo se il file lo ha, altrimenti tiene il CBnet", () => {
+  it("sovrascrive l'indirizzo se il file lo ha, altrimenti tiene il MPCUnderwriting", () => {
     const overwritten = patchUfficioDaFiliale(esistenti[3], {
       codice: "BG",
       nome: "Ufficio di Bergamo",

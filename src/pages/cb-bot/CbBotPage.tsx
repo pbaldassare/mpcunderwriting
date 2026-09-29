@@ -57,7 +57,7 @@ const CbBotPage = () => {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-bold text-foreground">CB Bot</h1>
+        <h1 className="text-2xl font-bold text-foreground">MPC Bot</h1>
         <p className="text-sm text-muted-foreground mt-1">
           Assistente Web sui siti autorizzati, documenti e Libreria CGA. Sotto, la configurazione admin.
         </p>

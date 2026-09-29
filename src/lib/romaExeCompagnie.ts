@@ -1,11 +1,11 @@
 /**
- * Mapping compagnie gestionale EXE (Roma EXE) → catalogo CBnet.
+ * Mapping compagnie gestionale EXE (Roma EXE) → catalogo MPCUnderwriting.
  *
  * Scelte chiuse con il broker:
  * - La ragione sociale EXE è la compagnia (non l'agenzia di sede).
  * - La ragione sociale aggiuntiva è la controparte EXE: non si importa.
  * - Non si creano direzioni fittizie se manca il gruppo madre.
- * - Niente doppioni: stesso brand → stessa compagnia CBnet.
+ * - Niente doppioni: stesso brand → stessa compagnia MPCUnderwriting.
  * - Le agenzie restano visibili a tutte le sedi.
  */
 
@@ -54,7 +54,7 @@ const ALIAS: AliasDef[] = [
     canonical: "EXE INSURANCE BROKER",
     brand: "EXE",
     skip: true,
-    motivoSkip: "Siamo noi: non si crea una compagnia CBnet",
+    motivoSkip: "Siamo noi: non si crea una compagnia MPCUnderwriting",
   },
   {
     keys: [

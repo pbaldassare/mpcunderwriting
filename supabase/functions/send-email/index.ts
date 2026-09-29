@@ -289,7 +289,7 @@ serve(async (req) => {
         const originalRecipients = Array.isArray(to) ? to.join(", ") : to;
         const fallbackPayload = {
           ...payload,
-          from: "ConsulNet <onboarding@resend.dev>",
+          from: "MPCUnderwriting <onboarding@resend.dev>",
           to: [SANDBOX_OWNER],
           subject: `[FALLBACK → ${originalRecipients}] ${finalSubject}`,
           reply_to: finalReplyTo || (Array.isArray(to) ? to[0] : to),

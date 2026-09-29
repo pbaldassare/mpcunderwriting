@@ -205,7 +205,7 @@ export default function CbBotFontiSalvatePanel() {
           <AlertDialogHeader>
             <AlertDialogTitle>Rimuovere questa fonte?</AlertDialogTitle>
             <AlertDialogDescription>
-              CB Bot non la userà più come fonte interna. L&apos;URL resta raggiungibile sul web.
+              MPC Bot non la userà più come fonte interna. L&apos;URL resta raggiungibile sul web.
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>

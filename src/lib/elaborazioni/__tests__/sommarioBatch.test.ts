@@ -50,7 +50,7 @@ describe("sommarioBatch selezione", () => {
 });
 
 describe("sommarioBatch integrazione campi IA", () => {
-  it("non sovrascrive i dati CBnet già presenti", () => {
+  it("non sovrascrive i dati MPCUnderwriting già presenti", () => {
     const out = applyElaborazioneCampiToSommario(p(), {
       prodotto: "Altro",
       compagnia: "XL",

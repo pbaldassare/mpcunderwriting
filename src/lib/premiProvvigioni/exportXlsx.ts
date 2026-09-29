@@ -32,7 +32,7 @@ export function exportPremiProvvigioniXlsx(rows: PremiProvvigioniRow[], opts: Ex
   const tot = totaliPremiProvvigioni(rows);
 
   exportEstrazioneWorkbook({
-    title: "Premi e Provvigioni — Consulnet",
+    title: "Premi e Provvigioni — MPCUnderwriting",
     subtitle: `Periodo: ${opts.periodoLabel}`,
     metaRows: [
       [],

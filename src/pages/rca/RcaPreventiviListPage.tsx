@@ -53,7 +53,7 @@ export default function RcaPreventiviListPage() {
     <div className="mx-auto max-w-6xl space-y-5">
       <RcaPageHeader
         title="Preventivi RCA"
-        subtitle="Preventivi salvati in CBnet, con offerte Assicurapp e compagnia scelta."
+        subtitle="Preventivi salvati in MPCUnderwriting, con offerte Assicurapp e compagnia scelta."
         actions={
           <Button onClick={() => navigate("/rca/preventivi/nuovo")}>Nuovo preventivo</Button>
         }

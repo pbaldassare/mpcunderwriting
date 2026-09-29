@@ -367,7 +367,7 @@ export function downloadModuloSxTemplate(): void {
   a.remove();
 }
 
-/** Ramo/garanzia da titolo CBnet (stessa etichetta del wizard sinistri). */
+/** Ramo/garanzia da titolo MPCUnderwriting (stessa etichetta del wizard sinistri). */
 export function ramoSinistroFromPolizza(p: PolizzaImportMatch | null | undefined): string {
   if (!p) return "";
   const label = formatPolizzaRamo(p);
@@ -401,11 +401,11 @@ export function validateImportRow(row: Pick<
   const titoloOk = !!row.titolo_id && !row.titolo_id.startsWith("cga:");
   if (!row.sinistro_terzi && !titoloOk) {
     if (row.matchPolizza === "ambiguous") {
-      errors.push("Più polizze con lo stesso numero: scegli quella corretta o marca come senza polizza CBnet");
+      errors.push("Più polizze con lo stesso numero: scegli quella corretta o marca come senza polizza MPCUnderwriting");
     } else if (row.matchPolizza === "cga") {
-      errors.push("La polizza è solo in CGA: collega un titolo CBnet oppure marca come senza polizza CBnet");
+      errors.push("La polizza è solo in CGA: collega un titolo MPCUnderwriting oppure marca come senza polizza MPCUnderwriting");
     } else {
-      errors.push("Collega una polizza CBnet oppure marca la riga come senza polizza CBnet");
+      errors.push("Collega una polizza MPCUnderwriting oppure marca la riga come senza polizza MPCUnderwriting");
     }
   }
 
@@ -496,11 +496,11 @@ export function contextualImportWarnings(row: SinistroImportPreviewRow): string[
   const warnings: string[] = [];
   if (row.sinistro_terzi && !row.titolo_id) {
     if (row.matchPolizza === "cga") {
-      warnings.push("Numero trovato solo in CGA, non collegabile come titolo CBnet");
+      warnings.push("Numero trovato solo in CGA, non collegabile come titolo MPCUnderwriting");
     } else if (row.n_polizza && row.matchPolizza === "none") {
-      warnings.push(`Polizza "${row.n_polizza}" non trovata per questo cliente: proposta come senza polizza CBnet`);
+      warnings.push(`Polizza "${row.n_polizza}" non trovata per questo cliente: proposta come senza polizza MPCUnderwriting`);
     } else if (!row.n_polizza && row.matchPolizza === "terzi") {
-      warnings.push("Nessun numero polizza: proposta come senza polizza CBnet");
+      warnings.push("Nessun numero polizza: proposta come senza polizza MPCUnderwriting");
     }
   }
   return warnings;

@@ -127,7 +127,7 @@ export default function SinistriImportPreviewTable({
                     onCheckedChange={(c) => onChange(row.id, { sinistro_terzi: !!c })}
                     className="mt-0.5"
                   />
-                  <span>Senza polizza CBnet</span>
+                  <span>Senza polizza MPCUnderwriting</span>
                 </label>
                 {!row.sinistro_terzi && (
                   <SearchableSelect

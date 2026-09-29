@@ -1,5 +1,5 @@
 /**
- * Mapping anagrafiche gestionale sede Campobasso → clienti CBnet.
+ * Mapping anagrafiche gestionale sede Campobasso → clienti MPCUnderwriting.
  *
  * Decisioni chiuse con il broker (2026-09-25):
  * - Nuovi si creano; esistenti Campobasso / 3G SPA / De Polo Anna si collegano.
@@ -8,7 +8,7 @@
  * - Mail mancante → mail sede Campobasso.
  * - Melanitto specialist = corrispondente, non profilo backoffice.
  * - CF/P.IVA: padding zeri, CF troncato si importa comunque.
- * - codice_ricerca = codice gestionale; codice_cliente lo genera CBnet.
+ * - codice_ricerca = codice gestionale; codice_cliente lo genera MPCUnderwriting.
  * - Unit strani (Napoli / MFB) restano sulla sede Campobasso (Filiale).
  * - Gruppo statistico testuale, niente nidificazione in questo giro.
  * - Sui già presenti: solo codice_ricerca, niente tel/email/P.IVA.

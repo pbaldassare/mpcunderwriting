@@ -25,11 +25,11 @@ export default function AssistenteGaranzieSection({ consultazioneMode = false }:
       <div className="flex items-start gap-3">
         <CbBotLogo className="h-10 w-auto shrink-0" />
         <div>
-          <h2 className="text-lg font-semibold sr-only">CB Bot</h2>
+          <h2 className="text-lg font-semibold sr-only">MPC Bot</h2>
           <p className="text-xs text-muted-foreground max-w-2xl">
             <strong>Assistente Web</strong> — cerca solo sui siti autorizzati dall&apos;admin.
             {" "}
-            <strong>Libreria CGA</strong> — garanzie, massimali ed esclusioni dal catalogo CBnet.
+            <strong>Libreria CGA</strong> — garanzie, massimali ed esclusioni dal catalogo MPCUnderwriting.
             {showSitiTab && (
               <>
                 {" "}

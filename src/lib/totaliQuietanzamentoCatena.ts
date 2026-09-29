@@ -4,7 +4,7 @@ import { getProvvigioneEC, type TitoloProvvigioneEC } from "@/lib/getProvvigione
  * Totali premio/provvigioni del quietanzamento di una catena polizza.
  *
  * Regola: somma solo le quietanze (`rate` = titoli con `sostituisce_polizza`, non appendici).
- * La madre non si somma: in CBnet ripete spesso il premio della prima rata (annuale 1y → 1 madre + 1 quietanza)
+ * La madre non si somma: in MPCUnderwriting ripete spesso il premio della prima rata (annuale 1y → 1 madre + 1 quietanza)
  * e sommarla raddoppierebbe. Appendici escluse (titoli da incassare a parte).
  * Se non ci sono rate (legacy/incompleto), fallback sugli importi della madre.
  */

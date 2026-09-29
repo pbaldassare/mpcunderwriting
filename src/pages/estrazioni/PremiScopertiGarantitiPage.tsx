@@ -178,7 +178,7 @@ const PremiScopertiGarantitiPage = () => {
 
   const exportExcel = () => {
     exportEstrazioneWorkbook({
-      title: "Premi Scoperti e Garantiti — Consulnet",
+      title: "Premi Scoperti e Garantiti — MPCUnderwriting",
       subtitle: `Periodo: ${periodo}`,
       metaRows: [
         [],

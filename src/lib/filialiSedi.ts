@@ -1,5 +1,5 @@
 /**
- * Allineamento filiali gestionale (TTXFL00F) → uffici CBnet.
+ * Allineamento filiali gestionale (TTXFL00F) → uffici MPCUnderwriting.
  * Match per codice (con alias Roma/Napoli). Niente doppioni.
  */
 
@@ -34,7 +34,7 @@ export const FILIALI_SKIP = new Set([
   "Z1", // Ufficio Cauzioni
 ]);
 
-/** Codice file → codice già in CBnet. */
+/** Codice file → codice già in MPCUnderwriting. */
 export const FILIALI_ALIAS_CODICE: Record<string, string> = {
   RM: "009",
   RO: "RM2",

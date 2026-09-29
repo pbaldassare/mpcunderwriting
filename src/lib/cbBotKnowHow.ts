@@ -1,4 +1,4 @@
-/** Normalizzazione e matching delle domande know-how CB Bot (senza IA). */
+/** Normalizzazione e matching delle domande know-how MPC Bot (senza IA). */
 
 const STOP = new Set([
   "che", "come", "cosa", "quali", "quale", "per", "una", "uno", "dei", "delle",

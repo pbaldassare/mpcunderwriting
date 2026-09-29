@@ -793,7 +793,7 @@ export default function SinistroAperturaWizardPage() {
             </h1>
             <p className="text-sm text-muted-foreground">
               {watchSinistroTerzi
-                ? "Procedura guidata per sinistro senza polizza CBnet"
+                ? "Procedura guidata per sinistro senza polizza MPCUnderwriting"
                 : "Procedura guidata per l'apertura di un sinistro su polizza attiva"}
             </p>
           </div>
@@ -867,7 +867,7 @@ export default function SinistroAperturaWizardPage() {
             </CardTitle>
             <CardDescription>
               {currentStep === 1 && (watchSinistroTerzi
-                ? "Seleziona il cliente. Nessuna polizza CBnet verrà collegata a questa pratica."
+                ? "Seleziona il cliente. Nessuna polizza MPCUnderwriting verrà collegata a questa pratica."
                 : "Seleziona prima il cliente, poi scegli una delle sue polizze attive. La polizza è facoltativa.")}
               {currentStep === 2 && "Fornisci tutte le informazioni relative a quando, dove e come si è verificato il sinistro."}
               {currentStep === 3 && "Carica referti, foto o denunce firmate. Questo step è facoltativo."}
@@ -932,7 +932,7 @@ export default function SinistroAperturaWizardPage() {
                     <div className="space-y-0.5">
                       <span className="text-sm font-medium">Sinistro Terzi</span>
                       <p className="text-xs text-muted-foreground">
-                        Sinistro gestito senza collegamento a una polizza CBnet. La selezione polizza viene disabilitata.
+                        Sinistro gestito senza collegamento a una polizza MPCUnderwriting. La selezione polizza viene disabilitata.
                       </p>
                     </div>
                   </label>

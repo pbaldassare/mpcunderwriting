@@ -164,7 +164,7 @@ const ClienteLayout = () => {
           <h1 className="text-base font-bold text-white tracking-tight">CB</h1>
         ) : (
           <>
-            <h1 className="text-xl font-bold text-white tracking-tight">CBnet</h1>
+            <h1 className="text-xl font-bold text-white tracking-tight">MPCUnderwriting</h1>
             <span className="text-xs text-white/60">Area Clienti</span>
           </>
         )}
@@ -277,7 +277,7 @@ const ClienteLayout = () => {
                 <Menu className="h-5 w-5" />
               </button>
               <HistoryBackButton fallback="/cliente" />
-              <h1 className="text-base sm:text-lg font-bold text-primary tracking-tight truncate">CBnet</h1>
+              <h1 className="text-base sm:text-lg font-bold text-primary tracking-tight truncate">MPCUnderwriting</h1>
               <span className="hidden sm:inline text-xs text-muted-foreground border-l border-border pl-2 ml-1 truncate">
                 Area Clienti
               </span>
@@ -353,7 +353,7 @@ const ClienteLayout = () => {
         </main>
 
         <footer className="border-t border-border bg-card py-3 text-center text-xs text-muted-foreground px-3">
-          CBnet — Per assistenza contatta la tua agenzia
+          MPCUnderwriting — Per assistenza contatta la tua agenzia
         </footer>
       </div>
     </div>

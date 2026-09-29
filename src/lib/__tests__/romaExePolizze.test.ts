@@ -162,7 +162,7 @@ describe("sospesi", () => {
     expect(q.motivoSospensione).toBe("PIANO DI RIENTRO");
   });
 
-  it("mappa CREDITO sul catalogo CBnet per gli orfani", () => {
+  it("mappa CREDITO sul catalogo MPCUnderwriting per gli orfani", () => {
     const q = resolveRomaExeSospeso(
       {
         numero: "3057963",

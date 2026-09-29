@@ -2,7 +2,7 @@ export const DOCUMENTALE_TABS = ["archivio", "libreria-cga", "assistente-garanzi
 export type DocumentaleTab = (typeof DOCUMENTALE_TABS)[number];
 
 /** Etichetta visibile in UI (sidebar, tab, H1, breadcrumb). */
-export const CB_BOT_LABEL = "CB Bot";
+export const CB_BOT_LABEL = "MPC Bot";
 
 /** Query `tab=cb-bot` (sidebar) → tab interno `assistente-garanzie`. */
 export function parseDocumentaleTab(raw: string | null, consultazioneMode: boolean): DocumentaleTab {
@@ -12,7 +12,7 @@ export function parseDocumentaleTab(raw: string | null, consultazioneMode: boole
   return consultazioneMode ? "assistente-garanzie" : "archivio";
 }
 
-/** Tab CB Bot (assistente + libreria), non archivio cartelle. */
+/** Tab MPC Bot (assistente + libreria), non archivio cartelle. */
 export function isCbBotChromeTab(tab: DocumentaleTab): boolean {
   return tab === "assistente-garanzie" || tab === "libreria-cga";
 }
@@ -26,7 +26,7 @@ export function documentalePageSubtitle(tab: DocumentaleTab): string {
     return "Assistente Web, documenti e Libreria CGA — siti autorizzati, ricerche e confronti";
   }
   if (tab === "libreria-cga") {
-    return "Libreria CGA — garanzie, massimali ed esclusioni dal catalogo CBnet";
+    return "Libreria CGA — garanzie, massimali ed esclusioni dal catalogo MPCUnderwriting";
   }
   return "CGA, Condizioni di Polizza, Fascicoli Informativi e Modulistica";
 }

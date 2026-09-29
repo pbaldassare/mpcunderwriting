@@ -17,7 +17,7 @@ export function exportCaricoXlsx(rows: CaricoExportRow[], meta: CaricoExportMeta
   const wb = XLSX.utils.book_new();
 
   const metaRows: (string | number)[][] = [
-    ["Carico portafoglio — Consulnet"],
+    ["Carico portafoglio — MPCUnderwriting"],
     ["Vista", meta.vista === "incassati" ? "Incassati" : "Pendenti"],
     ["Ambito export", meta.scope === "selezione" ? "Selezione" : "Righe in pagina"],
     ["Generato il", format(new Date(), "dd/MM/yyyy HH:mm", { locale: it })],

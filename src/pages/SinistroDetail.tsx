@@ -311,7 +311,7 @@ export default function SinistroDetail() {
               ) : (
                 <span className="font-medium text-foreground">
                   {sinistro.sinistro_terzi
-                    ? (sinistro.numero_polizza || "Terzi (senza CBnet)")
+                    ? (sinistro.numero_polizza || "Terzi (senza MPCUnderwriting)")
                     : "—"}
                 </span>
               )}

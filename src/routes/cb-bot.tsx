@@ -23,7 +23,7 @@ export const cbBotRoutes = (
         <RoleGuard allowedRoles={["admin"]}>
           <CbBotSectionPage
             title="Assistente Web"
-            description="Chat di consultazione: cerca sul web, non legge polizze o portafoglio CBnet. Prompt oggi in chiedi-mercato-assicurativo."
+            description="Chat di consultazione: cerca sul web, non legge polizze o portafoglio MPCUnderwriting. Prompt oggi in chiedi-mercato-assicurativo."
             icon={Globe}
           />
         </RoleGuard>

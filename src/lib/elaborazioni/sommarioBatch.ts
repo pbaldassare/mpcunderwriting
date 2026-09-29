@@ -38,7 +38,7 @@ function asNumber(v: unknown): number | null {
   return null;
 }
 
-/** Integra i campi estratti dall'IA sulla riga sommario, senza sovrascrivere dati CBnet già presenti. */
+/** Integra i campi estratti dall'IA sulla riga sommario, senza sovrascrivere dati MPCUnderwriting già presenti. */
 export function applyElaborazioneCampiToSommario(
   p: SommarioPolizzaRow,
   campi: ValoriCampi | null | undefined,

@@ -39,7 +39,7 @@ export const useTour = () => {
 
 export const CLIENTE_TOUR_STEPS: TourStep[] = [
   // Sidebar
-  { selector: "cl-logo", title: "Benvenuto in CBnet! 👋", description: "Questa è la tua Area Clienti: polizze, scadenze, sinistri, chat e documenti del tuo ente — tutto in un solo posto, in tempo reale.", page: "/cliente" },
+  { selector: "cl-logo", title: "Benvenuto in MPCUnderwriting! 👋", description: "Questa è la tua Area Clienti: polizze, scadenze, sinistri, chat e documenti del tuo ente — tutto in un solo posto, in tempo reale.", page: "/cliente" },
   { selector: "cl-nav-dashboard", title: "Dashboard 📊", description: "Il tuo punto di partenza: KPI, prossime scadenze, sinistri aperti e premi totali, sempre aggiornati.", page: "/cliente" },
 
   // Dashboard
@@ -65,7 +65,7 @@ export const CLIENTE_TOUR_STEPS: TourStep[] = [
   { selector: "cl-chat-page", title: "Le tue Conversazioni 💬", description: "Sulla sinistra l'elenco dei canali con anteprima, conteggio non letti e timestamp. A destra la chat con header contestuale (polizza/sinistro collegato).", page: "/cliente/chat", action: { type: "navigate", target: "/cliente/chat", delay: 500 } },
   { selector: "cl-chat-search", title: "Ricerca conversazioni 🔎", description: "Cerca nei titoli E dentro i messaggi: bastano 2 caratteri. I canali con match nei messaggi mostrano il badge 'match'.", page: "/cliente/chat" },
   { selector: "cl-chat-new", title: "Nuova conversazione ➕", description: "Apri un canale legato a una specifica polizza, a un sinistro, oppure un argomento libero. Scegli i destinatari interni dell'agenzia.", page: "/cliente/chat" },
-  { selector: "cl-chat-export", title: "Esporta la chat in PDF 📄", description: "NOVITÀ: scarica l'intera conversazione in PDF brandizzato CBnet — header, partecipanti, bolle messaggi con timestamp e log attività completo. Perfetto per archivio o per portarla in agenzia.", page: "/cliente/chat" },
+  { selector: "cl-chat-export", title: "Esporta la chat in PDF 📄", description: "NOVITÀ: scarica l'intera conversazione in PDF brandizzato MPCUnderwriting — header, partecipanti, bolle messaggi con timestamp e log attività completo. Perfetto per archivio o per portarla in agenzia.", page: "/cliente/chat" },
 
   // Assistente Polizze (AI)
   { selector: "cl-nav-assistente", title: "Assistente Polizze ✨", description: "Un assistente AI che conosce TUTTE le tue polizze e risponde in linguaggio naturale, citando sempre la fonte.", page: "/cliente" },

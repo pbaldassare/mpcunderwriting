@@ -48,7 +48,7 @@ describe("sinistriImportExcel", () => {
     expect(Array.isArray(rows)).toBe(true);
   });
 
-  it("deriva il ramo dalla polizza CBnet", () => {
+  it("deriva il ramo dalla polizza MPCUnderwriting", () => {
     expect(ramoSinistroFromPolizza({
       id: "t1",
       numero_titolo: "ABC",
@@ -157,7 +157,7 @@ describe("sinistriImportExcel", () => {
       stato: "aperto",
     });
     expect(res.status).toBe("blocked");
-    expect(res.errors[0]).toMatch(/polizza CBnet/);
+    expect(res.errors[0]).toMatch(/polizza MPCUnderwriting/);
     expect(LONG_DESC.length).toBeGreaterThanOrEqual(DESCRIZIONE_MIN_CHARS);
   });
 

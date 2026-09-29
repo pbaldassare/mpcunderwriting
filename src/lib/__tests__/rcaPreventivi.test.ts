@@ -35,7 +35,7 @@ describe("preventivo form", () => {
     expect(prodottoFromTipo("auto")).toBe("rca_auto");
   });
 
-  it("precompila da cliente CBnet e segnala campi mancanti", () => {
+  it("precompila da cliente MPCUnderwriting e segnala campi mancanti", () => {
     const form = formFromClienteCBnet(
       {
         id: "c1",

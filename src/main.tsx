@@ -7,8 +7,8 @@ import { installSafeRandomUUID } from "./lib/safeId";
 
 installSafeRandomUUID();
 
-console.info(`[CBnet] bundle version: ${BUNDLE_VERSION}`);
-console.info(`[CBnet] release marker: ${APP_RELEASE_LABEL}`);
+console.info(`[MPCUnderwriting] bundle version: ${BUNDLE_VERSION}`);
+console.info(`[MPCUnderwriting] release marker: ${APP_RELEASE_LABEL}`);
 
 // Best-effort cleanup ad ogni avvio: disinstalla qualsiasi Service Worker
 // residuo e svuota le cache HTTP del browser. Non blocca il rendering.

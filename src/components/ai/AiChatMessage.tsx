@@ -244,7 +244,7 @@ export const AiChatMessage = ({ message, onSaveFonte, savedFonteUrls }: Props) =
                       {onSaveFonte && (
                         <button
                           type="button"
-                          title={already ? "Già in fonti salvate" : "Salva tra le fonti CB Bot"}
+                          title={already ? "Già in fonti salvate" : "Salva tra le fonti MPC Bot"}
                           className={cn(
                             "shrink-0 p-0.5 rounded hover:bg-muted",
                             already ? "text-primary" : "text-muted-foreground hover:text-primary",

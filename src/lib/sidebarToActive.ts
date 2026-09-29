@@ -4,7 +4,7 @@ function pathOf(to: string) {
 
 /**
  * Active state per NavLink con query string.
- * CB Bot (`?tab=cb-bot`) e Archivio Documentale condividono il pathname:
+ * MPC Bot (`?tab=cb-bot`) e Archivio Documentale condividono il pathname:
  * senza questo controllo si accenderebbero entrambi.
  */
 export function isSidebarToActive(

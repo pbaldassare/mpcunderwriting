@@ -84,7 +84,7 @@ export default function SinistroTerziPolizzaFields({
   return (
     <div className="space-y-4 p-4 border rounded-lg bg-amber-50/40 border-amber-200">
       <div>
-        <p className="text-sm font-medium">Polizza di riferimento (non CBnet)</p>
+        <p className="text-sm font-medium">Polizza di riferimento (non MPCUnderwriting)</p>
         <p className="text-xs text-muted-foreground mt-0.5">
           Il sinistro terzi non si collega a un titolo di portafoglio, ma numero polizza, compagnia e ramo/garanzia sono obbligatori e vengono salvati in anagrafica.
         </p>

@@ -1,9 +1,9 @@
 /**
- * Mapping polizze gestionale sede Campobasso → titoli CBnet.
+ * Mapping polizze gestionale sede Campobasso → titoli MPCUnderwriting.
  *
  * Decisioni chiuse con il broker (2026-09-25):
  * - CAT110 (Armanetti, nome sporco) → CAT101 (DL Assiservice / Armanetti).
- * - Compagnia senza codice CBnet: non si importa, non si crea anagrafica.
+ * - Compagnia senza codice MPCUnderwriting: non si importa, non si crea anagrafica.
  * - Ogni polizza ha un frontespizio non cassabile; la quietanza porta Dt Incasso.
  * - PI senza PQ: si clona una quietanza dagli stessi dati.
  * - PI+PQ: madre dal PI, quietanze solo dalle PQ (niente rate inventate).

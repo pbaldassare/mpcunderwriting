@@ -181,7 +181,7 @@ export default function CbBotSitiAutorizzatiPanel() {
         <Skeleton className="h-32 w-full" />
       ) : siti.length === 0 ? (
         <p className="text-sm text-muted-foreground border rounded-md p-4">
-          Nessun sito in elenco. Aggiungi i portali da cui CB Bot può cercare (es. IVASS, ANIA).
+          Nessun sito in elenco. Aggiungi i portali da cui MPC Bot può cercare (es. IVASS, ANIA).
         </p>
       ) : (
         <div className="rounded-md border">
@@ -240,7 +240,7 @@ export default function CbBotSitiAutorizzatiPanel() {
           <AlertDialogHeader>
             <AlertDialogTitle>Rimuovere {toDelete?.nome}?</AlertDialogTitle>
             <AlertDialogDescription>
-              CB Bot non interrogherà più {toDelete?.dominio}. Puoi riaggiungerlo in seguito.
+              MPC Bot non interrogherà più {toDelete?.dominio}. Puoi riaggiungerlo in seguito.
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>

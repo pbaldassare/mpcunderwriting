@@ -1,5 +1,5 @@
 /**
- * Mapping polizze/sospesi gestionale EXE (Roma EXE) → titoli CBnet.
+ * Mapping polizze/sospesi gestionale EXE (Roma EXE) → titoli MPCUnderwriting.
  *
  * Scelte chiuse con il broker:
  * - L'elenco è il portafoglio vivo: solo polizze madri, niente rate inventate.

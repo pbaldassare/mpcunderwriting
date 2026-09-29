@@ -173,7 +173,7 @@ serve(async (req) => {
       }
     }
     if (!logoDrawn) {
-      page.drawText("ConsulNet", {
+      page.drawText("MPCUnderwriting", {
         x: 30,
         y: height - 55,
         size: 22,
@@ -343,7 +343,7 @@ serve(async (req) => {
       thickness: 0.5,
       color: rgb(0.85, 0.85, 0.9),
     });
-    const sedeName = titolo?.uffici?.nome_ufficio || "ConsulNet";
+    const sedeName = titolo?.uffici?.nome_ufficio || "MPCUnderwriting";
     const sedeIndirizzo = titolo?.uffici?.indirizzo || "";
     const sedeContatti = [titolo?.uffici?.telefono, titolo?.uffici?.email].filter(Boolean).join(" • ");
     page.drawText(sedeName, { x: left, y: footerY + 14, size: 9, font: fontBold, color: labelColor });

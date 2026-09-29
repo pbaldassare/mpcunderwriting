@@ -177,7 +177,7 @@ export function buildStoricoGaraFromBando(
     bando.regione || bando.localita
       ? `Luogo: ${[bando.localita, bando.regione].filter(Boolean).join(", ")}`
       : null,
-    "Origine: Bandi partecipati CBnet",
+    "Origine: Bandi partecipati MPCUnderwriting",
   ]
     .filter(Boolean)
     .join("\n");

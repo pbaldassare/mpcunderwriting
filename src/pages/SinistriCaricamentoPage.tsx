@@ -312,7 +312,7 @@ function SinistriCaricamentoPageInner() {
           </h1>
           <p className="text-muted-foreground max-w-3xl">
             Carica un Excel secondo il tracciato MODULO SX per un cliente. Il sistema interpreta le colonne,
-            normalizza date e stati e propone il collegamento alle polizze CBnet — oppure come pratica senza polizza,
+            normalizza date e stati e propone il collegamento alle polizze MPCUnderwriting — oppure come pratica senza polizza,
             come in apertura sinistro.
           </p>
         </div>
@@ -471,7 +471,7 @@ function SinistriCaricamentoPageInner() {
           <CardHeader>
             <CardTitle>3. Anteprima e collegamenti</CardTitle>
             <CardDescription>
-              Cliente: <strong>{clienteNome}</strong>. Controlla le righe, collega le polizze CBnet oppure
+              Cliente: <strong>{clienteNome}</strong>. Controlla le righe, collega le polizze MPCUnderwriting oppure
               marca come senza polizza. La conferma crea i sinistri solo se non ci sono righe bloccate.
             </CardDescription>
           </CardHeader>
@@ -497,7 +497,7 @@ function SinistriCaricamentoPageInner() {
             {counts.blocked > 0 && (
               <p className="text-sm text-destructive flex items-center gap-1">
                 <AlertCircle className="h-4 w-4" />
-                Completa i campi obbligatori e il collegamento polizza (o senza polizza CBnet) sulle righe bloccate.
+                Completa i campi obbligatori e il collegamento polizza (o senza polizza MPCUnderwriting) sulle righe bloccate.
               </p>
             )}
             <SinistriImportPreviewTable
@@ -534,7 +534,7 @@ function SinistriCaricamentoPageInner() {
                     <p className="text-sm font-medium">
                       Riga {row.excelRow}
                       {row.n_polizza ? ` · polizza ${row.n_polizza}` : ""}
-                      {row.sinistro_terzi ? " · senza polizza CBnet" : ""}
+                      {row.sinistro_terzi ? " · senza polizza MPCUnderwriting" : ""}
                     </p>
                     <p className="text-xs text-muted-foreground line-clamp-2">{row.descrizione}</p>
                   </div>
@@ -567,7 +567,7 @@ function SinistriCaricamentoPageInner() {
       {step === 1 && (
         <p className="text-xs text-muted-foreground">
           Campi obbligatori per ogni riga: data accadimento, data denuncia, descrizione (min. {DESCRIZIONE_MIN_CHARS} caratteri)
-          e collegamento a una polizza CBnet oppure pratica senza polizza CBnet.
+          e collegamento a una polizza MPCUnderwriting oppure pratica senza polizza MPCUnderwriting.
         </p>
       )}
     </div>

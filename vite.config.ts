@@ -65,7 +65,7 @@ function devServerStartupLog(port: number, projectName: string): Plugin {
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
   const devPort = Number(env.VITE_DEV_PORT || process.env.VITE_DEV_PORT || 5175);
-  const projectName = "CBnet";
+  const projectName = "MPCUnderwriting";
 
   return {
   define: {

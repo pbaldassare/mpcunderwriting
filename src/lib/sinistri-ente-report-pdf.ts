@@ -106,7 +106,7 @@ function drawFooter(ctx: Ctx) {
     color: COLOR.line,
   });
   const lines = [
-    "CONSULBROKERS - Società per Azioni  |  CBnet Gestionale Assicurativo",
+    "CONSULBROKERS - Società per Azioni  |  MPCUnderwriting Gestionale Assicurativo",
     "Documento generato automaticamente — riservato all'ente destinatario",
   ];
   let ly = fy + 22;
@@ -118,7 +118,7 @@ function drawFooter(ctx: Ctx) {
 }
 
 function drawHeader(ctx: Ctx, d: SinistriEnteReportData) {
-  ctx.page.drawText("CBnet", { x: MARGIN.left, y: ctx.y - 16, size: 18, font: ctx.bold, color: COLOR.headerText });
+  ctx.page.drawText("MPCUnderwriting", { x: MARGIN.left, y: ctx.y - 16, size: 18, font: ctx.bold, color: COLOR.headerText });
   ctx.page.drawText("Consulbrokers", { x: MARGIN.left + 58, y: ctx.y - 16, size: 9, font: ctx.font, color: COLOR.muted });
 
   const metaX = A4.w - MARGIN.right - 200;

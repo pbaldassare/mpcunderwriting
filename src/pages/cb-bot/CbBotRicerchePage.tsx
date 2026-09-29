@@ -59,7 +59,7 @@ const CbBotRicerchePage = () => {
   return (
     <div className="space-y-6">
       <div className="flex items-start gap-3">
-        <Button variant="ghost" size="icon" onClick={() => navigate("/cb-bot")} title="Torna a CB Bot">
+        <Button variant="ghost" size="icon" onClick={() => navigate("/cb-bot")} title="Torna a MPC Bot">
           <ArrowLeft className="h-4 w-4" />
         </Button>
         <div className="flex items-center gap-3">

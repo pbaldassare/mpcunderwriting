@@ -15,7 +15,6 @@ import {
   isConsultazioneEmailAllowed,
 } from "@/lib/consultazioneSession";
 import { cn } from "@/lib/utils";
-import logoCbnet from "@/assets/logo-cbnet-transparent.png.asset.json";
 
 type LoginMode = "gestionale" | "consultazione";
 
@@ -133,7 +132,7 @@ const LoginPage = () => {
       <div className={cn("w-full", isConsultazione ? "max-w-md" : "max-w-sm")}>
         <div className="bg-card/95 backdrop-blur-sm border border-white/10 rounded-xl p-8 shadow-2xl">
           <div className="flex items-center justify-center -mt-2 mb-2">
-            <img src={logoCbnet.url} alt="CBnet" className="w-full max-w-[260px] h-auto" />
+            <p className="text-2xl font-bold tracking-tight text-foreground">MPCUnderwriting</p>
           </div>
 
           {!resetMode && (

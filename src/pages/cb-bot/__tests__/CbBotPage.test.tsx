@@ -19,7 +19,7 @@ vi.mock("@/integrations/supabase/client", () => ({
 }));
 
 vi.mock("@/components/documentale/AssistenteGaranzieSection", () => ({
-  default: () => <div>Assistente CB Bot</div>,
+  default: () => <div>Assistente MPC Bot</div>,
 }));
 
 function renderPage() {
@@ -37,8 +37,8 @@ describe("CbBotPage", () => {
   it("mostra l'assistente e non crasha senza randomUUID", () => {
     vi.stubGlobal("crypto", {});
     renderPage();
-    expect(screen.getByRole("heading", { name: "CB Bot" })).toBeInTheDocument();
-    expect(screen.getByText("Assistente CB Bot")).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "MPC Bot" })).toBeInTheDocument();
+    expect(screen.getByText("Assistente MPC Bot")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /Fonti siti/i })).toBeInTheDocument();
     vi.unstubAllGlobals();
   });

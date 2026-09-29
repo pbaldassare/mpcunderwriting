@@ -4,7 +4,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { useKeyboardShortcuts, type ShortcutDef } from "@/hooks/useKeyboardShortcuts";
 
 /**
- * Registra le scorciatoie globali di Consulnet e mostra l'overlay di
+ * Registra le scorciatoie globali di MPCUnderwriting e mostra l'overlay di
  * help quando l'utente preme "?".
  *
  * Convenzione:

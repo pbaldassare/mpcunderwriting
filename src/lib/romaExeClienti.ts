@@ -1,5 +1,5 @@
 /**
- * Mapping anagrafiche gestionale EXE (Roma EXE) → clienti CBnet.
+ * Mapping anagrafiche gestionale EXE (Roma EXE) → clienti MPCUnderwriting.
  *
  * Scelte chiuse con il broker:
  * - Email obbligatoria = mail della sede ROMA 2 EXE (non si perdono le mail EXE: vanno in note/PEC).
@@ -8,7 +8,7 @@
  * - Forma giuridica ricavata dal nome (SRL, SPA, condominio, …).
  * - Nome e cognome spezzati dalla ragione sociale (privati).
  * - Niente CF/P.IVA inventati. Dummy EXE (`00000000000`, `0`, `1`) → vuoto.
- * - Niente doppioni: se CF o P.IVA CBnet già esiste, si collega senza sovrascrivere.
+ * - Niente doppioni: se CF o P.IVA MPCUnderwriting già esiste, si collega senza sovrascrivere.
  */
 
 import { validateCF } from "@/lib/validateCF";
@@ -374,7 +374,7 @@ export function resolveRomaExeCliente(
     note: noteParts.length ? noteParts.join("\n") : null,
     esito: hit ? "esistente" : "da_creare",
     clienteId: hit?.id || null,
-    motivo: hit ? "CF/P.IVA già in CBnet: collegato senza sovrascrivere" : "Nuova anagrafica Roma EXE",
+    motivo: hit ? "CF/P.IVA già in MPCUnderwriting: collegato senza sovrascrivere" : "Nuova anagrafica Roma EXE",
   };
 }
 

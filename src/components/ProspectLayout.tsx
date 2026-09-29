@@ -58,7 +58,7 @@ const ProspectLayout = () => {
               {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
             <HistoryBackButton fallback="/prospect" />
-            <h1 className="text-lg font-bold text-primary tracking-tight">CBnet</h1>
+            <h1 className="text-lg font-bold text-primary tracking-tight">MPCUnderwriting</h1>
             <span className="hidden sm:inline text-xs text-muted-foreground">Area Prospect</span>
           </div>
           <div className="flex items-center gap-3">
@@ -140,7 +140,7 @@ const ProspectLayout = () => {
       </main>
 
       <footer className="border-t border-border bg-card py-4 text-center text-xs text-muted-foreground">
-        CBnet — Per assistenza contatta la tua agenzia
+        MPCUnderwriting — Per assistenza contatta la tua agenzia
       </footer>
     </div>
   );

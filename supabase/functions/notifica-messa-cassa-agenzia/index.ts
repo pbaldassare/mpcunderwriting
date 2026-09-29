@@ -248,7 +248,7 @@ function buildEmailContent(titoli: TitoloRow[], sentAt: Date) {
           <p style="margin:0;">È gradita l'occasione per porgere cordiali saluti.</p>
         </td></tr>
         <tr><td style="background:#fafbfb;color:#7a8784;padding:14px 24px;font-size:11px;border-top:1px solid #e0e6e4;">
-          Messaggio generato automaticamente dal gestionale CBnet il ${escapeHtml(fmtDateTime(sentAt))}. Non rispondere a questa email.
+          Messaggio generato automaticamente dal gestionale MPCUnderwriting il ${escapeHtml(fmtDateTime(sentAt))}. Non rispondere a questa email.
         </td></tr>
       </table>
     </td></tr>
@@ -338,7 +338,7 @@ async function buildArchivePdf(opts: {
   drawLine(bodyIntro, 9);
   drawLine("È gradita l'occasione per porgere cordiali saluti.", 9);
 
-  page.drawText(`Documento archiviato automaticamente da CBnet — ${fmtDateTime(new Date())}`, {
+  page.drawText(`Documento archiviato automaticamente da MPCUnderwriting — ${fmtDateTime(new Date())}`, {
     x: margin,
     y: margin - 10,
     size: 8,

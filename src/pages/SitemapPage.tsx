@@ -224,7 +224,7 @@ const sezioni = [
     icon: AlertTriangle,
     pagine: [
       { nome: "Lista Sinistri", desc: "Elenco sinistri con filtri per stato, data, agenzia e tipo", ruoli: ["admin", "ufficio", "backoffice"] },
-      { nome: "Caricamento massivo", desc: "Import Excel MODULO SX per un cliente, anteprima e collegamento a polizze CBnet o pratiche senza polizza", ruoli: ["admin", "ufficio", "backoffice", "produttore"] },
+      { nome: "Caricamento massivo", desc: "Import Excel MODULO SX per un cliente, anteprima e collegamento a polizze MPCUnderwriting o pratiche senza polizza", ruoli: ["admin", "ufficio", "backoffice", "produttore"] },
       { nome: "Dettaglio Sinistro", desc: "Scheda sinistro con cronologia, perizie, documenti e liquidazioni", ruoli: ["admin", "ufficio", "backoffice"] },
       { nome: "Doc Precontrattuale", desc: "Generazione documentazione precontrattuale obbligatoria", ruoli: ["admin", "ufficio"] },
     ],
@@ -255,8 +255,8 @@ const sezioni = [
     pagine: [
       { nome: "Clientela", desc: "Clienti con auto o autocarro: targa, nominativo e scadenza polizza", ruoli: ["admin", "ufficio", "produttore", "backoffice", "corrispondente"] },
       { nome: "Scadenze", desc: "Coda rinnovi RCA ordinata per scadenza, con avvio preventivazione", ruoli: ["admin", "ufficio", "produttore", "backoffice", "corrispondente"] },
-      { nome: "Analisi preventivo", desc: "Dati CBnet e garanzie richieste prima della quotazione compagnie", ruoli: ["admin", "ufficio", "produttore", "backoffice"] },
-      { nome: "Preventivi", desc: "Elenco e dettaglio preventivi RCA salvati in CBnet", ruoli: ["admin", "ufficio", "produttore", "backoffice"] },
+      { nome: "Analisi preventivo", desc: "Dati MPCUnderwriting e garanzie richieste prima della quotazione compagnie", ruoli: ["admin", "ufficio", "produttore", "backoffice"] },
+      { nome: "Preventivi", desc: "Elenco e dettaglio preventivi RCA salvati in MPCUnderwriting", ruoli: ["admin", "ufficio", "produttore", "backoffice"] },
     ],
   },
   {
@@ -302,7 +302,7 @@ const sezioni = [
       { nome: "Privacy & Consensi", desc: "Gestione consensi GDPR e documentazione privacy clienti", ruoli: ["admin", "ufficio"] },
       { nome: "Report", desc: "Report statistici e analitici personalizzabili", ruoli: ["admin", "ufficio", "cfo"] },
       { nome: "Archivio Documentale", desc: "Archivio documentale con cartelle e upload file", ruoli: ["admin", "ufficio"] },
-      { nome: "CB Bot", desc: "Assistente Web e Libreria CGA sui siti autorizzati e sul catalogo CBnet", ruoli: ["admin", "ufficio"] },
+      { nome: "MPC Bot", desc: "Assistente Web e Libreria CGA sui siti autorizzati e sul catalogo MPCUnderwriting", ruoli: ["admin", "ufficio"] },
       { nome: "Chat Interna", desc: "Messaggistica interna tra operatori con canali tematici", ruoli: ["admin", "ufficio", "contabilita", "produttore", "backoffice", "corrispondente"] },
     ],
   },
@@ -419,7 +419,7 @@ export default function SitemapPage() {
           Sitemap — Organigramma Ruoli & Privilegi
         </h1>
         <p className="text-muted-foreground mt-1">
-          Mappa completa del sistema CBnet: gerarchia ruoli, aree funzionali e permessi per ciascun livello.
+          Mappa completa del sistema MPCUnderwriting: gerarchia ruoli, aree funzionali e permessi per ciascun livello.
         </p>
       </div>
 

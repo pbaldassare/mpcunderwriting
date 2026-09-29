@@ -57,7 +57,7 @@ const App = () => (
                   <Route element={<AppErrorBoundary section="Opportunity"><Outlet /></AppErrorBoundary>}>
                     {opportunityRoutes}
                   </Route>
-                  <Route element={<AppErrorBoundary section="Cb Bot"><Outlet /></AppErrorBoundary>}>
+                  <Route element={<AppErrorBoundary section="MPC Bot"><Outlet /></AppErrorBoundary>}>
                     {cbBotRoutes}
                   </Route>
                   <Route element={<AppErrorBoundary section="Portafoglio"><Outlet /></AppErrorBoundary>}>

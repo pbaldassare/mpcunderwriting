@@ -93,8 +93,8 @@ export default function AssistenteWebChatPanel({ consultazioneMode = false }: Pr
       suggestions={SUGGERIMENTI}
       emptyIcon={<CbBotLogo className="h-14 w-auto mb-3 opacity-90" />}
       emptyTitle="Assistente Web"
-      emptyDescription="Cerca solo sui siti autorizzati dall'admin. Non accede a polizze, clienti né al portafoglio CBnet. Per le CGA usa la tab Libreria CGA."
-      thinkingLabel="CB Bot sta cercando sui siti autorizzati…"
+      emptyDescription="Cerca solo sui siti autorizzati dall'admin. Non accede a polizze, clienti né al portafoglio MPCUnderwriting. Per le CGA usa la tab Libreria CGA."
+      thinkingLabel="MPC Bot sta cercando sui siti autorizzati…"
       formatConvDate={chat.formatConvDate}
       hideTeam={consultazioneMode}
       evidenzaMutation={chat.evidenzaMutation}

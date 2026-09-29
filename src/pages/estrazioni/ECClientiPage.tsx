@@ -99,7 +99,7 @@ const ECClientiPage = () => {
 
   const exportExcel = () => {
     exportEstrazioneWorkbook({
-      title: "E/C Clienti — Consulnet",
+      title: "E/C Clienti — MPCUnderwriting",
       subtitle: `Periodo: ${periodo}`,
       metaRows: [
         [],

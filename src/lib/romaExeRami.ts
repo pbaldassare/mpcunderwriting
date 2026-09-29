@@ -1,6 +1,6 @@
 /**
- * Mapping rami gestionale EXE (Roma EXE) → catalogo CBnet.
- * I codici numerici EXE non si importano: collidevano con `rami.codice` CBnet.
+ * Mapping rami gestionale EXE (Roma EXE) → catalogo MPCUnderwriting.
+ * I codici numerici EXE non si importano: collidevano con `rami.codice` MPCUnderwriting.
  *
  * Scelte chiuse con il broker:
  * - Globale esercizi → MULTIRISCHIO (LQ)
@@ -211,7 +211,7 @@ export type RomaExeRamoRisolto = ExeRamoMap & {
   gruppoRamoId: string | null;
 };
 
-/** Collega il mapping EXE a un `ramo_id` reale del catalogo CBnet. */
+/** Collega il mapping EXE a un `ramo_id` reale del catalogo MPCUnderwriting. */
 export function resolveRomaExeRamo(
   codice: string | number | null | undefined,
   descrizione: string | null | undefined,

@@ -2,7 +2,7 @@ import { PDFDocument, StandardFonts, rgb, PDFFont, PDFPage } from "pdf-lib";
 import { format } from "date-fns";
 import { it } from "date-fns/locale";
 
-// Palette CBnet — teal/dark petrol green
+// Palette MPCUnderwriting — teal/dark petrol green
 const TEAL = rgb(0.043, 0.298, 0.314); // #0B4C50
 const TEAL_LIGHT = rgb(0.85, 0.92, 0.92);
 const AMBER = rgb(0.85, 0.55, 0.13);
@@ -139,7 +139,7 @@ export async function exportChatToPdf(data: ChatPdfData): Promise<void> {
       thickness: 0.5,
       color: BORDER,
     });
-    p.drawText(`CBnet · Esportato il ${exportStr} · ${data.clienteNome}`, {
+    p.drawText(`MPCUnderwriting · Esportato il ${exportStr} · ${data.clienteNome}`, {
       x: MARGIN_X, y: 22, size: 8, font, color: MUTED,
     });
     const pn = `Pagina ${n}`;
@@ -160,7 +160,7 @@ export async function exportChatToPdf(data: ChatPdfData): Promise<void> {
 
   // === HEADER BAND ===
   page.drawRectangle({ x: 0, y: PAGE_H - 70, width: PAGE_W, height: 70, color: TEAL });
-  page.drawText("CBnet", { x: MARGIN_X, y: PAGE_H - 35, size: 22, font: fontBold, color: WHITE });
+  page.drawText("MPCUnderwriting", { x: MARGIN_X, y: PAGE_H - 35, size: 22, font: fontBold, color: WHITE });
   page.drawText("Conversazione Chat", { x: MARGIN_X, y: PAGE_H - 55, size: 11, font, color: rgb(0.85, 0.92, 0.92) });
   const dateLine = `Esportato il ${exportStr}`;
   page.drawText(dateLine, {
