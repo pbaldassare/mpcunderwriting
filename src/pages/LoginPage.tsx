@@ -132,7 +132,11 @@ const LoginPage = () => {
       <div className={cn("w-full", isConsultazione ? "max-w-md" : "max-w-sm")}>
         <div className="bg-card/95 backdrop-blur-sm border border-white/10 rounded-xl p-8 shadow-2xl">
           <div className="flex items-center justify-center -mt-2 mb-2">
-            <p className="text-2xl font-bold tracking-tight text-foreground">MPCUnderwriting</p>
+            <img
+              src="/cropped-logo.png"
+              alt="MPC — La protezione è un bene comune"
+              className="w-full h-auto rounded-md"
+            />
           </div>
 
           {!resetMode && (
