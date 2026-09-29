@@ -4,6 +4,30 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Barra che si consuma in 3s: stessa durata delle notifiche Sonner. */
+@keyframes mpc-toast-timeline {
+  from { transform: scaleX(1); }
+  to { transform: scaleX(0); }
+}
+
+[data-sonner-toast]:not([data-type="loading"])::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  transform-origin: left center;
+  animation: mpc-toast-timeline 3s linear forwards;
+  background: currentColor;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+[data-sonner-toast]:hover::after {
+  animation-play-state: paused;
+}
+
 @layer base {
   :root {
     --background: 0 0% 98%;
