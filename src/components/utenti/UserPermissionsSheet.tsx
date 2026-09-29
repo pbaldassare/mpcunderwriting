@@ -14,6 +14,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
 import { toast } from "sonner";
 import { readInvokeErrorMessage } from "@/lib/edgeFunctionError";
+import { canModifyAccount, isRootAdminEmail, OTHER_ADMIN_LOCKED_MESSAGE } from "@/lib/adminAccountGuard";
 import { ALL_PERMISSION_KEYS, getLevelByRole, ROLE_LABELS, VISIBILITY_LABEL, VisibilityScope, LEVELS } from "@/lib/userLevels";
 import { roleLabel, sedeAssegnataLabel } from "@/lib/userPrivilegiDisplay";
 import PermissionsMatrix from "./PermissionsMatrix";
@@ -31,7 +32,7 @@ interface Props {
 }
 
 const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
-  const { user: authUser } = useAuth();
+  const { user: authUser, profile: authProfile } = useAuth();
   const [permissions, setPermissions] = useState<Record<string, boolean>>({});
   const [visibility, setVisibility] = useState<VisibilityScope>("self_only");
   const [ruolo, setRuolo] = useState<string>("");
@@ -64,8 +65,23 @@ const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
   const level = getLevelByRole(ruolo);
   const Icon = level.icon;
   const isSelf = authUser?.id === user.id;
+  const actorIsRoot = isRootAdminEmail(authProfile?.email);
+  const locked = !canModifyAccount({ id: authUser?.id, email: authProfile?.email }, user);
+  const roleChoices = LEVELS.flatMap((l) => l.roles).filter((r) => {
+    if (r === "cliente" || r === "prospect") return false;
+    if (r === "admin" && !actorIsRoot && user.ruolo !== "admin") return false;
+    return true;
+  });
 
   const handleSave = async () => {
+    if (locked) {
+      toast.error(OTHER_ADMIN_LOCKED_MESSAGE);
+      return;
+    }
+    if (ruolo === "admin" && user.ruolo !== "admin" && !actorIsRoot) {
+      toast.error("Solo admin@mpc.it può assegnare il ruolo amministratore");
+      return;
+    }
     setSaving(true);
     const newPermissions = {
       ...permissions,
@@ -103,6 +119,10 @@ const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
   };
 
   const handleResetPassword = async () => {
+    if (locked) {
+      toast.error(OTHER_ADMIN_LOCKED_MESSAGE);
+      return;
+    }
     if (!resetPwd || resetPwd.length < 6) {
       toast.error("Inserisci una password (min 6 caratteri)");
       return;
@@ -149,6 +169,12 @@ const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
           </div>
         </SheetHeader>
 
+        {locked && (
+          <p className="mt-3 rounded-lg border border-amber-500/40 bg-amber-500/10 px-3 py-2 text-xs text-amber-950 dark:text-amber-100">
+            {OTHER_ADMIN_LOCKED_MESSAGE}
+          </p>
+        )}
+
         <Tabs defaultValue="anagrafica" className="flex-1 flex flex-col overflow-hidden mt-4">
           <TabsList className="grid grid-cols-4">
             <TabsTrigger value="anagrafica" className="text-xs"><UserIcon className="w-3.5 h-3.5 mr-1" />Anagrafica</TabsTrigger>
@@ -164,6 +190,7 @@ const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
                   userId={user.id}
                   avatarUrl={user.avatar_url || null}
                   fallback={`${(user.nome || "")[0] || ""}${(user.cognome || "")[0] || ""}`.toUpperCase() || "U"}
+                  disabled={locked}
                   onChange={(url) => { user.avatar_url = url; }}
                 />
               </div>
@@ -177,6 +204,7 @@ const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
                   telefono: user.telefono || "",
                   note: user.note || "",
                 }}
+                disabled={locked}
                 onSaved={(info) => {
                   user.nome = info.nome;
                   user.cognome = info.cognome;
@@ -192,10 +220,10 @@ const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
               <div className="grid grid-cols-2 gap-2">
                 <div>
                   <Label className="text-xs">Ruolo</Label>
-                  <Select value={ruolo} onValueChange={setRuolo}>
+                  <Select value={ruolo} onValueChange={setRuolo} disabled={locked}>
                     <SelectTrigger><SelectValue /></SelectTrigger>
                     <SelectContent>
-                      {LEVELS.flatMap((l) => l.roles).filter((r) => r !== "cliente" && r !== "prospect").map((r) => (
+                      {roleChoices.map((r) => (
                         <SelectItem key={r} value={r}>{ROLE_LABELS[r] || r}</SelectItem>
                       ))}
                     </SelectContent>
@@ -212,18 +240,20 @@ const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
                 <div>
                   <Label className="font-medium">Account attivo</Label>
                   <p className="text-xs text-muted-foreground">
-                    {isSelf
-                      ? "Non puoi disattivare il tuo account"
-                      : "Se disattivato, l'utente non può accedere"}
+                    {locked
+                      ? OTHER_ADMIN_LOCKED_MESSAGE
+                      : isSelf
+                        ? "Non puoi disattivare il tuo account"
+                        : "Se disattivato, l'utente non può accedere"}
                   </p>
                 </div>
-                <span title={isSelf ? "Non puoi disattivare il tuo account" : undefined}>
+                <span title={locked ? OTHER_ADMIN_LOCKED_MESSAGE : isSelf ? "Non puoi disattivare il tuo account" : undefined}>
                   <Switch
-                    checked={isSelf ? true : attivo}
-                    disabled={isSelf}
-                    className={isSelf ? "grayscale" : undefined}
+                    checked={locked ? user.attivo !== false : isSelf ? true : attivo}
+                    disabled={isSelf || locked}
+                    className={isSelf || locked ? "grayscale" : undefined}
                     onCheckedChange={setAttivo}
-                    aria-label={isSelf ? "Non puoi disattivare il tuo account" : "Account attivo"}
+                    aria-label={locked ? OTHER_ADMIN_LOCKED_MESSAGE : isSelf ? "Non puoi disattivare il tuo account" : "Account attivo"}
                   />
                 </span>
               </div>
@@ -265,10 +295,10 @@ const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
 
             <TabsContent value="visibility" className="space-y-3 mt-0">
               <p className="text-sm text-muted-foreground">Quali dati può vedere questo utente?</p>
-              <RadioGroup value={visibility} onValueChange={(v) => setVisibility(v as VisibilityScope)} className="space-y-2">
+              <RadioGroup value={visibility} onValueChange={(v) => setVisibility(v as VisibilityScope)} className="space-y-2" disabled={locked}>
                 {(Object.keys(VISIBILITY_LABEL) as VisibilityScope[]).map((v) => (
                   <label key={v} className="flex items-center gap-3 p-3 rounded-lg border cursor-pointer hover:bg-muted/40">
-                    <RadioGroupItem value={v} />
+                    <RadioGroupItem value={v} disabled={locked} />
                     <span className="text-sm">{VISIBILITY_LABEL[v]}</span>
                   </label>
                 ))}
@@ -283,7 +313,7 @@ const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
                     : "Spunta i moduli accessibili"}
                 </p>
                 {ruolo !== "admin" && (
-                  <Button variant="outline" size="sm" onClick={handleApplyTemplate}>
+                  <Button variant="outline" size="sm" onClick={handleApplyTemplate} disabled={locked}>
                     Applica template {level.label}
                   </Button>
                 )}
@@ -294,7 +324,7 @@ const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
                     ? Object.fromEntries(ALL_PERMISSION_KEYS.map((key) => [key, true]))
                     : permissions
                 }
-                disabled={ruolo === "admin"}
+                disabled={ruolo === "admin" || locked}
                 onChange={(k, v) => setPermissions((p) => ({ ...p, [k]: v }))}
               />
               <div className="flex items-center justify-between rounded-lg border p-3 mt-3">
@@ -304,7 +334,7 @@ const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
                 </div>
                 <Switch
                   checked={ruolo === "admin" ? true : riceveProvvigioni}
-                  disabled={ruolo === "admin"}
+                  disabled={ruolo === "admin" || locked}
                   onCheckedChange={setRiceveProvvigioni}
                 />
               </div>
@@ -314,8 +344,8 @@ const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
               <div className="rounded-lg border p-3 space-y-2">
                 <Label className="font-medium flex items-center gap-1.5"><KeyRound className="w-4 h-4" />Reset password</Label>
                 <div className="flex gap-2">
-                  <Input type="text" value={resetPwd} onChange={(e) => setResetPwd(e.target.value)} placeholder="Nuova password" />
-                  <Button onClick={handleResetPassword} variant="outline">Imposta</Button>
+                  <Input type="text" value={resetPwd} onChange={(e) => setResetPwd(e.target.value)} placeholder="Nuova password" disabled={locked} />
+                  <Button onClick={handleResetPassword} variant="outline" disabled={locked}>Imposta</Button>
                 </div>
               </div>
               <div className="rounded-lg border p-3 bg-destructive/5">
@@ -329,7 +359,7 @@ const UserPermissionsSheet = ({ user, open, onOpenChange, onSaved }: Props) => {
         <Separator className="my-2" />
         <div className="flex justify-end gap-2">
           <Button variant="outline" onClick={() => onOpenChange(false)}>Chiudi</Button>
-          <Button onClick={handleSave} disabled={saving}>
+          <Button onClick={handleSave} disabled={saving || locked}>
             <Save className="w-4 h-4 mr-1.5" />
             {saving ? "Salvataggio…" : "Salva modifiche"}
           </Button>

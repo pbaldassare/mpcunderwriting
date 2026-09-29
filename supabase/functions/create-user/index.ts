@@ -95,6 +95,32 @@ Deno.serve(async (req) => {
       return jsonResponse({ error: "Accesso non autorizzato" }, 403);
     }
 
+    const rootAdminEmail = "admin@mpc.it";
+    const lockedMessage = "Solo admin@mpc.it può modificare un altro account amministratore";
+    const assignMessage = "Solo admin@mpc.it può assegnare il ruolo amministratore";
+    const { data: callerProfile } = await adminClient
+      .from("profiles")
+      .select("email")
+      .eq("id", caller.id)
+      .maybeSingle();
+    const callerIsRoot = (callerProfile?.email || caller.email || "").trim().toLowerCase() === rootAdminEmail;
+
+    const targetIsAdmin = async (userId: string) => {
+      const { data: profile } = await adminClient
+        .from("profiles")
+        .select("ruolo, email")
+        .eq("id", userId)
+        .maybeSingle();
+      if ((profile?.ruolo || "").trim().toLowerCase() === "admin") return true;
+      if ((profile?.email || "").trim().toLowerCase() === rootAdminEmail) return true;
+      const { data: adminRoles } = await adminClient
+        .from("user_roles")
+        .select("role")
+        .eq("user_id", userId)
+        .eq("role", "admin");
+      return (adminRoles?.length || 0) > 0;
+    };
+
     const body = await req.json();
     const action = body.action || "create";
 
@@ -103,6 +129,9 @@ Deno.serve(async (req) => {
       const { user_id, password } = body;
       if (!user_id || !password) {
         return jsonResponse({ error: "user_id e password obbligatori" }, 400);
+      }
+      if (user_id !== caller.id && !callerIsRoot && await targetIsAdmin(user_id)) {
+        return jsonResponse({ error: lockedMessage }, 403);
       }
       const { error: updErr } = await adminClient.auth.admin.updateUserById(user_id, { password });
       if (updErr) {
@@ -128,6 +157,13 @@ Deno.serve(async (req) => {
 
     if (!email || !nome || !cognome || !ruolo) {
       return jsonResponse({ error: "Campi obbligatori mancanti: nome, cognome, email, ruolo" }, 400);
+    }
+
+    if (String(ruolo).trim().toLowerCase() === "admin" && !callerIsRoot) {
+      return jsonResponse({ error: assignMessage }, 403);
+    }
+    if (String(email).trim().toLowerCase() === rootAdminEmail) {
+      return jsonResponse({ error: "L'indirizzo admin@mpc.it è riservato" }, 403);
     }
 
     const userPassword = password || "Temp123!";

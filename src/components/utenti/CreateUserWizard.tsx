@@ -13,6 +13,8 @@ import { Sparkles, UserPlus, Building2, ShieldCheck, ChevronRight, CheckCircle2 
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 import { readInvokeErrorMessage } from "@/lib/edgeFunctionError";
+import { useAuth } from "@/contexts/AuthContext";
+import { isRootAdminEmail } from "@/lib/adminAccountGuard";
 
 type Source = "scratch" | "anagrafica" | "cliente";
 
@@ -30,6 +32,8 @@ const STEPS = [
 ];
 
 const CreateUserWizard = ({ open, onOpenChange, onCreated }: Props) => {
+  const { profile: authProfile } = useAuth();
+  const actorIsRoot = isRootAdminEmail(authProfile?.email);
   const [step, setStep] = useState(1);
   const [source, setSource] = useState<Source>("scratch");
   const [selectedAnagId, setSelectedAnagId] = useState<string>("");
@@ -99,6 +103,10 @@ const CreateUserWizard = ({ open, onOpenChange, onCreated }: Props) => {
   };
 
   const handleCreate = async () => {
+    if (role === "admin" && !actorIsRoot) {
+      toast.error("Solo admin@mpc.it può assegnare il ruolo amministratore");
+      return;
+    }
     setSaving(true);
     const { data: sessionData } = await supabase.auth.getSession();
     const token = sessionData?.session?.access_token;
@@ -242,13 +250,18 @@ const CreateUserWizard = ({ open, onOpenChange, onCreated }: Props) => {
                 {LEVELS.filter((l) => l.id !== "L6").map((l) => {
                   const Icon = l.icon;
                   const active = level.id === l.id;
+                  const adminLevelLocked = l.roles.includes("admin") && !actorIsRoot;
                   return (
                     <button
                       key={l.id}
+                      type="button"
+                      disabled={adminLevelLocked}
+                      title={adminLevelLocked ? "Solo admin@mpc.it può assegnare il ruolo amministratore" : undefined}
                       onClick={() => { setLevel(l); setRole(l.roles[0]); }}
                       className={cn(
                         "p-3 rounded-lg border-2 text-left transition-all",
                         l.bgClass,
+                        adminLevelLocked && "opacity-40 grayscale cursor-not-allowed",
                         active ? l.borderClass + " ring-2 ring-primary" : "border-border/40 hover:border-border",
                       )}
                     >

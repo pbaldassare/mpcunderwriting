@@ -10,16 +10,18 @@ interface Props {
   avatarUrl: string | null;
   fallback: string;
   onChange: (url: string | null) => void;
+  disabled?: boolean;
 }
 
 const MAX_SIZE = 2 * 1024 * 1024; // 2MB
 const ALLOWED = ["image/jpeg", "image/png", "image/webp"];
 
-const ProfileAvatarUpload = ({ userId, avatarUrl, fallback, onChange }: Props) => {
+const ProfileAvatarUpload = ({ userId, avatarUrl, fallback, onChange, disabled }: Props) => {
   const inputRef = useRef<HTMLInputElement>(null);
   const [busy, setBusy] = useState(false);
 
   const handleFile = async (file: File) => {
+    if (disabled) return;
     if (!ALLOWED.includes(file.type)) {
       toast.error("Formato non valido", { description: "Usa JPG, PNG o WEBP" });
       return;
@@ -58,6 +60,7 @@ const ProfileAvatarUpload = ({ userId, avatarUrl, fallback, onChange }: Props) =
   };
 
   const handleRemove = async () => {
+    if (disabled) return;
     setBusy(true);
     try {
       // Tenta di rimuovere file dallo storage (ignora errori, potrebbe non esistere)
@@ -103,7 +106,7 @@ const ProfileAvatarUpload = ({ userId, avatarUrl, fallback, onChange }: Props) =
           type="button"
           variant="outline"
           size="sm"
-          disabled={busy}
+          disabled={busy || disabled}
           onClick={() => inputRef.current?.click()}
         >
           {busy ? <Loader2 className="w-4 h-4 mr-1.5 animate-spin" /> : <Camera className="w-4 h-4 mr-1.5" />}
@@ -114,7 +117,7 @@ const ProfileAvatarUpload = ({ userId, avatarUrl, fallback, onChange }: Props) =
             type="button"
             variant="ghost"
             size="sm"
-            disabled={busy}
+            disabled={busy || disabled}
             onClick={handleRemove}
             className="text-destructive hover:text-destructive"
           >

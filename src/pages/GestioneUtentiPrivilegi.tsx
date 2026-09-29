@@ -19,9 +19,11 @@ import DeleteWithImpactDialog from "@/components/common/DeleteWithImpactDialog";
 import { toast } from "sonner";
 import { matchesProfileNameSearch } from "@/lib/searchNoEmail";
 import { useAuth } from "@/contexts/AuthContext";
+import { canModifyAccount, isRootAdminEmail, OTHER_ADMIN_LOCKED_MESSAGE } from "@/lib/adminAccountGuard";
 
 const GestioneUtentiPrivilegi = () => {
-  const { user: authUser } = useAuth();
+  const { user: authUser, profile: authProfile } = useAuth();
+  const actor = { id: authUser?.id, email: authProfile?.email };
   const [searchParams, setSearchParams] = useSearchParams();
   const [filterLevel, setFilterLevel] = useState<UserLevel | "all">("all");
   const [statusFilter, setStatusFilter] = useState<"all" | "active" | "suspended">("all");
@@ -121,6 +123,10 @@ const GestioneUtentiPrivilegi = () => {
   }, [filtered]);
 
   const toggleAttivo = async (user: any, value: boolean) => {
+    if (!canModifyAccount(actor, user)) {
+      toast.error(OTHER_ADMIN_LOCKED_MESSAGE);
+      return;
+    }
     if (authUser?.id === user.id && !value) {
       toast.error("Non puoi disattivare il tuo account");
       return;
@@ -135,6 +141,11 @@ const GestioneUtentiPrivilegi = () => {
 
   const confirmDelete = async () => {
     if (!deleteUser) return;
+    if (!canModifyAccount(actor, deleteUser) || isRootAdminEmail(deleteUser.email)) {
+      toast.error(isRootAdminEmail(deleteUser.email) ? "Non puoi eliminare l'account admin@mpc.it" : OTHER_ADMIN_LOCKED_MESSAGE);
+      setDeleteUser(null);
+      return;
+    }
     setDeleting(true);
     const { error } = await supabase.from("profiles").delete().eq("id", deleteUser.id);
     setDeleting(false);
@@ -279,26 +290,48 @@ const GestioneUtentiPrivilegi = () => {
                         <p className="text-xs text-muted-foreground truncate">Permessi: {permissionSummary(u)}</p>
                       </div>
                       <div className="flex items-center gap-2">
+                        {(() => {
+                          const self = authUser?.id === u.id;
+                          const locked = !canModifyAccount(actor, u);
+                          const switchDisabled = self || locked;
+                          const deleteDisabled = locked || isRootAdminEmail(u.email);
+                          const switchTitle = locked
+                            ? OTHER_ADMIN_LOCKED_MESSAGE
+                            : self
+                              ? "Non puoi disattivare il tuo account"
+                              : undefined;
+                          return (
+                            <>
                         <div className="flex items-center gap-1.5">
                           <span className="text-[10px] text-muted-foreground hidden md:inline">
-                            {authUser?.id === u.id ? "Il tuo account" : u.attivo ? "Attivo" : "Sospeso"}
+                            {self ? "Il tuo account" : locked ? "Protetto" : u.attivo ? "Attivo" : "Sospeso"}
                           </span>
-                          <span title={authUser?.id === u.id ? "Non puoi disattivare il tuo account" : undefined}>
+                          <span title={switchTitle}>
                             <Switch
                               checked={!!u.attivo}
-                              disabled={authUser?.id === u.id}
-                              className={authUser?.id === u.id ? "grayscale" : undefined}
+                              disabled={switchDisabled}
+                              className={switchDisabled ? "grayscale" : undefined}
                               onCheckedChange={(v) => toggleAttivo(u, v)}
-                              aria-label={authUser?.id === u.id ? "Non puoi disattivare il tuo account" : "Attiva o sospendi utente"}
+                              aria-label={switchTitle || "Attiva o sospendi utente"}
                             />
                           </span>
                         </div>
                         <Button size="sm" variant="outline" onClick={() => { setSheetUser(u); setSheetOpen(true); }}>
                           <Settings2 className="w-3.5 h-3.5 mr-1" /> Permessi
                         </Button>
-                        <Button size="sm" variant="ghost" className="text-destructive hover:bg-destructive/10" onClick={() => setDeleteUser(u)}>
+                        <Button
+                          size="sm"
+                          variant="ghost"
+                          className="text-destructive hover:bg-destructive/10 disabled:opacity-40"
+                          disabled={deleteDisabled}
+                          title={deleteDisabled ? (isRootAdminEmail(u.email) ? "Non puoi eliminare l'account admin@mpc.it" : OTHER_ADMIN_LOCKED_MESSAGE) : "Elimina utente"}
+                          onClick={() => setDeleteUser(u)}
+                        >
                           <Trash2 className="w-3.5 h-3.5" />
                         </Button>
+                            </>
+                          );
+                        })()}
                       </div>
                     </CardContent>
                   </Card>

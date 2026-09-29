@@ -22,11 +22,12 @@ interface Props {
   onSaved?: (info: ProfileInfo) => void;
   /** Se true non mostra il pulsante; salvataggio gestito esternamente via ref/imperative */
   hideSubmit?: boolean;
+  disabled?: boolean;
 }
 
 const NOTE_MAX = 500;
 
-const ProfileInfoForm = ({ userId, initial, mode, onSaved, hideSubmit }: Props) => {
+const ProfileInfoForm = ({ userId, initial, mode, onSaved, hideSubmit, disabled }: Props) => {
   const [form, setForm] = useState<ProfileInfo>(initial);
   const [saving, setSaving] = useState(false);
 
@@ -38,6 +39,7 @@ const ProfileInfoForm = ({ userId, initial, mode, onSaved, hideSubmit }: Props) 
     setForm((p) => ({ ...p, [k]: v }));
 
   const handleSave = async () => {
+    if (disabled) return;
     if (form.note.length > NOTE_MAX) {
       toast.error(`Note troppo lunghe (max ${NOTE_MAX} caratteri)`);
       return;
@@ -88,6 +90,7 @@ const ProfileInfoForm = ({ userId, initial, mode, onSaved, hideSubmit }: Props) 
             onChange={(e) => update("nome", e.target.value)}
             maxLength={100}
             placeholder="Mario"
+            disabled={disabled}
           />
         </div>
         <div>
@@ -97,6 +100,7 @@ const ProfileInfoForm = ({ userId, initial, mode, onSaved, hideSubmit }: Props) 
             onChange={(e) => update("cognome", e.target.value)}
             maxLength={100}
             placeholder="Rossi"
+            disabled={disabled}
           />
         </div>
       </div>
@@ -108,6 +112,7 @@ const ProfileInfoForm = ({ userId, initial, mode, onSaved, hideSubmit }: Props) 
           maxLength={30}
           placeholder="+39 ..."
           inputMode="tel"
+          disabled={disabled}
         />
       </div>
       <div>
@@ -122,11 +127,12 @@ const ProfileInfoForm = ({ userId, initial, mode, onSaved, hideSubmit }: Props) 
           onChange={(e) => update("note", e.target.value.slice(0, NOTE_MAX))}
           rows={3}
           placeholder="Brevi annotazioni opzionali"
+          disabled={disabled}
         />
       </div>
       {!hideSubmit && (
         <div className="flex justify-end">
-          <Button onClick={handleSave} disabled={saving}>
+          <Button onClick={handleSave} disabled={saving || disabled}>
             {saving ? <Loader2 className="w-4 h-4 mr-1.5 animate-spin" /> : <Save className="w-4 h-4 mr-1.5" />}
             Salva dati personali
           </Button>
