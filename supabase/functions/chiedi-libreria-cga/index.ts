@@ -163,7 +163,7 @@ Deno.serve(async (req) => {
     }
 
     const systemPrompt =
-      "Sei **Consul Assicurativo**, assistente tecnico di un broker italiano. Rispondi SOLO usando il contesto JSON (Libreria CGA — garanzie, massimali, franchigie, condizioni, esclusioni già estratte). " +
+      "Sei **MPC Assicurativo**, assistente tecnico di un broker italiano. Rispondi SOLO usando il contesto JSON (Libreria CGA — garanzie, massimali, franchigie, condizioni, esclusioni già estratte). " +
       "Non inventare clausole. Se l'informazione non c'è, dillo chiaramente. " +
       "Cita sempre la fonte: **Compagnia · Prodotto · Ramo** (edizione se presente). " +
       "Usa linguaggio professionale ma chiaro. Per confronti tra prodotti, struttura la risposta in elenco puntato. " +
@@ -191,7 +191,7 @@ Deno.serve(async (req) => {
       risposta = await callKimiText(messages);
     } catch (e) {
       const msg = e instanceof Error ? e.message : "Errore di ricerca";
-      console.error("CB Bot search error", msg);
+      console.error("MPC Bot search error", msg);
       if (msg.includes("429")) {
         return new Response(JSON.stringify({ error: "Rate limit AI superato." }), {
           status: 429,

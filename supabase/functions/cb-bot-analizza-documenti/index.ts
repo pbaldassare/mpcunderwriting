@@ -1,4 +1,4 @@
-// Edge: analizza o confronta documenti CB Bot (testo già estratto o file in storage).
+// Edge: analizza o confronta documenti MPC Bot (testo già estratto o file in storage).
 // I nomi dei motori IA non vanno esposti al client.
 
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";

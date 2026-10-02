@@ -1,5 +1,5 @@
 // Edge function: chiedi-mercato-assicurativo (Assistente Web)
-// Chat web — interroga SOLO i siti in cb_bot_siti_autorizzati. Non accede a polizze CBnet.
+// Chat web — interroga SOLO i siti in cb_bot_siti_autorizzati. Non accede a polizze MPCUnderwriting.
 // IA: Kimi (Moonshot). Know-how curato: se la domanda matcha, nessuna chiamata IA.
 
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
@@ -117,7 +117,7 @@ function isEmailAllowed(email: string | null | undefined): boolean {
 
 const PORTAL_ROLES = new Set(["cliente", "prospect"]);
 
-/** Utente CBnet loggato (JWT valido, profilo attivo, non portale cliente/prospect). */
+/** Utente MPCUnderwriting loggato (JWT valido, profilo attivo, non portale cliente/prospect). */
 async function isAuthenticatedStaff(req: Request): Promise<boolean> {
   const authHeader = req.headers.get("Authorization");
   if (!authHeader?.toLowerCase().startsWith("bearer ")) return false;
@@ -235,7 +235,7 @@ Deno.serve(async (req) => {
       });
     }
 
-    // Staff CBnet autenticato (es. admin@consul.it) passa col JWT.
+    // Staff MPCUnderwriting autenticato (es. admin@mpc.it) passa col JWT.
     // Area consultazione esterna resta sulla allowlist dei domini partner.
     const staffOk = await isAuthenticatedStaff(req);
     if (!staffOk && !isEmailAllowed(email)) {
@@ -274,7 +274,7 @@ Deno.serve(async (req) => {
         JSON.stringify({
           ok: true,
           risposta:
-            "Non ci sono siti autorizzati attivi. Un amministratore deve aggiungerli in **CB Bot → Siti autorizzati**. " +
+            "Non ci sono siti autorizzati attivi. Un amministratore deve aggiungerli in **MPC Bot → Siti autorizzati**. " +
             "Per clausole e garanzie di prodotto usa la tab **Libreria CGA**.",
           fonti: [],
           query: null,
@@ -310,10 +310,10 @@ Deno.serve(async (req) => {
       "Sei **Assistente Web**, un assistente per professionisti del brokeraggio assicurativo italiano. " +
       "Puoi usare SOLO i risultati web provenienti dai siti autorizzati e le fonti interne salvate dallo staff. " +
       "REGOLE FERREE:\n" +
-      "• NON hai accesso a polizze, clienti, portafoglio, titoli, quietanze o dati interni CBnet/Consulbrokers.\n" +
-      "• Se l'utente chiede 'le mie polizze', dati cliente o estrazioni dal gestionale → spiega che Assistente Web non può accedervi; indirizza al gestionale CBnet.\n" +
+      "• NON hai accesso a polizze, clienti, portafoglio, titoli, quietanze o dati interni MPCUnderwriting.\n" +
+      "• Se l'utente chiede 'le mie polizze', dati cliente o estrazioni dal gestionale → spiega che Assistente Web non può accedervi; indirizza al gestionale MPCUnderwriting.\n" +
       "• Se chiede clausole/garanzie di un prodotto assicurativo specifico → suggerisci la tab **Libreria CGA** nel Documentale.\n" +
-      "• Preferisci le FONTI INTERNE CB BOT quando sono pertinenti; poi i risultati web.\n" +
+      "• Preferisci le FONTI INTERNE MPC BOT quando sono pertinenti; poi i risultati web.\n" +
       "• Usa ESCLUSIVAMENTE i JSON forniti. Non inventare fonti.\n" +
       "• Se i risultati sono vuoti o insufficienti, dillo chiaramente: non hai trovato nulla sui siti autorizzati.\n" +
       "• Cita le fonti con link markdown [titolo](url).\n" +
@@ -322,7 +322,7 @@ Deno.serve(async (req) => {
       `Siti autorizzati: ${elencoSiti}.`;
 
     const userContent =
-      "FONTI INTERNE CB BOT (pagine salvate dallo staff):\n" +
+      "FONTI INTERNE MPC BOT (pagine salvate dallo staff):\n" +
       JSON.stringify(fontiSalvateOut, null, 2) +
       "\n\nRISULTATI RICERCA WEB SUI SITI AUTORIZZATI (JSON):\n" +
       JSON.stringify({ query: searchQuery, siti_autorizzati: elencoSiti, risultati: fonti }, null, 2) +

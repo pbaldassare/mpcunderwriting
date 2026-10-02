@@ -14,7 +14,7 @@ const SUPABASE_ANON_KEY = Deno.env.get("SUPABASE_ANON_KEY")!;
 const MAX_ITERATIONS = 10;
 const MAX_ROWS = 100;
 
-const SYSTEM_PROMPT = `Sei un assistente IA per un broker assicurativo italiano (CBnet/ConsulNet).
+const SYSTEM_PROMPT = `Sei un assistente IA per un broker assicurativo italiano (MPCUnderwriting).
 Rispondi in italiano, in modo conciso e professionale.
 
 Hai 5 tool a disposizione:
