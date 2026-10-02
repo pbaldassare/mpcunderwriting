@@ -1,6 +1,6 @@
 /**
  * Gateway IA CBnet: Moonshot/Kimi (preferito) con fallback Lovable Gemini.
- * La chiave vive solo nei secret Edge — mai nel client Vite.
+ * La chiave vive nei secret Edge o nel vault del database — mai nel client Vite.
  *
  * Alias env: MOONSHOT_API_KEY | MOONSHINE_API_KEY (stesso provider Kimi).
  */
@@ -17,8 +17,43 @@ export type AiConfig = {
   chatModel: string;
 };
 
+/** Chiave dal vault (public.ai_config), usata quando i secret Edge non sono impostati. */
+let vaultApiKey: string | undefined;
+
+async function loadVaultApiKey(): Promise<string | undefined> {
+  const url = Deno.env.get("SUPABASE_URL");
+  const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
+  if (!url || !serviceKey) return undefined;
+  try {
+    const resp = await fetch(`${url}/rest/v1/rpc/ai_config`, {
+      method: "POST",
+      headers: {
+        apikey: serviceKey,
+        Authorization: `Bearer ${serviceKey}`,
+        "Content-Type": "application/json",
+      },
+      body: "{}",
+      signal: AbortSignal.timeout(8_000),
+    });
+    if (!resp.ok) return undefined;
+    const json = await resp.json() as { api_key?: string | null };
+    return json?.api_key?.trim() || undefined;
+  } catch (e) {
+    console.warn("[aiProvider] vault MOONSHOT_API_KEY non disponibile:", e);
+    return undefined;
+  }
+}
+
+if (
+  !Deno.env.get("MOONSHOT_API_KEY") &&
+  !Deno.env.get("MOONSHINE_API_KEY") &&
+  !Deno.env.get("LOVABLE_API_KEY")
+) {
+  vaultApiKey = await loadVaultApiKey();
+}
+
 function moonshotKey(): string | undefined {
-  return Deno.env.get("MOONSHOT_API_KEY") || Deno.env.get("MOONSHINE_API_KEY") || undefined;
+  return Deno.env.get("MOONSHOT_API_KEY") || Deno.env.get("MOONSHINE_API_KEY") || vaultApiKey;
 }
 
 export function hasAiCredentials(): boolean {
